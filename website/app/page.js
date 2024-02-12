@@ -1308,7 +1308,7 @@ const HomePage = () =>{
         </div>
       </div>
      
-      <OurPortfolio inputData={content_CaseStudy} />
+      {/* <OurPortfolio inputData={content_CaseStudy} /> */}
       
       {/* <BgImgLeftContentRtImg inputData={content_endLessPossibility} /> */}
       <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
