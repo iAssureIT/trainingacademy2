@@ -6,17 +6,18 @@ import VideoBanner from "@/templates/BannerBlocks/VideoBanner/VideoBanner";
 import BgImgLeftContentRtImg from "@/templates/ContentBlocks/BgImgLeftContent/BgImgLeftContentRtImg";
 import CenterContentRepeatableBlocks from "@/templates/RepeatableBlocks/CenterContentRepeatableBlocks/CenterContentRepeatableBlocks";
 import CardsBlocks from "@/templates/SubComponents/CardsBlocks/CardsBlock";
-import LeftImgRightRepeatableBlk from "@/templates/RepeatableBlocks/LeftImgRightRepeatableBlk/LeftImgRightRepeatableBlk";
 import CenterContentRepeatableBlocksWithBg from "@/templates/RepeatableBlocks/CenterContentRepeatebleBlocksWithBg/CenterContentRepeatableBlocksWithBg";
 import TextCarousel from '@/templates/Carousel/AllTypeCarousel/Carousel';
 //import CardsBlocks1 from "@/templates/SubComponents/CardsBlocks1/CardsBlocks1";
-import Destination from "@/templates/Gallery/destination";
-import CustomHead from "@/templates/CustomHead/CustomHead";
-import Statistics from "@/templates/StatisticsBlocks/Statistics"
-import LandingPageModal from '@/components/Modal/landingPageModal';
 
-const HomePage = () =>{
-  const [isModalOpen, setModalOpen] = useState(false);
+import CustomHead from "@/templates/CustomHead/CustomHead";
+
+import LeftImgRightRepeatableBlk from "@/templates/RepeatableBlocks/LeftImgRightRepeatableBlk/LeftImgRightRepeatableBlk";
+import SmallBanner from "@/templates/BannerBlocks/SmallBanner/SmallBanner";
+import Map from "@/widgets/Contact-Us/ContactDetails/Map";
+
+const HomePage = () => {
+
   const content_Video = {
     id: "bannerVideo",
     class: "w-full ",
@@ -57,14 +58,14 @@ const HomePage = () =>{
     // urlName: "Dive In Now",
     // linkCss:
     //   " mx-auto lg:mx-0 font-bold text-sm md:text-xl  p-3  2xl:px-2 text-center border w-2/3 md:w-1/2  lg:w-1/2 xl:w-1/3 2xl:w-1/3 rounded btn bg-light text-darkGray my-10 hover:bg-transparent hover:text-white hover:shadow-2xl",
-      modalId:"BfsiModal",  
-      modalDisplay:"true",
-      modalUrlName:"Dive In Now <span><i class='fa-solid  fa-angle-double-right'></i></span>",
-      modalBtnCss:"w-fit mx-auto md:float-left text-btnBlue text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-gray-100 hover:bg-offWhite hover:text-black cursor-pointer"
-    
-    };
+    modalId: "BfsiModal",
+    modalDisplay: "true",
+    modalUrlName: "Dive In Now <span><i class='fa-solid  fa-angle-double-right'></i></span>",
+    modalBtnCss: "w-fit mx-auto md:float-left text-btnBlue text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-gray-100 hover:bg-offWhite hover:text-black cursor-pointer"
+
+  };
   const content_GlanceBlk = {
-    sectionCss:"z-0",
+    sectionCss: "z-0",
     bgImage:
       "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-2.webp",
     smallBGImage:
@@ -74,7 +75,7 @@ const HomePage = () =>{
     pageTitle: "COMPANY AT <span class='font-extrabold leading-relaxed'> A GLANCE </span>",
     pageTitleCss: "text-light w-full text-center BlockTitle text-center",
     dash: "border-white mb-0 md:mb-5 mt-28 md:mt-20",
-    titleDivCss:"absolute mt-32 md:mt-10 lg:mt-32 xl:mt-32 2xl:mt-52 mx-auto z-10 w-full",
+    titleDivCss: "absolute mt-32 md:mt-10 lg:mt-32 xl:mt-32 2xl:mt-52 mx-auto z-10 w-full",
     classForNoOfCards:
       "px-5 md:px-20 mx-10 grid grid-cols-1 m-5 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mb-10 lg:mb-20 mt-60 xl:mt-72",
     // "xl:px-32 2xl:w-3/4 mx-auto px-7 pb-10  max-w-8xl my-auto item-center text-center justify-evenly grid  sm:grid-cols-1 md:grid-cols-2 md:gap-x-9 lg:gap-x-9 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-9 mt-10",
@@ -504,8 +505,8 @@ const HomePage = () =>{
     paraCss: "subTitle text-justify font-normal",
     blockContent: "We have been honored with several awards recognizing our strides in the tech industry. For a detailed look at our accolades.",
     classForblockContent:
-       "px-5 md:px-1 lg:w-2/5 xl:w-2/5 2xl:w-1/3 xxl:!w-2/5 mx-auto text-center font-normal text-darkGray mb-10 md:mb-2 text-lg md:text-2xl text-white mt-6",
-    
+      "px-5 md:px-1 lg:w-2/5 xl:w-2/5 2xl:w-1/3 xxl:!w-2/5 mx-auto text-center font-normal text-darkGray mb-10 md:mb-2 text-lg md:text-2xl text-white mt-6",
+
     gridCss:
       "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  md:mx-10 lg:mx-10 xl:mx-32 place-content-center  lg:h-full   xl:h-full h-full content-center  ",
     gridSubDivCss:
@@ -632,10 +633,10 @@ const HomePage = () =>{
     classForNoOfCards:
       // "mx-auto  max-w-8xl item-center text-center  grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:gap-x-2 lg:gap-10 gap-10 mx-10 mb-10 mt-10",
       "mx-auto  max-w-8xl item-center text-center  grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:gap-x-2 lg:gap-x-10  mx-10 md:mx-10 mb-10 md:mt-10",
-      classForCards:
+    classForCards:
       " break-words  h-full  border-spacing-x-96 mb-5 md:mb-5 lg:mb-10 ",
-      classForBlkWidth: "text-white md:h-24 xl:h-auto p-4 w-3/5 md:w-3/5 lg:w-2/3 xl:w-3/4 2xl:w-3/5",
-    
+    classForBlkWidth: "text-white md:h-24 xl:h-auto p-4 w-3/5 md:w-3/5 lg:w-2/3 xl:w-3/4 2xl:w-3/5",
+
     classForCardTitle: "BlockTitle  font-extrabold py-auto",
     classForcardTitle_2: "text-lg md:text-sm  lg:text-lg xl:text-[28px] 2xl:text-[25px] font-bold leading-relaxed   text-left text-white font-extrabold leading-relaxed",
     classForCardImage: "w-full px-7 ",
@@ -741,8 +742,8 @@ const HomePage = () =>{
         classForCardImg2: "w-auto rounded-t-lg  py-2 h-auto group-hover:h-48 mx-auto",
         bgImg:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-9.webp",
-          smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-9.webp",
-          cardImage2:
+        smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-9.webp",
+        cardImage2:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-image-21.webp",
         cardTitle_2: "TRANSPARENT AND  ETHICAL PRACTICES",
         cardAltImage2: "cardImg1",
@@ -759,8 +760,8 @@ const HomePage = () =>{
         classForCardImg2: "w-auto rounded-t-lg  py-2 h-auto group-hover:h-48 mx-auto",
         bgImg:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-10.webp",
-          smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-10.webp",
-          cardImage2:
+        smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-10.webp",
+        cardImage2:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-image-16.webp",
         cardAltImage2: "cardImg2",
         cardTitle_2: "PROACTIVE APPROACH",
@@ -778,8 +779,8 @@ const HomePage = () =>{
         classForCardImg2: "w-auto rounded-t-lg  py-2 h-auto group-hover:h-48 mx-auto",
         bgImg:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-11.webp",
-          smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-11.webp",
-          cardImage2:
+        smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-11.webp",
+        cardImage2:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-image-home-page-15.webp",
         cardTitle_2: "CONTINUOUS SKILL  UPGRADATION",
         cardAltImage2: "cardImg3",
@@ -796,8 +797,8 @@ const HomePage = () =>{
         classForCardImg2: "w-auto rounded-t-lg  py-2 h-auto group-hover:h-48 mx-auto",
         bgImg:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-12.webp",
-          smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-12.webp",
-          cardImage2:
+        smallBgImg: "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-12.webp",
+        cardImage2:
           "/images/specific/Home/HomeNewImg/iAssureIT-home-page-image-17.webp",
         cardTitle_2: "LONG-TERM  PARTNERSHIP",
         cardAltImage2: "cardImg5",
@@ -824,7 +825,7 @@ const HomePage = () =>{
       "text-center font-bold text-xl md:text-xl lg:text-2xl p-3",
     classForCardTitle_2:
       "font-bold text-md text-primary dark:text-primary-400 p-5",
-      imgDivCss:"py-2",
+    imgDivCss: "py-2",
     classForCardImage: " px-2 w-full",
     classForblockContent:
       "text-lg md:text-xl text-center font-[500] px-2 md:px-12 lg:px-32 xl:px-64  2xl:w-2/5 2xl:px-2  mx-auto ",
@@ -891,14 +892,14 @@ const HomePage = () =>{
     // btn2UrlName: "Contact Us",
     // btn2Css:
     //   "mx-auto font-bold text-lg md:text-xl  p-3  2xl:px-2 text-center border w-full md:w-3/4  lg:w-3/4 xl:w-3/4 2xl:w-3/4 rounded btn bg-light text-darkGray mt-10 mb-10  md:mt-5 lg:mb-20 lg:mt-0 hover:bg-transparent hover:text-white",
-    modalId:"contactUsModal",
-    modalDisplay2:"true",
-    modalUrlName2:"Contact Us <span><i class='fa-solid  fa-angle-double-right'></i></span>",
-    modalBtnCss2:"mx-auto font-bold text-lg md:text-xl  p-3  2xl:px-2 text-center border w-full md:w-3/4  lg:w-3/4 xl:w-3/4 2xl:w-3/4 rounded btn bg-white text-darkGray mt-10 mb-10  md:mt-5 lg:mb-20 lg:mt-0 hover:bg-transparent hover:text-white cursor-pointer"
-  
+    modalId: "contactUsModal",
+    modalDisplay2: "true",
+    modalUrlName2: "Contact Us <span><i class='fa-solid  fa-angle-double-right'></i></span>",
+    modalBtnCss2: "mx-auto font-bold text-lg md:text-xl  p-3  2xl:px-2 text-center border w-full md:w-3/4  lg:w-3/4 xl:w-3/4 2xl:w-3/4 rounded btn bg-white text-darkGray mt-10 mb-10  md:mt-5 lg:mb-20 lg:mt-0 hover:bg-transparent hover:text-white cursor-pointer"
+
   };
   const content_WhyChoose = {
-    id:"whyChooseBlk",
+    id: "whyChooseBlk",
     sectionClass: "mx-auto text-center px-2  md:px-8 py-1 container md:mt-20 xl:mt-10",
     pageTitle:
       " <span class=' leading-relaxed font-extrabold'>ENHANCING INFRASTRUCTURE </span><br/><span class=' font-normal'>MANAGEMENT</span>  ",
@@ -1057,7 +1058,7 @@ const HomePage = () =>{
     dash: "border-blue-700 mb-0 md:mt-10 lg:mt-0",
     cardsArray: [
       {
-        id:"1",
+        id: "1",
         cardImage: "/images/specific/Home/icon1.webp",
         altImage: "imageDescription",
         cardTitle: "Growth-Engineered Solutions",
@@ -1072,7 +1073,7 @@ const HomePage = () =>{
       },
 
       {
-        id:"2",
+        id: "2",
         cardImage: "/images/specific/Home/icon2.webp",
         altImage: "imageDescription",
         cardTitle: "Microservices Architecture",
@@ -1082,7 +1083,7 @@ const HomePage = () =>{
           "Harnessing a modular, event-driven architecture to ensure effortless scalability and agility.",
       },
       {
-        id:"3",
+        id: "3",
         cardImage: "/images/specific/Home/icon3.webp",
         altImage: "imageDescription",
         cardTitle: "Future-Ready Tech Stack",
@@ -1093,60 +1094,87 @@ const HomePage = () =>{
       },
     ],
   };
-  const content_BFSIindustries = {
+  const content_About = {
     sectionClass:
-      "pt-48 pb-20 md:pt-52 md:pb-52 lazyload object-fit bg-cover bg-no-repeat relative    lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] px-2 md:px-5 lg:px-32 2xl:px-32",
-    sectionBgImg:
-      "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-3.webp",
-    smallBGImage:
-      "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-3.webp",
+      "pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-blue-50   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] px-2 md:px-5 lg:px-32 2xl:px-32",
+    // sectionBgImg:
+    //   "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-3.webp",
+    // smallBGImage:
+    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-3.webp",
 
     pageTitle:
-      " <span class='font-normal'>EMPOWERING</span> <span class=' font-extrabold'>BFSI INDUSTRIES </span>  ",
+      "<span class=' font-extrabold'>About Mr. Ashish Naik:</span>  ",
     pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
     blockSubTitle:
-      "At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
+      "<div class='px-3 md:px-20'> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</div> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
     classForblockSubTitle:
-      "text-xl md:text-sm lg:text-lg text-center font-normal  lg:w-3/4 xl:w-3/5 2xl:w-1/2 mx-auto    -mt-10 md:mt-0",
+      "text-xl md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0",
     bgImage:
       "/images/specific/Home/HomeNewImg/iAssureIT-home-page-image-2.webp",
     bgImageCss: "md:w-full xl:w-auto  2xl:w-2/3 mx-auto h-auto object-cover xl:mb-32 lg:-mt-12 2xl:-mt-5",
     bigImageAlt: "iAssureIT-infra",
-    gridCss: "grid grid-cols-1 lg:grid-cols-2 gap-7 md:gap-10",
+    gridCss: "grid grid-cols-1 lg:grid-cols-2 gap-7 md:gap-10 float-left px-3",
     gridCol1Css: "order-last  w-full h-auto relative my-auto",
-    repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 2xl:my-5  ",
+    repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 2xl:my-5  border-b ",
     imgCss:
       "flex-none bg-purple h-auto   items-start rounded mr-3 md:mr-10 object-cover shadow-[4.0px_8.0px_8.0px_rgba(97,143,237,0.8)]",
-    titleCss: " text-xl md:text-2xl xl:text-xl 2xl:text-2xl  font-bold mb-4 2xl:mb-3",
-    desCss: "text-white  text-lg md:text-sm lg:text-sm 2xl:text-lg overflow-hidden",
+    titleCss: " text-lg md:text-sm lg:text-sm 2xl:text-lg overflow-hidden mb-8",
+    desCss: "",
     linkCss: "float-right px-4 text-skyBlue",
     repeatedBlocks: [
       {
         imageSrc:
           "images/specific/Home/HomeNewImg/Icons/iAssureIT-home-page-icon-4.webp",
-        title: "Legacy System Evolution:",
-        description:
-          "Migrating from outdated systems to modern, efficient platforms, enhancing operational efficiency in the BFSI domain.",
+        title: "25 years of IT Industry experience, spanning across various domains and technologies.",
       },
       {
         imageSrc:
           "images/specific/Home/HomeNewImg/Icons/iAssureIT-home-page-icon-5.webp",
-        title: "Automation & Precision:",
-        description:
-          "Implementing automation to streamline BFSI processes, ensuring accuracy and time economy.",
+        title: "Masters degree graduate from IIT Delhi, showcasing his dedication to excellence and continuous learning.",
       },
       {
         imageSrc:
           "images/specific/Home/HomeNewImg/Icons/iAssureIT-home-page-icon-6.webp",
-        title: "Digital Document Mastery:",
-        description:
-          "Transforming physical documents into secure digital  assets, fortified with advanced search functionalities.",
+        title: "Extensive global experience, having worked in countries such as the US, Italy, Canada, UK, Switzerland, and Dubai.",
+      },
+      {
+        imageSrc:
+          "images/specific/Home/HomeNewImg/Icons/iAssureIT-home-page-icon-6.webp",
+        title: "Collaborated with over 12 Fortune-500 clients, delivering cutting-edge solutions and exceeding expectations.",
+      },
+      {
+        imageSrc:
+          "images/specific/Home/HomeNewImg/Icons/iAssureIT-home-page-icon-6.webp",
+        title: "Entrepreneurial spirit, with over 12 years of experience running successful ventures in the tech space.",
+      },
+      {
+        imageSrc:
+          "images/specific/Home/HomeNewImg/Icons/iAssureIT-home-page-icon-6.webp",
+        title: "Developed over 600 applications, demonstrating his proficiency in a wide array of technologies.",
+      },
+      {
+        imageSrc:
+          "images/specific/Home/HomeNewImg/Icons/iAssureIT-home-page-icon-6.webp",
+        title: "Expertise in more than 60 technologies, showcasing his versatility and adaptability in the ever-evolving tech landscape.",
       },
     ],
     // dash: "border-white mb-5 mt-5 md:mt-20 lg:mt-52 xl:mt-40 xxl:!mt-72",
   };
+  const content_SmallBanner2 = {
+    id: "mbSmallBanner",
+    // bgImage: "/images/specific/Services/MobileApp/Images/12.webp",
+    // smallBGImage: "/images/specific/Services/MobileApp/Images/12.webp",
+    title: "Affordable Online Courses & Learning Opportunities For You",
+    titleClass: " text-center mx-auto  my-auto font-extrabold text-lg md:text-3xl xl:text-4xl py-10 md:py-20 w-full md:w-3/5 2xl:w-1/2",
+    className: "h-auto w-full mx-auto",
+    alt: "reserve",
+    bgImgCss: "bg-blue-600 py-3 md:py-10 mb-5 md:mb-20 2xl:py-5 bg-cover bg-no-repeat  bg-left-bottom lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
+    gridCss: "grid grid-cols-1 sm:grid-cols-1   lg:grid-cols-1 2xl:grid-cols-1 gap-x-10 h-full w-full content-center  place-content-center my-auto xl:py-10",
+    gridCol1Class: "my-auto  sm:w-auto  text-white text-center  mb-2 md:mb-4 ",
+    // para: "",
+    // paraCss: "text-xs md:text-2xl xl:text-2xl text-light text-center "
+  }
 
- 
   const content_carousel3 = {
     sectionCss: "relative px-12 md:px-20 mb-0 md:mb-5 text-center xl:px-20 max-w-8xl justify-evenly",
     pageTitle: "Customer Testimonials for <span class='font-extrabold'>iAssureIT </span>",
@@ -1201,7 +1229,7 @@ const HomePage = () =>{
       {
         content: "<span class='text-xl italic font-semibold'>“</span>Our experience with iAssureIT was exceptional. Their team seamlessly transformed our vision into a user-friendly and visually stunning online platform. The level of professionalism, timely delivery, and ongoing support exceeded our expectations. Thanks to their expertise, our business has seen significant growth in the digital marketplace.<span class='text-xl font-semibold'>”</span>",
         author: "Barry Baetu<br/><span class='text-sm font-semibold'>Founder - Harmonic Group </span> "
-      },      
+      },
       {
         content: "<span class='text-xl italic font-semibold'>“</span>Our experience with iAssureIT was nothing short of exceptional. Their innovative approach, transparent communication, and commitment to quality resulted in a cutting-edge web app that surpassed our expectations. We highly recommend their services for anyone seeking top-tier web development expertise.<span class='text-xl font-semibold'>”</span>",
         author: "Dr. Akhil Deshpande<br/><span class='text-sm font-semibold'>CIO - TruUSmiles.com</span> "
@@ -1230,28 +1258,28 @@ const HomePage = () =>{
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    console.log("process.env.NEXT_PUBLIC_BASE_URL",process.env.NEXT_PUBLIC_BASE_URL)
-      // try {
-        const url = '/';
-        const encodedURL = encodeURIComponent(url);
-        console.log("encodedURL",encodedURL)
-        axios.get('api/seodetails/get/url/' + encodedURL)
-                .then(response => {
-                console.log("response.data -> ",response.data);
-                setData(response.data);
-              
-                })
-                .catch(error =>{
-                  console.log("error -------> ",error);
-                })
-        // const response = await axios.get('/api/seodetails/get/url/' + encodedURL);
-        // setData(response.data);
-        // console.log("response",response)
-      // } catch (error) {
-      //   console.log("error",error)
-      //   setError(error.message);
-      // }
-  
+    console.log("process.env.NEXT_PUBLIC_BASE_URL", process.env.NEXT_PUBLIC_BASE_URL)
+    // try {
+    const url = '/';
+    const encodedURL = encodeURIComponent(url);
+    console.log("encodedURL", encodedURL)
+    axios.get('api/seodetails/get/url/' + encodedURL)
+      .then(response => {
+        console.log("response.data -> ", response.data);
+        setData(response.data);
+
+      })
+      .catch(error => {
+        console.log("error -------> ", error);
+      })
+    // const response = await axios.get('/api/seodetails/get/url/' + encodedURL);
+    // setData(response.data);
+    // console.log("response",response)
+    // } catch (error) {
+    //   console.log("error",error)
+    //   setError(error.message);
+    // }
+
   }, []);
 
   return (
@@ -1259,10 +1287,10 @@ const HomePage = () =>{
 
       {/* PB added metaData */}
       <CustomHead
-        title={data?data.metaTagTitle:""}
-        description={data?data.metaDescription:""}
-        keywords={data?data.keywords:""}
-        canonicalUrl={data?data.canonicalUrl:""}
+        title={data ? data.metaTagTitle : ""}
+        description={data ? data.metaDescription : ""}
+        keywords={data ? data.keywords : ""}
+        canonicalUrl={data ? data.canonicalUrl : ""}
       />
       <VideoBanner inputData={content_Video} />
       <BgImgLeftContentRtImg inputData={content_BSFI} />
@@ -1275,14 +1303,23 @@ const HomePage = () =>{
       /> */}
       <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} />
       <LeftImgRightRepeatableBlk
-        inputData={content_BFSIindustries}
+        inputData={content_About}
         readMore={false}
+      />
+      <SmallBanner inputData={content_SmallBanner2} />
+      <Map
+        // dash="border-blue-700 mb-5 md:mb-3"
+        // pageTitle="OUR <span class='uppercase font-extrabold leading-relaxed' > LOCATIONS</span>"
+        pageTitleCss=" mb-12 text-black w-full text-center text-3xl md:text-3xl lg:text-4xl xl:text-4xl"
+
+        mapCss="h-96 rounded-none"
+        locationPath="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.6527976967045!2d73.90869827574598!3d18.54458568255369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c220a4234a03%3A0xaacdd60fadf55f2c!2siAssure%20International%20Technology%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1696849231056!5m2!1sen!2sin"
       />
       <CenterContentRepeatableBlocks
         inputData={content_DigitalTransformation}
       />
-      {isModalOpen && <LandingPageModal modalId="contactFormModal" />}
-       <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
+
+      <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
         <div className="cursor-pointer text-white mx-auto text-center font-bold text-lg md:text-xl p-2  2xl:px-2  mt-3 xl:mt-8 2xl:mt-10 border w-48 md:w-48  lg:w-64 xl:w-48 2xl:w-48 rounded btn bg-blue-600 hover:bg-blue-800 hover:text-white">Let's Connect
           <i className="fa-solid fa-angle-double-right"></i>
         </div>
@@ -1294,22 +1331,14 @@ const HomePage = () =>{
         inputData={content_WhyChoose}
         readMore={false}
       />
-      <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
-        <div className="cursor-pointer text-white mx-auto text-center font-bold text-lg md:text-xl p-2  2xl:px-2  mt-3 xl:mt-8 2xl:mt-10 border w-48 md:w-48  lg:w-64 xl:w-48 2xl:w-48 rounded btn bg-blue-600 hover:bg-blue-800 hover:text-white">Get In Touch
-          <i className="fa-solid fa-angle-double-right"></i>
-        </div>
-      </div>
-     
+
+
       {/* <OurPortfolio inputData={content_CaseStudy} /> */}
-      
+
       {/* <BgImgLeftContentRtImg inputData={content_endLessPossibility} /> */}
-      <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
-        <div className="cursor-pointer text-white mx-auto text-center font-bold text-lg md:text-xl p-2  2xl:px-2  mt-3 xl:mt-8 2xl:mt-10 border w-48 md:w-48  lg:w-64 xl:w-48 2xl:w-48 rounded btn bg-blue-600 hover:bg-blue-800 hover:text-white">Let's Connect
-          <i className="fa-solid fa-angle-double-right"></i>
-        </div>
-      </div>
+
       <TextCarousel inputData={content_carousel3} showVideos={false} showImages={false} />
-     
+
       <Autocarousel inputData={content_carousel2} />
       <Autocarousel inputData={content_carouselLeft} />
 
@@ -1320,9 +1349,9 @@ const HomePage = () =>{
 
 //PB added metaData
 // export async function getServerSideProps() {
-  // export async function getStaticProps() {
+// export async function getStaticProps() {
 // HomePage.getInitialProps = async () => {
-  // Perform data fetching here (e.g., making API requests)
+// Perform data fetching here (e.g., making API requests)
 //   var url ='/'
 //   const encodedURL = encodeURIComponent(url);
 //   console.log("encodedURL",encodedURL)

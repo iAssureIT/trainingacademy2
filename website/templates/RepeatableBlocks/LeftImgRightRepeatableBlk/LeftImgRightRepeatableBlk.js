@@ -10,7 +10,7 @@ const LeftRightImgCenterContent = (props) => {
                 '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
                 'backgroundSize': "100% 100%"
             }}>
-
+                { props.inputData?.dash?
             <div className="w-full mb-4">
                 <ul className="place-content-center flex flex-wrap">
                     <li className={"dash1 " + props.inputData.dash}></li>
@@ -18,6 +18,9 @@ const LeftRightImgCenterContent = (props) => {
                     <li className={"dash3 " + props.inputData.dash}></li>
                 </ul>
             </div>
+            :
+            ""
+                }
             {
                 props?.inputData?.pageTitle ?
                     <h2 className={props.inputData?.pageTitleCss ? props.inputData?.pageTitleCss : "text-3xl font-bold mb-6"}
