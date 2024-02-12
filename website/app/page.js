@@ -1,32 +1,22 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
 import Autocarousel from "@/components/Autocarousel";
 import VideoBanner from "@/templates/BannerBlocks/VideoBanner/VideoBanner";
-import HexagonalBlock from "@/templates/HexagonalBlock/HexagonalBlock";
 import BgImgLeftContentRtImg from "@/templates/ContentBlocks/BgImgLeftContent/BgImgLeftContentRtImg";
 import CenterContentRepeatableBlocks from "@/templates/RepeatableBlocks/CenterContentRepeatableBlocks/CenterContentRepeatableBlocks";
-import BgImgRightContent from "@/templates/ContentBlocks/BgImgRightContent/BgImgRightContent";
-import CenterImgCenterContentRepeatableBlocks from "@/templates/RepeatableBlocks/CenterImgCenterContentRepeatableBlocks/CenterImgCenterContentRepeatableBlocks";
-//import TopTextImageRepeatBlocks from "@/templates/RepeatableBlocks/TopTextImageRepeatBlocks/TopTextImageRepeatBlocks";
-import BgImgLeftImgRtGrid from "@/templates/ContentBlocks/BgImgLeftImgRightGrid/BgImgLeftImgRightGrid";
-import TopTextImageRepeatBlocks from "@/templates/Carousel/TopTextImageRepeatBlocks/TopTextImageRepeatBlocks";
-// import AutoScroll from "@/templates/Carousel/AutoScroll";
 import CardsBlocks from "@/templates/SubComponents/CardsBlocks/CardsBlock";
 import LeftImgRightRepeatableBlk from "@/templates/RepeatableBlocks/LeftImgRightRepeatableBlk/LeftImgRightRepeatableBlk";
-import OurPortfolio from "@/templates/OurPortfolio/OurPortfolio";
-import BlogsList from "@/templates/Blog/BlogsList";
-import MyBlogList from "@/components/MyBlogs/MyBlogList";
 import CenterContentRepeatableBlocksWithBg from "@/templates/RepeatableBlocks/CenterContentRepeatebleBlocksWithBg/CenterContentRepeatableBlocksWithBg";
 import TextCarousel from '@/templates/Carousel/AllTypeCarousel/Carousel';
 //import CardsBlocks1 from "@/templates/SubComponents/CardsBlocks1/CardsBlocks1";
 import Destination from "@/templates/Gallery/destination";
 import CustomHead from "@/templates/CustomHead/CustomHead";
 import Statistics from "@/templates/StatisticsBlocks/Statistics"
+import LandingPageModal from '@/components/Modal/landingPageModal';
 
-const HomePage = (props) =>{
-  console.log("props",props)
+const HomePage = () =>{
+  const [isModalOpen, setModalOpen] = useState(false);
   const content_Video = {
     id: "bannerVideo",
     class: "w-full ",
@@ -70,7 +60,7 @@ const HomePage = (props) =>{
       modalId:"BfsiModal",  
       modalDisplay:"true",
       modalUrlName:"Dive In Now <span><i class='fa-solid  fa-angle-double-right'></i></span>",
-      modalBtnCss:"w-fit   text-btnBlue text-center font-bold text-lg md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  py-2 px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-gray-100 hover:bg-offWhite hover:text-black cursor-pointer"
+      modalBtnCss:"w-fit mx-auto md:float-left text-btnBlue text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-gray-100 hover:bg-offWhite hover:text-black cursor-pointer"
     
     };
   const content_GlanceBlk = {
@@ -1113,11 +1103,11 @@ const HomePage = (props) =>{
 
     pageTitle:
       " <span class='font-normal'>EMPOWERING</span> <span class=' font-extrabold'>BFSI INDUSTRIES </span>  ",
-    pageTitleCss: "w-full text-center text-white  BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
+    pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
     blockSubTitle:
-      "We lead the way in digital transformation for the BFSI Industry  with our modernization and automation IT Solution",
+      "At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
     classForblockSubTitle:
-      "text-xl md:text-sm lg:text-lg text-center font-normal  lg:w-3/4 xl:w-3/5 2xl:w-1/2 mx-auto text-white   -mt-10 md:mt-0",
+      "text-xl md:text-sm lg:text-lg text-center font-normal  lg:w-3/4 xl:w-3/5 2xl:w-1/2 mx-auto    -mt-10 md:mt-0",
     bgImage:
       "/images/specific/Home/HomeNewImg/iAssureIT-home-page-image-2.webp",
     bgImageCss: "md:w-full xl:w-auto  2xl:w-2/3 mx-auto h-auto object-cover xl:mb-32 lg:-mt-12 2xl:-mt-5",
@@ -1127,7 +1117,7 @@ const HomePage = (props) =>{
     repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 2xl:my-5  ",
     imgCss:
       "flex-none bg-purple h-auto   items-start rounded mr-3 md:mr-10 object-cover shadow-[4.0px_8.0px_8.0px_rgba(97,143,237,0.8)]",
-    titleCss: " text-xl md:text-2xl xl:text-xl 2xl:text-2xl text-white font-bold mb-4 2xl:mb-3",
+    titleCss: " text-xl md:text-2xl xl:text-xl 2xl:text-2xl  font-bold mb-4 2xl:mb-3",
     desCss: "text-white  text-lg md:text-sm lg:text-sm 2xl:text-lg overflow-hidden",
     linkCss: "float-right px-4 text-skyBlue",
     repeatedBlocks: [
@@ -1153,7 +1143,7 @@ const HomePage = (props) =>{
           "Transforming physical documents into secure digital  assets, fortified with advanced search functionalities.",
       },
     ],
-    dash: "border-white mb-5 mt-5 md:mt-20 lg:mt-52 xl:mt-40 xxl:!mt-72",
+    // dash: "border-white mb-5 mt-5 md:mt-20 lg:mt-52 xl:mt-40 xxl:!mt-72",
   };
 
  
@@ -1242,18 +1232,18 @@ const HomePage = (props) =>{
   useEffect(() => {
     console.log("process.env.NEXT_PUBLIC_BASE_URL",process.env.NEXT_PUBLIC_BASE_URL)
       // try {
-        // const url = '/';
-        // const encodedURL = encodeURIComponent(url);
-        // console.log("encodedURL",encodedURL)
-        // axios.get('api/seodetails/get/url/' + encodedURL)
-        //         .then(response => {
-        //         console.log("response.data -> ",response.data);
-        //         setData(response.data);
+        const url = '/';
+        const encodedURL = encodeURIComponent(url);
+        console.log("encodedURL",encodedURL)
+        axios.get('api/seodetails/get/url/' + encodedURL)
+                .then(response => {
+                console.log("response.data -> ",response.data);
+                setData(response.data);
               
-        //         })
-        //         .catch(error =>{
-        //           console.log("error -------> ",error);
-        //         })
+                })
+                .catch(error =>{
+                  console.log("error -------> ",error);
+                })
         // const response = await axios.get('/api/seodetails/get/url/' + encodedURL);
         // setData(response.data);
         // console.log("response",response)
@@ -1265,7 +1255,7 @@ const HomePage = (props) =>{
   }, []);
 
   return (
-    <main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
+    <main className=" flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
 
       {/* PB added metaData */}
       <CustomHead
@@ -1276,7 +1266,6 @@ const HomePage = (props) =>{
       />
       <VideoBanner inputData={content_Video} />
       <BgImgLeftContentRtImg inputData={content_BSFI} />
-      <HexagonalBlock inputData={content_whatWeDo} />
       <CardsBlocks inputData={content_GlanceBlk} />
       {/* <Statistics inputData={content_Statistics}/> */}
       {/* <BgImgLeftContentRtImg inputData={content_leftContentBgImg} /> */}
@@ -1292,6 +1281,12 @@ const HomePage = (props) =>{
       <CenterContentRepeatableBlocks
         inputData={content_DigitalTransformation}
       />
+      {isModalOpen && <LandingPageModal modalId="contactFormModal" />}
+       <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
+        <div className="cursor-pointer text-white mx-auto text-center font-bold text-lg md:text-xl p-2  2xl:px-2  mt-3 xl:mt-8 2xl:mt-10 border w-48 md:w-48  lg:w-64 xl:w-48 2xl:w-48 rounded btn bg-blue-600 hover:bg-blue-800 hover:text-white">Let's Connect
+          <i className="fa-solid fa-angle-double-right"></i>
+        </div>
+      </div>
       <BgImgLeftContentRtImg inputData={content_contactBlock} />
       {/* <BgImgLeftContentRtImg inputData={content_content_mgmt_Syestem} /> */}
       {/* <TopTextImageRepeatBlocks inputData={content_TopTextImageRepeatBlocks} /> */}
@@ -1299,40 +1294,35 @@ const HomePage = (props) =>{
         inputData={content_WhyChoose}
         readMore={false}
       />
-      <BgImgLeftImgRtGrid inputData={content_NationalAwards} />
-      <OurPortfolio inputData={content_CaseStudy} />
-      <Destination inputData={content_transformation} />
-      <CardsBlocks inputData={content_CardBlock} />
+      <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
+        <div className="cursor-pointer text-white mx-auto text-center font-bold text-lg md:text-xl p-2  2xl:px-2  mt-3 xl:mt-8 2xl:mt-10 border w-48 md:w-48  lg:w-64 xl:w-48 2xl:w-48 rounded btn bg-blue-600 hover:bg-blue-800 hover:text-white">Get In Touch
+          <i className="fa-solid fa-angle-double-right"></i>
+        </div>
+      </div>
+     
+      {/* <OurPortfolio inputData={content_CaseStudy} /> */}
+      
       {/* <BgImgLeftContentRtImg inputData={content_endLessPossibility} /> */}
+      <div onClick={() => setModalOpen(!isModalOpen)} className=" w-full ">
+        <div className="cursor-pointer text-white mx-auto text-center font-bold text-lg md:text-xl p-2  2xl:px-2  mt-3 xl:mt-8 2xl:mt-10 border w-48 md:w-48  lg:w-64 xl:w-48 2xl:w-48 rounded btn bg-blue-600 hover:bg-blue-800 hover:text-white">Let's Connect
+          <i className="fa-solid fa-angle-double-right"></i>
+        </div>
+      </div>
       <TextCarousel inputData={content_carousel3} showVideos={false} showImages={false} />
-      {/* <AutoScroll
-        inputData={content_carousel2}
-        showVideos={false}
-        showImages={true}
-        direction="right"
-      />
-      <AutoScroll
-        inputData={content_carouselLeft}
-        showVideos={false}
-        showImages={true}
-        direction="left"
-      /> */}
+     
       <Autocarousel inputData={content_carousel2} />
       <Autocarousel inputData={content_carouselLeft} />
 
-      {/* <BlogsList inputData={content_BlogList} /> */}
-      <MyBlogList inputData={content_blogList} />
-      <BgImgRightContent inputData={content_contactUs} />
 
     </main>
   );
 }
 
-// //PB added metaData
+//PB added metaData
 // export async function getServerSideProps() {
-// //   export async function getStaticProps() {
-// // HomePage.getInitialProps = async () => {
-//   // Perform data fetching here (e.g., making API requests)
+  // export async function getStaticProps() {
+// HomePage.getInitialProps = async () => {
+  // Perform data fetching here (e.g., making API requests)
 //   var url ='/'
 //   const encodedURL = encodeURIComponent(url);
 //   console.log("encodedURL",encodedURL)
@@ -1348,21 +1338,5 @@ const HomePage = (props) =>{
 //   }
 // };
 
-export async function getServerSideProps() {
-  // Fetch data from external API
-  
-  const res = await fetch('https://api.github.com/repos/vercel/next.js')
-  const repo = await res.json()
-  console.log("repo",repo)
-  // Pass data to the page via props
-  return { props: { repo } }
-}
- 
-// export default function Page({ repo }) {
-//   return (
-//     <main>
-//       <p>{repo.stargazers_count}</p>
-//     </main>
-//   )
-// }
+
 export default HomePage;
