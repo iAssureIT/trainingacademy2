@@ -1,0 +1,10 @@
+Table facilities
+
+1. Reusable Table 
+2. Must be driven by Props. Extremely easy to use props structure.
+3. Action column -> icons, function, API
+4. It must have filters to filter out the data. Reset Filter button.
+5. Sort each column. 
+6. Infinite scroll facility
+7. Search Data facility. Search must be Global. 
+8. Export as Excel / CSV

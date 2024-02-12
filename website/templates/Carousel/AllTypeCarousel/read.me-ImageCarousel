@@ -1,0 +1,24 @@
+//================================
+//  Read Me - AllTypeCarousel----Carousel for display images, display text, display videos
+//================================
+//====Displaying the only multiple Images=====
+
+import Carousel                 from '@/templates/Carousel/AllTypeCarousel/Carousel';
+
+
+ const content_carousel2 = {
+    
+   images : [
+      "/images/generic/5.jpg",
+      "/images/generic/6.jpg",
+      "/images/generic/7.jpg",
+      "/images/generic/2.jpg",
+      "/images/generic/5.jpg",
+      
+    ],
+  }
+
+
+
+ <Carousel               inputData={content_carousel2} showVideos={false} showImages={true}/>
+        

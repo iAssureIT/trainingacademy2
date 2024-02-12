@@ -1,0 +1,13 @@
+API/node_modules
+API/uploads
+API/nodemon.js
+
+website/node_modules
+website/.env
+website/.next
+website/next.config.js
+
+/website/node_modules
+/website/.env
+/website/.next
+/website/next.config.js

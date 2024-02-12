@@ -1,0 +1,30 @@
+//================================
+//  Read Me - OurPortfolio
+//================================
+
+import OurPortfolio from "@/templates/OurPortfolio/OurPortfolio";
+
+
+
+const content_OurPortfolio = {
+    blockTitle: " CASE STUDIES",
+    blockSubTitle: "We shed light on our work and what goes behind the development",
+    classForblockTitle: " text-darkGray w-full text-center font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:py-10 py-10 ",
+    classForblockSubTitle: "text-center font-normal text-darkGray mb-10",
+    classForNoOfCards: "px-10 lg:px-20  max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6",
+    classForCards: "p-3  mb-7 rounded-md",
+    classForCardTitle: "text-darkGray text-center font-bold text-xl md:text-xl lg:text-2xl p-3",
+    classForCardImage: "w-full rounded-md bg-white p-10 border",
+    cardsArray: [
+      { cardImage: '/images/specific/Home/Endless_Possibilities/1.webp', altImg: 'portfolio', cardTitle: 'Coffic-1' },
+      { cardImage: '/images/specific/Services/MobileApp/Images/2.webp', altImg: 'portfolio', cardTitle: 'BCI (Better Cotton Initiative)' },
+      { cardImage: '/images/specific/Services/MobileApp/Images/4.webp', altImg: 'portfolio', cardTitle: 'LYVO' },
+      { cardImage: '/images/specific/Services/MobileApp/Images/6.webp', altImg: 'portfolio', cardTitle: 'Unimandai' },
+      { cardImage: '/images/specific/Services/MobileApp/Images/1.webp', altImg: 'portfolio', cardTitle: 'Five Bees' },
+      { cardImage: '/images/specific/Services/MobileApp/Images/11.webp', altImg: 'portfolio', cardTitle: 'Pipito' },
+    ],
+    dash: "border-blue-700 mb-5 ",
+  };
+
+<OurPortfolio inputData={content_OurPortfolio} />
+      
