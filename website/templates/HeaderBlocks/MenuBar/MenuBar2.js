@@ -3,10 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 
 function MenuBar2(props) {
 
-	const [isMenuOpen, setMenuOpen] = useState(false);
-	const [isDropdownOpen, setDropdownOpen] = useState(false);
-	const [isDoubleDropdownOpen, setDoubleDropdownOpen] = useState(false);
-
 	const [isOpen, setIsOpen] = useState(false);
 
 	const [currentLink, setCurrentLink] = useState();
@@ -42,10 +38,10 @@ function MenuBar2(props) {
 		const button = document.getElementById('navbar-toggle');
 		const menu = document.getElementById('navbar-dropdown');
 
-		const dropdownButton = document.getElementById('dropdownNavbarLink');
+		const dropdownButton = document?.getElementById('dropdownNavbarLink');
 		const dropdownMenu = document.getElementById('dropdownNavbar');
 
-		dropdownButton.addEventListener('click', (e) => {
+		dropdownButton?.addEventListener('click', (e) => {
 			if (!e.disabled) {
 				e.disabled = true;
 				dropdownMenu.classList.toggle('hidden');
@@ -56,7 +52,7 @@ function MenuBar2(props) {
 		});
 
 		var doubleDropdownButton1 = document.getElementsByClassName("doubleDropdownButton");
-		const doubleDropdown = document.getElementById('doubleDropdown');
+		const doubleDropdown = document?.getElementById('doubleDropdown');
 
 
 		for (var i = 0; i < doubleDropdownButton1.length; i++) {
@@ -127,36 +123,33 @@ function MenuBar2(props) {
 		}
 		// Code en dfor submenu set active class
 
-		var l = window.location.href;
-		if (l.indexOf('services') < 0) {
-			let doubleDropdown = document.getElementById('doubleDropdown1');
-			doubleDropdown.style.display = "none";
-			document.getElementById('1').click();
-		}
+		// var l = window.location.href;
+		// if (l.indexOf('services') < 0) {
+		// 	let doubleDropdown = document?.getElementById('doubleDropdown1');
+		// 	doubleDropdown.style.display = "none";
+		// 	document.getElementById('1').click();
+		// }
 
-		// Clean up event listeners when the component unmounts
-		return () => {
-			dropdownButton.removeEventListener('click', () => {
-				dropdownMenu.classList.toggle('hidden');
-			});
+		// return () => {
+		// 	dropdownButton.removeEventListener('click', () => {
+		// 		dropdownMenu.classList.toggle('hidden');
+		// 	});
 
-			// doubleDropdownButton.removeEventListener('click', () => {
-			// doubleDropdown.classList.toggle('hidden');
-			// });
+			
 
-			button.removeEventListener('click', function () {
-				menu.classList.toggle('hidden');
-			});
-		};
+		// 	button.removeEventListener('click', function () {
+		// 		menu.classList.toggle('hidden');
+		// 	});
+		// };
 	}, []);
 
 	if (typeof window !== 'undefined') {
 		var nav1 = document.querySelector(".navBar1");
 		var menuItemElements = document.querySelectorAll(".menuItemC");
-		var dropdownNav = document.querySelector("#dropdownNavbarLink");
+		// var dropdownNav = document.querySelector("#dropdownNavbarLink");
 		var topHeadElements = document.querySelectorAll(".topHead")
 		var imageElement = document.querySelector("#navLogo");
-		var triangleElement = document.querySelector("#triangle");
+		// var triangleElement = document.querySelector("#triangle");
 		console.log("nav1", nav1);
 		window.addEventListener('scroll', () => {
 			// var shouldAddClass = window.scrollY > nav1.clientHeight;
@@ -164,11 +157,11 @@ function MenuBar2(props) {
 			nav1.classList.toggle("bg-white", shouldAddClass);
 			nav1.classList.toggle("bg-transparent", !shouldAddClass);
 
-			dropdownNav.classList.toggle("md:text-darkGray", shouldAddClass);
-			dropdownNav.classList.toggle("md:text-white", !shouldAddClass);
+			// dropdownNav.classList.toggle("md:text-darkGray", shouldAddClass);
+			// dropdownNav.classList.toggle("md:text-white", !shouldAddClass);
 
-			triangleElement.classList.toggle("border-b-gray-400", shouldAddClass);
-			triangleElement.classList.toggle("border-b-white", !shouldAddClass);
+			// triangleElement.classList.toggle("border-b-gray-400", shouldAddClass);
+			// triangleElement.classList.toggle("border-b-white", !shouldAddClass);
 
 			menuItemElements.forEach((menuItem) => {
 				menuItem.classList.toggle("md:!text-darkGray", shouldAddClass);
@@ -191,31 +184,7 @@ function MenuBar2(props) {
 			}
 		});
 	}
-	// const [isOpen, setIsOpen] = useState(false);
-
-	// const [isOpen2, setIsOpen2] = useState(false);
-	// const [isOpen1, setOpen] = useState(false);
-	// const [isMenuOpen1, setIsMenuOpen1] = useState(false);
-	// const handleDropDown = () => {
-	// setOpen(!isOpen1);
-	// };
-	// const [menuItems, setmenuItems] = useState([]);
-	// const [menuItemsAfterLogin, setmenuItemsAfterLogin] = useState([]);
-	// const [userData, setUserData] = useState("");
-	// const pathname = usePathname();
-
-	// useEffect(() => {
-	// setmenuItems(props.menuItemsList);
-	// setmenuItemsAfterLogin(props.menuItemsAfterLoginList);
-	// const userDetails = localStorage.getItem("userDetails");
-	// if (userDetails) {
-	// const userDetailsParse = JSON.parse(userDetails);
-	// const parseUser_id = userDetailsParse.user_id;
-	// setUserData(userDetailsParse);
-	// }
-	// // console.log("pathname",pathname);
-
-	// }, []);
+	
 
 
 	return (

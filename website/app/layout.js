@@ -27,220 +27,217 @@ const metadata = {
 const menuItems = [
   { label: "HOME", link: "/" },
   { label: "ABOUT US", link: "/about-us" },
-  {
-    label: "SERVICES",
-    link: "/services",
-    id: "dropdown",
-    showSubMenu: "true",
-    subMenu: [
-      {
-        id: "1",
-        submenutitle: "Application Development",
-        submenutiltleLink: "/service/type1",
-        img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-2.webp",
-        bigImg: "/images/specific/MenuImages/Application-Development/5.webp",
-        NestedMenu: [
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Application-Development/1.webp",
-            title: "Web Development",
-            link: "/services/web-app-development",
-            subTypes: [
-              "Business Portal",
-              "Web Application",
-              " Corporate Website ",
-            ],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Application-Development/2.webp",
-            title: "Mobile App Development",
-            link: "/services/mobile-app-development",
-            subTypes: [
-              "iOS Native",
-              "Android Native",
-              "Hybrid Apps",
-              "Webview Apps",
-            ],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Application-Development/3.webp",
-            title: "eCommerce Online Store Development",
-            link: "/services/e-comm-online-store-development",
-            subTypes: [" D2C Store", " Order Management System"],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Application-Development/4.webp",
-            title: "UI/UX development",
-            link: "/services/ui-ux-development",
-            subTypes: [],
-          },
-        ],
-      },
-      {
-        id: "2",
-        submenutitle: "Digital Transformation",
-        img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-3.webp",
-        bigImg: "/images/specific/MenuImages/Digital-Transformation/5.webp",
-        NestedMenu: [
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Digital-Transformation/1.webp",
-            title: "Application Modernization",
-            link: "/services/application-modernization",
-            subTypes: [],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Digital-Transformation/2.webp",
-            title: "Enhance User Digital Experience",
-            link: "/services/enhance-user-digital-experience",
-            subTypes: [],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Digital-Transformation/3.webp",
-            title: "Manual Documents to Digital Asset",
-            link: "/services/manual-documents-to-digital-assets",
-            subTypes: [],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Digital-Transformation/4.webp",
-            title: "Develop Digital Strategy & Digital Applications",
-            link: "/services/develop-digital-strategy-and-digital-applications",
-            subTypes: [],
-          },
-        ],
-      },
-      {
-        id: "3",
-        submenutitle: "Robotic Process Automation",
-        img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-5.webp",
-        bigImg: "/images/specific/MenuImages/Robotic-Process-Automation/4.webp",
-        NestedMenu: [
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Robotic-Process-Automation/1.webp",
-            title: "Customer Service Automation",
-            link: "/services/customer-service-automation",
-            subTypes: [],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Robotic-Process-Automation/2.webp",
-            title: "Document Processing & Report Automation",
-            link: "/services/document-processing-and-report-automation",
-            subTypes: [],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/Robotic-Process-Automation/3.webp",
-            title: "Data migration & entry",
-            link: "/services/data-migration-entry",
-            subTypes: [],
-          },
-        ],
-      },
-      {
-        id: "4",
-        submenutitle: "IT Infrastructure Management",
-        img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-7.webp",
-        bigImg:
-          "/images/specific/MenuImages/IT-Infrastructure-Management/3.webp",
-        NestedMenu: [
-          {
-            imageSrc:
-              "/images/specific/MenuImages/IT-Infrastructure-Management/1.webp",
-            title: "Infrastructure Architecture & Technology Selection",
-            link: "/services/infrastructure-architech-selection",
-            subTypes: [],
-          },
-          {
-            imageSrc:
-              "/images/specific/MenuImages/IT-Infrastructure-Management/2.webp",
-            title: "IT Operations Management",
-            link: "/services/it-operation-mgmt",
-            subTypes: [],
-          },
-        ],
-      },
-      {
-        id: "5",
-        submenutitle: "Cyber Security",
-        img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-9.webp",
-        bigImg: "/images/specific/MenuImages/Cyber-Security/4.webp",
-        NestedMenu: [
-          {
-            imageSrc: "/images/specific/MenuImages/Cyber-Security/1.webp",
-            title: "Application & Information Security",
-            link: "/services/information-security",
-            subTypes: [],
-          },
-          {
-            imageSrc: "/images/specific/MenuImages/Cyber-Security/2.webp",
-            title: "Network Security",
-            link: "/services/network-security",
-            subTypes: [],
-          },
-          {
-            imageSrc: "/images/specific/MenuImages/Cyber-Security/3.webp",
-            title: "Cloud Security",
-            link: "/services/cloud-security",
-            subTypes: [],
-          },
-        ],
-      },
-      {
-        id: "6",
-        submenutitle: "Software Testing & QA",
-        img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-11.webp",
-        bigImg: "/images/specific/MenuImages/Software-Testing-QA/5.webp",
-        NestedMenu: [
-          {
-            imageSrc: "/images/specific/MenuImages/Software-Testing-QA/1.webp",
-            title: "Manual Testing",
-            link: "/services/manual-functional-testing",
-            subTypes: [" UI Testing, Functional Testing, Integration Testing"],
-          },
-          {
-            imageSrc: "/images/specific/MenuImages/Software-Testing-QA/2.webp",
-            title: "Automation Testing",
-            link: "/services/automation-testing",
-            subTypes: [" Unit Tests, Integration Tests, Regression Tests"],
-          },
-          {
-            imageSrc: "/images/specific/MenuImages/Software-Testing-QA/3.webp",
-            title: "Performance Testing",
-            link: "/services/performance-testing",
-            subTypes: [
-              " Stress Testing",
-              "Volume Testing",
-              "Load Testing ",
-              "Speed Testing ",
-            ],
-          },
-          {
-            imageSrc: "/images/specific/MenuImages/Software-Testing-QA/4.webp",
-            title: "Security Testing",
-            link: "/services/security-testing",
-            subTypes: [
-              " Vulnerability Scanning",
-              "Security Scanning",
-              "Penetration Testing",
-              "Security Audit/ Review",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  // { label: "CASE STUDIES", link: "", subMenu: [], title: "Comming Soon" },
+  // {
+  //   label: "SERVICES",
+  //   link: "/services",
+  //   id: "dropdown",
+  //   showSubMenu: "true",
+  //   subMenu: [
+  //     {
+  //       id: "1",
+  //       submenutitle: "Application Development",
+  //       submenutiltleLink: "/service/type1",
+  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-2.webp",
+  //       bigImg: "/images/specific/MenuImages/Application-Development/5.webp",
+  //       NestedMenu: [
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Application-Development/1.webp",
+  //           title: "Web Development",
+  //           link: "/services/web-app-development",
+  //           subTypes: [
+  //             "Business Portal",
+  //             "Web Application",
+  //             " Corporate Website ",
+  //           ],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Application-Development/2.webp",
+  //           title: "Mobile App Development",
+  //           link: "/services/mobile-app-development",
+  //           subTypes: [
+  //             "iOS Native",
+  //             "Android Native",
+  //             "Hybrid Apps",
+  //             "Webview Apps",
+  //           ],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Application-Development/3.webp",
+  //           title: "eCommerce Online Store Development",
+  //           link: "/services/e-comm-online-store-development",
+  //           subTypes: [" D2C Store", " Order Management System"],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Application-Development/4.webp",
+  //           title: "UI/UX development",
+  //           link: "/services/ui-ux-development",
+  //           subTypes: [],
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "2",
+  //       submenutitle: "Digital Transformation",
+  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-3.webp",
+  //       bigImg: "/images/specific/MenuImages/Digital-Transformation/5.webp",
+  //       NestedMenu: [
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Digital-Transformation/1.webp",
+  //           title: "Application Modernization",
+  //           link: "/services/application-modernization",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Digital-Transformation/2.webp",
+  //           title: "Enhance User Digital Experience",
+  //           link: "/services/enhance-user-digital-experience",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Digital-Transformation/3.webp",
+  //           title: "Manual Documents to Digital Asset",
+  //           link: "/services/manual-documents-to-digital-assets",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Digital-Transformation/4.webp",
+  //           title: "Develop Digital Strategy & Digital Applications",
+  //           link: "/services/develop-digital-strategy-and-digital-applications",
+  //           subTypes: [],
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "3",
+  //       submenutitle: "Robotic Process Automation",
+  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-5.webp",
+  //       bigImg: "/images/specific/MenuImages/Robotic-Process-Automation/4.webp",
+  //       NestedMenu: [
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Robotic-Process-Automation/1.webp",
+  //           title: "Customer Service Automation",
+  //           link: "/services/customer-service-automation",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Robotic-Process-Automation/2.webp",
+  //           title: "Document Processing & Report Automation",
+  //           link: "/services/document-processing-and-report-automation",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/Robotic-Process-Automation/3.webp",
+  //           title: "Data migration & entry",
+  //           link: "/services/data-migration-entry",
+  //           subTypes: [],
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "4",
+  //       submenutitle: "IT Infrastructure Management",
+  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-7.webp",
+  //       bigImg:
+  //         "/images/specific/MenuImages/IT-Infrastructure-Management/3.webp",
+  //       NestedMenu: [
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/IT-Infrastructure-Management/1.webp",
+  //           title: "Infrastructure Architecture & Technology Selection",
+  //           link: "/services/infrastructure-architech-selection",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc:
+  //             "/images/specific/MenuImages/IT-Infrastructure-Management/2.webp",
+  //           title: "IT Operations Management",
+  //           link: "/services/it-operation-mgmt",
+  //           subTypes: [],
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "5",
+  //       submenutitle: "Cyber Security",
+  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-9.webp",
+  //       bigImg: "/images/specific/MenuImages/Cyber-Security/4.webp",
+  //       NestedMenu: [
+  //         {
+  //           imageSrc: "/images/specific/MenuImages/Cyber-Security/1.webp",
+  //           title: "Application & Information Security",
+  //           link: "/services/information-security",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc: "/images/specific/MenuImages/Cyber-Security/2.webp",
+  //           title: "Network Security",
+  //           link: "/services/network-security",
+  //           subTypes: [],
+  //         },
+  //         {
+  //           imageSrc: "/images/specific/MenuImages/Cyber-Security/3.webp",
+  //           title: "Cloud Security",
+  //           link: "/services/cloud-security",
+  //           subTypes: [],
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "6",
+  //       submenutitle: "Software Testing & QA",
+  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-11.webp",
+  //       bigImg: "/images/specific/MenuImages/Software-Testing-QA/5.webp",
+  //       NestedMenu: [
+  //         {
+  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/1.webp",
+  //           title: "Manual Testing",
+  //           link: "/services/manual-functional-testing",
+  //           subTypes: [" UI Testing, Functional Testing, Integration Testing"],
+  //         },
+  //         {
+  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/2.webp",
+  //           title: "Automation Testing",
+  //           link: "/services/automation-testing",
+  //           subTypes: [" Unit Tests, Integration Tests, Regression Tests"],
+  //         },
+  //         {
+  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/3.webp",
+  //           title: "Performance Testing",
+  //           link: "/services/performance-testing",
+  //           subTypes: [
+  //             " Stress Testing",
+  //             "Volume Testing",
+  //             "Load Testing ",
+  //             "Speed Testing ",
+  //           ],
+  //         },
+  //         {
+  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/4.webp",
+  //           title: "Security Testing",
+  //           link: "/services/security-testing",
+  //           subTypes: [
+  //             " Vulnerability Scanning",
+  //             "Security Scanning",
+  //             "Penetration Testing",
+  //             "Security Audit/ Review",
+  //           ],
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   { label: "BLOGS", link: "/blogs" },
-  // { label: "CAREER", link: "", title: "Comming Soon" },
-  // { label: "CASE STUDY", link: "/case-study" },
   { label: "CONTACT", link: "/contact-us" },
 ];
 
