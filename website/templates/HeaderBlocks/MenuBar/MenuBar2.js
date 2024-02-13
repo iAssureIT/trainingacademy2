@@ -216,7 +216,7 @@ function MenuBar2(props) {
 								<li className="topHead text-white text-md font-normal ">
 									<i className="fa-regular fa-envelope mr-1"></i>
 									<a href="https://mail.google.com/">
-										info@iassureit.com
+									training@iassureit.com
 									</a>
 								</li>
 							</ul>

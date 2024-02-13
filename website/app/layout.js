@@ -332,7 +332,7 @@ const content_Footer = {
   addLine2: " Cerebrum IT Park Kalyani Nagar",
   addLine3: "Pune, Maharashtra 411014",
   phone1: "+91 9022426944",
-  email1: "info@iassureit.com",
+  email1: "training@iassureit.com",
   fbLink: "https://www.facebook.com/iAssureIT",
   linkedIn:
     "https://www.linkedin.com/company/iassure-international-technologies-pvt-ltd/?viewAsMember=true",
