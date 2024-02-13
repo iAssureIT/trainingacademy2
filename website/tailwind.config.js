@@ -71,7 +71,7 @@ module.exports = {
         yellowColor: "#ffc962",
         formColor: "#e3f2fd",
         submitBtn: "#283592",
-        Accordion: "#004f95",
+        Accordion: "#FD641F",
         ftLink: "#618AE8",
         //training academy
         orangeColor:"#FD641F",

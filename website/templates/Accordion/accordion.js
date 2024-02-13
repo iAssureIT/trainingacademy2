@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Accordion = ({ title, content }) => {
+const Accordion = ({ title, content, accordianThemeColor }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleAccordionToggle = () => {
@@ -8,7 +8,7 @@ const Accordion = ({ title, content }) => {
   };
 
   return (
-    <div className="mb-4 border border-Accordion">
+    <div className={"mb-4 border border-Accordion"}>
       <div className="flex items-center justify-between"
           onClick={handleAccordionToggle}
         >
@@ -20,9 +20,9 @@ const Accordion = ({ title, content }) => {
         <div className="flex">
           {isOpen 
           ? 
-            <h2 className="w-20 px-8 py-4 text-3xl font-semibold text-white bg-Accordion "> - </h2>
+            <h2 className="w-20 px-8 py-4 text-3xl font-semibold text-white bg-Accordion" > - </h2>
           : 
-            <h2 className="w-20 py-4 text-3xl font-semibold text-white px-7 bg-Accordion "> + </h2>
+            <h2 className="w-20 py-4 text-3xl font-semibold text-white px-7 bg-Accordion"> + </h2>
           }
           <h2 className="py-4 pl-4 text-sm font-bold lg:text-xl">{title}</h2>
         </div>
