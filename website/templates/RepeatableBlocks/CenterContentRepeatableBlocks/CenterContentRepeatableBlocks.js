@@ -98,52 +98,57 @@ const CenterContentRepeatableBlocks = (props) => {
                                     }}
 
                                 >
-                                    <div className={props?.inputData?.imgDivCss? props?.inputData?.imgDivCss:" py-5"}>
-                                        <div className="relative z-0">
-                                            {
-                                                card.cardImage
-                                                    ?
-                                                    <img alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"}   />
-                                                    :
-                                                    null
-                                            }
-                                           {   props.inputData?.displayAnimation === "true"
-                                                        ?<div  className="">
+                                    {
+                                        card?.cardImage?
+                                        
+                                            <div className={props?.inputData?.imgDivCss? props?.inputData?.imgDivCss:" py-5"}>
+                                                <div className="relative z-0">
+                                                    {
+                                                        card.cardImage
+                                                            ?
+                                                            <img alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"}   />
+                                                            :
+                                                            null
+                                                    }
+                                                {   props.inputData?.displayAnimation === "true"
+                                                                ?<div  className="">
 
-                                                {/* <div className={props.inputData?.classForImg ? props.inputData?.classForImg : " overflow-hidden bg-cover bg-no-repeat"}> */}
-                                                
-                                                  
-                                                        <>
-                                                            <img id={"rotateBlk" + card?.id}  src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload "  />
-                                                            <img  id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute animatedCircle2 lazyload" />
+                                                        {/* <div className={props.inputData?.classForImg ? props.inputData?.classForImg : " overflow-hidden bg-cover bg-no-repeat"}> */}
+                                                        
+                                                        
+                                                                <>
+                                                                    <img id={"rotateBlk" + card?.id}  src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload "  />
+                                                                    <img  id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute animatedCircle2 lazyload" />
 
-                                                        </>
-                                                       
-                                               
-                                                {/* </div> */}
+                                                                </>
+                                                            
+                                                    
+                                                        {/* </div> */}
+                                                    </div>
+                                                    : null
+                                                    }
+                                                </div>
                                             </div>
-                                             : null
-                                             }
-                                        </div>
-                                    </div>
-                                    {/* {props?.inputData?.testimonial
+                                        :null
+                                    }
+                                    {props?.inputData?.testimonial
                                         ?
-                                            <div className="flex p-5 mx-auto mb-2">
+                                            <div className="flex object-cover my-2 px-9">
                                                 {card.profileImage ? (
                                                 <img
-                                                    className={"h-18 w-18 object-cover  rounded-full object-center mx-auto px-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"}
+                                                    className={"h-24 w-24   rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"}
                                                     // src="/images/generic/logo1.png"
                                                     src={card.profileImage}
                                                     alt={card.profileImage ? "logo-iassureit" : ""}
                                                 />
                                                 ) : (
                                                 <img
-                                                    className="object-cover object-center w-18 h-18 rounded-full px-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                                                    className="w-24 h-24 rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
                                                     src="/images/generic/noImage.jpg"
                                                     alt="logo-iassureit"
                                                 />
                                                 )}
-                                                <div>
+                                                <div className='object-center mx-5 my-auto'>
                                                     <h5 className="my-2 text-lg font-bold text-left">
                                                     {card.name
                                                         ? card.name
@@ -158,7 +163,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                                 </div>
                                             </div>
                                         :null
-                                    } */}
+                                    }
 
                                     {
                                         card.cardTitle ?
