@@ -50,13 +50,10 @@ module.exports = {
       },
       colors: {
         // darkBlue: "#133A75",
-        offWhite: "#F5F5FF",
         purple: "#618FED",
         darkBlue: "#283593",
         skyBlue: "#376bff",
         light: "#f1f1f1",
-        lightGray: "#666666",
-        darkGray: "#333333",
         btnBlue: "#17478D",
         fbColor: "#3b5998",
         whatsappColor: "#4FCE5D",
@@ -76,6 +73,12 @@ module.exports = {
         submitBtn: "#283592",
         Accordion: "#004f95",
         ftLink: "#618AE8",
+        //training academy
+        orangeColor:"#FD641F",
+        yellowColor:"#FCBD29",
+        offWhite: "#F5F5FF",
+        lightGray: "#666666",
+        darkGray: "#333333",
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
