@@ -79,6 +79,8 @@ module.exports = {
         offWhite: "#F5F5FF",
         lightGray: "#666666",
         darkGray: "#333333",
+        blueC    :"#1654F2",
+        darkBlueC:"#0F1EAF"
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",

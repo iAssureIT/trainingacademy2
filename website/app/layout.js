@@ -26,7 +26,7 @@ const metadata = {
 };
 const menuItems = [
   { label: "HOME", link: "/" },
-  { label: "ABOUT US", link: "/about-us" },
+  { label: "ABOUT ME", link: "/about-us" },
   // {
   //   label: "SERVICES",
   //   link: "/services",
@@ -237,7 +237,8 @@ const menuItems = [
   //     },
   //   ],
   // },
-  { label: "BLOGS", link: "/blogs" },
+  { label: "COURSES", link: "/courses" },
+  { label: "TESTIMONIALS", link: "/testimonials" },
   { label: "CONTACT", link: "/contact-us" },
 ];
 
@@ -281,139 +282,55 @@ const content_Menubar = {
 const footerMenuItems = [
   { label: "Home", link: "/" },
   { label: "About Us", link: "/about-us" },
-  { label: "Blogs", link: "/blogs" },
+  { label: "Courses", link: "/courses" },
+  { label: "Testimonials", link: "/testimonials" },
   { label: "Contact Us", link: "/contact-us" },
   // { label: "Career", link: "/career/career1" },
 ];
 const siteMapItems = [
   {
-    label: " Application Development",
-    link: "/",
-    subItem: [
-      { label: "Web App Development", link: "/services/web-app-development" },
-      {
-        label: "Mobile App Development",
-        link: "/services/mobile-app-development",
-      },
-      {
-        label: "eCommerce Online Store Development",
-        link: "/services/e-comm-online-store-development",
-      },
-      { label: "UI/UX Development", link: "/services/ui-ux-development" },
-    ],
+    label: "Advanced Skills and Beyond",
+    link: "/",   
   },
   {
-    label: "Digital Transformation",
-    link: "/services/mobile-app-development",
-    subItem: [
-      {
-        label: "Application Modernization",
-        link: "/services/application-modernization",
-      },
-      {
-        label: "Enhance User Digital Experience",
-        link: "/services/enhance-user-digital-experience",
-      },
-      {
-        label: "Manual Documents to Digital Assets",
-        link: "/services/manual-documents-to-digital-assets",
-      },
-      {
-        label: "Develop Digital Strategy & Digital Applications",
-        link: "/services/develop-digital-strategy-and-digital-applications",
-      },
-    ],
+    label: "Web Technologie Mastery",
+    link: "/",   
   },
   {
-    label: "Robotic Process Automation",
-    link: "/",
-    subItem: [
-      {
-        label: "Customer Service Automation",
-        link: "/services/customer-service-automation",
-      },
-      {
-        label: "Document Processing & Report Automation",
-        link: "/services/document-processing-and-report-automation",
-      },
-      {
-        label: "Data Migration & Entry",
-        link: "/services/data-migration-entry",
-      },
-    ],
+    label: "ReactJS Framework and Beyond",
+    link: "/",    
+  },
+  {
+    label: "NodeJS and Database Development",
+    link: "/",    
   },
 ];
 
-const siteMapItems1 = [
-  {
-    label: "IT Infrastructure Management",
-    link: "/",
-    subItem: [
-      {
-        label: "Infrastructure Architecture & Technology Solution",
-        link: "/services/infrastructure-architech-selection",
-      },
-      { label: "IT Operation Management", link: "/services/it-operation-mgmt" },
-    ],
-  },
-  {
-    label: "Cyber Security",
-    link: "/",
-    subItem: [
-      {
-        label: "Application & Information Security",
-        link: "/services/information-security",
-      },
-      { label: "Network Security", link: "/services/network-security" },
-      { label: "Cloud Security", link: "/services/cloud-security" },
-    ],
-  },
 
-  {
-    label: "Software Testing & QA",
-    link: "/",
-    subItem: [
-      {
-        label: "Manual and Functional Testing",
-        link: "/services/manual-functional-testing",
-      },
-      { label: "Automation Testing", link: "/services/automation-testing" },
-      { label: "Performance Testing", link: "/services/performance-testing" },
-      { label: "Security Testing", link: "/services/security-testing" },
-    ],
-  },
-  {
-    label: "Scalable Application",
-    link: "/scalable-application",
-
-  }
-
-
-];
 
 const content_Footer = {
   bannerClass:
-    "relative pt-10 lg:pt-48 block shadow-lg  bg-no-repeat  max-w-full   bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] bg-[length:100%_100%] md:bg-[length:100%_100%]",
-  bgImage: "/images/specific/Footer/Footer-1.webp",
-  smallBGImage: "/images/specific/Footer/Responsive-Footer-Design.webp",
+    "relative bg-darkBlueC pt-0 lg:pt-10 block shadow-lg  bg-no-repeat  max-w-full   bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] bg-[length:100%_100%] md:bg-[length:100%_100%]",
+  // bgImage: "/images/specific/Footer/Footer-1.webp",
+  // smallBGImage: "/images/specific/Footer/Responsive-Footer-Design.webp",
   bgColor: "bg-ceyone_offWhite",
   logo: "/images/specific/iAssureIT_Logo/iAssureIT_White_Logo.webp",
   smallLogo: "/images/specific/iAssureIT_Logo/iAssureIT_White_Logo.webp",
-  logoCss: "w-1/2 md:w-1/3 xl:w-2/3  lg:mx-0 xl:pl-10 2xl:pl-0  ",
+  logoCss: "w-1/2 md:w-1/3 xl:w-2/3  lg:mx-auto   ",
   // icon: "/images/specific/Footer/Footer_Icon.webp",
+  titleCss:"text-orangeColor",
   titleCss: "mb-6 text-xl xxl:text-xl font-extrabold  underline  text-light",
-  title1: "Menu",
-  title2: " Services",
-  // title3: " ",
-  title4: "Our Awards",
+  title1: "MENU",
+  title2: " COURSES",
+  title3: "ADDRESS ",
+  // title4: "Our Awards",
   footerList: footerMenuItems,
   sitemapList: siteMapItems,
-  sitemapList1: siteMapItems1,
-  addLine1: "#1B, 2nd Floor, B3",
+  // sitemapList1: siteMapItems1,
+  addLine1: "# 1B, 2nd Floor, B3",
   addLine2: " Cerebrum IT Park Kalyani Nagar",
   addLine3: "Pune, Maharashtra 411014",
-  phone1: "+91 8459748828",
-  phone2: "+91 9579963857",
+  phone1: "+91 9579963857",
   email1: "info@iassureit.com",
   fbLink: "https://www.facebook.com/iAssureIT",
   linkedIn:
@@ -429,10 +346,10 @@ const content_Footer = {
   //   '<span class="text-light font-normal">Copyright © 2023, iAssureIT All Rights Reserved</span>',
   // footerText:
   //   '<div class="text-light mr-1 mb-3">Designed & Developed By</div> <div class="text-light font-bold left"> <a href="/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></div>',
-  btnName: "CLICK TO CONTACT",
-  btnUrl: "/contact-us",
-  btnClass:
-    " text-blue-600 bg-white hover:border hover:border-2 border-blue-300 rounded-full p-2 md:p-3 md:px-4 px-4 text-xs font-bold ",
+  // btnName: "CLICK TO CONTACT",
+  // btnUrl: "/contact-us",
+  // btnClass:
+  //   " text-blue-600 bg-white hover:border hover:border-2 border-blue-300 rounded-full p-2 md:p-3 md:px-4 px-4 text-xs font-bold ",
   contentImg: "/images/specific/Footer/Laurel-wreath.webp",
   classForAwards:
     "relative text-light font-bold bg-cover text-center h-28 md:h-32 py-5 px-10 lg:px-20 xl:px-24 2xl:px-24 text-xs md:text-sm block bg-no-repeat  max-w-full xl:w-3/5 2xl:w-1/4  sm:bg-cover bg-center mb-5",
@@ -450,9 +367,9 @@ const content_Footer2 = {
   bgImage: "/images/specific/Footer/Footer-2.webp",
   smallBGImage: "/images/specific/Footer/Footer-2.webp",
   copyrightText:
-    '<span class="text-light font-normal">Copyright © <script>document.write(new Date().getFullYear())</script>, <span class="text-light hover:text-ftLink "><a href="https://iassureit.com/"  target="_blank" >iAssureIT</a></span> All Rights Reserved</span>',
+    '<span class="text-light font-normal">Copyright © <script>document.write(new Date().getFullYear())</script>, <span class="text-orangeColor hover:text-ftLink "><a href="https://iassureit.com/"  target="_blank" >iAssureIT</a></span> All Rights Reserved</span>',
   footerText:
-    '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="text-light font-bold left hover:text-ftLink "> <a href="/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
+    '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
 export default function RootLayout({ children }) {
   useEffect(() => {
