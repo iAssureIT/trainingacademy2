@@ -24,33 +24,33 @@ const HomePage = () => {
     videoUrl: "/images/videos/latest-web-banners.mp4",
     imgUrl: "/images/specific/Home/HomeVideoImg.webp"
   };
-  const content_BSFI = {
-    id: "BSFI_Block",
-    bgImage:
-      "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-1.webp",
-    smallBGImage:
-      "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
+  const content_CET = {
+    id: "CET_Block",
+    // bgImage:
+    //   "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-1.webp",
+    // smallBGImage:
+    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
     logo: "",
-    pageTitle: "",
-    pageTitleCss: " ",
-    h1Txt:
-      "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
-    para: "Experience a blend of ground breaking IT solutions tailored for large-scale operations in software development, cloud computing & cybersecurity.",
+    pageTitle: "Transform Your Skills with </br>Cutting-edge Technologies",
+    pageTitleCss: " pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
+    // h1Txt:
+    //   "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
+    para: "Stay ahead of the curve and master the latest technologies in Fullstack Development. Our comprehensive training program covers everything from ReactJS and NodeJS to advanced topics like Redux, MongoDB integration, and AWS integration. With flexible learning options and expert guidance from industry professionals, there's no limit to what you can achieve. Take the first step towards transforming your skills and shaping your future – enroll now!",
     bgImgCss:
-      "lazyload object-fit py-0 sm:py-10 md:py-10 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+      "lazyload object-fit py-0 sm:py-10 md:py-10 2xl:py-20 bg-blue-400 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
+    // h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
     paraCss:
-      "text-sm sm:text-lg md:text-2xl lg:text-2xl text-justify font-bold mt-5 md:mt-10 lg:mt-20",
+      " text-white text-sm md:text-lg lg:text-2xl text-justify mt-5 ",
     gridCss:
       "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 mb-5 md:mb-10  lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
     gridSubDivCss:
-      " mt-12 mx-auto text-white content-center  place-content-center  justify-center  ",
+      " md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
     image: "/images/specific/Home/HomeNewImg/iAssureIT-home-page-image-1.webp",
     imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 xxl:!w-full mx-auto mb-10 pb-5 md:py-10",
-    imgCaption: "BSFI Industry Expert",
-    imgCaptionCss: "text-center text-white text-xl md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-extrabold",
-    imgTagcss: "mx-auto lazyload",
+    // imgCaption: "BSFI Industry Expert",
+    // imgCaptionCss: "text-center text-white text-xl md:text-3xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-extrabold",
+    // imgTagcss: "mx-auto lazyload",
     borderColor:
       "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
     dash: "",
@@ -58,12 +58,14 @@ const HomePage = () => {
     // urlName: "Dive In Now",
     // linkCss:
     //   " mx-auto lg:mx-0 font-bold text-sm md:text-xl  p-3  2xl:px-2 text-center border w-2/3 md:w-1/2  lg:w-1/2 xl:w-1/3 2xl:w-1/3 rounded btn bg-light text-darkGray my-10 hover:bg-transparent hover:text-white hover:shadow-2xl",
-    modalId: "BfsiModal",
-    modalDisplay: "true",
-    modalUrlName: "Dive In Now <span><i class='fa-solid  fa-angle-double-right'></i></span>",
-    modalBtnCss: "w-fit mx-auto md:float-left text-btnBlue text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-gray-100 hover:bg-offWhite hover:text-black cursor-pointer"
 
-  };
+    // modalId: "BfsiModal",
+    modalId:"CetModal",  
+    modalDisplay:"true",
+    modalUrlName:"Explore Courses <span><i class='fa-solid  fa-angle-double-right'></i></span>",
+    modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-blue-500 hover:bg-offWhite hover:text-black cursor-pointer"
+    
+    };
   const content_GlanceBlk = {
     sectionCss: "z-0",
     bgImage:
@@ -1293,7 +1295,7 @@ const HomePage = () => {
         canonicalUrl={data ? data.canonicalUrl : ""}
       />
       <VideoBanner inputData={content_Video} />
-      <BgImgLeftContentRtImg inputData={content_BSFI} />
+      <BgImgLeftContentRtImg inputData={content_CET} />
       <CardsBlocks inputData={content_GlanceBlk} />
       {/* <Statistics inputData={content_Statistics}/> */}
       {/* <BgImgLeftContentRtImg inputData={content_leftContentBgImg} /> */}

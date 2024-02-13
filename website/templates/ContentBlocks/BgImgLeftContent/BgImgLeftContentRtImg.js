@@ -1,10 +1,3 @@
-/*==========================================================
-  Developer  :  Sarika Ghanwat
-  Date       :  12st Sept 2023
-  ------------------------------------
-  Reviewed By:  
-  Review Date: 
-==========================================================*/
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from 'next/image'
