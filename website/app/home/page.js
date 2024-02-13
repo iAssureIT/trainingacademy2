@@ -21,53 +21,35 @@ const HomePage = () => {
         titleDescription:"Frequently Asked Questions (FAQs) for Fullstock ReactJS & NodeJS Training Program",
         accordionData : [
             {
-              title: '1. Who is this training program suitable for?',
-              content: "Fullstack Development refers to the practice of developing both the frontend (client-side) and backenct (server-side) of web applications. It involves mastering technologies such as ReactJS for frontend development and NodeJS for backend development."
-            },
+                title:"1. What courses do you offer in your IT training academy?",
+                content:"We offer a variety of courses, including web development, mobile app development, and specialized training in various programming languages and frameworks."},
             {
-                title: '2. Who is this training program suitable for?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"2. How long are the training programs?",
+                content:"Our training programs vary in duration, typically ranging from a few weeks for short courses to several months for comprehensive programs."},
             {
-                title: '3. What ore the prerequisites for enrolling in this program?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"3. Are the courses suitable for beginners, or do I need prior experience in programming?",
+                content:"Our courses cater to all skill levels, including beginners. No prior programming experience is necessary for many of our entry-level courses."},
             {
-                title: '4. What will I learn in the ReactJS course?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"4. What technologies/languages do you cover in web and mobile app development training?",
+                content:"We cover a wide range of technologies and programming languages, including but not limited to HTML, CSS, JavaScript, reactJs,  NodeJs, NextJs."},
             {
-                title: '5. What will I learn in the NodeJS course',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"5. How is the training conducted – online, in-person, or a combination of both?",
+                content:"We offer flexible training options, including both online and in-person classes, allowing you to choose the format that suits your preferences and schedule."},
             {
-                title: '6. How is the training delivered?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"6. Can I access course materials after completing the training?",
+                content:"Yes, you will have continued access to course materials even after completion, providing valuable resources for ongoing reference and learning."},
             {
-                title: '7. What kind of projects will I work on during the troining?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"7. Do you provide any certification upon course completion?",
+                content:"Yes, we offer certification upon successful completion of our courses, recognized in the industry."},
             {
-                title: '8. Will I receive any certification upon completion of the program?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"8. What is the class size for the training sessions?",
+                content:"Our classes are designed to maintain an optimal student-to-instructor ratio, ensuring personalized attention and an effective learning experience."},
             {
-                title: '9. Do you provide}ob placement assistance?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"9. What kind of projects or practical experience can I expect during the training?",
+                content:"Our training emphasizes hands-on projects and real-world applications to provide practical experience and enhance your skills."},
             {
-                title: '10. What is the duration of the training program?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
-            {
-                title: '11. Is financial aid available for the program?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
-            {
-                title: '12. How con I enroll in the training progrom?',
-                content: "Fullstack Development refers to the practice of developing both the frontend "
-            },
+                title:"10. Are there any prerequisites for enrolling in specific courses?",
+                content:"Prerequisites vary by course, but many of our programs are designed to accommodate learners with diverse backgrounds and skill sets."},
         ],
         titleDescription_2:"Have more questions* Feel free to reach out to us! We're here to help you embark on your journey to becoming a successful Fullstack Developer."
     }
@@ -75,7 +57,7 @@ const HomePage = () => {
         sectionCss: "md:my-5 lg:my-0",
         blockTitle:
           " <span  class='uppercase font-extrabold leading-relaxed' >TESTIMONIALS</span>",
-        classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl py-14",
+        classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl px-10 py-14",
         classForNoOfCards:
           "px-10 lg:px-32 2xl:px-48 max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-10 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10",
         classForCards:
@@ -217,7 +199,7 @@ const HomePage = () => {
         sectionCss: "md:my-5 lg:my-0 bg-offWhite",
         blockTitle:
         " <span  class='uppercase font-extrabold leading-relaxed' >WHY CHOOSE OUR TRAINING PROGRAM?</span>",
-        classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl py-14",
+        classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl px-10 py-14",
         classForNoOfCards:
         "px-10 lg:px-32 2xl:px-48 max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6",
         classForCards:
@@ -295,8 +277,6 @@ const HomePage = () => {
         ],
     };
     const content_ExclusiveBenefits={
-        
-
         sectionCss: "md:my-5 lg:my-0 md:my-5 lg:my-0 px-10 lg:px-32 2xl:px-48 max-w-8xl",
         blockTitle:" <span  class='uppercase font-extrabold leading-relaxed' >EXCLUSIVE BENEFITS</span>",
         classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl my-10",
@@ -323,8 +303,7 @@ const HomePage = () => {
         "relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         // dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
         cardsArray: [],
-    };
-    
+    };    
     const content_CourseFees = {
         blockTitle: "OUR RANGE OF <span class='font-extrabold uppercase'>WEB APP TECHNOLOGIES</span>",
         blockSubTitle: "Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients.",

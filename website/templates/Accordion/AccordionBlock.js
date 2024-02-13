@@ -16,7 +16,7 @@ const AccordionBlock = (props) => {
     setSearchData(event.target.value);
   };
   return (
-    <div className="max-w-5xl px-5 mx-auto mb-10 lg:px-32 xl:px-32">
+    <div className="max-w-5xl px-10 mx-auto mb-10 lg:px-32 xl:px-32">
       {/* <label className="relative max-w-2xl mx-auto shadow-xl shadow-black-500/50">
         <span className="sr-only">Search</span>
         <span className="absolute inset-y-0 left-0 flex items-center pl-2">
