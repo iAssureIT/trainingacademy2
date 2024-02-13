@@ -1108,7 +1108,7 @@ const HomePage = () => {
 	const accordionData={
 		accordianThemeColor:"bg-orangeColor",
 		pageTitle:"FAQ",
-		titleDescription:"Frequently Asked Questions (FAQs) for Fullstock ReactJS & NodeJS Training Program",
+		titleDescription:"Frequently Asked Questions (FAQs) for Fullstack, ReactJS & NodeJS Training Program",
 		accordionData : [
 			{
 				title:"1. What courses do you offer in your IT training academy?",
@@ -1121,7 +1121,7 @@ const HomePage = () => {
 				content:"Our courses cater to all skill levels, including beginners. No prior programming experience is necessary for many of our entry-level courses."},
 			{
 				title:"4. What technologies/languages do you cover in web and mobile app development training?",
-				content:"We cover a wide range of technologies and programming languages, including but not limited to HTML, CSS, JavaScript, reactJs,  NodeJs, NextJs."},
+				content:"We cover a wide range of technologies and programming languages, including but not limited to HTML, CSS, JavaScript, reactJs, NodeJs, or NextJs."},
 			{
 				title:"5. How is the training conducted – online, in-person, or a combination of both?",
 				content:"We offer flexible training options, including both online and in-person classes, allowing you to choose the format that suits your preferences and schedule."},
@@ -1405,7 +1405,7 @@ const HomePage = () => {
     };
 	
     const content_ExclusiveBenefits={
-        sectionCss: "md:my-5 lg:my-0 md:my-5 lg:my-14 px-10 lg:px-32 2xl:px-48 max-w-8xl",
+        sectionCss: "my-14 px-10 lg:px-32 2xl:px-48 max-w-8xl",
         blockTitle:" <span  class='uppercase font-extrabold leading-relaxed' >EXCLUSIVE BENEFITS</span>",
         classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl my-10",
         classForNoOfCards:"",
@@ -1427,6 +1427,93 @@ const HomePage = () => {
         ensuring your seamless transition into the workforce.</div></div>`+
         `<br /><div class="flex">Don't miss out on this opportunity to unlock your FullStack potential at an unbeatable value. Enroll today
         and take the first step towards a rewarding career in the ever-evolving world of technology.</div>`,
+        bgImgCss:
+        "relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+        // dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
+        cardsArray: [],
+    };  
+    const content_CourseFees = {
+        sectionCss: "md:mt-5 lg:mt-20",
+        blockTitle: "<span class='font-extrabold uppercase'>COURSE PRICE</span>",
+        blockSubTitle: "<span class='font-extrabold'>Unlock Your FullStack Potential: Affordable Fees, Boundless Opportunities</span>",
+        classForblockSubTitle: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-bold text-darkGray mb-10 bodyTxt",
+        classForblockDescription:"lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt my-5",
+        blockDescription:"<p>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</p>"+
+        "<br /><span class='font-bold'>Course Fees Breakdown</span>",
+        classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-3 md:py-10  leading-tight",
+        classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",
+        classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
+        classForCardTitle: "text-white text-center font-bold text-sm md:text-sm lg:text-md p-3",
+        classForCardTitle_2: "",
+        classForCardImage: "w-full rounded-full pb-5 object-cover",
+        bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
+        cardTitle_2:"<div class='text-center text-xl'><h5 class='font-extrabold '>Total Investment</h5>"+
+        "<br /> <p class='flex font-semibold text-xl'>Regular Price for all 4 Courses    : <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></p>"+
+        "<br /> <p class='flex font-semibold text-xl'>Discounted Price for all 4 Courses : <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,00,000</span></p>"+
+        "<br /><p class='text-2xl font-bold text-lightGreen'>Discount of 45% discount</p></div>",
+        cardsArray: [
+            {
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 1</p>'+
+                '<p class="wrap-text">HTML5, CSS3, JavaScript </p><p>etc</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 17% discount</p>"
+            }, {
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 2</p>'+
+                '<p class="wrap-text">ReactJS, JSON,</p><p> API Integration</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
+            }, {
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 3</p>'+
+                '<p class="wrap-text">NodeJS, MongoDB,</p><p> REST API Development</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
+            }, {
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 4</p>'+
+                '<p class="wrap-text">Advanced Skills in ReactJS,</p><p> NodeJS, etc</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
+            },
+        ],
+        // dash: "border-blue-700 mb-0  md:mb-0 ",
+    }
+	
+    const content_PAYMENT_OPTIONS={
+        sectionCss: "my-5 lg:mb-14 px-10 lg:px-32 2xl:px-48 max-w-8xl",
+        blockTitle:" <span  class='uppercase font-extrabold leading-relaxed' >PAYMENT OPTIONS</span>",
+        classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl my-10",
+        classForNoOfCards:"",
+        classForCards: "",
+        classForCardTitle:
+        "text-center font-extrabold text-md md:text-md lg:text-lg",
+        classForCardTitle_2:
+        "font-bold text-md text-primary dark:text-primary-400 p-5",
+        imgDivCss:"py-2",
+        classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
+        classForblockContent:
+        "text-lg md:text-xl text-center font-[500] mx-auto ",
+        blockContent:`<div class="flex"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>`+
+        `<br /><div class="flex"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
+		to just Rs 90,000.<span class='text-xl font-bold text-lightGreen'> (Overall Discount of 50% discount)</span></div></div>`,
         bgImgCss:
         "relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         // dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
@@ -1460,6 +1547,10 @@ const HomePage = () => {
 			/>
 			<BgImgRightContent inputData={content_VisionBlock} />
 
+            <Technology inputData={content_CourseFees} />
+			
+			<CenterContentRepeatableBlocks inputData={content_PAYMENT_OPTIONS} />
+			
 			<BgImgLeftContentRtImg inputData={content_CET} /> 
 
 			<CenterContentRepeatableBlocks inputData={content_ExclusiveBenefits} />

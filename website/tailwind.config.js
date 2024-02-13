@@ -80,7 +80,8 @@ module.exports = {
         lightGray: "#666666",
         darkGray: "#333333",
         blueC    :"#1654F2",
-        darkBlueC:"#0F1EAF"
+        darkBlueC:"#0F1EAF",
+        lightGreen:"#228B22"
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",

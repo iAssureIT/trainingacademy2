@@ -28,7 +28,7 @@ const Accordion = ({ title, content, accordianThemeColor }) => {
         </div>
         </div>
       {isOpen && 
-        <div className="py-6 pl-24 text-sm border border-Accordion lg:text-md bg-offWhite">
+        <div className="px-4 py-6 text-sm border lg:pr-4 lg:pl-24 border-Accordion lg:text-md bg-offWhite">
           <span
             dangerouslySetInnerHTML={{
               __html: content,

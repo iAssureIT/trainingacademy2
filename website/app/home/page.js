@@ -305,75 +305,83 @@ const HomePage = () => {
         cardsArray: [],
     };    
     const content_CourseFees = {
-        blockTitle: "OUR RANGE OF <span class='font-extrabold uppercase'>WEB APP TECHNOLOGIES</span>",
-        blockSubTitle: "Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients.",
-        classForblockSubTitle: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt",
+        sectionCss: "md:my-5 lg:my-20",
+        blockTitle: "<span class='font-extrabold uppercase'>COURSE PRICE</span>",
+        blockSubTitle: "<span class='font-extrabold'>Unlock Your FullStack Potential: Affordable Fees, Boundless Opportunities</span>",
+        classForblockSubTitle: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-bold text-darkGray mb-10 bodyTxt",
+        classForblockDescription:"lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt my-5",
+        blockDescription:"<p>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</p>"+
+        "<br /><span class='font-bold'>Course Fees Breakdown</span>",
         classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-3 md:py-10  leading-tight",
-        classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-8 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-10 mx-auto",
-        classForCards: " text-white  mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
-        classForCardTitle: "text-center font-bold text-xl md:text-xl lg:text-3xl p-3",
-        classForCardTitle_2: "font-bold text-md text-primary dark:text-primary-400",
-        classForCardImage: "w-full rounded-full pb-5",
-        bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload ",
+        classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",
+        classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
+        classForCardTitle: "text-white text-center font-bold text-sm md:text-sm lg:text-md p-3",
+        classForCardTitle_2: "",
+        classForCardImage: "w-full rounded-full pb-5 object-cover",
+        bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
+        cardTitle_2:"<div class='text-center text-lg'><h5 class='font-bold '>Total Investment</h5>"+
+        "<br /> <p class='flex font-semibold text-lg'>Regular Price for all 4 Courses   :<i class='fa-solid fa-indian-rupee-sign'></i><span class='font-bold'> 1,80,000</span></p>"+
+        "<br /> <p class='flex font-semibold text-lg'>Discounted Price for all 4 Courses:<i class='fa-solid fa-indian-rupee-sign'></i><span class='font-bold'> 1,00,000</span></p>"+
+        "<br /><p class='text-xl font-bold text-lightGreen'>Discount of 45% discount</p></div>",
         cardsArray: [
 
             {
-                cardImage: '/images/specific/Services/Technologies/Background.webp',
-                cardTitle: 'Front End Technologies',
-                imageArr: ["/images/specific/Services/Technologies/Front End/1.webp",
-                    "/images/specific/Services/Technologies/Front End/2.webp",
-                    "/images/specific/Services/Technologies/Front End/3.webp",
-                    "/images/specific/Services/Technologies/Front End/4.webp",
-                    "/images/specific/Services/Technologies/Front End/5.webp",
-                    "/images/specific/Services/Technologies/Front End/6.webp",
-                    "/images/specific/Services/Technologies/Front End/7.webp",
-                    "/images/specific/Services/Technologies/Front End/8.webp",
-                    "/images/specific/Services/Technologies/Front End/9.webp",]
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 1</p>'+
+                '<p class="wrap-text">HTML5, CSS3, JavaScript </p><p>etc</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 17% discount</p>"
             }, {
-                cardImage: '/images/specific/Services/Technologies/Background.webp',
-                cardTitle: 'Back End Technologies',
-                imageArr: ["/images/specific/Services/Technologies/Back End/1.webp",
-                    "/images/specific/Services/Technologies/Back End/2.webp",
-                    "/images/specific/Services/Technologies/Back End/3.webp",
-                    "/images/specific/Services/Technologies/Back End/4.webp",
-                    "/images/specific/Services/Technologies/Back End/5.webp",]
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 2</p>'+
+                '<p class="wrap-text">ReactJS, JSON,</p><p> API Integration</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
             }, {
-                cardImage: '/images/specific/Services/Technologies/Background.webp',
-                cardTitle: 'Database Technologies',
-                imageArr: ["/images/specific/Services/Technologies/Databases/1.webp",
-                    "/images/specific/Services/Technologies/Databases/2.webp",
-                    "/images/specific/Services/Technologies/Databases/3.webp",
-                    "/images/specific/Services/Technologies/Databases/4.webp",
-                    "/images/specific/Services/Technologies/Databases/5.webp",
-                    "/images/specific/Services/Technologies/Databases/6.webp",]
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 3</p>'+
+                '<p class="wrap-text">NodeJS, MongoDB,</p><p> REST API Development</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
             }, {
-                cardImage: '/images/specific/Services/Technologies/Background.webp',
-                cardTitle: 'Cloud Technologies',
-                imageArr: ["/images/specific/Services/Technologies/DevOps/1.webp",
-                    "/images/specific/Services/Technologies/DevOps/2.webp",
-                    "/images/specific/Services/Technologies/DevOps/3.webp",
-                    "/images/specific/Services/Technologies/DevOps/4.webp",
-
-                    "/images/specific/Services/Technologies/DevOps/7.webp",]
+                // cardImage: '/images/specific/trainingAcademy/iAssureIT-training-15.webp',
+                cardTitle: '<p>Course 4</p>'+
+                '<p class="wrap-text">Advanced Skills in ReactJS,</p><p> NodeJS, etc</p>',
+                // imageArr: []
+                cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>"+
+                "<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>"+
+                "<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>"+
+                "<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
             },
-            {
-                cardImage: '/images/specific/Services/Technologies/Background.webp',
-                cardTitle: 'Others Technologies',
-                imageArr: ["/images/specific/Services/Technologies/Front End/1.webp",
-                    "/images/specific/Services/Technologies/DevOps/5.webp",
-                    "/images/specific/Services/Technologies/DevOps/6.webp",
-                ]
-            },],
-        dash: "border-blue-700 mb-0  md:mb-0 ",
+        ],
+        // dash: "border-blue-700 mb-0  md:mb-0 ",
     }
+
+    
+    // "<p>Instalment Plan: Pay in 4 equal instalments for ease of budgeting.</p>"+
+    // "<p>One-Time Payment Discount: Avail a further discount by paying the total fees upfront, reducing the total</p>"+
+    // "<p>to just Rs 90,000. (Overall Discount of 50% discount)</p>"+
+
     return (
         <div>
-            <VideoBanner inputData={content_Video} />
-            {/* <Technology inputData={content_CourseFees} /> */}
             <CenterContentRepeatableBlocks inputData={content_TRAININGPROGRAM} />
-            <CenterContentRepeatableBlocks inputData={content_ExclusiveBenefits} />
+            <Technology inputData={content_CourseFees} />
+            {/* <CenterContentRepeatableBlocks inputData={content_ExclusiveBenefits} />
             <CenterContentRepeatableBlocks inputData={content_Testimonials} />
-            <AccordionBlock inputData={accordionData} />
+            <AccordionBlock inputData={accordionData} /> */}
         </div>
     )
 
