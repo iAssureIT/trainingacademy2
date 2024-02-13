@@ -171,7 +171,7 @@ const HomePage = () => {
           dash: "",
               
           };
-
+          
           const content_Block2 = {
                 id: "Banner_Block2",
                 paraTitle:
@@ -1176,6 +1176,9 @@ const HomePage = () => {
       <BgImgRightContent inputData={content_Block2} /> 
       {/* <VideoBanner inputData={content_Video} /> */}
       <BgImgLeftContentRtImg inputData={content_Banner} />      
+      {/* <CardsBlocks inputData={content_GlanceBlk} /> */}      
+      {/* <VideoBanner inputData={content_Video} /> */}
+      <BgImgLeftContentRtImg inputData={content_Banner} />      
       {/* <CardsBlocks inputData={content_GlanceBlk} /> */}
       <BgImgLeftContentRtImg inputData={content_CET} />
       {/* <Statistics inputData={content_Statistics}/> */}
@@ -1184,6 +1187,7 @@ const HomePage = () => {
       <BgImgRightContent inputData={content_VisionBlock} />
       {/* <CenterImgCenterContentRepeatableBlocks  inputData={content_CenterImgCenterContentRepeatableBlocks}
       /> */}
+      {/* <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} /> */}
       {/* <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} /> */}
       <BgImgLeftContentRtImg inputData={content_UnlockP} />
       <LeftImgRightRepeatableBlk
