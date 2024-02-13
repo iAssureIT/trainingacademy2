@@ -5,7 +5,6 @@
   Reviewed By:  
   Review Date: 
 ==========================================================*/
-
 import Accordion from "@/templates/Accordion/accordion.js";
 import { useState, useEffect } from "react";
 
@@ -17,14 +16,14 @@ const AccordionBlock = (props) => {
     setSearchData(event.target.value);
   };
   return (
-    <div className="container mx-auto px-5  lg:px-32 xl:px-32 mb-10">
-      {/* <label className="mx-auto  max-w-2xl relative   shadow-xl shadow-black-500/50">
+    <div className="max-w-5xl px-5 mx-auto mb-10 lg:px-32 xl:px-32">
+      {/* <label className="relative max-w-2xl mx-auto shadow-xl shadow-black-500/50">
         <span className="sr-only">Search</span>
         <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-          <svg className="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></svg>
+          <svg className="w-5 h-5 fill-slate-300" viewBox="0 0 20 20"></svg>
         </span>
         <input
-          className="mt-10 overflow-visible  placeholder:text-slate-400 block bg-white w-full shadow-lg rounded-md lg:py-6 py-2 pl-9 pr-3 focus:outline-none focus:ring-1 sm:text-sm border border-1 mb-4"
+          className="block w-full py-2 pr-3 mt-10 mb-4 overflow-visible bg-white border rounded-md shadow-lg placeholder:text-slate-400 lg:py-6 pl-9 focus:outline-none focus:ring-1 sm:text-sm border-1"
           placeholder=""
           type="text"
           name="search"
@@ -33,11 +32,11 @@ const AccordionBlock = (props) => {
         />
         <button
           type="submit"
-          className="absolute top-0 right-0 xxl:py-6 rounded-md lg:px-10 lg:py-3 py-1 px-7  text-sm font-medium text-white rounded-r-lg  focus:ring-4 focus:outline-none bg-blue dark:focus:ring-blue"
+          className="absolute top-0 right-0 py-1 text-sm font-medium text-white rounded-md rounded-r-lg xxl:py-6 lg:px-10 lg:py-3 px-7 focus:ring-4 focus:outline-none bg-blue dark:focus:ring-blue"
         >
           <svg
             aria-hidden="true"
-            className="stroke-2 w-8 lg:h-11 h-8 xxl:10 xxl:16"
+            className="w-8 h-8 stroke-2 lg:h-11 xxl:10 xxl:16"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -51,10 +50,10 @@ const AccordionBlock = (props) => {
           <span className="sr-only">Search</span>
         </button>
       </label>
-      <h2 className="text-2xl my-9 font-bold">Purchase</h2> */}
+      <h2 className="text-2xl font-bold my-9">Purchase</h2> */}
       {props?.inputData?.dash ?
-          <div className="w-full mb-4">
-              <ul className="place-content-center flex flex-wrap">
+          <div className="w-full">
+              <ul className="flex flex-wrap place-content-center">
                   <li className={"dash1 " + props.inputData.dash}></li>
                   <li className={"dash2 " + props.inputData.dash}></li>
                   <li className={"dash3 " + props.inputData.dash}></li>
@@ -65,14 +64,29 @@ const AccordionBlock = (props) => {
       }
       {
           props?.inputData?.pageTitle ?
-              <div className={props?.inputData?.pageTitleCss ? props?.inputData?.pageTitleCss : "block font-extrabold uppercase text-3xl text-center md:text-4xl lg:text-5xl xl:text-5xl xxl:text-6xl"} 
+              <div className={props?.inputData?.pageTitleCss ? props?.inputData?.pageTitleCss : "mt-5 block font-extrabold text-3xl text-center md:text-4xl lg:text-5xl xl:text-5xl xxl:text-6xl"} 
               dangerouslySetInnerHTML={{ __html: props?.inputData?.pageTitle }} ></div>
+              :
+              null
+      }
+      {
+          props?.inputData?.titleDescription ?
+              <div className={props?.inputData?.titleDescriptionCss ? props?.inputData?.titleDescriptionCss : "block font-semibold text-md text-center md:text-md lg:text-lg xl:text-lg xxl:text-xl mt-5 mb-10"} 
+              dangerouslySetInnerHTML={{ __html: props?.inputData?.titleDescription }} ></div>
               :
               null
       }
       {props?.inputData?.accordionData.map((item, index) => (
         <Accordion key={index} title={item.title} content={item.content} />
       ))}
+      
+      {
+          props?.inputData?.titleDescription_2 ?
+              <div className={props?.inputData?.titleDescription_2Css ? props?.inputData?.titleDescription_2Css : "block font-semibold text-md text-center md:text-md lg:text-lg xl:text-lg xxl:text-xl my-10"} 
+              dangerouslySetInnerHTML={{ __html: props?.inputData?.titleDescription_2 }} ></div>
+              :
+              null
+      }
     </div>
   );
 };

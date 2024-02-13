@@ -40,7 +40,7 @@ const CenterContentRepeatableBlocks = (props) => {
         <section className={props?.inputData?.sectionCss}>
             {props?.inputData?.dash ?
                 <div className="w-full mb-0 md:mb-4">
-                    <ul className="place-content-center flex flex-wrap">
+                    <ul className="flex flex-wrap place-content-center">
                         <li className={"dash1 " + props?.inputData?.dash}></li>
                         <li className={"dash2 " + props?.inputData?.dash}></li>
                         <li className={"dash3 " + props?.inputData?.dash}></li>
@@ -108,14 +108,14 @@ const CenterContentRepeatableBlocks = (props) => {
                                                     null
                                             }
                                            {   props.inputData?.displayAnimation === "true"
-                                                        ?<div  className=" ">
+                                                        ?<div  className="">
 
                                                 {/* <div className={props.inputData?.classForImg ? props.inputData?.classForImg : " overflow-hidden bg-cover bg-no-repeat"}> */}
                                                 
                                                   
                                                         <>
-                                                            <img id={"rotateBlk" + card?.id}  src="/images/generic/11.webp" alt="smallHexagon" className="animatedCircle   lazyload absolute "  />
-                                                            <img  id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className=" animatedCircle2  lazyload absolute  " />
+                                                            <img id={"rotateBlk" + card?.id}  src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload "  />
+                                                            <img  id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute  animatedCircle2 lazyload" />
 
                                                         </>
                                                        
