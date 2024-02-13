@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import BgImgLeftContentRtImg from "@/templates/ContentBlocks/BgImgLeftContent/BgImgLeftContentRtImg";
+import BgImgRightContent from "@/templates/ContentBlocks/BgImgRightContent/BgImgRightContent";
 import CenterContentRepeatableBlocks from "@/templates/RepeatableBlocks/CenterContentRepeatableBlocks/CenterContentRepeatableBlocks";
 import CustomHead from "@/templates/CustomHead/CustomHead";
 import LeftImgRightRepeatableBlk from "@/templates/RepeatableBlocks/LeftImgRightRepeatableBlk/LeftImgRightRepeatableBlk";
@@ -169,6 +170,60 @@ const HomePage = () => {
             "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
           dash: "",
               
+          };
+
+          const content_Block2 = {
+                id: "Banner_Block2",
+                paraTitle:
+                "At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
+              paraTitleClass: "subTitle text-justify font-normal text-black",
+              // bgImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
+              // smallBGImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
+              // bgImgCss: "lazyload",
+              pageTitle:
+                "<span class='font-extrabold'> Welcome to India's Premier Training Program in FullStack Development</span>",
+              pageTitleCss: " mb-10 md:mb-20 text-black w-full text-center BlockTitle",
+              gridColCss:
+                "my-auto mx-auto text-white content-center  place-content-center  justify-center py-10 px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
+          
+              gridCol1Css: "  ",
+              gridClass:
+                "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-content-center md:grid-cols-2  lg:h-full   xl:h-full h-full content-center ",
+              bannerClass:
+                "object-fit py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+              image: "/images/specific/Home/AutoPiloteCommercePlatform/2.webp",
+              imageCss:
+                "mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
+              imgTagcss: "mx-auto lazyload",
+              // dash: "border-white mb-5 md:mb-10 sm:mt-32 lg:mt-20",
+              // url: "/about-us",
+              // urlName: "Read More",
+              // linkCss: "text-white underline font-bold text-lg md:text-xl mt-5",
+            };
+
+        const content_VisionBlock = {
+            id: "Vision_Block",
+            paraTitle:
+              "Driven by a vision to propel India to new heights in the IT industry, Ashish is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.<br/><span class=''>Join Ashish Naik and embark on a transformative journey in FullStack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient FullStack developer ready to tackle the challenges of tomorrow's tech world.</span>",
+            paraTitleClass: "subTitle text-justify font-normal text-black",
+            // bgImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
+            // smallBGImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
+            // bgImgCss: "lazyload",
+            pageTitle:
+              "<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
+            pageTitleCss: "  mb-10 md:mb-20 text-black w-full text-center BlockTitle",
+            gridColCss:
+              "my-auto mx-auto text-white content-center  place-content-center  justify-center py-10 px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
+        
+            gridCol1Css: "  ",
+            gridClass:
+              "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-content-center md:grid-cols-2  lg:h-full   xl:h-full h-full content-center ",
+            bannerClass:
+              "object-fit py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+            image: "/images/specific/Home/AutoPiloteCommercePlatform/2.webp",
+            imageCss:
+              "mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
+            imgTagcss: "mx-auto lazyload",
           };
 
   const content_GlanceBlk = {
@@ -1117,7 +1172,8 @@ const HomePage = () => {
         keywords={data ? data.keywords : ""}
         canonicalUrl={data ? data.canonicalUrl : ""}
       />
-      <BgImgLeftContentRtImg inputData={content_CET} />     
+      <BgImgLeftContentRtImg inputData={content_CET} />  
+      <BgImgRightContent inputData={content_Block2} /> 
       {/* <VideoBanner inputData={content_Video} /> */}
       <BgImgLeftContentRtImg inputData={content_Banner} />      
       {/* <CardsBlocks inputData={content_GlanceBlk} /> */}
@@ -1125,7 +1181,7 @@ const HomePage = () => {
       {/* <Statistics inputData={content_Statistics}/> */}
       {/* <BgImgLeftContentRtImg inputData={content_leftContentBgImg} /> */}
       {/* <CenterContentRepeatableBlocks inputData={content_CenterContentRepeatableBlocks} /> */}
-      {/* <BgImgRightContent inputData={content_BgImgRightTxt_3} /> */}
+      <BgImgRightContent inputData={content_VisionBlock} />
       {/* <CenterImgCenterContentRepeatableBlocks  inputData={content_CenterImgCenterContentRepeatableBlocks}
       /> */}
       {/* <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} /> */}
