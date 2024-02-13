@@ -1430,26 +1430,6 @@ const HomePage = () => {
         // dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
         cardsArray: [],
     };  
-	const [data, setData] = useState(null);
-
-	useEffect(() => {
-		console.log("process.env.NEXT_PUBLIC_BASE_URL", process.env.NEXT_PUBLIC_BASE_URL)
-		// try {
-		const url = '/';
-		const encodedURL = encodeURIComponent(url);
-		console.log("encodedURL", encodedURL)
-		axios.get('api/seodetails/get/url/' + encodedURL)
-		.then(response => {
-			console.log("response.data -> ", response.data);
-			setData(response.data);
-
-		})
-		.catch(error => {
-			console.log("error -------> ", error);
-		})
-		// }
-
-	}, []);
 
 	return (
 		<main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
