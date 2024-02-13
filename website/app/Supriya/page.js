@@ -1121,7 +1121,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main className=" flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
+    <main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
 
       {/* PB added metaData */}
       <CustomHead
@@ -1132,24 +1132,13 @@ const HomePage = () => {
       />
       <BgImgLeftContentRtImg inputData={content_Banner} />
       <BgImgRightContent inputData={content_Block2} />
-      <BgImgLeftContentRtImg inputData={content_CET} />       
-      {/* <VideoBanner inputData={content_Video} /> */}            
-      {/* <CardsBlocks inputData={content_GlanceBlk} /> */}      
-      {/* <VideoBanner inputData={content_Video} /> */}     
-      {/* <CardsBlocks inputData={content_GlanceBlk} /> */}
-      {/* <Statistics inputData={content_Statistics}/> */}
-      {/* <BgImgLeftContentRtImg inputData={content_leftContentBgImg} /> */}
-      {/* <CenterContentRepeatableBlocks inputData={content_CenterContentRepeatableBlocks} /> */}
-      <BgImgRightContent inputData={content_VisionBlock} />
-      {/* <CenterImgCenterContentRepeatableBlocks  inputData={content_CenterImgCenterContentRepeatableBlocks}
-      /> */}
-      {/* <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} /> */}
-      {/* <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} /> */}
       <BgImgLeftContentRtImg inputData={content_UnlockP} />
+      <BgImgLeftContentRtImg inputData={content_CET} /> 
       <LeftImgRightRepeatableBlk
         inputData={content_About}
         readMore={false}
       />
+      <BgImgRightContent inputData={content_VisionBlock} />      
       <BgImgLeftContentRtImg inputData={content_JTCD} />
       <SmallBanner inputData={content_SmallBanner2} />
       <Map
@@ -1165,6 +1154,18 @@ const HomePage = () => {
       />      
       <BgImgLeftContentRtImg inputData={content_contactBlock} />   
 
+      {/* <VideoBanner inputData={content_Video} /> */}            
+      {/* <CardsBlocks inputData={content_GlanceBlk} /> */}      
+      {/* <VideoBanner inputData={content_Video} /> */}     
+      {/* <CardsBlocks inputData={content_GlanceBlk} /> */}
+      {/* <Statistics inputData={content_Statistics}/> */}
+      {/* <BgImgLeftContentRtImg inputData={content_leftContentBgImg} /> */}
+      {/* <CenterContentRepeatableBlocks inputData={content_CenterContentRepeatableBlocks} /> */}
+      {/* <CenterImgCenterContentRepeatableBlocks  inputData={content_CenterImgCenterContentRepeatableBlocks}
+      /> */}
+      {/* <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} /> */}
+      {/* <CenterContentRepeatableBlocksWithBg inputData={content_Expertise} /> */}
+      
     </main>
   );
 }

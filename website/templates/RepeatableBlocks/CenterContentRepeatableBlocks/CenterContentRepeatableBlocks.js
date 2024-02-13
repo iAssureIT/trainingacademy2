@@ -115,7 +115,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                                   
                                                         <>
                                                             <img id={"rotateBlk" + card?.id}  src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload "  />
-                                                            <img  id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute  animatedCircle2 lazyload" />
+                                                            <img  id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute animatedCircle2 lazyload" />
 
                                                         </>
                                                        
@@ -126,6 +126,39 @@ const CenterContentRepeatableBlocks = (props) => {
                                              }
                                         </div>
                                     </div>
+                                    {/* {props?.inputData?.testimonial
+                                        ?
+                                            <div className="flex p-5 mx-auto mb-2">
+                                                {card.profileImage ? (
+                                                <img
+                                                    className={"h-18 w-18 object-cover  rounded-full object-center mx-auto px-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"}
+                                                    // src="/images/generic/logo1.png"
+                                                    src={card.profileImage}
+                                                    alt={card.profileImage ? "logo-iassureit" : ""}
+                                                />
+                                                ) : (
+                                                <img
+                                                    className="object-cover object-center w-18 h-18 rounded-full px-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                                                    src="/images/generic/noImage.jpg"
+                                                    alt="logo-iassureit"
+                                                />
+                                                )}
+                                                <div>
+                                                    <h5 className="my-2 text-lg font-bold text-left">
+                                                    {card.name
+                                                        ? card.name
+                                                        : ""}
+                                                    </h5>
+                                                    <h6 className="my-2 text-sm font-bold text-left text-lightGray">
+                                                        {card.designation
+                                                            ? card.designation
+                                                            : ""}
+
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        :null
+                                    } */}
 
                                     {
                                         card.cardTitle ?
