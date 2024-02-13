@@ -236,20 +236,13 @@ const landingPageModal = (props) => {
                                 {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
                             </div>
                             <div>
-                                <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Business Email <span className="text-red-600 my-auto">*</span></label>
+                                <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email <span className="text-red-600 my-auto">*</span></label>
                                 <input type="email" name="email" id="email" onChange={handleChange}
-                                    value={fields.email} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" />
+                                    value={fields.email} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="example@email.com" />
                                 {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                             </div>
-                            <div>
-                                <label for="companyName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Business Name <span className="text-red-600 my-auto">*</span></label>
-                                <input type="text" name="companyName" id="companyName" onChange={handleChange}
-                                    value={fields.companyName} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Business Name" />
-                                {errors.companyName && <p className="text-red-500 text-xs mt-1">{errors.companyName}</p>}
-                            </div>
-
                             <div className='grid grid-cols-2 gap-3'><div>
-                                <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile</label>
+                                <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Number</label>
                                 <input type="number" name="phone" id="phone" onChange={handleChange}
                                     value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
                             </div>
@@ -258,21 +251,6 @@ const landingPageModal = (props) => {
                                     <input type="text" name="city" id="city" onChange={handleChange}
                                         value={fields.city} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
                                 </div>
-                            </div>
-                            <div>
-                                <label for="comments" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Comments <span className="text-red-600 my-auto">*</span></label>
-                                <input
-                                    type="text"
-                                    name="comments"
-                                    id="comments"
-                                    className="bg-gray-50 border  h-28 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                    placeholder="Please share your requirement"
-                                    maxLength="200"
-                                    row={7}
-                                    onChange={handleChange}
-                                    value={fields.comments}
-                                />
-                                {errors.comments && <p className="text-red-500 text-xs mt-1">{errors.comments}</p>}
                             </div>
                             {(btnLoading == true) ? (
                                 <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

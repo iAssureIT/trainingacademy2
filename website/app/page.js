@@ -12,149 +12,148 @@ import AccordionBlock from '@/templates/Accordion/AccordionBlock.js'
 
 
 const HomePage = () => { 
+  const content_Banner = {
+    id: "Banner_Block",
+    bgImage:
+      "/images/specific/trainingAcademy/iAssureIT-training-1.webp",
+    // smallBGImage:
+    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
+    logo: "",    
+    h1Txt:
+      "<h1 class='leading-tight uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
+    bgImgCss:
+      "lazyload object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+    logoCss: "lazyload justify-left align-left  mb-5 ",
+    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-40 2xl:mt-20 text-center lg:text-left",
+    gridCss:
+      " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+    gridSubDivCss:
+      " md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
+    image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
+    imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:mb-10 pb-0 md:pb-5 md:py-10",
+    borderColor:
+      "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
+    dash: "",
+        
+    };
 
-	const content_Banner = {
-		id: "Banner_Block",
-		bgImage:
-		"/images/specific/trainingAcademy/iAssureIT-training-1.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-		logo: "",    
-		h1Txt:
-		"<h1 class='leading-tight uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
-		bgImgCss:
-		"lazyload object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-40 text-center lg:text-left",
-		gridCss:
-		" pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
-		gridSubDivCss:
-		" md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 xxl:!w-full mx-auto mb-0 md:mb-10 pb-0 md:pb-5 md:py-10",
-		borderColor:
-		"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-		dash: "",
-			
-	};
+  const content_CET = {
+    id: "CET_Block",
+    bgImage:
+      "/images/specific/trainingAcademy/iAssureIT-training-17.webp",
+    // smallBGImage:
+    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
+    logo: "",
+    pageTitle: "Transform Your Skills with </br>Cutting-edge Technologies",
+    pageTitleCss: " pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
+    // h1Txt:
+    //   "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
+    para: "Stay ahead of the curve and master the latest technologies in Fullstack Development. Our comprehensive training program covers everything from ReactJS and NodeJS to advanced topics like Redux, MongoDB integration, and AWS integration. With flexible learning options and expert guidance from industry professionals, there's no limit to what you can achieve. Take the first step towards transforming your skills and shaping your future – enroll now!",
+    bgImgCss:
+      "lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+    logoCss: "lazyload justify-left align-left  mb-5 ",
+    // h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
+    paraCss:
+      " text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
+    gridCss:
+      "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+    gridSubDivCss:
+      " md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
+    image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
+    imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-10",
+    borderColor:
+      "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
+    dash: "",
+    modalId:"CetModal",  
+    modalDisplay:"true",
+    modalUrlName:"Explore Courses",
+    modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+    
+    };
 
-	const content_CET = {
-		id: "CET_Block",
-		bgImage:
-		"/images/specific/trainingAcademy/iAssureIT-training-17.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-		logo: "",
-		pageTitle: "Transform Your Skills with </br>Cutting-edge Technologies",
-		pageTitleCss: " pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
-		// h1Txt:
-		//   "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
-		para: "Stay ahead of the curve and master the latest technologies in Fullstack Development. Our comprehensive training program covers everything from ReactJS and NodeJS to advanced topics like Redux, MongoDB integration, and AWS integration. With flexible learning options and expert guidance from industry professionals, there's no limit to what you can achieve. Take the first step towards transforming your skills and shaping your future – enroll now!",
-		bgImgCss:
-		"lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		// h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
-		paraCss:
-		" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
-		gridCss:
-		"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
-		gridSubDivCss:
-		" md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 xxl:!w-full mx-auto mb-10 pb-5 md:py-10",
-		borderColor:
-		"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-		dash: "",
-		modalId:"CetModal",  
-		modalDisplay:"true",
-		modalUrlName:"Explore Courses",
-		modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
-		
-	};
+    const content_UnlockP = {
+      id: "UnlockP_Block",
+      bgImage:
+        "/images/specific/trainingAcademy/iAssureIT-training-12.webp",
+      // smallBGImage:
+      //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
+      logo: "",
+      pageTitle: "Unlock Your Potential </br>in Fullstack Development",
+      pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
+      para: "Are you ready to take your career to new heights? Our Fullstack ReactJS & NodeJS training program offers the perfect opportunity to unlock your potential and become a sought-after developer in the industry. With expert mentorship, hands-on projects, and job placement assistance, now is the time to invest in your future. Don't wait any longer – enroll today and pave the way for a successful career in Fullstack Development!",
+      bgImgCss:
+        "lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+      logoCss: "lazyload justify-left align-left  mb-5 ",
+      paraCss:
+        " text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
+      gridCss:
+        "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+      gridSubDivCss:
+        " md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
+      image: "/images/specific/trainingAcademy/iAssureIT-training-13.webp",
+      imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 md:mb-0 pb-5 md:pb-0 md:py-10",
+      borderColor:
+        "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
+      dash: "",
+      modalId:"UnlockPModal",  
+      modalDisplay:"true",
+      modalUrlName:"Enroll Now",
+      modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+      
+      };
 
-	const content_UnlockP = {
-		id: "UnlockP_Block",
-		bgImage:
-			"/images/specific/trainingAcademy/iAssureIT-training-12.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-		logo: "",
-		pageTitle: "Unlock Your Potential </br>in Fullstack Development",
-		pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
-		para: "Are you ready to take your career to new heights? Our Fullstack ReactJS & NodeJS training program offers the perfect opportunity to unlock your potential and become a sought-after developer in the industry. With expert mentorship, hands-on projects, and job placement assistance, now is the time to invest in your future. Don't wait any longer – enroll today and pave the way for a successful career in Fullstack Development!",
-		bgImgCss:
-			"lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		paraCss:
-			" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
-		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
-		gridSubDivCss:
-			" md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-13.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 xxl:!w-full mx-auto mb-10 md:mb-0 pb-5 md:pb-0 md:py-10",
-		borderColor:
-			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-		dash: "",
-		modalId:"UnlockPModal",  
-		modalDisplay:"true",
-		modalUrlName:"Enroll Now",
-		modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
-		
-	};
-
-	const content_JTCD = {
-		id: "JTCD_Block",
-		bgImage:
-		"/images/specific/trainingAcademy/iAssureIT-training-19.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-		logo: "",
-		pageTitle: "Join a Thriving Community </br>of Developers",
-		pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
-		para: "Join a vibrant community of like-minded individuals and embark on a journey of growth and discovery. Our training program not only equips you with technical skills but also provides networking opportunities, internships, and job placement assistance. Whether you're a beginner or an experienced developer, there's something for everyone here. Don't miss out on this chance to connect with industry professionals and elevate your career – sign up today!",
-		bgImgCss:
-		"lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		paraCss:
-		" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
-		gridCss:
-		"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
-		gridSubDivCss:
-		" md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-20.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 xxl:!w-full mx-auto mb-10 pb-5 md:py-10",
-		borderColor:
-		"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-		dash: "",
-		modalId:"UnlockPModal",  
-		modalDisplay:"true",
-		modalUrlName:"Join Our Community",
-		modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
-		
-	};
-		
-	const content_Block2 = {
-		id: "Banner_Block2",
-		paraTitle:
-		"At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
-		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-black",
-		pageTitle:
-			"<span class='font-extrabold'> Welcome to India's Premier Training Program in FullStack Development</span>",
-		pageTitleCss: " mb-10 md:mb-20 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-black w-full text-center BlockTitle ",
-		gridColCss:
-			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 sm:px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
-	
-		gridCol1Css: "  ",
-		gridClass:
-			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center ",
-		bannerClass:
-			"object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
-		imageCss:
-			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
-		imgTagcss: "mx-auto lazyload",
-	};
+      const content_JTCD = {
+        id: "JTCD_Block",
+        bgImage:
+          "/images/specific/trainingAcademy/iAssureIT-training-19.webp",
+        // smallBGImage:
+        //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
+        logo: "",
+        pageTitle: "Join a Thriving Community </br>of Developers",
+        pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
+        para: "Join a vibrant community of like-minded individuals and embark on a journey of growth and discovery. Our training program not only equips you with technical skills but also provides networking opportunities, internships, and job placement assistance. Whether you're a beginner or an experienced developer, there's something for everyone here. Don't miss out on this chance to connect with industry professionals and elevate your career – sign up today!",
+        bgImgCss:
+          "lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+        logoCss: "lazyload justify-left align-left  mb-5 ",
+        paraCss:
+          " text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
+        gridCss:
+          "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+        gridSubDivCss:
+          " md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
+        image: "/images/specific/trainingAcademy/iAssureIT-training-20.webp",
+        imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-10",
+        borderColor:
+          "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
+        dash: "",
+        modalId:"UnlockPModal",  
+        modalDisplay:"true",
+        modalUrlName:"Join Our Community",
+        modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+        
+        };
+          
+          const content_Block2 = {
+                id: "Banner_Block2",
+                paraTitle:
+                "At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
+              paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-black",
+              pageTitle:
+                "<span class='font-extrabold'> Welcome to India's Premier Training Program in FullStack Development</span>",
+              pageTitleCss: " mb-10 md:mb-20 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-black w-full text-center BlockTitle ",
+              gridColCss:
+                "my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 sm:px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
+          
+              gridCol1Css: "  ",
+              gridClass:
+                "grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center ",
+              bannerClass:
+                "object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+              image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
+              imageCss:
+                "mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
+              imgTagcss: "mx-auto lazyload",
+            };
 
 	const content_VisionBlock = {
 		id: "Vision_Block",
@@ -1099,7 +1098,7 @@ const HomePage = () => {
     titleClass: " text-center mx-auto  my-auto font-extrabold text-lg md:text-3xl xl:text-3xl  w-full md:w-5/6 xl:w-4/5 2xl:w-2/3  px-4 2xl:px-10 md:leading-loose",
     className: "h-auto w-full mx-auto",
     alt: "reserve",
-    bgImgCss: "bg-blue-600 py-3 md:py-10 mb-5 md:mb-20 2xl:py-20 bg-cover bg-no-repeat  bg-left-bottom lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
+    bgImgCss: "bg-blue-600 py-3 md:py-10 2xl:py-20 bg-cover bg-no-repeat  bg-left-bottom lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
     gridCss: "grid grid-cols-1 sm:grid-cols-1   lg:grid-cols-1 2xl:grid-cols-1 gap-x-10 h-full w-full content-center  place-content-center my-auto xl:py-10",
     gridCol1Class: "my-auto  sm:w-auto  text-white text-center  ",
     // para: "",
