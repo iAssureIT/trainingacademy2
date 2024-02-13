@@ -928,6 +928,7 @@ const HomePage = () => {
 	};
 
 	const content_Courses = {
+    id:"courses",
 		sectionCss: "md:my-5 lg:my-0 py-20 bg-offWhite",
 
 		blockTitle:
@@ -1024,6 +1025,7 @@ const HomePage = () => {
 
 	};
   const content_About = {
+    id:"about",
     sectionClass:
       "pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] px-2 md:px-5 lg:px-20 xl:px-32 2xl:px-32 xxl:!px-48",
     // sectionBgImg:
@@ -1144,6 +1146,7 @@ const HomePage = () => {
 	}
 	
     const content_Testimonials = {
+      id:"testimonials",
         sectionCss: "md:my-5 lg:my-0",
         blockTitle:
           " <span  class='uppercase font-extrabold leading-relaxed' >TESTIMONIALS</span>",

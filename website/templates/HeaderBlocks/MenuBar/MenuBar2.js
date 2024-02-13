@@ -349,7 +349,7 @@ function MenuBar2(props) {
 																?
 																<a href={data.link} className=" menuItemC mainMenuActive block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
 																:
-																<a href={data.link} className=" menuItemC block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent pointer-events-none" aria-current="page">{data.label}</a>
+																<a href={data.link} className=" menuItemC block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent " aria-current="page">{data.label}</a>
 
 														}
 													</li>

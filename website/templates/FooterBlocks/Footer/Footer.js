@@ -12,7 +12,7 @@ const Footer = (props) => {
   var largeImageURL = props?.inputData?.bgImage;
   var smallImageURL = props?.inputData?.smallBGImage;
   return (
-    <section>
+    <section id="footer">
       <div
         className={
           props?.inputData?.bannerClass
@@ -48,9 +48,10 @@ const Footer = (props) => {
                           <div className="mx-auto lg:mx-0">
                             <a
                               href={data.link}
-                              target="_blank"
-                              className=" hover:underline text-sm lg:text-sm xl:text-lg pointer-events-none"
+                              target="_self"
+                              className=" hover:underline text-sm lg:text-sm xl:text-lg "
                               aria-label="FooterIcon"
+                              
                             >
                               {props.inputData?.icon ? (
                                 <img
@@ -84,14 +85,14 @@ const Footer = (props) => {
                   </h2>
                 ) : null}
                 {props.inputData?.sitemapList?.length > 0 ? (
-                  <div className="flex flex-wrap text-light dark:text-light-400 font-normal text-sm ">
+                  <div className="flex flex-wrap text-light dark:text-light-400 font-normal text-sm poin">
                     {props.inputData?.sitemapList.map((data, index) => {
                       return (
                         <div key={index} className="mb-0 w-full mx-auto ">
                           <a
                             href={data.link}
-                            target="_blank"
-                            className="hover:underline text-lg md:text-sm lg:text-sm xl:text-base mb-10 font-bold capitalize pointer-events-none"
+                            target="_self"
+                            className="hover:underline text-lg md:text-sm lg:text-sm xl:text-base mb-10 font-bold capitalize "
                             aria-label="FooterIcon"
                           >
                             <span className="font-bold  mb-4">

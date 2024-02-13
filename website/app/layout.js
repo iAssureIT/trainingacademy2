@@ -26,7 +26,7 @@ const metadata = {
 };
 const menuItems = [
   { label: "HOME", link: "/" },
-  { label: "ABOUT ME", link: "/about-us" },
+  { label: "ABOUT ME", link: "#about" },
   // {
   //   label: "SERVICES",
   //   link: "/services",
@@ -237,9 +237,9 @@ const menuItems = [
   //     },
   //   ],
   // },
-  { label: "COURSES", link: "/courses" },
-  { label: "TESTIMONIALS", link: "/testimonials" },
-  { label: "CONTACT", link: "/contact-us" },
+  { label: "COURSES", link: "#courses" },
+  { label: "TESTIMONIALS", link: "#testimonials" },
+  { label: "CONTACT", link: "#footer" },
 ];
 
 const menuItemsAfterLogin = [
@@ -281,28 +281,29 @@ const content_Menubar = {
 };
 const footerMenuItems = [
   { label: "Home", link: "/" },
-  { label: "About Us", link: "/about-us" },
-  { label: "Courses", link: "/courses" },
-  { label: "Testimonials", link: "/testimonials" },
-  { label: "Contact Us", link: "/contact-us" },
+  { label: "About Us", link: "#about" },
+  { label: "Courses", link: "#courses" },
+  { label: "Testimonials", link: "#testimonials" },
+  { label: "Contact Us", link: "#footer" },
   // { label: "Career", link: "/career/career1" },
 ];
 const siteMapItems = [
-  {
-    label: "Advanced Skills and Beyond",
-    link: "/",   
-  },
+  
   {
     label: "Web Technologie Mastery",
-    link: "/",   
+    link: "#courses",   
   },
   {
     label: "ReactJS Framework and Beyond",
-    link: "/",    
+    link: "#courses",    
   },
   {
     label: "NodeJS and Database Development",
-    link: "/",    
+    link: "#courses",    
+  },
+  {
+    label: "Advanced Skills and Beyond",
+    link: "#courses",   
   },
 ];
 
