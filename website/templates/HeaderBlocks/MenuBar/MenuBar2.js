@@ -211,7 +211,7 @@ function MenuBar2(props) {
 							<ul className="px-1 py-3 hidden md:flex lg:flex xl:flex space-x-5 justify-end text-sm font-semibold ">
 								<li className="topHead text-white text-md font-normal ">
 									<i className="fa fa-phone mr-1 " aria-hidden="true"></i>
-									+91 8459748828
+									+91 9022426944
 								</li>
 								<li className="topHead text-white text-md font-normal ">
 									<i className="fa-regular fa-envelope mr-1"></i>
@@ -349,7 +349,7 @@ function MenuBar2(props) {
 																?
 																<a href={data.link} className=" menuItemC mainMenuActive block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
 																:
-																<a href={data.link} className=" menuItemC block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
+																<a href={data.link} className=" menuItemC block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent pointer-events-none" aria-current="page">{data.label}</a>
 
 														}
 													</li>

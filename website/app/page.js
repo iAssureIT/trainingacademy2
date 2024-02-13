@@ -1023,86 +1023,86 @@ const HomePage = () => {
 		modalBtnCss2: "mx-auto font-bold text-lg md:text-xl  p-3  2xl:px-2 text-center border w-full md:w-3/4  lg:w-3/4 xl:w-3/4 2xl:w-3/4 rounded btn bg-white text-darkGray mt-10 mb-10  md:mt-5 lg:mb-20 lg:mt-0 hover:bg-transparent hover:text-white cursor-pointer"
 
 	};
-	const content_About = {
-		sectionClass:
-		"pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] px-2 md:px-5 lg:px-32 2xl:px-48",
-		// sectionBgImg:
-		//   "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-3.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-3.webp",
+  const content_About = {
+    sectionClass:
+      "pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] px-2 md:px-5 lg:px-20 xl:px-32 2xl:px-32 xxl:!px-48",
+    // sectionBgImg:
+    //   "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-3.webp",
+    // smallBGImage:
+    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-3.webp",
 
-		pageTitle:
-		"<span class=' font-extrabold'>About Mr. Ashish Naik:</span>  ",
-		pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
-		blockSubTitle:
-		"<div class='px-3 md:px-20'> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</div> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
-		classForblockSubTitle:
-		"text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0",
-		bgImage:
-		"/images/specific/trainingAcademy/iAssureIT-training-14.webp",
-		bgImageCss: "  object-cover 2xl:-mt-10 w-3/4 h-full ",
-		bigImageAlt: "iAssureIT-infra",
-		gridCss: "grid grid-cols-1 lg:grid-cols-2 gap-7 md:gap-10 float-left px-3",
-		gridCol1Css: "order-last  w-full h-auto relative my-auto ",
-		repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 lg:my-5 2xl:my-5  border-b  border-black	leading-tight ",
-		imgCss:
-		"flex-none h-auto  w-12  items-start rounded mr-3 md:mr-10 object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
-		titleCss: " text-lg md:text-lg lg:text-[16px] 2xl:text-lg overflow-hidden mb-8 xl:mb-5",
-		desCss: "",
-		linkCss: "float-right px-4 text-skyBlue",
-		repeatedBlocks: [
-		{
-			imageSrc:
-			"/images/specific/Icons-1/1.webp",
-			title: "25 years of IT Industry experience, spanning across various domains and technologies.",
-		},
-		{
-			imageSrc:
-			"/images/specific/Icons-1/2.webp",
-			title: "Masters degree graduate from IIT Delhi, showcasing his dedication to excellence and continuous learning.",
-		},
-		{
-			imageSrc:
-			"/images/specific/Icons-1/3.webp",
-			title: "Extensive global experience, having worked in countries such as the US, Italy, Canada, UK, Switzerland, and Dubai.",
-		},
-		{
-			imageSrc:
-			"/images/specific/Icons-1/4.webp",
-			title: "Collaborated with over 12 Fortune-500 clients, delivering cutting-edge solutions and exceeding expectations.",
-		},
-		{
-			imageSrc:
-			"/images/specific/Icons-1/5.webp",
-			title: "Entrepreneurial spirit, with over 12 years of experience running successful ventures in the tech space.",
-		},
-		{
-			imageSrc:
-			"/images/specific/Icons-1/6.webp",
-			title: "Developed over 600 applications, demonstrating his proficiency in a wide array of technologies.",
-		},
-		{
-			imageSrc:
-			"/images/specific/Icons-1/7.webp",
-			title: "Expertise in more than 60 technologies, showcasing his versatility and adaptability in the ever-evolving tech landscape.",
-		},
-		],
-		// dash: "border-white mb-5 mt-5 md:mt-20 lg:mt-52 xl:mt-40 xxl:!mt-72",
-	};
+    pageTitle:
+      "<span class=' font-extrabold'>About Mr. Ashish Naik:</span>  ",
+    pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
+    blockSubTitle:
+      "<div class='px-3 md:px-20 lg:px-2 xl:px-20'> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</div> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
+    classForblockSubTitle:
+      "text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0",
+    bgImage:
+      "/images/specific/trainingAcademy/iAssureIT-training-14.webp",
+    bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto 2xl:-mt-32  xxl:!w-3/4 h-full ",
+    bigImageAlt: "iAssureIT-infra",
+    gridCss: "grid grid-cols-1 lg:grid-cols-2 float-left px-3",
+    gridCol1Css: "order-last  w-full h-auto relative my-auto ",
+    repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 lg:my-4 2xl:my-5  border-b  border-black	leading-tight ",
+    imgCss:
+      "flex-none h-auto  w-12  items-start rounded mr-3 md:mr-10 object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
+    titleCss: " text-lg md:text-lg lg:text-[14px] xl:text-[16px] 2xl:text-lg overflow-hidden mb-3 xl:mb-5",
+    desCss: "",
+    linkCss: "float-right px-4 text-skyBlue",
+    repeatedBlocks: [
+      {
+        imageSrc:
+          "/images/specific/Icons-1/1.webp",
+        title: "25 years of IT Industry experience, spanning across various domains and technologies.",
+      },
+      {
+        imageSrc:
+          "/images/specific/Icons-1/2.webp",
+        title: "Masters degree graduate from IIT Delhi, showcasing his dedication to excellence and continuous learning.",
+      },
+      {
+        imageSrc:
+          "/images/specific/Icons-1/3.webp",
+        title: "Extensive global experience, having worked in countries such as the US, Italy, Canada, UK, Switzerland, and Dubai.",
+      },
+      {
+        imageSrc:
+          "/images/specific/Icons-1/4.webp",
+        title: "Collaborated with over 12 Fortune-500 clients, delivering cutting-edge solutions and exceeding expectations.",
+      },
+      {
+        imageSrc:
+          "/images/specific/Icons-1/5.webp",
+        title: "Entrepreneurial spirit, with over 12 years of experience running successful ventures in the tech space.",
+      },
+      {
+        imageSrc:
+          "/images/specific/Icons-1/6.webp",
+        title: "Developed over 600 applications, demonstrating his proficiency in a wide array of technologies.",
+      },
+      {
+        imageSrc:
+          "/images/specific/Icons-1/7.webp",
+        title: "Expertise in more than 60 technologies, showcasing his versatility and adaptability in the ever-evolving tech landscape.",
+      },
+    ],
+    // dash: "border-white mb-5 mt-5 md:mt-20 lg:mt-52 xl:mt-40 xxl:!mt-72",
+  };
 	const content_SmallBanner2 = {
-		id: "mbSmallBanner",
-		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-21.webp",
-		smallBGImage: "/images/specific/trainingAcademy/iAssureIT-training-21.webp",
-		title: "UNLOCK YOUR POTENTIAL, TRANSFORM YOUR SKILLS, AND JOIN A THRIVING COMMUNITY OF DEVELOPERS. ENROLL NOW AND TAKE THE FIRST STEP TOWARDS A SUCCESSFUL CAREER IN FULLSTACK DEVELOPMENT!",
-		titleClass: " text-center mx-auto  my-auto font-extrabold text-lg md:text-3xl xl:text-3xl  w-full md:w-5/6 xl:w-4/5 2xl:w-2/3  px-4 2xl:px-10 md:leading-loose",
-		className: "h-auto w-full mx-auto",
-		alt: "reserve",
-		bgImgCss: "bg-blue-600 py-3 md:py-10 mb-5 md:mb-20 2xl:py-20 bg-cover bg-no-repeat  bg-left-bottom lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
-		gridCss: "grid grid-cols-1 sm:grid-cols-1   lg:grid-cols-1 2xl:grid-cols-1 gap-x-10 h-full w-full content-center  place-content-center my-auto xl:py-10",
-		gridCol1Class: "my-auto  sm:w-auto  text-white text-center  ",
-		// para: "",
-		// paraCss: "text-xs md:text-2xl xl:text-2xl text-light text-center "
-	}
+    id: "mbSmallBanner",
+    bgImage: "/images/specific/trainingAcademy/iAssureIT-training-21.webp",
+    smallBGImage: "/images/specific/trainingAcademy/iAssureIT-training-21.webp",
+    title: "UNLOCK YOUR POTENTIAL, TRANSFORM YOUR SKILLS, AND JOIN A THRIVING COMMUNITY OF DEVELOPERS. ENROLL NOW AND TAKE THE FIRST STEP TOWARDS A SUCCESSFUL CAREER IN FULLSTACK DEVELOPMENT!",
+    titleClass: " text-center mx-auto  my-auto font-extrabold text-lg md:text-3xl xl:text-3xl  w-full md:w-5/6 xl:w-4/5 2xl:w-2/3  px-4 2xl:px-10 md:leading-loose",
+    className: "h-auto w-full mx-auto",
+    alt: "reserve",
+    bgImgCss: "bg-blue-600 py-3 md:py-10 mb-5 md:mb-20 2xl:py-20 bg-cover bg-no-repeat  bg-left-bottom lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
+    gridCss: "grid grid-cols-1 sm:grid-cols-1   lg:grid-cols-1 2xl:grid-cols-1 gap-x-10 h-full w-full content-center  place-content-center my-auto xl:py-10",
+    gridCol1Class: "my-auto  sm:w-auto  text-white text-center  ",
+    // para: "",
+    // paraCss: "text-xs md:text-2xl xl:text-2xl text-light text-center "
+  }
 	
 	const accordionData={
 		accordianThemeColor:"bg-orangeColor",
@@ -1443,6 +1443,7 @@ const HomePage = () => {
 			/>  
 			
 			<BgImgLeftContentRtImg inputData={content_UnlockP} />
+
 
 			<LeftImgRightRepeatableBlk
 				inputData={content_About}

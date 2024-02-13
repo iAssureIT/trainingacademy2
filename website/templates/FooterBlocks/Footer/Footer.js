@@ -49,7 +49,7 @@ const Footer = (props) => {
                             <a
                               href={data.link}
                               target="_blank"
-                              className=" hover:underline text-sm lg:text-sm xl:text-lg"
+                              className=" hover:underline text-sm lg:text-sm xl:text-lg pointer-events-none"
                               aria-label="FooterIcon"
                             >
                               {props.inputData?.icon ? (
@@ -91,7 +91,7 @@ const Footer = (props) => {
                           <a
                             href={data.link}
                             target="_blank"
-                            className="hover:underline text-lg md:text-sm lg:text-sm xl:text-base mb-10 font-bold capitalize"
+                            className="hover:underline text-lg md:text-sm lg:text-sm xl:text-base mb-10 font-bold capitalize pointer-events-none"
                             aria-label="FooterIcon"
                           >
                             <span className="font-bold  mb-4">

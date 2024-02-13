@@ -330,7 +330,7 @@ const content_Footer = {
   addLine1: "# 1B, 2nd Floor, B3",
   addLine2: " Cerebrum IT Park Kalyani Nagar",
   addLine3: "Pune, Maharashtra 411014",
-  phone1: "+91 9579963857",
+  phone1: "+91 9022426944",
   email1: "info@iassureit.com",
   fbLink: "https://www.facebook.com/iAssureIT",
   linkedIn:
@@ -450,9 +450,9 @@ export default function RootLayout({ children }) {
 
         <div
           onClick={scrollToTop}
-          className=" fixed bottom-5 right-5 rounded-full border border-white hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-blue-900 shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
+          className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
         >
-          <i className="fa-solid fa-angles-up"></i>
+          <i className="fa-solid fa-angles-up text-white"></i>
         </div>
       </body>
     </html>
