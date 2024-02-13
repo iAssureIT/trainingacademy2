@@ -442,6 +442,7 @@ export default function RootLayout({ children }) {
         
       </head>
       <body className={" bg-white"}>
+        
         <MenuBar2 inputData={content_Menubar} />
 
         {children}

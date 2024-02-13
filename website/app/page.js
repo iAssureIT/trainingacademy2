@@ -1435,7 +1435,14 @@ const HomePage = () => {
 
 	return (
 		<main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
-
+      <div
+         
+          className=" fixed top-20 z-10 right-5 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
+        >
+          <i className="fa-solid fa-download text-white">
+            {/* <br/><span className="text-[5px]">BROCHURE</span> */}
+            </i>
+        </div>
 			<BgImgLeftContentRtImg inputData={content_Banner} />
 
 			<BgImgRightContent inputData={content_Block2} />
