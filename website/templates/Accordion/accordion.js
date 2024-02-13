@@ -20,15 +20,15 @@ const Accordion = ({ title, content, accordianThemeColor }) => {
         <div className="flex">
           {isOpen 
           ? 
-            <div className="items-center object-center w-20 px-8 py-10 text-3xl font-semibold text-white lg:py-6 place-content-center bg-Accordion" > <span>-</span></div>
+            <div className="items-center object-center w-20 px-8 py-10 text-3xl font-semibold text-white lg:py-4 place-content-center bg-Accordion" > <span>-</span></div>
           : 
-            <div className="items-center object-center w-20 py-10 text-3xl font-semibold text-white lg:py-6 place-content-center px-7 bg-Accordion"> <span>+</span></div>
+            <div className="items-center object-center w-20 px-8 py-10 text-3xl font-semibold text-white lg:py-4 place-content-center bg-Accordion"> <span>+</span></div>
           }
           <h2 className="py-4 pl-4 my-auto text-sm font-bold lg:text-xl">{title}</h2>
         </div>
         </div>
       {isOpen && 
-        <div className="py-6 pl-24 text-sm border lg:text-md bg-offWhite">
+        <div className="py-6 pl-24 text-sm border border-Accordion lg:text-md bg-offWhite">
           <span
             dangerouslySetInnerHTML={{
               __html: content,
