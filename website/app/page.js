@@ -59,7 +59,7 @@ const HomePage = () => {
     logoCss: "lazyload justify-left align-left  mb-5 ",
     // h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
     paraCss:
-      " text-white text-sm md:text-lg lg:text-2xl text-justify mt-5 ",
+      " text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
     gridCss:
       "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
     gridSubDivCss:
@@ -90,7 +90,7 @@ const HomePage = () => {
         "lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
       logoCss: "lazyload justify-left align-left  mb-5 ",
       paraCss:
-        " text-white text-sm md:text-lg lg:text-2xl text-justify mt-5 ",
+        " text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
       gridCss:
         "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
       gridSubDivCss:
@@ -121,7 +121,7 @@ const HomePage = () => {
           "lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         logoCss: "lazyload justify-left align-left  mb-5 ",
         paraCss:
-          " text-white text-sm md:text-lg lg:text-2xl text-justify mt-5 ",
+          " text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
         gridCss:
           "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
         gridSubDivCss:
@@ -142,16 +142,16 @@ const HomePage = () => {
                 id: "Banner_Block2",
                 paraTitle:
                 "At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
-              paraTitleClass: "subTitle text-justify font-normal text-black",
+              paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-black",
               pageTitle:
                 "<span class='font-extrabold'> Welcome to India's Premier Training Program in FullStack Development</span>",
               pageTitleCss: " mb-10 md:mb-20 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl text-black w-full text-center BlockTitle ",
               gridColCss:
-                "my-auto mx-auto text-white content-center  place-content-center  justify-center py-10 px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
+                "my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 sm:px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
           
               gridCol1Css: "  ",
               gridClass:
-                "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-content-center md:grid-cols-2  lg:h-full   xl:h-full h-full content-center ",
+                "grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center ",
               bannerClass:
                 "object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
               image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
@@ -164,21 +164,21 @@ const HomePage = () => {
             id: "Vision_Block",
             paraTitle:
               "Driven by a vision to propel India to new heights in the IT industry, Ashish is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.<br/><span class=''>Join Ashish Naik and embark on a transformative journey in FullStack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient FullStack developer ready to tackle the challenges of tomorrow's tech world.</span>",
-            paraTitleClass: "subTitle text-justify font-normal text-white",
+            paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-white",
             bgImage: "/images/specific/trainingAcademy/iAssureIT-training-15.webp",
             // smallBGImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
             bgImgCss: "lazyload",
             pageTitle:
               "<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
-            pageTitleCss: "  mb-10 md:mb-20 text-white w-full text-center BlockTitle",
+            pageTitleCss: " mb-5 sm:mb-10 md:mb-20 text-white w-full text-center BlockTitle",
             gridColCss:
-              "my-auto mx-auto text-white content-center  place-content-center  justify-center py-10 px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
+              "my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 sm:px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
         
             gridCol1Css: "  ",
             gridClass:
-              "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-content-center md:grid-cols-2  lg:h-full   xl:h-full h-full content-center ",
+              "grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center ",
             bannerClass:
-              "object-fit py-10 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+              "object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
             image: "/images/specific/trainingAcademy/iAssureIT-training-16.webp",
             imageCss:
               "mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
