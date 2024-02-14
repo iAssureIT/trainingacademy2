@@ -87,7 +87,7 @@ const landingPageModal = (props) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        var adminEmail = "iassureitmail@gmail.com";
+        var adminEmail = process.env.TRAINING_EMAIL
         if (validateForm()) {
             setSubmitted(true);
 
@@ -175,7 +175,7 @@ const landingPageModal = (props) => {
                         .then((res) => {
                             if (res.status === 200) {
                                 Swal.fire({
-                                    html: "<span className='mt-5 p-5'><span>Thank you for contacting us.<span></br><span>We will get back to you shortly.</span></span>",
+                                    html: "<span className='p-5 mt-5'><span>Thank you for contacting us.<span></br><span>We will get back to you shortly.</span></span>",
                                     showConfirmButton: true,
                                     confirmButtonColor: "#376bff"
                                 });
@@ -211,11 +211,11 @@ const landingPageModal = (props) => {
     };
     return (
         <div id={props.modalId} tabIndex="-1" aria-hidden="true" className="block overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div className="relative p-4 w-full max-w-md max-h-full mx-auto my-auto">
+            <div className="relative w-full max-w-md max-h-full p-4 mx-auto my-auto">
 
                 <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
 
-                    <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <div className="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                             Connect with us
                         </h3>
@@ -230,16 +230,16 @@ const landingPageModal = (props) => {
                     <div className="p-4 md:p-5">
                         <form className="space-y-4" action="#">
                             <div>
-                                <label for="fullName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name <span className="text-red-600 my-auto">*</span></label>
+                                <label for="fullName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name <span className="my-auto text-red-600">*</span></label>
                                 <input type="text" name="fullName" id="fullName" onChange={handleChange}
                                     value={fields.fullName} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Your Name" />
-                                {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
+                                {errors.fullName && <p className="mt-1 text-xs text-red-500">{errors.fullName}</p>}
                             </div>
                             <div>
-                                <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email <span className="text-red-600 my-auto">*</span></label>
+                                <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email <span className="my-auto text-red-600">*</span></label>
                                 <input type="email" name="email" id="email" onChange={handleChange}
                                     value={fields.email} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="example@email.com" />
-                                {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+                                {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email}</p>}
                             </div>
                             <div className='grid grid-cols-2 gap-3'><div>
                                 <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Number</label>
