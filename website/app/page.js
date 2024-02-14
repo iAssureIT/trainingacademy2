@@ -1448,8 +1448,8 @@ const HomePage = () => {
         classForCardImage: "w-full rounded-full pb-5 object-cover",
         bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
         cardTitle_2:"<div class='text-center text-xl'><h5 class='font-extrabold '>Total Investment</h5>"+
-        "<br /> <p class='flex font-semibold text-xl'>Regular Price for all 4 Courses    : <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></p>"+
-        "<br /> <p class='flex font-semibold text-xl'>Discounted Price for all 4 Courses : <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,00,000</span></p>"+
+        "<br /> <p class='lg:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses    :<span class='flex'> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></span></p>"+
+        "<br /> <p class='lg:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses :<span class='flex'> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,00,000</span></span></p>"+
         "<br /><p class='text-2xl font-bold text-lightGreen'>Discount of 45% discount</p></div>",
         cardsArray: [
             {

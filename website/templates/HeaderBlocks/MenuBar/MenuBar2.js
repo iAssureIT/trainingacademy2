@@ -172,10 +172,10 @@ function MenuBar2(props) {
 			});
 			if (shouldAddClass) {
 				// Change to the image source you want when scrolling down
-				imageElement.src = "/images/specific/iAssureIT_Logo/iAssureIT_Logo.png";
+				imageElement.src = "/images/specific/trainingAcademy/LogoBlue.webp";
 			} else {
 				// Change to the image source you want when scrolling up
-				imageElement.src = "/images/specific/iAssureIT_Logo/iAssureIT_White_Logo.webp";
+				imageElement.src = "/images/specific/trainingAcademy/LogoBlue.webp";
 			}
 			if (shouldAddClass) {
 				nav1.classList.add("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
@@ -189,8 +189,8 @@ function MenuBar2(props) {
 
 	return (
 		<>
-			<div id={"Menubar"} ref={menuRef} className=" fixed z-10 w-full ">
-				<nav className="navBar1 bg-transparent border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
+			<div id={"Menubar"} ref={menuRef} className="fixed z-10 w-full ">
+				<nav className="bg-transparent border-gray-200 navBar1 dark:bg-gray-900 dark:border-gray-700 ">
 					<div className={props?.inputData?.navCss ? props?.inputData?.navCss : "max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"}>
 						<a className={props?.inputData?.classForLogoLink} href="/">
 							<img
@@ -201,27 +201,27 @@ function MenuBar2(props) {
 
 							/>
 						</a>
-						<button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+						<button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button" className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
 							<span className="sr-only">Open main menu</span>
 							<svg className="w-5 h-5 mt-[6px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
 								<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
 							</svg>
 						</button>
-						<div className="lg:grid lg:grid-cols-1 w-full md:w-auto">
-							<ul className="px-1 py-3 hidden md:flex lg:flex xl:flex space-x-5 justify-end text-sm font-semibold ">
-								<li className="topHead text-white text-md font-normal ">
-									<i className="fa fa-phone mr-1 " aria-hidden="true"></i>
+						<div className="w-full lg:grid lg:grid-cols-1 md:w-auto">
+							<ul className="justify-end hidden px-1 py-3 space-x-5 text-sm font-semibold md:flex lg:flex xl:flex ">
+								<li className="font-normal text-white topHead text-md ">
+									<i className="mr-1 fa fa-phone " aria-hidden="true"></i>
 									+91 9022426944
 								</li>
-								<li className="topHead text-white text-md font-normal ">
-									<i className="fa-regular fa-envelope mr-1"></i>
+								<li className="font-normal text-white topHead text-md ">
+									<i className="mr-1 fa-regular fa-envelope"></i>
 									<a href="https://mail.google.com/">
 									training@iassureit.com
 									</a>
 								</li>
 							</ul>
 							<div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-								<ul className="flex flex-col font-medium md:py-4 md:p-0 mt-4 border border-gray-100 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-black md:text-white dark:bg-gray-800 bg-white md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
+								<ul className="flex flex-col mt-4 font-medium text-black bg-white border border-gray-100 md:py-4 md:p-0 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-white dark:bg-gray-800 md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
 
 									{
 										props.inputData.menuItemsList.map((data, index) => {
@@ -235,14 +235,14 @@ function MenuBar2(props) {
 														{
 															currentLink == data.link
 																?
-																<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="mainMenuActive  relative flex items-center justify-between w-full py-2 pl-3 pr-4 text-sm md:text-lg font-bold text-gray-700 md:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+																<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="relative flex items-center justify-between w-full py-2 pl-3 pr-4 text-sm font-bold text-gray-700 border-b border-gray-100 mainMenuActive md:text-lg md:text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
 																	{data.label}
 																	<svg className="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 																		<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
 																	</svg>
 																</button>
 																:
-																<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex relative items-center justify-between w-full py-2 pl-3 pr-4 text-sm md:text-lg font-bold text-gray-700 md:text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+																<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="relative flex items-center justify-between w-full py-2 pl-3 pr-4 text-sm font-bold text-gray-700 border-b border-gray-100 md:text-lg md:text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
 																	{data.label}
 																	<svg className="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 																		<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
@@ -268,7 +268,7 @@ function MenuBar2(props) {
 
 																		<li key={index} className="w-full sm:w-32 md:w-full lg:w-32" >
 																			<button id={val.id} data-parent={val.id} data-dropdown-placement="right-start" type="button" className=" flex flex-row lg:text-[14px] w-full md:w-full lg:w-80 2xl:w-[26rem] md:my-2 text-left font-bold text-sm py-2 items-center justify-between md:justify-start px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white doubleDropdownButton">
-																				<div data-parent={val.id} className=" bg-gray-200 rounded mr-4">
+																				<div data-parent={val.id} className="mr-4 bg-gray-200 rounded ">
 																					<img id={'menu-img-' + val.id} data-parent={val.id} src={val.img} className='menu-img' />
 																				</div>
 																				<div data-parent={val.id} >{val.submenutitle}</div>
@@ -295,14 +295,14 @@ function MenuBar2(props) {
 
 																											/>
 																										</div>
-																										<div className='text-left my-auto w-full'>
+																										<div className='w-full my-auto text-left'>
 																											<div servicepage_id={val.id} className={props?.inputData?.titleCss ? props?.inputData?.titleCss : "font-bold text-base sm:text-lg mb-2"}>
 																												<a href={data?.link} className="" > {data?.title}</a>
 																											</div>
-																											<ul className=" w-full md:grid md:grid-cols-2 list-disc hidden md:block ">{
+																											<ul className="hidden w-full list-disc md:grid md:grid-cols-2 md:block">{
 																												data?.subTypes?.map((subType, index) => {
 																													return (
-																														<li key={index} className=" w-full mx-5">{subType}</li>
+																														<li key={index} className="w-full mx-5 ">{subType}</li>
 																													)
 																												})
 																											}</ul>
@@ -321,7 +321,7 @@ function MenuBar2(props) {
 																						})}
 
 																					</ul>
-																					<div className="w-full h-auto relative my-auto hidden lg:block">
+																					<div className="relative hidden w-full h-auto my-auto lg:block">
 																						<img
 																							src={val?.bigImg}
 																							alt="Big Image"
@@ -347,9 +347,9 @@ function MenuBar2(props) {
 
 															currentLink == data.link
 																?
-																<a href={data.link} className=" menuItemC mainMenuActive block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
+																<a href={data.link} className="block py-2 pl-3 pr-4 text-sm font-bold text-black rounded menuItemC mainMenuActive md:text-white md:text-lg md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
 																:
-																<a href={data.link} className=" menuItemC block py-2 pl-3 pr-4 text-black md:text-white text-sm md:text-lg rounded md:bg-transparent font-bold md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent " aria-current="page">{data.label}</a>
+																<a href={data.link} className="block py-2 pl-3 pr-4 text-sm font-bold text-black rounded menuItemC md:text-white md:text-lg md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
 
 														}
 													</li>

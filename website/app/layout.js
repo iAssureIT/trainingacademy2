@@ -254,8 +254,8 @@ const menuItemsAfterLogin = [
 const content_Menubar = {
   menuItemsList: menuItems,
   menuItemsAfterLoginList: menuItemsAfterLogin,
-  logo: "/images/specific/iAssureIT_Logo/iAssureIT_White_Logo.webp",
-  smallLogo: "/images/specific/iAssureIT_Logo/iAssureIT_White_Logo.webp",
+  logo: "/images/specific/trainingAcademy/LogoBlue.webp",
+  smallLogo: "/images/specific/trainingAcademy/LogoBlue.webp",
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-4 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/2 lg:w-auto",
@@ -281,7 +281,7 @@ const content_Menubar = {
 };
 const footerMenuItems = [
   { label: "Home", link: "/" },
-  { label: "About Us", link: "#about" },
+  { label: "About Me", link: "#about" },
   { label: "Courses", link: "#courses" },
   { label: "Testimonials", link: "#testimonials" },
   { label: "Contact Us", link: "#footer" },
@@ -290,7 +290,7 @@ const footerMenuItems = [
 const siteMapItems = [
   
   {
-    label: "Web Technologie Mastery",
+    label: "Web Technologies Mastery",
     link: "#courses",   
   },
   {
@@ -315,8 +315,8 @@ const content_Footer = {
   // bgImage: "/images/specific/Footer/Footer-1.webp",
   // smallBGImage: "/images/specific/Footer/Responsive-Footer-Design.webp",
   bgColor: "bg-ceyone_offWhite",
-  logo: "/images/specific/iAssureIT_Logo/iAssureIT_White_Logo.webp",
-  smallLogo: "/images/specific/iAssureIT_Logo/iAssureIT_White_Logo.webp",
+  logo: "/images/specific/trainingAcademy/whiteLogo.jpeg",
+  smallLogo: "/images/specific/trainingAcademy/whiteLogo.jpeg",
   logoCss: "w-1/2 md:w-1/3 xl:w-2/3  lg:mx-auto   ",
   // icon: "/images/specific/Footer/Footer_Icon.webp",
   titleCss:"text-orangeColor",
@@ -454,7 +454,7 @@ export default function RootLayout({ children }) {
           onClick={scrollToTop}
           className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
         >
-          <i className="fa-solid fa-angles-up text-white"></i>
+          <i className="text-white fa-solid fa-angles-up"></i>
         </div>
       </body>
     </html>
