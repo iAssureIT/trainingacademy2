@@ -124,7 +124,7 @@ const Dashboard = require("./api/admin2.0/dashboard/routes.js");
 const ReportsRoute = require("./api/admin2.0/reports/routes");
 const CaseStudyRoutes = require("./api/admin2.0/caseStudyManagement/routes.js");
 const JobRoutes = require("./api/admin2.0/jobManagement/routes.js");
-const landingPageRoutes = require("./api/admin2.0/leadManagement/routes.js");
+const studEnrollRoutes = require("./api/admin2.0/studEnrollManagement/routes.js");
 // //Payment/Wallet routes
 const PaymentRoutes = require("./api/admin2.0/payment/routes.js");
 const WalletRoutes = require("./api/admin2.0/mywallet/routes.js");
@@ -171,22 +171,15 @@ app.use("/api/dashboard", Dashboard);
 app.use("/api/reports", ReportsRoute);
 app.use("/api/jobrun", JobRun);
 app.use("/api/seodetails", seodetails); //for meta tags
-app.use("/api/casestudy",CaseStudyRoutes);
-app.use("/api/jobs",JobRoutes)
-app.use("/api/contact-page-routes",landingPageRoutes)
+app.use("/api/casestudy", CaseStudyRoutes);
+app.use("/api/jobs", JobRoutes)
+app.use("/api/stud-enroll-routes", studEnrollRoutes)
 
 app.use("/api/website-data", WebsiteData);
 // //================Payment/Wallet===========
 app.use("/api/payment", PaymentRoutes);
 app.use("/api/wallet", WalletRoutes);
 
-// app.use("/api/sections", SectionRoutes);
-// app.use("/api/unitofmeasurmentmaster",unitOfMeasurment);
-// app.use("/api/blocktemplate",addNewBlockTempMasterRoutes);
-// app.use('/api/blocktemplatebyblocktype',addNewBlockTempMasterRoutes);
-// app.use("/api/masternotifications",notificationRoutes);
-// app.use("/api/preference",preferenceurl);
-// app.use("/api/notifications",notificationRoutes);
 app.use(addNewBlockTempMasterRoutes);
 app.use(pageRoutes);
 app.use(blockRoutes);

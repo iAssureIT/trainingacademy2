@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from 'next/image'
 import Link from 'next/link';
-import LandingPageModal from '@/components/Modal/landingPageModal';
+import StudEnrollModal from '@/components/Modal/StudEnrollModal';
 
 const BgImgLeftContentRtImg = (props) => {
     var largeImageURL = props?.inputData?.bgImage;
@@ -28,7 +28,7 @@ const BgImgLeftContentRtImg = (props) => {
     };
     return (
         <div id={props?.inputData?.id} >
-            {isModalOpen && <LandingPageModal modalId={props?.inputData?.modalId ? props?.inputData?.modalId : "loginModal"} />}
+            {isModalOpen && <StudEnrollModal modalId={props?.inputData?.modalId ? props?.inputData?.modalId : "enrollModal"} />}
             {/* <div className={props?.inputData?.bgImgCss ? props?.inputData?.bgImgCss : "relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center "} style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}> */}
             <div
                 className={

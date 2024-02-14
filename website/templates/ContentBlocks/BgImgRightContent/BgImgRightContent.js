@@ -10,7 +10,7 @@
 import React, { useState, useEffect } from "react";
 import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
 import Link from 'next/link';
-import LandingPageModal from '@/components/Modal/landingPageModal';
+import StudEnrollModal from '@/components/Modal/StudEnrollModal';
 
 const BgImgRightContent = (props) => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -19,7 +19,7 @@ const BgImgRightContent = (props) => {
     const data = props?.inputData?.pageTitle;
     return (
         <div className="" id={props?.inputData?.id}>
-            {isModalOpen && <LandingPageModal modalId="landingPageModal"/>}
+            {isModalOpen && <StudEnrollModal modalId="StudEnrollModal"/>}
             {!props?.inputData?.singlebgImage ? (
                 // <div className={props.inputData?.bannerClass ? props.inputData?.bannerClass : "relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center lg:h-72 xl:h-96 h-96 "} style={{ backgroundImage: `url(${imageURL})`,backgroundSize:"100% 100%"}}>
                 <div

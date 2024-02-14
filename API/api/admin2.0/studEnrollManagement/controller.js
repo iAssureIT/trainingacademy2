@@ -1,16 +1,14 @@
 const mongoose = require("mongoose");
 const empModel = require('./model.js');
 
-exports.insertEmpDetails = (req, res, next) => {
+exports.insertStudentDetails = (req, res, next) => {
 
 	var EmpDetails = new empModel({
 		_id: new mongoose.Types.ObjectId(),
 		fullName: req.body.fullName,
-		companyName: req.body.companyName,
 		email: req.body.email,
 		phone: req.body.phone,
 		city: req.body.city,
-		comments: req.body.comments,
 		createdAt: new Date(),
 	});
 

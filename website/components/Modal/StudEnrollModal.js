@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-const landingPageModal = (props) => {
+const StudEnrollModal = (props) => {
     const [errors, setErrors] = useState({});
     const [btnLoading, setBtnLoading] = useState("false");
     const [submitted, setSubmitted] = useState(false);
@@ -17,7 +17,6 @@ const landingPageModal = (props) => {
         email: "",
         phone: "",
         city: "",
-        companyName: "",
     });
     const handleChange = (event) => {
         setFields((prevFields) => ({
@@ -62,19 +61,19 @@ const landingPageModal = (props) => {
             errors["email"] = "Email contains invalid characters.";
             formIsValid = false;
         }
-        if (!fields["companyName"]) {
+        if (!fields["phone"].match(phoneno)) {
+            errors["phone"] = "Please enter valid Mobile Number";
             formIsValid = false;
-            errors["companyName"] = "This field is required.";
         }
-        if (!fields["comments"]) {
-            formIsValid = false;
-            errors["comments"] = "This field is required.";
-        }
-        // if (!fields["mobile"].match(phoneno)) {
-        //     document.getElementById("mobileError1").innerHTML =
-        //         "Please enter valid Mobile Number";
+        // if (!fields["companyName"]) {
         //     formIsValid = false;
+        //     errors["companyName"] = "This field is required.";
         // }
+        // if (!fields["comments"]) {
+        //     formIsValid = false;
+        //     errors["comments"] = "This field is required.";
+        // }
+        
 
         setErrors(errors);
 
@@ -94,27 +93,24 @@ const landingPageModal = (props) => {
             var formValues = {
                 fullName: fields.fullName,
                 email: fields.email,
-                phone: fields.phone,
-                companyName: fields.companyName,
+                phone: fields.phone,                
                 city: fields.city,
-                comments: fields.comments,
+               
             };
 
 
             axios
-                .post("/api/contact-page-routes/post", formValues)
+                .post("/api/stud-enroll-routes/post", formValues)
                 .then((data) => {
                     setSubmitted(false);
                     const formValues1 = {
                         toEmail: fields.email,
-                        subject: "Thank You for Your Inquiry - iAssureIT",
-                        text: fields.comments,
+                        subject: "Thank You for Your Enrollment in Training Academy",
+                        text: "",
                         mail:
                             "Dear " +
                             fields.fullName +
                             ", <br/><br/>" +
-                            "Thank you for taking the time to fill out the contact form on our iAssure IT International Technologies website. We appreciate your interest in our services, and we are thrilled to have the opportunity to connect with you. <br/> <br/> " +
-                            "Our team is currently reviewing the information you provided, and we will get back to you as soon as possible to discuss your specific needs and how we can assist you. Your inquiry is important to us, and we are committed to delivering the highest level of service to meet your expectations. <br/><br/> " +
                             "In the meantime, feel free to explore our website to learn more about our solutions and the range of services we offer. Thank you once again for considering iAssure IT as your trusted technology partner. We look forward to the opportunity to work together and address your IT needs." +
                             "<br/><br/> Best Regards, <br/> Team iAssure IT International Technologies.",
                     };
@@ -123,20 +119,18 @@ const landingPageModal = (props) => {
                         .then((res) => {
                             if (res.status === 200) {
                                 Swal.fire({
-                                    html: "<span className='mt-5'><span>Thank you for contacting us.<span></br><span>We will get back to you shortly.</span></span>",
+                                    html: "<span className='mt-5'><span>Thanks for Enrolement<span></span>",
                                     showConfirmButton: true,
                                     confirmButtonColor: "#376bff"
                                 });
-                                setTimeout(() => {
-                                    window.location.href = "https://calendly.com/iassureit/discovery-call?back=1&month=2024-01";
-                                }, 2000);
+                                // setTimeout(() => {
+                                //     window.location.href = "https://calendly.com/iassureit/discovery-call?back=1&month=2024-01";
+                                // }, 2000);
                                 setBtnLoading(false)
                                 setFields({
                                     fullName: "",
                                     email: "",
                                     phone: "",
-                                    comments: "",
-                                    companyName: "",
                                     city: "",
                                 });
                             }
@@ -146,51 +140,43 @@ const landingPageModal = (props) => {
                         });
                     const formValues2 = {
                         toEmail: adminEmail,
-                        subject: "New Contact Form Submission on iAssureIT Website",
+                        subject: "New Enrollment from  Training Academy  Website",
                         text: "",
                         mail:
                             "Dear Admin, <br/>" +
-                            "This is to inform you that we have received a new contact form submission on the iAssure IT website’s Scalable Applications page. Below are the details of the prospect:<br/> <br/> " +
+                            "This is to inform you that we have received a new Enrollment form submission on the Training Academy  website. Below are the details of the student:<br/> <br/> " +
                             "<b>Full Name: </b>" +
                             fields.fullName +
                             "<br/>" +
-                            "<b>Business Name: </b>" +
-                            fields.companyName +
-                            "<br/>" +
-                            "<b>Business Email Address: </b>" +
+                            "<b>Email Address: </b>" +
                             fields.email +
                             "<br/>" +
                             "<b>Phone Number: </b>" +
                             fields.phone +
-                            "<br/>" +
-                            "<b>Message/Inquiry: </b>" +
-                            fields.comments +
-                            "<br/>" +
+                            "<br/>" +                            
                             "<b>City: </b>" +
                             fields.city +
-                            "<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry. It's crucial to provide them with the information they need and showcase our commitment to excellent customer service.",
+                            "<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
                     };
                     axios
                         .post("/send-email", formValues2)
                         .then((res) => {
                             if (res.status === 200) {
-                                Swal.fire({
-                                    html: "<span className='p-5 mt-5'><span>Thank you for contacting us.<span></br><span>We will get back to you shortly.</span></span>",
-                                    showConfirmButton: true,
-                                    confirmButtonColor: "#376bff"
-                                });
-                                setTimeout(() => {
-                                    window.location.href = "https://calendly.com/iassureit/discovery-call?back=1&month=2024-01";
-                                }, 2000);
+                                // Swal.fire({
+                                //     html: "<span className='p-5 mt-5'><span>Thank you for contacting us.<span></br><span>We will get back to you shortly.</span></span>",
+                                //     showConfirmButton: true,
+                                //     confirmButtonColor: "#376bff"
+                                // });
+                                // setTimeout(() => {
+                                //     window.location.href = "https://calendly.com/iassureit/discovery-call?back=1&month=2024-01";
+                                // }, 2000);
 
                                 setBtnLoading(false)
                                 setFields({
                                     fullName: "",
                                     email: "",
                                     phone: "",
-                                    comments: "",
-                                    companyName: "",
-                                    city: "",
+                                     city: "",
                                 });
                             }
                         })
@@ -206,6 +192,7 @@ const landingPageModal = (props) => {
                     );
                 });
         } else {
+            setBtnLoading(false)
             // Swal.fire("Validation Issue", "Please correct the errors in the form fields.", "error");
         }
     };
@@ -242,9 +229,10 @@ const landingPageModal = (props) => {
                                 {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email}</p>}
                             </div>
                             <div className='grid grid-cols-2 gap-3'><div>
-                                <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Number</label>
+                                <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Number <span className="my-auto text-red-600">*</span></label>
                                 <input type="number" name="phone" id="phone" onChange={handleChange}
                                     value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
+                                {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
                             </div>
                                 <div>
                                     <label for="city" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">City</label>
@@ -271,4 +259,4 @@ const landingPageModal = (props) => {
 
     )
 }
-export default landingPageModal;
+export default StudEnrollModal;
