@@ -254,8 +254,8 @@ const menuItemsAfterLogin = [
 const content_Menubar = {
   menuItemsList: menuItems,
   menuItemsAfterLoginList: menuItemsAfterLogin,
-  logo: "/images/specific/trainingAcademy/LogoBlue.webp",
-  smallLogo: "/images/specific/trainingAcademy/LogoBlue.webp",
+  logo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.webp",
+  smallLogo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.webp",
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-4 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/2 lg:w-auto",
@@ -315,8 +315,8 @@ const content_Footer = {
   // bgImage: "/images/specific/Footer/Footer-1.webp",
   // smallBGImage: "/images/specific/Footer/Responsive-Footer-Design.webp",
   bgColor: "bg-ceyone_offWhite",
-  logo: "/images/specific/trainingAcademy/whiteLogo.jpeg",
-  smallLogo: "/images/specific/trainingAcademy/whiteLogo.jpeg",
+  logo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.jpeg",
+  smallLogo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.jpeg",
   logoCss: "w-1/2 md:w-1/3 xl:w-2/3  lg:mx-auto   ",
   // icon: "/images/specific/Footer/Footer_Icon.webp",
   titleCss:"text-orangeColor",
