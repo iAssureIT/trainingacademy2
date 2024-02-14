@@ -1141,7 +1141,7 @@ const HomePage = () => {
 				title:"10. Are there any prerequisites for enrolling in specific courses?",
 				content:"Prerequisites vary by course, but many of our programs are designed to accommodate learners with diverse backgrounds and skill sets."},
 		],
-		titleDescription_2:"Have more questions* Feel free to reach out to us! We're here to help you embark on your journey to becoming a successful Fullstack Developer."
+		titleDescription_2:"Have more questions? Feel free to reach out to us! We're here to help you embark on your journey to becoming a successful Fullstack Developer."
 	}
 	
     const content_Testimonials = {
@@ -1170,13 +1170,13 @@ const HomePage = () => {
 		testimonial:true,
 		cardsArray: [
             {
-				profileImage:"/images/specific/testimonials/Akshay_Madanepatil.jpg",
+				profileImage:"/images/specific/testimonials/Akshay_Madanepatil.JPG",
 				designation:"Student",
                 // cardImage: "",
                 altImage: "imageDescription",
                 // cardTitle: "Akshay Madanepatil",
 				name: "Akshay Madanepatil",
-                classForContent:" mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:" mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 content: `<p>I'm thrilled to share my positive feedback on the training program, and I must say it has been an enriching experience. The incorporation of a "learn with fun" approach made the sessions engaging, ensuring a positive and enjoyable learning environment. </p>`+
                 "<br /><p>What stood out for me was the program's problem-oriented methodology, allowing us to practically face challenges and fostering critical thinking for effective solution-building. This unique approach significantly contributed to enhancing my logic and problem-solving skills. The emphasis on concept clarity has been instrumental in enhancing my understanding. </p>"+
                 "<br /><p>The unique, multidirectional and assignment oriented focus has made the training exceptionally practical and relevant. Overall, I highly appreciate the program's quality and effectiveness. I feel more confident and equipped with new skills, thanks to this impactful training.</p>",
@@ -1186,7 +1186,7 @@ const HomePage = () => {
 				profileImage:"/images/specific/testimonials/Siddhant_Kakade.jpeg",
                 // cardImage: "",
                 altImage: "imageDescription",
-                classForContent:" mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:" mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Siddhant Kakade",
 				name:"Siddhant Kakade",
                 content:`<p>I am writing to provide feedback on the training program conducted by Mr. Ashish Naik over a period of three months. The experience was truly remarkable, and I would like to highlight some key features that made it exceptional.</p>`+
@@ -1211,7 +1211,7 @@ const HomePage = () => {
 				profileImage:"/images/generic/userProfile.webp",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Rutika Bankar",
 				name:"Rutika Bankar",
                 content:`<p>The Training Program has exceeded my expectations in every way. From the comprehensive curriculum to the exceptional instructor and supportive learning environment, this program has truly empowered me with the skills and confidence to excel in this field. One of the most impressive aspects of the program is its well-structured curriculum, which covers a wide range of topics.</p>`+
@@ -1224,7 +1224,7 @@ const HomePage = () => {
 				profileImage:"/images/specific/testimonials/Ashwini_Kori.jpeg",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Ashwini Kori",
 				name:"Ashwini Kori",
                 content:`<p>The training program is particularly good and valuable for us as we must keep ourselves updated about newer technologies in the field. It strengthened my technical skills and proved to be a great learning experience, especially with the practical deigning and planning and learn with fun sessions.</p>`+
@@ -1241,7 +1241,7 @@ const HomePage = () => {
 				profileImage:"/images/generic/userProfile.webp",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Shubham Ankushe",
 				name:"Shubham Ankushe",
                 content:`<p>I am absolutely delighted to express my profound gratitude for the transformative three-month training program conducted by Mr. Ashish Naik. The exceptional mastery he exhibited in the Full Stack Development enriched our learning experience with invaluable insights. From day one, Mr. Naik's engaging training style not only captivated our attention but also sparked an energetic and highly participative atmosphere. What truly sets his program apart is the innovative incorporation of the Scientific Method, a rarity in India.</p>`+
@@ -1253,7 +1253,7 @@ const HomePage = () => {
 				profileImage:"/images/specific/testimonials/Ankit_Kumar_Rai.jpg",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                                 // cardTitle:"Ankit Kumar Rai",
 				name:"Ankit Kumar Rai",
                 content:`<p>I am delighted to share my experience with the Advanced Full Stack Development training led by Ashish Naik. His expertise, dedication, and effective communication have been instrumental in my learning journey. The comprehensive curriculum covered all aspects of Full Stack Development, providing a robust foundation for real-world applications. </p>`+
@@ -1265,7 +1265,7 @@ const HomePage = () => {
 				profileImage:"/images/specific/testimonials/Abhishek_Varma.jpeg",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Abhishek Varma",
 				name:"Abhishek Varma",
                 content:`<p>I am pleased to provide feedback on the training conducted by Mr. Ashish Naik sir. The experience was truly remarkable, and I would like to highlight some points : </p>`+
@@ -1286,7 +1286,7 @@ const HomePage = () => {
 				// profileImage:"/images/specific/testimonials/Mohit_Panjwani.webp",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Mohit Panjwani",
 				name:"Mohit Panjwani",
                 content:`<p>I'm really excited and pleased to provide feedback on our Advanced and High level Software Development training program...</p>`+
@@ -1297,7 +1297,7 @@ const HomePage = () => {
 				profileImage:"/images/specific/testimonials/Archana_Kadam.jpeg",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Archana Kadam",
 				name:"Archana Kadam",
                 content:`<p>I am very much delighted to share my experience on the training program provided in iAssureIT. It gives me immense pleasure to show my gratitude to the training that is been provided to me.</p>`+
@@ -1311,7 +1311,7 @@ const HomePage = () => {
 				profileImage:"/images/specific/testimonials/Aniket_Pawar.jpeg",
 				// cardImage: "",
                 altImage: "imageDescription",
-                classForContent:"mb-4 breakWord h-[150px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+                classForContent:"mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content h-auto text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
                 // cardTitle:"Aniket Pawar",
 				name:"Aniket Pawar",
                 content:`<p>I am feeling grateful to share my feedback on the Full Stack Development learning experience under our best and always enthusiastic mentor Mr. Ashish Naik which has been incredibly positive and wonderful.</p>`+ 
@@ -1511,8 +1511,8 @@ const HomePage = () => {
         classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
         classForblockContent:
         "text-lg md:text-xl text-center font-[500] mx-auto ",
-        blockContent:`<div class="flex"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>`+
-        `<br /><div class="flex"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
+        blockContent:`<div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>`+
+        `<br /><div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
 		to just Rs 90,000.<span class='text-xl font-bold text-lightGreen'> (Overall Discount of 50% discount)</span></div></div>`,
         bgImgCss:
         "relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
@@ -1526,7 +1526,7 @@ const HomePage = () => {
          
           className=" fixed top-20 z-10 right-5 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
         >
-          <i className="fa-solid fa-download text-white">
+          <i className="text-white fa-solid fa-download">
             {/* <br/><span className="text-[5px]">BROCHURE</span> */}
             </i>
         </div>
