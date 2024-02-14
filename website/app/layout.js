@@ -254,8 +254,8 @@ const menuItemsAfterLogin = [
 const content_Menubar = {
   menuItemsList: menuItems,
   menuItemsAfterLoginList: menuItemsAfterLogin,
-  logo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.webp",
-  smallLogo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.webp",
+  logo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.png",
+  smallLogo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.png",
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-4 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/2 lg:w-auto",
