@@ -130,7 +130,6 @@ const PaymentRoutes = require("./api/admin2.0/payment/routes.js");
 const WalletRoutes = require("./api/admin2.0/mywallet/routes.js");
 const JobRun = require("./api/admin2.0/jobrun/routes.js");
 // =======
-const WebsiteData = require("./api/websiteData/routes.js");
 
 const SearchResults = require("./api/admin2.0/searchResults/routes.js");
 
@@ -175,7 +174,7 @@ app.use("/api/casestudy", CaseStudyRoutes);
 app.use("/api/jobs", JobRoutes)
 app.use("/api/stud-enroll-routes", studEnrollRoutes)
 
-app.use("/api/website-data", WebsiteData);
+
 // //================Payment/Wallet===========
 app.use("/api/payment", PaymentRoutes);
 app.use("/api/wallet", WalletRoutes);
