@@ -25,13 +25,13 @@ const HomePage = () => {
     bgImgCss:
       "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-40 2xl:mt-20 text-center lg:text-left",
+    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
     gridCss:
       " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
     gridSubDivCss:
       " md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
     image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
-    imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pt-10",
+    imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pb-8",
     borderColor:
       "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
     dash: "",

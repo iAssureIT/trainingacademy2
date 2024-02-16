@@ -38,7 +38,7 @@ const BannerSmallBlocks = (props) => {
                         ?
                         props?.inputData?.bgImgCss
                         :
-                        " grid z-10 py-5 bg-cover px-12 block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]"
+                        " grid  md:z-10 py-5 bg-cover px-12 block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]"
                 }
                 style={{
                     '--largeImage-url': `url(${largeImageURL})`,
@@ -47,15 +47,15 @@ const BannerSmallBlocks = (props) => {
                 }}
 
             >  
-            <div class="mx-40 -mt-20 h-auto " >        
-                <div class="grid p-5 block  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl grid-cols-4 gap-4">
+            <div class="mx-40 md:-mt-24 h-auto " >        
+                <div class="grid p-5 block bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl grid-cols-4 gap-4">
                     <div class="bg-cover px-2 py-4 block bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]" 
                         style={{
                         '--largeImage-url': `url(${largeImageURL1})`,
                         // '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
                         'backgroundSize': "100% 100%"
                     }}>
-                        <div class="text-white font-xs ml-20">
+                        <div class="text-white text-sm ml-5 md:ml-10 xl:ml-20 2xl:ml-24 3xl:md-30">
                             Advanced Skills and Beyond
                         </div>
                     </div>
@@ -65,7 +65,7 @@ const BannerSmallBlocks = (props) => {
                         // '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
                         'backgroundSize': "100% 100%"
                     }}> 
-                        <div class="text-white font-xs ml-20">
+                        <div class="text-white text-sm ml-5 md:ml-10 xl:ml-20 2xl:ml-24 3xl:md-30">
                             Web Technologie Mastery
                         </div>
                     </div>
@@ -75,7 +75,7 @@ const BannerSmallBlocks = (props) => {
                         // '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
                         'backgroundSize': "100% 100%"
                     }}> 
-                        <div class="text-white font-xs ml-20">
+                        <div class="text-white text-sm ml-5 md:ml-10 xl:ml-20 2xl:ml-24 3xl:md-30">
                             ReactJS Framework and Beyond
                         </div>
                     </div>
@@ -85,7 +85,7 @@ const BannerSmallBlocks = (props) => {
                         // '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
                         'backgroundSize': "100% 100%"
                     }}> 
-                        <div class="text-white font-xs ml-20">
+                        <div class="text-white text-sm ml-5 md:ml-10 xl:ml-20 2xl:ml-24 3xl:md-30">
                             NodeJS and Database Development
                         </div>
                     </div>
