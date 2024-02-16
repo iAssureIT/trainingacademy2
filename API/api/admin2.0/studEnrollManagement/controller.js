@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-const empModel = require('./model.js');
+const studModel = require('./model.js');
 
 exports.insertStudentDetails = (req, res, next) => {
 
-	var EmpDetails = new empModel({
+	var StudDetails = new studModel({
 		_id: new mongoose.Types.ObjectId(),
 		fullName: req.body.fullName,
 		email: req.body.email,
@@ -12,7 +12,7 @@ exports.insertStudentDetails = (req, res, next) => {
 		createdAt: new Date(),
 	});
 
-	EmpDetails.save()
+	StudDetails.save()
 		.then(data => {
 			res.status(200).json({
 				message: "Data added successfully",
@@ -29,3 +29,17 @@ exports.insertStudentDetails = (req, res, next) => {
 		})
 };
 
+exports.getStudentDetails = (req, res, next) => {
+	studModel.find({})
+		.sort({ "createdAt": -1 })		
+		.then(List => {
+			// console.log("list",List)			
+			res.status(200).json(List);
+		})
+		.catch(error => {
+			res.status(500).json({
+				error: error,
+				message: "Some error occured while fetching  List"
+			})
+		});
+}

@@ -10,7 +10,7 @@
 import React, { useState, useEffect } from "react";
 import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
 import Link from 'next/link';
-import StudEnrollModal from '@/components/Modal/StudEnrollModal';
+import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 
 const BgImgRightContent = (props) => {
     const [isModalOpen, setModalOpen] = useState(false);

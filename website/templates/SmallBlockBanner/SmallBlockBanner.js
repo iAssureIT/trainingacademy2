@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from 'next/image'
 import Link from 'next/link';
-import LandingPageModal from '@/components/Modal/StudEnrollModal';
+import LandingPageModal from '@/components/StudentEnrollment/StudEnrollModal';
 
 const SmallBlockBanner = (props) => {
     var largeImageURL = props?.inputData?.bgImage;

@@ -257,7 +257,7 @@ const content_Menubar = {
   logo: "/images/specific/trainingAcademy/White-Logo.png",
   smallLogo: "/images/specific/trainingAcademy/White-Logo.png",
   navCss:
-    "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-4 ",
+    "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-1 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/2 lg:w-auto",
   classForLogo: "h-full w-1/3 md:w-full lg:w-1/3 xl:w-1/2 ",
   showLoginbutton: false,
