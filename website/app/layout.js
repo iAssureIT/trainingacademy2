@@ -254,8 +254,8 @@ const menuItemsAfterLogin = [
 const content_Menubar = {
   menuItemsList: menuItems,
   menuItemsAfterLoginList: menuItemsAfterLogin,
-  logo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.png",
-  smallLogo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.png",
+  logo: "/images/specific/trainingAcademy/White-Logo.png",
+  smallLogo: "/images/specific/trainingAcademy/White-Logo.png",
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-4 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/2 lg:w-auto",
@@ -315,8 +315,8 @@ const content_Footer = {
   // bgImage: "/images/specific/Footer/Footer-1.webp",
   // smallBGImage: "/images/specific/Footer/Responsive-Footer-Design.webp",
   bgColor: "bg-ceyone_offWhite",
-  logo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.png",
-  smallLogo: "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.png",
+  logo: "/images/specific/trainingAcademy/White-Logo.png",
+  smallLogo: "/images/specific/trainingAcademy/White-Logo.png",
   logoCss: "w-1/2 md:w-1/3 xl:w-2/3  lg:mx-auto   ",
   // icon: "/images/specific/Footer/Footer_Icon.webp",
   titleCss:"text-orangeColor",
@@ -393,7 +393,7 @@ export default function RootLayout({ children }) {
           async
         ></script>
         {/* <script src="lazysizes.min.js" async></script> */}
-        <link rel="icon" href="/favicon.ico" sizes="any"></link>
+        <link rel="icon" href="/images/specific/trainingAcademy/favicon.ico" sizes="any"></link>
         <link
           href="https://db.onlinewebfonts.com/c/5b0ba2e20d3d7e3fc30b60595f3702c2?family=Druk+Text+Bold+Trial"
           rel="stylesheet"

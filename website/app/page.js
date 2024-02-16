@@ -8,67 +8,78 @@ import CustomHead from "@/templates/CustomHead/CustomHead";
 import LeftImgRightRepeatableBlk from "@/templates/RepeatableBlocks/LeftImgRightRepeatableBlk/LeftImgRightRepeatableBlk";
 import SmallBanner from "@/templates/BannerBlocks/SmallBanner/SmallBanner";
 import Technology from "@/templates/ContentBlocks/Technology/Technology";
-import AccordionBlock from '@/templates/Accordion/AccordionBlock.js'
+import AccordionBlock from '@/templates/Accordion/AccordionBlock.js';
+import BannerSmallBlocks from '@/templates/BannerSmallBlocks/BannerSmallBlocks'
 
 
 const HomePage = () => { 
-	const content_Banner = {
-		id: "Banner_Block",
-		bgImage:
-		"/images/specific/trainingAcademy/iAssureIT-training-1.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-		logo: "",    
-		h1Txt:
-		"<h1 class='leading-tight uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
-		bgImgCss:
-		"lazyload object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-40 2xl:mt-20 text-center lg:text-left",
-		gridCss:
-		" pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
-		gridSubDivCss:
-		" md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:mb-10 pb-0 md:pb-5 md:py-10",
-		borderColor:
-		"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-		dash: "",
-			
-	};
+  const content_Banner = {
+    id: "Banner_Block",
+    bgImage:
+      "/images/specific/trainingAcademy/iAssureIT-training-1.webp",
+    // smallBGImage:
+    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
+    logo: "",    
+    h1Txt:
+      "<h1 class='leading-tight uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
+    bgImgCss:
+      "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+    logoCss: "lazyload justify-left align-left  mb-5 ",
+    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-40 2xl:mt-20 text-center lg:text-left",
+    gridCss:
+      " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+    gridSubDivCss:
+      " md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
+    image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
+    imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pt-10",
+    borderColor:
+      "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
+    dash: "",
+        
+    };
 
-	const content_CET = {
-		id: "CET_Block",
-		bgImage:
-		"/images/specific/trainingAcademy/iAssureIT-training-17.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-		logo: "",
-		pageTitle: "Transform Your Skills with </br>Cutting-edge Technologies",
-		pageTitleCss: " pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
-		// h1Txt:
-		//   "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
-		para: "Stay ahead of the curve and master the latest technologies in Fullstack Development. Our comprehensive training program covers everything from ReactJS and NodeJS to advanced topics like Redux, MongoDB integration, and AWS integration. With flexible learning options and expert guidance from industry professionals, there's no limit to what you can achieve. Take the first step towards transforming your skills and shaping your future – Enroll Now!",
-		bgImgCss:
-		"lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		// h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
-		paraCss:
-		" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
-		gridCss:
-		"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
-		gridSubDivCss:
-		" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-10",
-		borderColor:
-		"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-		dash: "",
-		modalId:"CetModal",  
-		modalDisplay:"true",
-		modalUrlName:"Explore Courses",
-		modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
-		
+  const content_CET = {
+    id: "CET_Block",
+    bgImage:
+      "/images/specific/trainingAcademy/iAssureIT-training-17.webp",
+    // smallBGImage:
+    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
+    logo: "",
+    pageTitle: "Transform Your Skills with </br>Cutting-edge Technologies",
+    pageTitleCss: " pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
+    // h1Txt:
+    //   "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
+    para: "Stay ahead of the curve and master the latest technologies in Fullstack Development. Our comprehensive training program covers everything from ReactJS and NodeJS to advanced topics like Redux, MongoDB integration, and AWS integration. With flexible learning options and expert guidance from industry professionals, there's no limit to what you can achieve. Take the first step towards transforming your skills and shaping your future – Enroll Now!",
+    bgImgCss:
+      "lazyload object-fit py-0 sm:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+    logoCss: "lazyload justify-left align-left  mb-5 ",
+    // h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
+    paraCss:
+      " text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
+    gridCss:
+      "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+    gridSubDivCss:
+      " md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
+    image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
+    imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-10",
+    borderColor:
+      "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
+    dash: "",
+    modalId:"CetModal",  
+    modalDisplay:"true",
+    modalUrlName:"Explore Courses",
+    modalBtnCss:"w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+    
+	};
+	 
+	const content_BSmallBlocks = {
+		id: "BSmall_Blocks",
+		// // bgImage:
+		//   "/images/specific/trainingAcademy/iAssureIT-training-3.webp",
+		bgImage1:"/images/specific/trainingAcademy/iAssureIT-training-3.webp",
+		bgImage2:"/images/specific/trainingAcademy/iAssureIT-training-4.webp",
+		bgImage3:"/images/specific/trainingAcademy/iAssureIT-training-5.webp",
+		bgImage4:"/images/specific/trainingAcademy/iAssureIT-training-6.webp",
 	};
 
 	const content_UnlockP = {
@@ -643,7 +654,7 @@ const HomePage = () => {
   const content_About = {
     id:"about",
     sectionClass:
-      "pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] px-2 md:px-5 lg:px-20 xl:px-32 2xl:px-32 xxl:!px-48",
+      "pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] pl-2 md:pl-2 lg:pl-10 xl:pl-16 2xl:pl-16 xxl:!pl-24",
     // sectionBgImg:
     //   "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-3.webp",
     // smallBGImage:
@@ -653,7 +664,7 @@ const HomePage = () => {
       "<span class=' font-extrabold'>About Mr. Ashish Naik:</span>  ",
     pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
     blockSubTitle:
-      "<div class='px-3 md:px-20 lg:px-2 xl:px-20'> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</div> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
+      "<div class='px-2 md:px-10 '> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</div> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
     classForblockSubTitle:
       "text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0",
     bgImage:
@@ -1144,6 +1155,8 @@ const HomePage = () => {
             </i>
         </div>
 			<BgImgLeftContentRtImg inputData={content_Banner} />
+
+			<BannerSmallBlocks inputData={content_BSmallBlocks}  />
 
 			<BgImgRightContent inputData={content_Block2} />
 

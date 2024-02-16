@@ -172,10 +172,10 @@ function MenuBar2(props) {
 			});
 			if (shouldAddClass) {
 				// Change to the image source you want when scrolling down
-				imageElement.src = "/images/specific/trainingAcademy/LogoBlue.webp";
+				imageElement.src = "/images/specific/trainingAcademy/Logo-2.png";
 			} else {
 				// Change to the image source you want when scrolling up
-				imageElement.src = "/images/specific/trainingAcademy/iAssureIT-Training-Logo-white.png";
+				imageElement.src = "/images/specific/trainingAcademy/White-Logo.png";
 			}
 			if (shouldAddClass) {
 				nav1.classList.add("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
