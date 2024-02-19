@@ -454,7 +454,7 @@ export default function RootLayout({ children }) {
           onClick={scrollToTop}
           className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
         >
-          <i className="text-white fa-solid fa-angles-up"></i>
+          <i className="text-white fa-solid fa-arrow-up"></i>
         </div>
       </body>
     </html>

@@ -9,6 +9,7 @@ import Accordion from "@/templates/Accordion/accordion.js";
 import { useState, useEffect } from "react";
 
 const AccordionBlock = (props) => {
+  console.log("props------>",props);
   const [searchResults, setSearchResults] = useState([]);
   const [searchData, setSearchData] = useState("");
 
@@ -77,7 +78,12 @@ const AccordionBlock = (props) => {
               null
       }
       {props?.inputData?.accordionData.map((item, index) => (
-        <Accordion key={index} title={item.title} content={item.content} />
+        item.isFAQ
+          ?
+            <Accordion key={index} title={item.title} mb="true" content={item.content} />
+          :
+            <Accordion key={index} title={item.title} mb="false" content={item.content} />        
+        
       ))}
       
       {

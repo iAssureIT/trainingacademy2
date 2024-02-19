@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-const Accordion = ({ title, content, accordianThemeColor }) => {
+const Accordion = ({ mb, title, content, accordianThemeColor }) => {
+  console.log("props------>",{mb});
   const [isOpen, setIsOpen] = useState(false);
 
   const handleAccordionToggle = () => {
@@ -8,7 +9,7 @@ const Accordion = ({ title, content, accordianThemeColor }) => {
   };
 
   return (
-    <div className={"mb-4 border border-Accordion"}>
+    <div className={mb ? "mb-0.5 border border-Accordion" : "mb-4 border border-Accordion"}>
       <div className="flex items-center justify-between"
           onClick={handleAccordionToggle}
         >

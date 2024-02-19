@@ -80,6 +80,10 @@ const HomePage = () => {
 		bgImage2:"/images/specific/trainingAcademy/iAssureIT-training-4.webp",
 		bgImage3:"/images/specific/trainingAcademy/iAssureIT-training-5.webp",
 		bgImage4:"/images/specific/trainingAcademy/iAssureIT-training-6.webp",
+		smallBGImage1:"/images/specific/trainingAcademy/1.webp",
+		smallBGImage2:"/images/specific/trainingAcademy/2.webp",
+		smallBGImage3:"/images/specific/trainingAcademy/3.webp",
+		smallBGImage4:"/images/specific/trainingAcademy/4.webp",
 	};
 
 	const content_UnlockP = {
@@ -736,6 +740,7 @@ const HomePage = () => {
 	const accordionData={
 		accordianThemeColor:"bg-orangeColor",
 		pageTitle:"FAQ",
+		isFAQ:true,
 		titleDescription:"Frequently Asked Questions (FAQs) for Fullstack, ReactJS & NodeJS Training Program",
 		accordionData : [
 			{
