@@ -20,7 +20,7 @@ console.log("NEXT_PUBLIC_BASE_URL", process.env.NEXT_PUBLIC_BASE_URL)
 axios.defaults.headers.post["Content-Type"] = "application/json";
 const scrollToTop = () => window.scrollTo(0, 0);
 const metadata = {
-  title: "iAssure International Technologies Pvt. Ltd.",
+  title: "iAspire IT Training Academy",
   description:
     "iAssure International Technologies Pvt Ltd is a Pune, India based IT Services & Product Development company.",
 };
@@ -258,7 +258,7 @@ const content_Menubar = {
   smallLogo: "/images/specific/trainingAcademy/White-Logo.png",
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-1 ",
-  classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/2 lg:w-auto",
+  classForLogoLink: "w-1/3 sm:w-1/3 md:w-1/6 lg:w-1/2 lg:w-auto",
   classForLogo: "h-full w-1/3 md:w-full lg:w-1/3 xl:w-1/2 ",
   showLoginbutton: false,
   customButton: false,
@@ -331,8 +331,8 @@ const content_Footer = {
   addLine1: "# 1B, 2nd Floor, B3",
   addLine2: " Cerebrum IT Park Kalyani Nagar",
   addLine3: "Pune, Maharashtra 411014",
-  phone1: "+91 9022426944",
-  email1: "training@iassureit.com",
+  phone1: "+91 7770003690",
+  email1: "info@iaspireit.com",
   fbLink: "https://www.facebook.com/iAssureIT",
   linkedIn:
     "https://www.linkedin.com/company/iassure-international-technologies-pvt-ltd/?viewAsMember=true",
@@ -393,7 +393,7 @@ export default function RootLayout({ children }) {
           async
         ></script>
         {/* <script src="lazysizes.min.js" async></script> */}
-        <link rel="icon" href="/images/specific/trainingAcademy/favicon.ico" sizes="any"></link>
+        <link rel="icon" href="/favicon.ico" sizes="any"></link>
         <link
           href="https://db.onlinewebfonts.com/c/5b0ba2e20d3d7e3fc30b60595f3702c2?family=Druk+Text+Bold+Trial"
           rel="stylesheet"

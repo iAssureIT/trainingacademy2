@@ -25,7 +25,7 @@ const HomePage = () => {
     bgImgCss:
       "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
+    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
     gridCss:
       " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
     gridSubDivCss:
@@ -1153,7 +1153,7 @@ const HomePage = () => {
 		<main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
       <div
          
-          className=" fixed top-20 z-10 right-5 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
+          className=" fixed top-3 sm:top-5 md:top-16 z-10 right-8 sm:right-5 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
         >
           <i className="text-white fa-solid fa-download">
             {/* <br/><span className="text-[5px]">BROCHURE</span> */}
