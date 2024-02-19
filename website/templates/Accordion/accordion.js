@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Accordion = ({ mb, title, content, accordianThemeColor }) => {
-  console.log("props------>",{mb});
+  // console.log("props------>",{mb});
   const [isOpen, setIsOpen] = useState(false);
 
   const handleAccordionToggle = () => {

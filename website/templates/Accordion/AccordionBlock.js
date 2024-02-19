@@ -9,7 +9,7 @@ import Accordion from "@/templates/Accordion/accordion.js";
 import { useState, useEffect } from "react";
 
 const AccordionBlock = (props) => {
-  console.log("props------>",props);
+  // console.log("props------>",props);
   const [searchResults, setSearchResults] = useState([]);
   const [searchData, setSearchData] = useState("");
 
