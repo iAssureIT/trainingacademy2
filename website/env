@@ -1,5 +1,5 @@
 # NEXT_PUBLIC_BASE_URL=https://qaapi-scms-iassureitv5.iassureit.in/
-NEXT_PUBLIC_BASE_URL=http://localhost:3060
+NEXT_PUBLIC_BASE_URL=http://localhost:3061
 # NEXT_PUBLIC_BASE_URL=https://iassureitwebsiteapi.iassureit.com/
 NEXT_PUBLIC_ADMIN_EMAIL="sales@iassureit.com"
 NEXT_PUBLIC_CONTACT_EMAIL="iassureitmail@gmail.com"
