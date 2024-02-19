@@ -12,7 +12,7 @@ import AccordionBlock from '@/templates/Accordion/AccordionBlock.js';
 import BannerSmallBlocks from '@/templates/BannerSmallBlocks/BannerSmallBlocks'
 
 
-<<<<<<< Updated upstream
+
 const HomePage = () => { 
   const content_Banner = {
     id: "Banner_Block",
@@ -38,32 +38,6 @@ const HomePage = () => {
     dash: "",
         
     };
-=======
-const HomePage = () => {
-	const content_Banner = {
-		id: "Banner_Block",
-		bgImage:
-			"/images/specific/trainingAcademy/iAssureIT-training-1.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-		logo: "",
-		h1Txt:
-			"<h1 class='leading-tight uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
-		bgImgCss:
-			"lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
-		gridCss:
-			" pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
-		gridSubDivCss:
-			" md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
-		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pb-8",
-		borderColor:
-			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-		dash: "",
-
-	};
 
 	const content_CET = {
 		id: "CET_Block",
@@ -96,7 +70,7 @@ const HomePage = () => {
 		modalDisplay: "true",
 		modalUrlName: "Explore Courses",
 		modalBtnCss: "w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
->>>>>>> Stashed changes
+
 
 	};
 
