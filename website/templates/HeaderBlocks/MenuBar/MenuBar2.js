@@ -189,7 +189,7 @@ function MenuBar2(props) {
 
 	return (
 		<>
-			<div id={"Menubar"} ref={menuRef} className="fixed z-10 w-full ">
+			<div id={"Menubar"} ref={menuRef} className="fixed z-20 w-full ">
 				<nav className="bg-transparent border-gray-200 navBar1 dark:bg-gray-900 dark:border-gray-700 ">
 					<div className={props?.inputData?.navCss ? props?.inputData?.navCss : "max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"}>
 						<a className={props?.inputData?.classForLogoLink} href="/">

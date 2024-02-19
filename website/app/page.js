@@ -1166,7 +1166,7 @@ const HomePage = () => {
 
 			<div
 
-				className=" fixed top-16 z-10 right-5 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
+				className=" fixed top-16 z-30 right-5 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
 			>
 
 				<a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure.pdf" target={"_blank"}><i className="text-white fa-solid fa-download">
