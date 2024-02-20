@@ -48,7 +48,7 @@ const BannerSmallBlocks = (props) => {
                 }}
 
             >  
-            <div class="mx-1 lg:mx-40 lg:-mt-24 h-auto " >        
+            <div class="mx-1 md:mx-20 lg:mx-24 lg:-mt-24 h-auto " >        
                 <div class="grid p-5 block bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl grid-cols-1 lg:grid-cols-4 lg:gap-4">
                     <div class="bg-cover min-h-24 md:h-auto px-2 my-5 lg:my-0 py-4 block bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]" 
                         style={{

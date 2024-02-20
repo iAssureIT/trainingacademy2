@@ -26,9 +26,9 @@ const HomePage = () => {
     bgImgCss:
       "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
+    h1TxtCss: " ml-10  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
     gridCss:
-      " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+      " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32",
     gridSubDivCss:
       " md-mt-12 mx-auto text-white content-center  place-content-center  justify-center",
     image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
@@ -175,11 +175,13 @@ const HomePage = () => {
 	const content_VisionBlock = {
 		id: "Vision_Block",
 		paraTitle:
-			"Driven by a vision to propel India to new heights in the IT industry, Ashish Naik is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.<br/><span class=''>Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.</span>",
+			"Driven by a vision to propel India to new heights in the IT industry, Ashish Naik is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.",
 		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-white",
 		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-15.webp",
 		// smallBGImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
 		bgImgCss: "lazyload",
+		para:"Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.",
+		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-2xl text-justify text-white",
 		pageTitle:
 			"<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
 		pageTitleCss: " mb-5 sm:mb-10 md:mb-20 text-white w-full text-center BlockTitle",
@@ -562,7 +564,7 @@ const HomePage = () => {
 
 	const content_Courses = {
 		id: "courses",
-		sectionCss: "md:my-5 lg:my-0 py-20 bg-offWhite",
+		sectionCss: "md:mt-5 lg:mt-0 pt-20 bg-offWhite",
 
 		blockTitle:
 			" <span  class='uppercase font-extrabold leading-relaxed' > OUR COURSES</span>",
@@ -612,6 +614,30 @@ const HomePage = () => {
 				content:
 					"<div class='font-semibold text-left'>REST API Development, Database Integration </div><br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'> Delve into the world of server-side development with NodeJS and Express. Learn to harness the power of MongoDB for efficient data storage and retrieval. From REST API development to database management, this course empowers you to create robust backend systems that power your applications with speed and reliability.</div>",
 			},
+		],
+	};
+
+	const content_Courses2 = {
+		id: "courses",
+		sectionCss: "md:mb-5 lg:mb-0 pb-20 bg-offWhite",
+	
+		blockTitle:
+			"",
+		classForblockTitle: "w-full text-center",
+		classForNoOfCards:
+			"px-10 lg:px-32 2xl:px-48  max-w-8xl text-center justify-evenly grid grid-cols-1 ",
+		classForCards:
+			" p-3 mb-7 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
+		classForCardTitle:
+			"text-left font-bold text-xl md:text-xl lg:text-2xl p-3",
+		classForCardTitle_2:
+			"font-bold text-md text-primary dark:text-primary-400 p-5",
+		imgDivCss: "py-2",
+		classForCardImage: " px-2 w-full",
+		bgImgCss:
+			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+	   
+		cardsArray: [        
 			{
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-11.webp",
 				altImage: "imageDescription",
@@ -623,6 +649,7 @@ const HomePage = () => {
 			},
 		],
 	};
+
 	const content_contactBlock = {
 		id: "contact",
 		bgImage:
@@ -1070,7 +1097,7 @@ const HomePage = () => {
         in this company.</div></div>`+
 			`<br /><div class="flex"><i class="fa-solid fa-angles-right text-orangeColor m-1"></i><div><span class="font-extrabold">100% Job Assistance:</span> Gain expertise in cracking IT company interviews and receive 100% job assistance,
         ensuring your seamless transition into the workforce.</div></div>`+
-			`<br /><div class="flex">Don't miss out on this opportunity to unlock your FullStack potential at an unbeatable value. Enroll today
+			`<br /><div class="flex ml-6">Don't miss out on this opportunity to unlock your FullStack potential at an unbeatable value. Enroll today
         and take the first step towards a rewarding career in the ever-evolving world of technology.</div>`,
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
@@ -1093,7 +1120,7 @@ const HomePage = () => {
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
 		bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><h5 class='font-extrabold '>Total Investment</h5>" +
-			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses    :<span class='flex'> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></span></p>" +
+			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses :<span class='flex'> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></span></p>" +
 			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses :<span class='flex'> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,00,000</span></span></p>" +
 			"<br /><p class='text-2xl font-bold text-lightGreen'>Discount of 45% discount</p></div>",
 		cardsArray: [
@@ -1102,7 +1129,7 @@ const HomePage = () => {
 					'<p class="wrap-text">HTML5, CSS3, JavaScript </p><p>etc</p>',
 				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
-					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>" +
+					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
 					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 17% discount</p>"
@@ -1111,7 +1138,7 @@ const HomePage = () => {
 					'<p class="wrap-text">ReactJS, JSON,</p><p> API Integration</p>',
 				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
-					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
+					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
 					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
@@ -1120,7 +1147,7 @@ const HomePage = () => {
 					'<p class="wrap-text">NodeJS, MongoDB,</p><p> REST API Development</p>',
 				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
-					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
+					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
 					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
@@ -1129,7 +1156,7 @@ const HomePage = () => {
 					'<p class="wrap-text">Advanced Skills in ReactJS,</p><p> NodeJS, etc</p>',
 				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
-					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
+					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
 					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
@@ -1166,7 +1193,7 @@ const HomePage = () => {
 
 			<div
 
-				className=" fixed top-16 z-30 right-5 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
+				className=" fixed top-3 md:top-14 lg:top-16 z-30 right-10 xs:right-5 md:right-2 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
 			>
 
 				<a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure.pdf" target={"_blank"}><i className="text-white fa-solid fa-download">
@@ -1180,9 +1207,9 @@ const HomePage = () => {
 
 			<BgImgRightContent inputData={content_Block2} />
 
-			<CenterContentRepeatableBlocks
-				inputData={content_Courses}
-			/>
+			<CenterContentRepeatableBlocks inputData={content_Courses} />
+
+			<CenterContentRepeatableBlocks inputData={content_Courses2} />
 
 			<BgImgLeftContentRtImg inputData={content_UnlockP} />
 

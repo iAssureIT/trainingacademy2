@@ -191,6 +191,18 @@ function MenuBar2(props) {
 		<>
 			<div id={"Menubar"} ref={menuRef} className="fixed z-20 w-full ">
 				<nav className="bg-transparent border-gray-200 navBar1 dark:bg-gray-900 dark:border-gray-700 ">
+					<ul className="justify-end hidden px-1 py-1 space-x-5 text-sm font-semibold md:flex lg:flex xl:flex mr-14 md:mr-24 lg:mr-28 ">
+						<li className="font-normal text-white topHead text-md ">
+							<i className="mr-1 fa fa-phone " aria-hidden="true"></i>
+							+91 7770003690
+						</li>
+						<li className="font-normal text-white topHead text-md ">
+							<i className="mr-1 fa-regular fa-envelope"></i>
+							<a href="https://mail.google.com/">
+							info@iaspireit.com
+							</a>
+						</li>
+					</ul>
 					<div className={props?.inputData?.navCss ? props?.inputData?.navCss : "max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"}>
 						<a className={props?.inputData?.classForLogoLink} href="/">
 							<img
@@ -207,21 +219,9 @@ function MenuBar2(props) {
 								<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
 							</svg>
 						</button>
-						<div className="w-full lg:grid lg:grid-cols-1 md:w-auto">
-							<ul className="justify-end hidden px-1 py-3 space-x-5 text-sm font-semibold md:flex lg:flex xl:flex ">
-								<li className="font-normal text-white topHead text-md ">
-									<i className="mr-1 fa fa-phone " aria-hidden="true"></i>
-									+91 7770003690
-								</li>
-								<li className="font-normal text-white topHead text-md ">
-									<i className="mr-1 fa-regular fa-envelope"></i>
-									<a href="https://mail.google.com/">
-									info@iaspireit.com
-									</a>
-								</li>
-							</ul>
+						<div className="w-full lg:grid lg:grid-cols-1 md:w-auto">							
 							<div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-								<ul className="flex flex-col mr-5 lg:mr-20 mt-4 font-medium text-black bg-white border border-gray-100 md:py-4 md:p-0 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-white dark:bg-gray-800 md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
+								<ul className="flex flex-col mr-5 md:mr-18 lg:mr-16 xl:mr-12 mt-4 font-medium text-black bg-white border border-gray-100 md:py-4 md:p-0 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-white dark:bg-gray-800 md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
 
 									{
 										props.inputData.menuItemsList.map((data, index) => {

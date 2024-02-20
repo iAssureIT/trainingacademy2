@@ -952,3 +952,9 @@ cursor: pointer;}
 .label2{
 	@apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
 }
+
+.line-through{
+	textDecoration: line-through;
+	text-decoration-color: red;
+	text-decoration-width: 6px;
+}
