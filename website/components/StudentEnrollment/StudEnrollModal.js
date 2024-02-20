@@ -119,7 +119,7 @@ const StudEnrollModal = (props) => {
                         .then((res) => {
                             if (res.status === 200) {
                                 Swal.fire({
-                                    html: "<span className='mt-5'><span>Thanks for Enrolement<span></span>",
+                                    html: "<span className='mt-5'><span>Thanks for Enrollement<span></span>",
                                     showConfirmButton: true,
                                     confirmButtonColor: "#376bff"
                                 });
@@ -198,7 +198,7 @@ const StudEnrollModal = (props) => {
     };
     return (
         <div id={props.modalId} tabIndex="-1" aria-hidden="true" className="block overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div className="relative w-full max-w-md max-h-full p-4 mx-auto my-auto">
+            <div className="relative w-full max-w-md max-h-full p-4 mx-auto mt-24">
 
                 <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
 

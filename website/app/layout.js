@@ -18,7 +18,7 @@ import "./globals.css";
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 console.log("NEXT_PUBLIC_BASE_URL", process.env.NEXT_PUBLIC_BASE_URL)
 axios.defaults.headers.post["Content-Type"] = "application/json";
-const scrollToTop = () => window.scrollTo(0, 0);
+const scrollToTop = () => {window.scrollTo(0, 0), bahavior.scrollTo('smooth')};
 const metadata = {
   title: "iAspire IT Training Academy",
   description:
@@ -385,7 +385,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth'},{scrollPaddingTop:'20%'}} suppressHydrationWarning={true}>
       <head>
         <title>{metadata.title}</title>
         <script
