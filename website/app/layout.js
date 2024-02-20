@@ -281,7 +281,7 @@ const content_Menubar = {
 };
 const footerMenuItems = [
   { label: "Home", link: "/" },
-  { label: "About Me", link: "#about" },
+  { label: "About", link: "#about" },
   { label: "Courses", link: "#courses" },
   { label: "Testimonials", link: "#testimonials" },
   { label: "Contact Us", link: "#footer" },
