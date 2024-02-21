@@ -221,7 +221,7 @@ function MenuBar2(props) {
 						</button>
 						<div className="w-full lg:grid lg:grid-cols-1 md:w-auto">							
 							<div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-								<ul className="flex flex-col mr-5 md:mr-18 lg:mr-16 xl:mr-12 mt-4 font-medium text-black bg-white border border-gray-100 md:py-4 md:p-0 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-white dark:bg-gray-800 md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
+								<ul className="flex flex-col mr-5 md:mr-18 lg:mr-15 xl:mr-12 mt-4 font-medium text-black bg-white border border-gray-100 md:py-4 md:p-0 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-white dark:bg-gray-800 md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
 
 									{
 										props.inputData.menuItemsList.map((data, index) => {
@@ -347,9 +347,11 @@ function MenuBar2(props) {
 
 															currentLink == data.link
 																?
-																<a href={data.link} className="block py-2 pl-3 pr-4 text-sm font-bold text-black rounded menuItemC mainMenuActive md:text-white md:text-lg md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
+																<a href={data.link} className="block py-2 pl-3 pr-4 text-sm font-bold text-black rounded menuItemC mainMenuActive md:text-white md:text-lg md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page" data-te-smooth-scroll-init
+																data-te-duration="30000">{data.label}</a>
 																:
-																<a href={data.link} className="block py-2 pl-3 pr-4 text-sm font-bold text-black rounded menuItemC md:text-white md:text-lg md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">{data.label}</a>
+																<a href={data.link} className="block py-2 pl-3 pr-4 text-sm font-bold text-black rounded menuItemC md:text-white md:text-lg md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page" data-te-smooth-scroll-init
+																data-te-duration="30000">{data.label}</a>
 
 														}
 													</li>

@@ -1,6 +1,6 @@
 "use client";
 // import { Metadata } from "next";
-import React, { useEffect } from "react";
+import React, {$,useEffect } from "react";
 import axios from "axios";
 // import { Inter } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -258,7 +258,7 @@ const content_Menubar = {
   smallLogo: "/images/specific/trainingAcademy/White-Logo.png",
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-1 ",
-  classForLogoLink: "lg:ml-20 w-1/3 sm:w-1/3 md:w-1/6 lg:w-1/4 lg:w-auto",
+  classForLogoLink: "xl:ml-20 w-1/3 sm:w-1/3 md:w-1/6 lg:w-1/3",
   classForLogo: "h-full w-1/3 md:w-full lg:w-1/3 xl:w-1/2 ",
   showLoginbutton: false,
   customButton: false,

@@ -22,11 +22,11 @@ const HomePage = () => {
     //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
     logo: "",    
     h1Txt:
-      "<h1 class='leading-tight uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
+      "<h1 class=' uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
     bgImgCss:
       "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
+    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] mt-10 lg:mt-34 2xl:mt-20 text-left",
     gridCss:
       " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32",
     gridSubDivCss:
@@ -1193,7 +1193,7 @@ const HomePage = () => {
 
 			<div
 
-				className=" fixed top-3 md:top-14 lg:top-16 z-30 right-10 xs:right-5 md:right-2 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
+				className=" fixed top-3 md:top-14 lg:top-12 xl:top-16 2xl:top-20 z-30 right-10 xs:right-5 md:right-2 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
 			>
 
 				<a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure.pdf" target={"_blank"}><i className="text-white fa-solid fa-download">
