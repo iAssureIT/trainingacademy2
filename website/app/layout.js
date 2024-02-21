@@ -385,7 +385,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth'},{scrollPaddingTop:'20%'}} suppressHydrationWarning={true}>
+    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth'},{scrollPaddingTop:'25%'}} suppressHydrationWarning={true}>
       <head>
         <title>{metadata.title}</title>
         <script

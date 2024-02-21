@@ -26,7 +26,7 @@ const HomePage = () => {
     bgImgCss:
       "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: " ml-10  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
+    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] text-justify mt-10 lg:mt-34 2xl:mt-20 text-center lg:text-left",
     gridCss:
       " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32",
     gridSubDivCss:
