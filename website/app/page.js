@@ -592,7 +592,7 @@ const HomePage = () => {
 				altImage: "imageDescription",
 				cardTitle: "Course 1: Web Technologies Mastery",
 				classForContent:
-					"justify-content h-auto text-justify my-auto text-md lg:text-lg p-3 font-[500] ",
+					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500] ",
 				content:
 					"<div class='font-semibold text-left'> HTML5, CSS3, Bootstrap6, Tailwind CSS, JavaScript </div>  <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Dive into the fundamentals of web development with HTML5, CSS3, and Bootstrap6. Learn to craft stunning, responsive designs with Tailwind CSS, and unleash the power of interactivity with JavaScript. From building beautiful UIs to ensuring seamless user experiences, this course lays the groundwork for your FullStack journey.</div>",
 			},
@@ -601,7 +601,7 @@ const HomePage = () => {
 				altImage: "imageDescription",
 				cardTitle: "Course 2: ReactJS Framework and Beyond",
 				classForContent:
-					"justify-content h-auto text-justify my-auto text-md lg:text-lg p-3 font-[500]",
+					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500]",
 				content:
 					"<div class='font-semibold text-left'>ReactJS Framework, JSON, API Integration </div> <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Unlock the potential of ReactJS and harness the versatility of JSON for dynamic data manipulation. Explore the art of API integration and discover how to seamlessly connect your applications with external services. With hands-on projects and real-world scenarios, you'll master the art of building modern, interactive web applications. </div>",
 			},
@@ -610,7 +610,7 @@ const HomePage = () => {
 				altImage: "imageDescription",
 				cardTitle: "Course 3: NodeJS and Database Development ",
 				classForContent:
-					"justify-content h-auto text-justify my-auto text-md lg:text-lg p-3 font-[500]",
+					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500]",
 				content:
 					"<div class='font-semibold text-left'>REST API Development, Database Integration </div><br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'> Delve into the world of server-side development with NodeJS and Express. Learn to harness the power of MongoDB for efficient data storage and retrieval. From REST API development to database management, this course empowers you to create robust backend systems that power your applications with speed and reliability.</div>",
 			},
@@ -1120,8 +1120,8 @@ const HomePage = () => {
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
 		bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><h5 class='font-extrabold '>Total Investment</h5>" +
-			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses :<span class='flex'> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></span></p>" +
-			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses :<span class='flex'> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,00,000</span></span></p>" +
+			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :<span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></span></p>" +
+			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses :<span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,00,000</span></span></p>" +
 			"<br /><p class='text-2xl font-bold text-lightGreen'>Discount of 45% discount</p></div>",
 		cardsArray: [
 			{
@@ -1178,7 +1178,7 @@ const HomePage = () => {
 		imgDivCss: "py-2",
 		classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
 		classForblockContent:
-			"text-lg md:text-xl text-center font-[500] mx-auto ",
+			"text-lg text-center font-[500] mx-auto ",
 		blockContent: `<div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>` +
 			`<br /><div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
 		to just Rs 90,000.<span class='text-xl font-bold text-lightGreen'> (Overall Discount of 50% discount)</span></div></div>`,
