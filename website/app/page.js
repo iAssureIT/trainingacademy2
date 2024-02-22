@@ -11,8 +11,6 @@ import Technology from "@/templates/ContentBlocks/Technology/Technology";
 import AccordionBlock from '@/templates/Accordion/AccordionBlock.js';
 import BannerSmallBlocks from '@/templates/BannerSmallBlocks/BannerSmallBlocks'
 
-
-
 const HomePage = () => { 
   const content_Banner = {
     id: "Banner_Block",
@@ -1196,7 +1194,7 @@ const HomePage = () => {
 				className=" fixed top-3 md:top-14 lg:top-12 xl:top-16 2xl:top-20 z-30 right-10 xs:right-5 md:right-2 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
 			>
 
-				<a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure.pdf" target={"_blank"}><i className="text-white fa-solid fa-download">
+				<a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf" target={"_blank"}><i className="text-white fa-solid fa-download">
 					{/* <br/><span className="text-[5px]">BROCHURE</span> */}
 				</i></a>
 			</div>
