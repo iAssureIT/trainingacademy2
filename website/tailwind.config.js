@@ -60,7 +60,7 @@ module.exports = {
         formColor: "#e3f2fd",
         light: "#f1f1f1",
         submitBtn: "#283592",
-
+       
         //training academy
         skyBlue: "#2493e0",
         orangeColor:"#FD641F",

@@ -21,9 +21,9 @@ const Accordion = ({ mb, title, content, accordianThemeColor }) => {
         <div className="flex">
           {isOpen 
           ? 
-            <div className="items-center object-center w-20 px-8 py-10 text-3xl font-semibold text-white lg:py-4 place-content-center bg-Accordion" > <span>-</span></div>
+            <div className="items-center object-center w-20 px-8 py-10 text-3xl font-semibold text-white lg:py-4 place-content-center bg-orangeColor" > <span>-</span></div>
           : 
-            <div className="items-center object-center w-20 px-8 py-10 text-3xl font-semibold text-white lg:py-4 place-content-center bg-Accordion"> <span>+</span></div>
+            <div className="items-center object-center w-20 px-8 py-10 text-3xl font-semibold text-white lg:py-4 place-content-center bg-orangeColor"> <span>+</span></div>
           }
           <h2 className="py-4 pl-4 my-auto text-sm font-bold lg:text-xl">{title}</h2>
         </div>
