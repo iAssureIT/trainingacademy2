@@ -6,7 +6,8 @@
   Review Date: 
 ==========================================================*/
 
-import React, { useState } from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 const SmallBanner = (props) => {
