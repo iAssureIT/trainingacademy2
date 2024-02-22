@@ -235,6 +235,15 @@ const BgImgRightContent = (props) => {
                             }
                         </div>
                     </div>
+                        {
+                            props?.inputData?.modalDisplay1
+                                ?
+                                <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss1 ? props?.inputData?.modalBtnCss1 : "text-white hidden"} type="button"
+                                    dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName1 }}>
+                                </div>
+                                :
+                                ""
+                        }
                 </div>
             ) : (
                 <section className="w-full bg-cover">

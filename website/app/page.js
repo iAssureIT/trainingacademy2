@@ -24,7 +24,7 @@ const HomePage = () => {
     bgImgCss:
       "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 xl:!leading-[1.3] mt-10 lg:mt-34 2xl:mt-20 text-left",
+    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 xl:!leading-[1.3] mt-10 3xl:mt-20 text-left",
     gridCss:
       " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32",
     gridSubDivCss:
@@ -34,11 +34,11 @@ const HomePage = () => {
     borderColor:
       "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 	dash: "",
-	modalDisplayLink:"true",
-	linkName:"Enroll Now",
-	linkUrl:"/",
-	linkDivCss:"ml-5 md:ml-10 mt-2",
-	linkCss:"underline text-orange-500 font-bold text-base",
+	// modalDisplayLink:"true",
+	// linkName:"Enroll Now",
+	// linkUrl:"/",
+	// linkDivCss:"ml-5 md:ml-10 mt-2",
+	// linkCss:"underline text-orange-500 font-bold text-base",
 	modalId: "UnlockPModal",
 	modalDisplay: "true",
 	modalUrlName: "Download Brochure",
@@ -177,6 +177,10 @@ const HomePage = () => {
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
 		imgTagcss: "mx-auto lazyload",
+		modalId: "UnlockPModal",
+		modalDisplay1: "true",
+		modalUrlName1: "Apply Now",
+		modalBtnCss1: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
 	};
 
 	const content_VisionBlock = {
