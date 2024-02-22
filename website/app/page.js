@@ -647,7 +647,11 @@ const HomePage = () => {
 		classForCardImage: " px-2 w-full",
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-	   
+		
+		modalId: "UnlockPModal",
+		modalDisplay: "true",
+		modalUrlName: "Enroll Now",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		cardsArray: [        
 			{
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-11.webp",
@@ -775,6 +779,9 @@ const HomePage = () => {
 		gridCol1Class: "my-auto  sm:w-auto  text-white text-center  ",
 		// para: "",
 		// paraCss: "text-xs md:text-2xl xl:text-2xl text-light text-center "
+		modalDisplay: "true",
+		modalUrlName: "Connect With Us",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 	}
 
 	const accordionData = {
@@ -1027,6 +1034,9 @@ const HomePage = () => {
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
+		modalDisplay: "true",
+		modalUrlName: "Get Started",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-20 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		cardsArray: [
 			{
 				cardImage: "/images/specific/Icons-2/1.webp",
@@ -1197,6 +1207,9 @@ const HomePage = () => {
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
 		cardsArray: [],
+		modalDisplay: "true",
+		modalUrlName: "Get Started",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-20 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 	};
 
 	return (

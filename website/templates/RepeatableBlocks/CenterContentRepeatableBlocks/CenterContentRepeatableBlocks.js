@@ -8,9 +8,13 @@
 
 
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
+import Link from 'next/link';
+import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 
 const CenterContentRepeatableBlocks = (props) => {
+    const [isModalOpen, setModalOpen] = useState(false);
     const MouseOver = (index) => {
         // console.log("index",index)
         if(index){
@@ -38,6 +42,7 @@ const CenterContentRepeatableBlocks = (props) => {
         "grid  grid-cols-3 gap-x-6 md:grid-cols-3 md:gap-x-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
     return (
         <section id={props.inputData?.id} className={props?.inputData?.sectionCss}>
+            {isModalOpen && <StudEnrollModal modalId="StudEnrollModal"/>}
             {props?.inputData?.dash ?
                 <div className="w-full mb-0 md:mb-4">
                     <ul className="flex flex-wrap place-content-center">
@@ -213,6 +218,15 @@ const CenterContentRepeatableBlocks = (props) => {
                     })
                 }
             </div>
+            {
+                props?.inputData?.modalDisplay
+                    ?
+                    <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss ? props?.inputData?.modalBtnCss : "text-white hidden"} type="button"
+                        dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName }}>
+                    </div>
+                    :
+                    ""
+            }
         </section>
     )
 }

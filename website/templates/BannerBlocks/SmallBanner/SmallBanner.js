@@ -6,13 +6,18 @@
   Review Date: 
 ==========================================================*/
 
-import React from "react";
+import React, { useState, useEffect } from "react";
+import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
+import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
+import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 const SmallBanner = (props) => {
+  const [isModalOpen, setModalOpen] = useState(false);
   var largeImageURL = props?.inputData?.bgImage;
   var smallImageURL = props?.inputData?.smallBGImage;
   return (
     <section id={props.inputData.id}>
+      {isModalOpen && <StudEnrollModal modalId="StudEnrollModal"/>}
       {!props?.inputData?.singlebgImage
         ?
         // <div className={props.inputData?.bgImgCss ? props.inputData?.bgImgCss : " bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center lg:h-72 xl:h-96 h-96 "} style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}>
@@ -99,6 +104,15 @@ const SmallBanner = (props) => {
                                 null
                         }
           </div>
+          {
+              props?.inputData?.modalDisplay
+                  ?
+                  <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss ? props?.inputData?.modalBtnCss : "text-white hidden"} type="button"
+                      dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName }}>
+                  </div>
+                  :
+                  ""
+          }
         </div>
         :
         <section className="w-full bg-cover">
