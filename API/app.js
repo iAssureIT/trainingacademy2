@@ -112,17 +112,15 @@ const EnterpriseProfileRoutes = require("./api/admin2.0/enterprise/routes.js");
 const AppointmentSlotsRoutes = require("./api/admin2.0/appointmentSlots/routes.js");
 const SearchRoutes = require("./api/admin2.0/search/routes.js");
 const AppointmentRoutes = require("./api/admin2.0/appointments/routes.js");
-const MyConsultants = require("./api/admin2.0/myconsultants/routes.js");
+// const MyConsultants = require("./api/admin2.0/myconsultants/routes.js");
 const MyClients = require("./api/admin2.0/myclients/routes.js");
 const Feedback = require("./api/admin2.0/feedback/routes.js");
 const Query = require("./api/admin2.0/queries/routes.js");
 const Review = require("./api/admin2.0/review/routes.js");
 const Orders = require("./api/admin2.0/orders/routes.js");
 const Contact = require("./api/admin2.0/contactManagement/routes.js");
-const Blogs2 = require("./api/admin2.0/blogManagement/routes.js");
 const Dashboard = require("./api/admin2.0/dashboard/routes.js");
 const ReportsRoute = require("./api/admin2.0/reports/routes");
-const CaseStudyRoutes = require("./api/admin2.0/caseStudyManagement/routes.js");
 const JobRoutes = require("./api/admin2.0/jobManagement/routes.js");
 const studEnrollRoutes = require("./api/admin2.0/studEnrollManagement/routes.js");
 // //Payment/Wallet routes
@@ -134,7 +132,6 @@ const JobRun = require("./api/admin2.0/jobrun/routes.js");
 const SearchResults = require("./api/admin2.0/searchResults/routes.js");
 
 const companyInfoRoutes = require("./api/admin2.0/companyInfo/routes.js");
-const thankYouNotes = require("./api/admin2.0/thankYouNotes/routes.js");
 const testimonials = require("./api/admin2.0/testimonials/routes.js");
 const bikeBooking = require("./api/admin2.0/bikeBooking/routes.js");
 const testRide = require("./api/admin2.0/testRide/routes.js");
@@ -142,7 +139,6 @@ const dealership = require("./api/admin2.0/dealership/routes.js");
 const seodetails = require('./api/admin2.0/seodetails/routes.js')
 
 app.use("/api/company-info", companyInfoRoutes);
-app.use("/api/thank-you-notes", thankYouNotes);
 app.use("/api/testimonials", testimonials);
 
 app.use("/api/bikebooking", bikeBooking);
@@ -158,21 +154,18 @@ app.use("/api/entprofile", EnterpriseProfileRoutes);
 app.use("/api/appointmentslots", AppointmentSlotsRoutes);
 app.use("/api/search", SearchRoutes);
 app.use("/api/appointments", AppointmentRoutes);
-app.use("/api/myconsultants", MyConsultants);
 app.use("/api/myclients", MyClients);
 app.use("/api/feedback", Feedback);
 app.use("/api/queries", Query);
 app.use("/api/reviews", Review);
 app.use("/api/orders", Orders);
 app.use("/api/contacts", Contact);
-app.use("/api/blogs2", Blogs2);
 app.use("/api/dashboard", Dashboard);
 app.use("/api/reports", ReportsRoute);
 app.use("/api/jobrun", JobRun);
 app.use("/api/seodetails", seodetails); //for meta tags
-app.use("/api/casestudy", CaseStudyRoutes);
 app.use("/api/jobs", JobRoutes)
-app.use("/api/stud-enroll-routes", studEnrollRoutes)
+app.use("/api/students", studEnrollRoutes)
 
 
 // //================Payment/Wallet===========

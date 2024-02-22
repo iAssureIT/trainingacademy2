@@ -35,6 +35,17 @@ function MenuBar2(props) {
 			menuRef.current.classList.add('bg-slate-700');
 			// menuRef.current.classList.add('bg-opacity-20');
 		}
+		if (window.location.pathname === '/user' ) {
+			var nav1 = document.querySelector(".navBar1");			
+			nav1.classList.add("bg-gray-500");
+			nav1.classList.remove("bg-transparent");
+			window.addEventListener('scroll', () => {
+				var shouldAddClass = window.scrollY;				
+				nav1.classList.toggle("bg-white", shouldAddClass);
+				nav1.classList.toggle("bg-gray-500", !shouldAddClass);
+			})		
+
+		}
 		const button = document.getElementById('navbar-toggle');
 		const menu = document.getElementById('navbar-dropdown');
 
@@ -221,7 +232,7 @@ function MenuBar2(props) {
 						</button>
 						<div className="w-full lg:grid lg:grid-cols-1 md:w-auto">							
 							<div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-								<ul className="flex flex-col mr-5 md:mr-18 lg:mr-15 xl:mr-12 mt-4 font-medium text-black bg-white border border-gray-100 md:py-4 md:p-0 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-white dark:bg-gray-800 md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
+								<ul className="flex flex-col mr-5 md:mr-18 lg:mr-15 xl:mr-12 mt-4 font-medium text-black bg-white border border-gray-100 md:py-1 md:p-0 md:rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-white dark:bg-gray-800 md:bg-transparent md:dark:bg-gray-900 dark:border-gray-700">
 
 									{
 										props.inputData.menuItemsList.map((data, index) => {

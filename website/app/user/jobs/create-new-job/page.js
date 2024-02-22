@@ -11,17 +11,19 @@ const CreateJob = () => {
         jobTitle: "",
         skills: "",
         jobCategory: "",
-        salary: "",
         position: "",
         experience: "",
         jobType: "",
-        industry: "",
         gender: "",
         qualification: "",
-        level: "",
         jobDescription: "",
-        jobResponsibilities:"",
-        jobQualification:""
+        jobResponsibilities: "",
+        location:"",
+        // salary: "",
+        // industry: "",
+        
+        
+
     });
     const [categoryList] = useState([
         "UI/UX Designer",
@@ -35,7 +37,7 @@ const CreateJob = () => {
         "Quality Assurance Tester ",
         "Director",
     ]);
-    const [jobTypesList] = useState(["Full Time", "Part Time", "Intership"]);
+    const [jobTypesList] = useState(["Full Time", "Part Time", "Internship","Consultant"]);
     const [errors, setErrors] = useState({});
     const [btnTxt, setBtnTxt] = useState("Submit");
     const [submitted, setSubmitted] = useState(false);
@@ -119,6 +121,18 @@ const CreateJob = () => {
             formIsValid = false;
             errors["jobCategory"] = "This field is required.";
         }
+        if (!fields["qualification"]) {
+            formIsValid = false;
+            errors["qualification"] = "This field is required.";
+        }
+        if (!fields["position"]) {
+            formIsValid = false;
+            errors["position"] = "This field is required.";
+        }
+        if (!fields["experience"]) {
+            formIsValid = false;
+            errors["experience"] = "This field is required.";
+        }
         if (!fields["jobType"]) {
             formIsValid = false;
             errors["jobType"] = "This field is required.";
@@ -126,6 +140,22 @@ const CreateJob = () => {
         if (!fields["gender"]) {
             formIsValid = false;
             errors["gender"] = "This field is required.";
+        }
+        if (!fields["location"]) {
+            formIsValid = false;
+            errors["location"] = "This field is required.";
+        }
+        if (!fields["skills"]) {
+            formIsValid = false;
+            errors["skills"] = "This field is required.";
+        }
+        if (!fields["jobDescription"]) {
+            formIsValid = false;
+            errors["jobDescription"] = "This field is required.";
+        }
+        if (!fields["jobResponsibilities"]) {
+            formIsValid = false;
+            errors["jobResponsibilities"] = "This field is required.";
         }
 
         setErrors(errors);
@@ -145,25 +175,26 @@ const CreateJob = () => {
             const string = fields?.jobTitle.replace(
                 /[^a-zA-Z0-9 ]/g,
                 ""
-              );
-              const url = encodeURIComponent(string.replace(/\s+/g, "-")).toLowerCase();
+            );
+            const url = encodeURIComponent(string.replace(/\s+/g, "-")).toLowerCase();
             var formValues = {
                 user_id: fields.user_id,
                 jobTitle: fields.jobTitle,
-                jobUrl:url,
-                jobCategory: fields.jobCategory,
+                jobUrl: url,
+                jobCategory: fields.jobCategory.split(" ").join(""),
                 skills: fields.skills,
-                salary: fields?.salary,
                 position: fields.position,
                 experience: fields.experience,
-                jobType: fields.jobType,
-                industry: fields.industry,
+                jobType: fields.jobType.split(" ").join(""),
                 qualification: fields.qualification,
-                level: fields.level,
                 gender: fields.gender,
                 jobDescription: fields.jobDescription,
-                jobResponsibilities:fields.jobResponsibilities,
-                jobQualification:fields.jobQualification,
+                jobResponsibilities: fields.jobResponsibilities,
+                location:fields.location,
+                // salary: fields?.salary,                
+                // industry: fields.industry,
+                // level: fields.level,              
+
             };
 
             axios
@@ -174,20 +205,20 @@ const CreateJob = () => {
                     setFields({
                         jobTitle: "",
                         skills: "",
-                        jobCategory: "",
-                        salary: "",
+                        jobCategory: "",                       
                         position: "",
                         experience: "",
-                        jobType: "",
-                        industry: "",
+                        jobType: "",                        
                         gender: "",
                         qualification: "",
-                        level: "",
                         jobDescription: "",
-                        jobResponsibilities:"",
-                        jobQualification:"",
+                        jobResponsibilities: "",
+                        location:"",
+                        // salary: "",
+                        // industry: "",
+                        // level: "",
                     });
-                    window.location.href = `/career/career2`;
+                    window.location.href = `/user/jobs/my-job-list`;
                 })
                 .catch((error) => {
                     Swal.fire(
@@ -197,7 +228,7 @@ const CreateJob = () => {
                     );
                 });
         } else {
-            Swal.fire("Validation Issue", "Please correct the errors in the form fields.", "error");
+            Swal.fire("Validation Error", "Please insert data in required fields.", "error");
         }
     };
     return (
@@ -217,11 +248,11 @@ const CreateJob = () => {
                 }
             >
                 <form id="jobForm" className="my-6 px-5 ">
-                    <div className="flex flex-row ">
-                        <div className="mr-3 w-full">
+                    <div className="grid md:grid-cols-2 md:gap-8">
+                        <div className="my-3 md:my-3 ">
                             <label className="label">
                                 Job Title
-                                <span className="asterik">*</span>
+                                <span className="asterik text-red-600">*</span>
                             </label>
                             <div className=" relative">
                                 <input
@@ -239,19 +270,18 @@ const CreateJob = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full">
+                        <div className="my-3 md:my-3 ">
                             <label
                                 className="label "
                                 htmlFor="jobCategory"
                             >
-                                job Category <span className="asterik">*</span>
+                                job Category <span className="asterik text-red-600">*</span>
                             </label>
                             <select
                                 className="w-full bg-gray-50 border border-exlightGray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 id="jobCategory"
                                 name="jobCategory"
                                 onChange={handleChange}
-
                                 autoComplete="off"
                                 value={
                                     fields.jobCategory
@@ -270,53 +300,20 @@ const CreateJob = () => {
                                     })
                                     : "null"}
                             </select>
-
+                            <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.jobCategory}
+                            </div>
                         </div>
 
                     </div>
-                    <div className="grid md:grid-cols-2 md:gap-4">
-                        <div className="my-3 md:my-7">
-                            <label htmlFor="Skills" className="label ">
-                                Skills
-                            </label>
-                            <div className="px-0">
-                                <input
-                                    type="text"
-                                    maxLength="200"
-                                    className=" stdInput2"
-                                    id="skills"
-                                    name="skills"
-                                    placeholder="Skills"
-                                    onChange={handleChange}
-                                    value={fields.skills}
-                                />
-                            </div>
-                        </div>
-                        {/* <div className="my-7 ">
-                            <label htmlFor="salary" className="label ">
-                                salary
-                            </label>
-                            <div className="px-0">
-                                <input
-                                    type="text"
-                                    maxLength="200"
-                                    className=" stdInput2"
-                                    id="salary"
-                                    name="salary"
-                                    placeholder="salary"
-                                    onChange={handleChange}
-                                    value={fields.salary}
-                                />
-                            </div>
-                        </div> */}
-                         <div className="my-7 ">
+                    <div className="grid md:grid-cols-2 md:gap-8">
+                        <div className="my-3 ">
                             <label htmlFor="Qualification" className="label ">
-                                Qualification
+                                Qualification<span className="asterik text-red-600">*</span>
                             </label>
                             <div className="px-0">
                                 <input
-                                    type="text"
-                                    maxLength="200"
+                                    type="text"                                    
                                     className=" stdInput2"
                                     id="qualification"
                                     name="qualification"
@@ -324,19 +321,18 @@ const CreateJob = () => {
                                     onChange={handleChange}
                                     value={fields.qualification}
                                 />
+                                <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                    {errors.qualification}
+                                </div>
                             </div>
                         </div>
-                        
-                    </div>
-                    <div className="grid md:grid-cols-2 md:gap-4">
-                        <div className="my-3 md:my-7">
+                        <div className="my-3 md:my-3 ">
                             <label htmlFor="positions" className="label ">
-                                Positions
+                                Positions<span className="asterik text-red-600">*</span>
                             </label>
                             <div className="px-0">
                                 <input
-                                    type="text"
-                                    maxLength="200"
+                                    type="text"                                    
                                     className=" stdInput2"
                                     id="position"
                                     name="position"
@@ -344,33 +340,40 @@ const CreateJob = () => {
                                     onChange={handleChange}
                                     value={fields.position}
                                 />
+                                 <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.position}
+                            </div>
                             </div>
                         </div>
-                        <div className="my-7 ">
+
+                    </div>
+                    <div className="grid md:grid-cols-2 md:gap-8">
+
+                        <div className="my-3">
                             <label htmlFor="experience" className="label ">
-                                Experience
+                                Experience<span className="asterik text-red-600">*</span>
                             </label>
                             <div className="px-0">
                                 <input
-                                    type="text"
-                                    maxLength="200"
+                                    type="text"                                    
                                     className=" stdInput2"
                                     id="experience"
                                     name="experience"
-                                    placeholder="Experience"
+                                    placeholder=" 5+ years"
                                     onChange={handleChange}
                                     value={fields.experience}
                                 />
+                                 <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.experience}
+                            </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="grid md:grid-cols-2 md:gap-4">
-                        <div className="my-3 md:my-7">
+                        <div className="my-3 md:my-3 ">
                             <label
                                 className="label "
                                 htmlFor="jobType"
                             >
-                                Job Type <span className="asterik">*</span>
+                                Job Type<span className="asterik text-red-600">*</span>
                             </label>
                             <select
                                 className="w-full bg-gray-50 border border-exlightGray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -395,33 +398,19 @@ const CreateJob = () => {
                                     })
                                     : "null"}
                             </select>
-                        </div>
-                        <div className="my-3 md:my-7">
-                            <label htmlFor="Industry" className="label ">
-                                Industry
-                            </label>
-                            <div className="px-0">
-                                <input
-                                    type="text"
-                                    maxLength="200"
-                                    className=" stdInput2"
-                                    id="industry"
-                                    name="industry"
-                                    placeholder="Industry"
-                                    onChange={handleChange}
-                                    value={fields.industry}
-                                />
+                            <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.jobType}
                             </div>
                         </div>
-                    </div>
-                    <div className="grid md:grid-cols-2 md:gap-4">
                         
-                        <div className="my-7">
+                    </div>
+                    <div className="grid md:grid-cols-2 md:gap-8">
+                    <div className="my-3">
                             <label
                                 className="label "
                                 htmlFor="gender"
                             >
-                                Gender <span className="asterik">*</span>
+                                Gender <span className="asterik text-red-600">*</span>
                             </label>
                             <select
                                 className="w-full bg-gray-50 border border-exlightGray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -438,88 +427,110 @@ const CreateJob = () => {
                                 <option value="">--Select Gender--</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
-                                <option value="Both">Both</option>
+                                <option value="Both">Male/Female</option>
+                                <option value="Other">Other</option>
                             </select>
+                            <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.gender}
+                            </div>
                         </div>
-                       
-                    </div>
-                    <div className="grid md:grid-cols-2 md:gap-4">
-                        {/* <div className="my-3 md:my-7">
-                            <label htmlFor="level" className="label ">
-                                Level
+                        <div className="my-3 md:my-3 ">
+                            <label htmlFor="location" className="label ">
+                                Location<span className="asterik text-red-600">*</span>
                             </label>
                             <div className="px-0">
                                 <input
-                                    type="text"
-                                    maxLength="200"
+                                    type="text"                                    
                                     className=" stdInput2"
-                                    id="level"
-                                    name="level"
-                                    placeholder="level"
+                                    id="location"
+                                    name="location"
+                                    placeholder="Pune"
                                     onChange={handleChange}
-                                    value={fields.level}
+                                    value={fields.location}
+                                />
+                                 <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.location}
+                            </div>
+                            </div>
+                        </div>
+                        {/* <div className="my-3 md:my-3 ">
+                            <label htmlFor="Industry" className="label ">
+                                Industry
+                            </label>
+                            <div className="px-0">
+                                <input
+                                    type="text"                                    
+                                    className=" stdInput2"
+                                    id="industry"
+                                    name="industry"
+                                    placeholder="Industry"
+                                    onChange={handleChange}
+                                    value={fields.industry}
                                 />
                             </div>
                         </div> */}
-                        
-                        
+                    </div>                    
+                    <div className="my-3 md:my-5  w-full">
+                        <label htmlFor="Skills" className="label ">
+                            Skills<span className="asterik text-red-600">*</span>
+                        </label>
+                        <div className="px-0">
+                            <textarea
+                                // type="text"                                
+                                className=" stdInput2"
+                                id="skills"
+                                name="skills"
+                                rows={6}
+                                placeholder="Add key skill required for the job"
+                                onChange={handleChange}
+                                value={fields.skills}
+                            />
+                            <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.skills}
+                            </div>
+                        </div>
                     </div>
-                    <div className="my-7 w-full">
-                            <label htmlFor="jobDescription" className="label ">
-                                Job Description
-                            </label>
-                            <div className="px-0">
-                                <textarea
-                                    type="text"
-                                    maxLength="200"
-                                    className=" stdInput2"
-                                    id="jobDescription"
-                                    name="jobDescription"
-                                    rows={6}
-                                    placeholder=" Job Description "
-                                    onChange={handleChange}
-                                    value={fields.jobDescription}
-                                />
+                    <div className="my-5 w-full">
+                        <label htmlFor="jobDescription" className="label ">
+                            Job Description <span className="asterik text-red-600">*</span>
+                        </label>
+                        <div className="px-0">
+                            <textarea
+                                // type="text"                                
+                                className=" stdInput2"
+                                id="jobDescription"
+                                name="jobDescription"
+                                rows={6}
+                                placeholder=" Job Description "
+                                onChange={handleChange}
+                                value={fields.jobDescription}
+                            />
+                            <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.jobDescription}
                             </div>
                         </div>
-                        <div className="my-7 w-full">
-                            <label htmlFor="jobDescription" className="label ">
-                                Job Responsibilities
-                            </label>
-                            <div className="px-0">
-                                <textarea
-                                    type="text"
-                                    maxLength="200"
-                                    className=" stdInput2"
-                                    id="jobResponsibilities"
-                                    name="jobResponsibilities"
-                                    rows={6}
-                                    placeholder=" Job Responsibilities "
-                                    onChange={handleChange}
-                                    value={fields.jobResponsibilities}
-                                />
+                    </div>
+                    <div className="my-5 w-full">
+                        <label htmlFor="jobDescription" className="label ">
+                            Job Responsibilities<span className="asterik text-red-600">*</span>
+                        </label>
+                        <div className="px-0">
+                            <textarea
+                                className=" stdInput2"
+                                id="jobResponsibilities"
+                                name="jobResponsibilities"
+                                rows={6}
+                                placeholder=" Job Responsibilities "
+                                onChange={handleChange}
+                                value={fields.jobResponsibilities}
+                            />
+                            <div className="errorMsg col-12 text-left pl-0 mt-2">
+                                {errors.jobResponsibilities}
                             </div>
                         </div>
-                        <div className="my-7 w-full">
-                            <label htmlFor="jobDescription" className="label ">
-                            Background, Skills & Experience
-                            </label>
-                            <div className="px-0">
-                                <textarea
-                                    type="text"
-                                    maxLength="200"
-                                    className=" stdInput2"
-                                    id="jobQualification"
-                                    name="jobQualification"
-                                    rows={6}
-                                    placeholder=" Background, Skills & Experience "
-                                    onChange={handleChange}
-                                    value={fields.jobQualification}
-                                />
-                            </div>
-                        </div>
-                    <div className=" my-12 mb-10 xl:my-7">
-                        {/*{console.log("this.state.submitted",this.state.submitted)}*/}
+                    </div>
+
+                    <div className=" my-12 mb-10 xl:my-3">
                         {submitted ? (
                             <button className="stdBtn pull-right  w-1/4">
                                 Submit &nbsp; <i className="fa fa-spinner fa-pulse"></i>{" "}

@@ -4,4 +4,7 @@ const Controller = require('./controller.js');
 
 router.post('/post',Controller.insertStudentDetails);
 router.get('/get/list',Controller.getStudentDetails);
+router.get('/get/single-stud/:stud_id', Controller.fetch_stud_data_using_id);
+// router.delete('/delete-job/:stud_id', Controller.addDeleteStatus);
+router.patch('/update/stud-data',Controller.update_studData);
 module.exports = router;

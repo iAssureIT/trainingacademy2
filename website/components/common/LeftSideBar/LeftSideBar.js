@@ -3,21 +3,21 @@ import React, { useState } from "react";
 const LeftSideBar = () => {
   const accordionItems = [
     { id: 1, label: "Dashboard" },
+    // {
+    //   id: 2, label: "Blogs", submenu: [{ subLabel: "Create New Blog", url: "/user/blogs/create-new-blog" },
+    //   { subLabel: "List of Blogs", url: "/user/blogs/my-blogs" }]
+    // },
+    // {
+    //   id: 3, label: "User Management", submenu: [{ subLabel: "Create New User", url: "/user/user-management/create-user" },
+    //   { subLabel: "Users List", url: "/user/user-management/users-list" }]
+    // },
     {
-      id: 2, label: "Blogs", submenu: [{ subLabel: "Create New Blog", url: "/user/blogs/create-new-blog" },
-      { subLabel: "List of Blogs", url: "/user/blogs/my-blogs" }]
+      id: 4, label: "Student Management", submenu: [{ subLabel: "Add Student", url: "/user/student/add-new-stud" },
+      { subLabel: "Student List", url: "/user/student-management/student-list" }]
     },
-    {
-      id: 3, label: "User Management", submenu: [{ subLabel: "Create New User", url: "/user/user-management/create-user" },
-      { subLabel: "Users List", url: "/user/user-management/users-list" }]
-    },
-    {
-      id: 4, label: "Job Management", submenu: [{ subLabel: "Add Job", url: "/user/jobs/create-new-job" },
-      { subLabel: "Job List", url: "/career/career2" }]
-    },
-    {
-      id: 5, label: "Case Study Management", submenu: [{ subLabel: "Add Case Study", url: "/user/case-study/create-new-case-study" },]
-    },
+    // {
+    //   id: 5, label: "Case Study Management", submenu: [{ subLabel: "Add Case Study", url: "/user/case-study/create-new-case-study" },]
+    // },
 
   ];
 

@@ -40,9 +40,9 @@ export default function UserLayout({ children }) {
   };
 
   return (
-    <div className="relative flex bg-leftGray">
+    <div className="relative flex">
       <div
-        className="absolute  duration-300  top-10 left-64  z-40 h-10 w-10 "
+        className="absolute  duration-300  top-20 left-64  z-40 h-10 w-10 "
         id="arrow"
       >
         <i
@@ -55,7 +55,7 @@ export default function UserLayout({ children }) {
       </div>
       <div
         id="logo-sidebar"
-        className={"  w-64  z-20 h-full pb-24  bg-leftGray  duration-300   "}
+        className={"  w-64   h-full pb-24  bg-leftGray  duration-300  mt-20 "}
         aria-label="Sidebar"
       >
         <LeftSideBar />

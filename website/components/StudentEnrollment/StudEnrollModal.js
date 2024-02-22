@@ -100,7 +100,7 @@ const StudEnrollModal = (props) => {
 
 
             axios
-                .post("/api/stud-enroll-routes/post", formValues)
+                .post("/api/students/post", formValues)
                 .then((data) => {
                     setSubmitted(false);
                     const formValues1 = {
