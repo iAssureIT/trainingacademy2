@@ -6,9 +6,7 @@
   Review Date: 
 ==========================================================*/
 
-import React, { useState, useEffect } from "react";
-import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
-import Link from 'next/link';
+import React, { useState } from "react";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 const SmallBanner = (props) => {

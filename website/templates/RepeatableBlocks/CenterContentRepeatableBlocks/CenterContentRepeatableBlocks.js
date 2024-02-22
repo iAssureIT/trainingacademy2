@@ -8,9 +8,7 @@
 
 
 "use client"
-import React, { useState, useEffect } from "react";
-import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
-import Link from 'next/link';
+import React, { useState } from "react";
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 
 const CenterContentRepeatableBlocks = (props) => {
