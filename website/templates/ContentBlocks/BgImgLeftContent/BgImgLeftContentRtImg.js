@@ -110,12 +110,21 @@ const BgImgLeftContentRtImg = (props) => {
                         {
                             props?.inputData?.para
                                 ?
-                                <p className={props?.inputData?.paraCss ? props?.inputData?.paraCss : "mb-6 text-xl  font-normal  text-justify lg:w-auto"}
+                                <p className={props?.inputData?.paraCss ? props?.inputData?.paraCss : "py-5 mb-6 text-xl  font-normal  text-justify lg:w-auto"}
                                     dangerouslySetInnerHTML={{ __html: props?.inputData?.para }} >
                                 </p>
                                 :
                                 null
                         }
+                        {
+                                    props?.inputData?.modalDisplayLink
+                                        ?
+                                            <div className={props?.inputData?.linkDivCss ? props?.inputData?.linkDivCss : ""}>
+                                                <a className={props?.inputData?.linkCss ? props?.inputData?.linkCss : ""} href={props?.inputData?.linkUrl} >{props?.inputData?.linkName}</a>
+                                            </div>
+                                        :
+                                        ""
+                                }
                         {
                             props?.inputData?.listTitle
                                 ?
@@ -171,7 +180,7 @@ const BgImgLeftContentRtImg = (props) => {
                                     ? <div className={props?.inputData?.imgCaptionCss}>{props?.inputData?.imgCaption}</div>
                                     :
                                     null
-                                }
+                                }                                
                                 {
                                     props?.inputData?.btn2
                                         ?

@@ -328,14 +328,14 @@ const content_Footer = {
   addLine3: "Pune, Maharashtra 411014",
   phone1: "+91 7770003690",
   email1: "info@iaspireit.com",
-  fbLink: "https://www.facebook.com/iAssureIT",
+  fbLink: "https://www.facebook.com/iAspireIT",
   linkedIn:
     "https://www.linkedin.com/company/iassure-international-technologies-pvt-ltd/?viewAsMember=true",
-  // instagramLink: "https://www.instagram.com/",
+  instagramLink: "https://www.instagram.com/iaspireit",
   // telegramLink: "https://www.telegram.com/",
-  twitterLink: "https://twitter.com/iAssure_IT",
-  // youtubeLink: "https://www.youtube.com/",
-  whatsup: "https://web.whatsapp.com/",
+  // twitterLink: "https://twitter.com/iAssure_IT",
+  youtubeLink: "https://www.youtube.com/@IAspireITTrainingAcademy",
+  // whatsup: "https://web.whatsapp.com/",
   iconColor: "text-light",
   // website: '<span class="text-light font-extrabold"> www.iassureit.com</span>',
   // copyrightText:
@@ -363,9 +363,9 @@ const content_Footer2 = {
   bgImage: "/images/specific/Footer/Footer-2.webp",
   smallBGImage: "/images/specific/Footer/Footer-2.webp",
   copyrightText:
-    '<span class="text-light font-normal">Copyright © <script>document.write(new Date().getFullYear())</script>, <span class="text-orangeColor hover:text-ftLink "><a href="https://iassureit.com/"  target="_blank" >iAssureIT</a></span> All Rights Reserved</span>',
+    '<span class="text-light font-normal">Copyright © <script>document.write(new Date().getFullYear())</script>, <span class="text-orangeColor hover:text-ftLink "><a href="/"  target="_blank" >iAspire</a></span> All Rights Reserved</span>',
   footerText:
-    '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
+    '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
 export default function RootLayout({ children }) {
   useEffect(() => {

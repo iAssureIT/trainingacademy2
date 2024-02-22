@@ -20,11 +20,11 @@ const HomePage = () => {
     //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
     logo: "",    
     h1Txt:
-      "<h1 class=' uppercase'>100% quality courses </h1><span class='font-bold'>FIND YOUR PERFECT COURSES AND IMPROVE YOUR SKILLS</span>",
+      "<span class='font-bold text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl'>Transforming Aspirations into Applications</span><br/><span class='text-base'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
     bgImgCss:
       "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
     logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl xl:!leading-[1.3] mt-10 lg:mt-34 2xl:mt-20 text-left",
+    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 xl:!leading-[1.3] mt-10 lg:mt-34 2xl:mt-20 text-left",
     gridCss:
       " pt-10 md:pt-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32",
     gridSubDivCss:
@@ -33,7 +33,16 @@ const HomePage = () => {
     imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pb-8",
     borderColor:
       "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-    dash: "",
+	dash: "",
+	modalDisplayLink:"true",
+	linkName:"Enroll Now",
+	linkUrl:"/",
+	linkDivCss:"ml-5 md:ml-10 mt-2",
+	linkCss:"underline text-orange-500 font-bold text-base",
+	modalId: "UnlockPModal",
+	modalDisplay: "true",
+	modalUrlName: "Download Brochure",
+	modalBtnCss: "w-fit mx-auto md:float-left text-white text-center font-bold text-sm 2xl:text-lg  ml-5 md:ml-10 py-2 px-2 md:px-5  2xl:px-6  mt-3 lg:mt-5 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
         
     };
 
@@ -643,7 +652,7 @@ const HomePage = () => {
 				classForContent:
 					"justify-content h-auto text-justify my-auto text-md lg:text-lg p-3 font-[500]",
 				content:
-					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><br/><div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
+					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><br/><div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36'><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
 			},
 		],
 	};
@@ -1118,8 +1127,8 @@ const HomePage = () => {
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
 		bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><h5 class='font-extrabold '>Total Investment</h5>" +
-			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :<span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,80,000</span></span></p>" +
-			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses :<span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'> 1,00,000</span></span></p>" +
+			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
+			"<br /> <p class='lg:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses : <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +
 			"<br /><p class='text-2xl font-bold text-lightGreen'>Discount of 45% discount</p></div>",
 		cardsArray: [
 			{
@@ -1166,7 +1175,7 @@ const HomePage = () => {
 	const content_PAYMENT_OPTIONS = {
 		sectionCss: "my-5 lg:mb-14 px-10 lg:px-32 2xl:px-48 max-w-8xl",
 		blockTitle: " <span  class='uppercase font-extrabold leading-relaxed' >PAYMENT OPTIONS</span>",
-		classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl my-10",
+		classForblockTitle: "w-full text-center text-xl md:text-2xl xl:text-3xl my-10",
 		classForNoOfCards: "",
 		classForCards: "",
 		classForCardTitle:
@@ -1177,8 +1186,8 @@ const HomePage = () => {
 		classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
 		classForblockContent:
 			"text-lg text-center font-[500] mx-auto ",
-		blockContent: `<div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>` +
-			`<br /><div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
+		blockContent: `<div class="flex mb-3 text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>` +
+			`<div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
 		to just Rs 90,000.<span class='text-xl font-bold text-lightGreen'> (Overall Discount of 50% discount)</span></div></div>`,
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",

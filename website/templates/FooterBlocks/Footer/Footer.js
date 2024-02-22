@@ -250,10 +250,11 @@ const Footer = (props) => {
                     {props.inputData.instagramLink ? (
                       <a
                         href={props.inputData.instagramLink}
-                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700"
+                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
                         aria-label="Instagram"
                       >
-                        <i className="fa-brands fa-instagram  hover:bg-white w-10 h-10 p-2 mx-auto rounded-full border-2 border-orangeColor  text-orangeColor"></i>
+                        <i className="fa-brands fa-instagram px-2.5 py-2.5 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
+                        <span className="sr-only">Instagram page</span>
                       </a>
                     ) : null}
                     {props.inputData.linkedIn ? (
@@ -269,10 +270,11 @@ const Footer = (props) => {
                     {props.inputData.youtubeLink ? (
                       <a
                         href={props.inputData.youtubeLink}
-                        className="text-light hover:text-gray-900 dark:hover:text-blue-700"
+                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
                         aria-label="Youtube"
                       >
-                        <i className="fa-brands fa-youtube  hover:bg-white"></i>
+                        <i className="fa-brands fa-youtube px-2 py-2.5 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
+                        <span className="sr-only">Youtube page</span>
                       </a>
                     ) : null}
                     {props.inputData.whatsup ? (
