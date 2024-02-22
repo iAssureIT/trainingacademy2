@@ -1,15 +1,10 @@
 "use client";
-// import { Metadata } from "next";
 import React, {$,useEffect } from "react";
 import axios from "axios";
-// import { Inter } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-// import MenuBar from "@/templates/HeaderBlocks/MenuBar/MenuBar";
 import Footer from "@/templates/FooterBlocks/Footer/Footer.js";
 import Footer2 from "@/templates/FooterBlocks/Footer/Footer2";
 import MenuBar2 from "@/templates/HeaderBlocks/MenuBar/MenuBar2";
-// const inter = Inter({ subsets: ["latin"] });
-// import getConfig                       from 'next/config';
 import "./globals.css";
 
 // const { publicRuntimeConfig } = getConfig();
@@ -387,42 +382,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth'},{scrollPaddingTop:'25%'}} suppressHydrationWarning={true}>
       <head>
-        <title>{metadata.title}</title>
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"
-          async
-        ></script>
-        {/* <script src="lazysizes.min.js" async></script> */}
-        <link rel="icon" href="/favicon.ico" sizes="any"></link>
-        <link
-          href="https://db.onlinewebfonts.com/c/5b0ba2e20d3d7e3fc30b60595f3702c2?family=Druk+Text+Bold+Trial"
-          rel="stylesheet"
-        ></link>
-        <link
-          rel="preload"
-          fetchPriority="high"
-          as="image"
-          href="/images/specific/Services/MobileApp/Images/2.webp"
-          type="image/webp"
-        ></link>
-
-        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,500;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" as="style"></link>
-         */}
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        {/* <script src="//cdn.ckeditor.com/4.6.1/basic/ckeditor.js"></script> */}
+        <title>{metadata.title}</title>        
+        <link rel="icon" href="/favicon.ico" sizes="any"></link>        
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,500;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
           rel="stylesheet"
         ></link>
-
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         {/* <meta
           name={metadata.title}
           content="iAssure International Technologies Pvt Ltd is a Pune, India based IT Services & Product Development company."
          /> */}
-
         <meta
           name="google-site-verification"
           content="V5Z5wlhvCU0Ix_33kkSekq7poDuHk4uK3MuZuN2lzOs"
@@ -435,12 +406,10 @@ export default function RootLayout({ children }) {
           }
         ></script>
         {/* <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> */}
-        <script src="https://cdn.tailwindcss.com" async></script>
+        {/* <script src="https://cdn.tailwindcss.com" async></script> */}
         {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>
-        
-        
-      </head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>        
+       </head>
       <body className={" bg-white"}>
         
         <MenuBar2 inputData={content_Menubar} />
