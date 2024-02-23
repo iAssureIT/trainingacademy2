@@ -363,7 +363,7 @@ const content_Footer2 = {
   bgImage: "/images/specific/Footer/Footer-2.webp",
   smallBGImage: "/images/specific/Footer/Footer-2.webp",
   copyrightText:
-    '<span class="text-light font-normal">Copyright © <script>document.write(new Date().getFullYear())</script>, <span class="text-orangeColor hover:text-ftLink "><a href="/"  target="_blank" >iAspire</a></span> All Rights Reserved</span>',
+    '<span class="text-light font-normal">Copyright © <script>document.write(new Date().getFullYear())</script>, <span class="text-orangeColor hover:text-ftLink "><a href="/"  target="_blank" >iAspireIT</a></span> All Rights Reserved</span>',
   footerText:
     '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };

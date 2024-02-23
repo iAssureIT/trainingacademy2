@@ -157,7 +157,7 @@ const StudEnrollModal = (props) => {
                             "<br/>" +                            
                             "<b>City: </b>" +
                             fields.city +
-                            "<br/>You can access the database of candidates by clicking the link below<br/>https://qatraining-academy.iassureit.in/stud-enrollment-list<br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
+                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>https://qatraining-academy.iassureit.in/stud-enrollment-list<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
                     };
                     axios
                         .post("/send-email", formValues2)
