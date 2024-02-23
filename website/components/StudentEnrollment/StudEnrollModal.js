@@ -86,7 +86,7 @@ const StudEnrollModal = (props) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        var adminEmail = process.env.TRAINING_EMAIL
+        var adminEmail = process.env.CONTACT_EMAIL
         if (validateForm()) {
             setSubmitted(true);
 
@@ -123,9 +123,9 @@ const StudEnrollModal = (props) => {
                                     showConfirmButton: true,
                                     confirmButtonColor: "#376bff"
                                 });
-                                // setTimeout(() => {
-                                //     window.location.href = "https://calendly.com/iassureit/discovery-call?back=1&month=2024-01";
-                                // }, 2000);
+                                setTimeout(() => {
+                                    window.location.href = "/";
+                                }, 2000);
                                 setBtnLoading(false)
                                 setCloseModal(true)
                                 props.modalId.close()
