@@ -128,7 +128,7 @@ const StudEnrollModal = (props) => {
                                 // }, 2000);
                                 setBtnLoading(false)
                                 setCloseModal()
-                                StudEnrollModal.close()
+                                props.modalId.close()
                                 setFields({
                                     fullName: "",
                                     email: "",
