@@ -41,7 +41,8 @@ const HomePage = () => {
 	// linkCss:"underline text-orange-500 font-bold text-base",
 	modalId: "UnlockPModal",
 	modalDisplay: "true",
-	modalUrlName: "Download Brochure",
+	// modalUrlName: "Download Brochure",
+	modalUrlName: "Enroll Now",
 	modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-sm  ml-5 md:ml-10 py-2 px-2 md:px-5  2xl:px-6  mt-3 lg:mt-5 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
         
     };
