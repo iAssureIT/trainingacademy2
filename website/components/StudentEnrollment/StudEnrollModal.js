@@ -127,7 +127,8 @@ const StudEnrollModal = (props) => {
                                 //     window.location.href = "https://calendly.com/iassureit/discovery-call?back=1&month=2024-01";
                                 // }, 2000);
                                 setBtnLoading(false)
-                                setCloseModal(true)
+                                setCloseModal()
+                                StudEnrollModal.close()
                                 setFields({
                                     fullName: "",
                                     email: "",
