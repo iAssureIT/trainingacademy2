@@ -157,9 +157,9 @@ const StudEnrollModal = (props) => {
                             fields.phone +
                             "<br/>" +                            
                             "<b>City: </b>" +
-                            fields.city +
-                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>https://www.iaspireit.com/stud-enrollment-list/<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
-                    };
+                            fields.city+ 
+                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>"+process.env.websiteName+"/stud-enrollment-list/<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
+                        };
                     axios
                         .post("/send-email", formValues2)
                         .then((res) => {
