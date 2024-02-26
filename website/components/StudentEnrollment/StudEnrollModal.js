@@ -111,8 +111,8 @@ const StudEnrollModal = (props) => {
                             "Dear " +
                             fields.fullName +
                             ", <br/><br/>" +
-                            "In the meantime, feel free to explore our website to learn more about our solutions and the range of services we offer. Thank you once again for considering iAspire IT as your trusted technology partner. We look forward to the opportunity to work together and address your IT needs." +
-                            "<br/><br/> Best Regards, <br/> Team iAspire IT Training Academy.",
+                            "In the meantime, feel free to explore our website to learn more about our solutions and the range of services we offer. Thank you once again for considering iAspireIT as your trusted technology partner. We look forward to the opportunity to work together and address your IT needs." +
+                            "<br/><br/> Best Regards, <br/> Team iAspireIT Training Academy.",
                     };
                     axios
                         .post("/send-email", formValues1)

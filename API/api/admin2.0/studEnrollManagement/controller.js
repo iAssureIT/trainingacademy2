@@ -121,7 +121,7 @@ exports.update_stud_status = (req, res) => {
 };
 
 exports.getStatusWiseList = (req, res, next) => {
-	console.log("req.params.status_value",req.params.status_value)
+	// console.log("req.params.status_value",req.params.status_value)
 	studModel.find({"status":req.params.status_value})
 		.sort({ "createdAt": -1 })		
 		.then(List => {
@@ -135,3 +135,20 @@ exports.getStatusWiseList = (req, res, next) => {
 			})
 		});
 }
+exports.deleteSingleStudent  = (req,res,next)=>{
+	studModel.deleteOne({_id:req.params.stud_id})
+		.exec()
+		.then(data=>{
+			
+			if(data.deletedCount === 1){
+				res.status(200).json({message:"STUDENT_DELETED"});
+			}else{
+				res.status(200).json({message:"STUDENT_NOT_DELETED"});
+			}
+		})
+		.catch(err =>{
+			res.status(500).json({
+				error: err
+			});
+		});
+};

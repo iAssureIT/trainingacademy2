@@ -70,7 +70,7 @@ const DeletedStudentList = props => {
 
         Swal.fire({
             title: 'Are you sure?',
-            text: 'You are about to delete student data.',
+            text: 'You are about to Permanant delete student data.',
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -78,11 +78,8 @@ const DeletedStudentList = props => {
             confirmButtonText: 'Confirm',
             cancelButtonText: 'Cancel'
         }).then((result) => {
-            if (result.isConfirmed) {
-                var formValues = {
-                    status: "Deleted",
-                };
-                axios.patch("/api/students/update/status/" + stud_id, formValues)
+            if (result.isConfirmed) {               
+                axios.patch("/api/students/update/status/" + stud_id)
                     .then(res => {
                         Swal.fire("Student data deleted Successfully");
                         setTimeout(() => {
@@ -97,7 +94,7 @@ const DeletedStudentList = props => {
                         );
                     });
             } else if (result.dismiss === Swal.DismissReason.cancel) {
-                Swal.fire('Action Canceled', 'Your student data remains unchanged.', 'info');
+                Swal.fire('Action Canceled', 'Student not deleted', 'info');
             }
         });
     };
@@ -117,7 +114,7 @@ const DeletedStudentList = props => {
             }
             <h2 className="text-black mt-32 w-full text-center leading-10 text-3xl md:text-3xl xl:text-5xl px-2 mb-10"
             >
-                Student Enrollment List
+                Deleted Students List
             </h2>
 
             {
@@ -160,7 +157,7 @@ const DeletedStudentList = props => {
                                             Status
                                         </th>
                                         <th
-                                            className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                            className="px-5 py-3 border-b-2  border-gray-200 bg-gray-100 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Actions
                                         </th>
                                     </tr>
@@ -192,20 +189,8 @@ const DeletedStudentList = props => {
                                                             <option value="notReachable">Not Reachable </option>
                                                         </select>
                                                     </td>
-                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                        <a
-                                                            title="Edit Student"
-                                                            href={
-                                                                "/user/student-management/" + data?._id
-                                                            }
-                                                        >
-                                                            {" "}
-                                                            <i
-                                                                className={
-                                                                    "fa fa-pencil float-right mr-3 right hover:cursor-pointer"
-                                                                }
-                                                                aria-hidden="true"
-                                                            ></i>{" "}</a>
+                                                    <td className="px-5 py-5 border-b text-center border-gray-200 bg-white text-sm">
+                                                       
                                                         <div>
                                                             <i className="fa fa-trash cursor-pointer hover:text-red-500 " title="Delete" onClick={handleDeleteStatus} id={data._id}></i>
                                                         </div>

@@ -10,10 +10,9 @@ const StudentList = props => {
         axios
             .get("/api/students/get/list")
             .then(res => {
-                console.log("data -> ", res?.data);
-                // if (res?.data) {
-                setStudList(res?.data);
-                // }
+                console.log("data -> ", res?.data);               
+                const filteredList = res?.data.filter(item => item.status !== "deleted");
+            setStudList(filteredList);
             })
             .catch((error) => {
                 Swal.fire(

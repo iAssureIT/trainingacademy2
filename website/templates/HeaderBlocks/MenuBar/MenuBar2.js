@@ -12,29 +12,13 @@ function MenuBar2(props) {
 	};
 	const menuRef = useRef();
 	useEffect(() => {
-		setCurrentLink('/' + window.location.pathname.split("/")[1]);
-		// const menuItems=document.getElementsByClassName("mainMenu");
-		// for (var i = 0; i < menuItems.length; i++) {
-		// menuItems[i].addEventListener("click", (e)=> {
-		// console.log(e.target.id)
-		// var current = document.getElementsByClassName("MainMenuActive");
-		// current[0].className = current[0].className.replace(" MainMenuActive", "");
-		// this.className += " MainMenuActive";
-		// });
-		// }
-
-		// console.log("menuItems",menuItems)
-		// console.log(window.location)
+		setCurrentLink('/' + window.location.pathname.split("/")[1]);		
 		if (window.location.pathname === '/') {
 			menuRef.current.classList.add('bg-black');
 			menuRef.current.classList.add('bg-opacity-20');
 
 		}
-		if (window.location.pathname.includes('/blogs/')) {
-			menuRef.current.classList.remove('absolute');
-			menuRef.current.classList.add('bg-slate-700');
-			// menuRef.current.classList.add('bg-opacity-20');
-		}
+		
 		if (window.location.pathname === '/user' || window.location.pathname ==="/stud-enrollment-list/") {
 			var nav1 = document.querySelector(".navBar1");			
 			nav1.classList.add("bg-gray-500");
