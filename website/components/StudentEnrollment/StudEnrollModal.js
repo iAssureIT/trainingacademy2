@@ -73,7 +73,7 @@ const StudEnrollModal = (props) => {
         //     formIsValid = false;
         //     errors["comments"] = "This field is required.";
         // }
-        
+
 
         setErrors(errors);
 
@@ -93,9 +93,9 @@ const StudEnrollModal = (props) => {
             var formValues = {
                 fullName: fields.fullName,
                 email: fields.email,
-                phone: fields.phone,                
+                phone: fields.phone,
                 city: fields.city,
-               
+
             };
 
 
@@ -155,11 +155,11 @@ const StudEnrollModal = (props) => {
                             "<br/>" +
                             "<b>Phone Number: </b>" +
                             fields.phone +
-                            "<br/>" +                            
+                            "<br/>" +
                             "<b>City: </b>" +
-                            fields.city+ 
-                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>"+process.env.websiteName+"/stud-enrollment-list/<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
-                        };
+                            fields.city +
+                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>" + process.env.WEBSITE_NAME+"/stud-enrollment-list/<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
+                    };
                     axios
                         .post("/send-email", formValues2)
                         .then((res) => {
@@ -178,7 +178,7 @@ const StudEnrollModal = (props) => {
                                     fullName: "",
                                     email: "",
                                     phone: "",
-                                     city: "",
+                                    city: "",
                                 });
                             }
                         })
