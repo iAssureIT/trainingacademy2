@@ -607,6 +607,7 @@ const HomePage = () => {
 		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
 		cardsArray: [
 			{
+				id: "course1",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-8.webp",
 				altImage: "imageDescription",
 				cardTitle: "Course 1: Web Technologies Mastery",
@@ -616,6 +617,7 @@ const HomePage = () => {
 					"<div class='font-semibold text-left'> HTML5, CSS3, Bootstrap6, Tailwind CSS, JavaScript </div>  <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Dive into the fundamentals of web development with HTML5, CSS3, and Bootstrap6. Learn to craft stunning, responsive designs with Tailwind CSS, and unleash the power of interactivity with JavaScript. From building beautiful UIs to ensuring seamless user experiences, this course lays the groundwork for your FullStack journey.</div>",
 			},
 			{
+				id: "course2",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-9.webp",
 				altImage: "imageDescription",
 				cardTitle: "Course 2: ReactJS Framework and Beyond",
@@ -625,6 +627,7 @@ const HomePage = () => {
 					"<div class='font-semibold text-left'>ReactJS Framework, JSON, API Integration </div> <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Unlock the potential of ReactJS and harness the versatility of JSON for dynamic data manipulation. Explore the art of API integration and discover how to seamlessly connect your applications with external services. With hands-on projects and real-world scenarios, you'll master the art of building modern, interactive web applications. </div>",
 			},
 			{
+				id: "course3",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-10.webp",
 				altImage: "imageDescription",
 				cardTitle: "Course 3: NodeJS and Database Development ",
@@ -637,7 +640,7 @@ const HomePage = () => {
 	};
 
 	const content_Courses2 = {
-		id: "courses",
+		id: "course4",
 		sectionCss: "pb-10 lg:pb-20 bg-offWhite",
 	
 		blockTitle:
@@ -662,6 +665,7 @@ const HomePage = () => {
 		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		cardsArray: [        
 			{
+				id: "course4",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-11.webp",
 				altImage: "imageDescription",
 				cardTitle: "Course 4: Advanced Skills and Beyond",
@@ -717,7 +721,7 @@ const HomePage = () => {
 		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-3.webp",
 
 		pageTitle:
-			"<span class=' font-extrabold'>About Mr. Ashish Naik:</span>  ",
+			"<span class=' font-extrabold'>Meet your coach - Mr Ashish Naik:</span>  ",
 		pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
 		blockSubTitle:
 			"<div class='px-2 md:px-10 '> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</div> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
@@ -727,8 +731,8 @@ const HomePage = () => {
 			"/images/specific/trainingAcademy/iAssureIT-training-14.webp",
 		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto 2xl:-mt-32  xxl:!w-3/4 h-full ",
 		bigImageAlt: "iAssureIT-infra",
-		gridCss: "grid grid-cols-1 lg:grid-cols-2 float-left px-3",
-		gridCol1Css: "order-last  w-full h-auto relative my-auto ",
+		gridCss: "grid grid-cols-1 lg:grid-cols-2 float-right lg:float-left px-3",
+		gridCol1Css: "order-first lg:order-last  w-full h-auto relative my-auto ",
 		repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 lg:my-4 2xl:my-5  border-b  border-black	leading-tight ",
 		imgCss:
 			"flex-none h-auto  w-12  items-start rounded mr-3 md:mr-10 object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
@@ -1106,7 +1110,7 @@ const HomePage = () => {
 	};
 
 	const content_ExclusiveBenefits = {
-		sectionCss: "my-14 px-10 lg:px-32 2xl:px-48 max-w-8xl",
+		sectionCss: "my-0 lg:my-14 px-10 lg:px-32 2xl:px-48 max-w-8xl",
 		blockTitle: " <span  class='uppercase font-extrabold leading-relaxed' >EXCLUSIVE BENEFITS</span>",
 		classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl my-10",
 		classForNoOfCards: "",

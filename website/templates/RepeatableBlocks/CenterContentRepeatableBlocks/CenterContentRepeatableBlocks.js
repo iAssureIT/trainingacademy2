@@ -80,7 +80,7 @@ const CenterContentRepeatableBlocks = (props) => {
                     props.inputData?.cardsArray.map((card, index) => {
                         return (
 
-                            <div className={props.inputData?.classForCards + " "} key={index}
+                            <div id={card?.id} className={props.inputData?.classForCards + " "} key={index}
                                 onMouseOver={() => MouseOver(card?.id)}
                                 onMouseLeave={() => MouseLeave(card?.id)}
                             >

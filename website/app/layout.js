@@ -232,7 +232,7 @@ const menuItems = [
   //     },
   //   ],
   // },
-  { label: "COURSES", link: "#courses" },
+  { label: "COURSES", link: "#course1" },
   { label: "TESTIMONIALS", link: "#testimonials" },
   { label: "CONTACT", link: "#footer" },
 ];
@@ -277,7 +277,7 @@ const content_Menubar = {
 const footerMenuItems = [
   { label: "Home", link: "/" },
   { label: "About", link: "#about" },
-  { label: "Courses", link: "#courses" },
+  { label: "Courses", link: "#course1" },
   { label: "Testimonials", link: "#testimonials" },
   { label: "Contact Us", link: "#footer" },
   // { label: "Career", link: "/career/career1" },
@@ -286,19 +286,19 @@ const siteMapItems = [
   
   {
     label: "Web Technologies Mastery",
-    link: "#courses",   
+    link: "#course1",   
   },
   {
     label: "ReactJS Framework and Beyond",
-    link: "#courses",    
+    link: "#course2",    
   },
   {
     label: "NodeJS and Database Development",
-    link: "#courses",    
+    link: "#course3",    
   },
   {
     label: "Advanced Skills and Beyond",
-    link: "#courses",   
+    link: "#course4",   
   },
 ];
 
