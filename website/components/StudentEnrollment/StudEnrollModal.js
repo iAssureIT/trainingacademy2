@@ -142,7 +142,7 @@ const StudEnrollModal = (props) => {
                         });
                     const formValues2 = {
                         toEmail: adminEmail,
-                        subject: "New Enrollment from  Training Academy  Website",
+                        subject: "New Enrollment from Training Academy Website",
                         text: "",
                         mail:
                             "Dear Admin, <br/>" +
