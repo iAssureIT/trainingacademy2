@@ -9,6 +9,7 @@ exports.insertStudentDetails = (req, res, next) => {
 		email: req.body.email,
 		phone: req.body.phone,
 		city: req.body.city,
+		status:req.body.status,
 		createdAt: new Date(),
 	});
 
@@ -70,6 +71,7 @@ exports.update_studData = (req, res, next) => {
 				email: req.body.email,
 				phone: req.body.phone,
 				city: req.body.city,
+				status:req.body.status,
 			}
 		},
 	)
@@ -89,5 +91,31 @@ exports.update_studData = (req, res, next) => {
 		.catch(error => {
 			console.log("update stud  error -> ", error);
 			res.status(500).json({ message: "Error occured while updating Student Data" });
+		})
+};
+
+exports.update_status_deleted = (req, res) => {
+	console.log("req.body => ",req.body);
+	studModel.updateOne(
+		{ _id: req.params.stud_id },
+		{
+			$set: {				
+				status:req.body.status,
+			}
+		},
+	)
+		.then(result => {
+			console.log("update student status -> ",result);			
+			if (result.nModified === 1) {				
+					res.status(200).json({
+						message: "Status updated successfully",
+						success: true,
+					});				
+			} else {
+				res.status(404).json({ message: "No changes were made", success: false });
+			}
+		})
+		.catch(error => {
+			res.status(500).json({ message: "Error occured while updating Student Status" });
 		})
 };

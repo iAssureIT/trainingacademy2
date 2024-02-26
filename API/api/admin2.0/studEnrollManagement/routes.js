@@ -7,4 +7,5 @@ router.get('/get/list',Controller.getStudentDetails);
 router.get('/get/single-stud/:stud_id', Controller.fetch_stud_data_using_id);
 // router.delete('/delete-job/:stud_id', Controller.addDeleteStatus);
 router.patch('/update/stud-data',Controller.update_studData);
+router.patch('/update/status-deleted/:stud_id',Controller.update_status_deleted);
 module.exports = router;

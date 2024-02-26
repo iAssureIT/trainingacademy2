@@ -35,7 +35,7 @@ function MenuBar2(props) {
 			menuRef.current.classList.add('bg-slate-700');
 			// menuRef.current.classList.add('bg-opacity-20');
 		}
-		if (window.location.pathname === '/user' ) {
+		if (window.location.pathname === '/user' || window.location.pathname ==="/stud-enrollment-list/") {
 			var nav1 = document.querySelector(".navBar1");			
 			nav1.classList.add("bg-gray-500");
 			nav1.classList.remove("bg-transparent");

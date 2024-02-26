@@ -23,9 +23,41 @@ const StudentList = props => {
                 );
             });
     }, [])
-    const handleDelete = (event) => {
-        const job_id = event.target.id;
-        axios.delete("/api/students/delete-job/" + job_id)
+    const handleUpdateStatus =(event)=>{
+        const stud_id = event.target.parentNode.id;
+        var formValues = {
+            status: event.target.value,            
+        }
+        // Swal({
+        //     text: "Are you sure you want to update status ?",
+        //     icon: "warning",
+        //     cancelButtonColor: "#DD6B55",
+        //     confirmButtonColor: "red",
+        //     buttons: true,
+        //     buttons: ["Cancel", "Confirm"],
+        //     dangerMode: true,
+        // })
+        axios.patch("/api/students/update/status-deleted/"+stud_id,formValues)
+            .then(res => {
+                Swal.fire("Status updated successfully")
+                setTimeout(() => {
+                    window.location.reload();
+                }, 3000);
+            })
+            .catch((error) => {
+                Swal.fire(
+                    "Data not updated",
+                    error.message,
+                    "error"
+                );
+            });
+    }
+    const handleDeleteStatus = (event) => {
+        const stud_id = event.target.id;
+        var formValues = {
+            status: "Deleted",            
+        }
+        axios.patch("/api/students/update/status-deleted/"+stud_id,formValues)
             .then(res => {
                 Swal.fire("Job deleted Successfully")
                 setTimeout(() => {
@@ -72,33 +104,33 @@ const StudentList = props => {
 
             <div className="px-32 ">
                 <div className=" ">
-                    <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-                        <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                            <table class="min-w-full leading-normal">
+                    <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+                        <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                            <table className="min-w-full leading-normal">
                                 <thead>
                                     <tr>
                                         <th
-                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                            className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             fullName
                                         </th>
                                         <th
-                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                            className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Email
                                         </th>
                                         <th
-                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                            className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Phone Number
                                         </th>
                                         <th
-                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                            className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             City
                                         </th>
                                         <th
-                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                            className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Status
                                         </th>
                                         <th
-                                            class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                            className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Actions
                                         </th>
                                     </tr>
@@ -108,17 +140,25 @@ const StudentList = props => {
                                         studList?.map((data, index) => {
                                             return (
                                                 <tr key={index}>
-                                                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                        <p class="text-gray-900 whitespace-no-wrap">{data.fullName}</p>
+                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                        <p className="text-gray-900 whitespace-no-wrap">{data.fullName}</p>
                                                     </td>
-                                                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                        <p class="text-gray-900 whitespace-no-wrap">{data.email}</p>
+                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                        <p className="text-gray-900 whitespace-no-wrap">{data.email}</p>
                                                     </td>
-                                                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                        <p class="text-gray-900 whitespace-no-wrap">{data.phone}</p>
+                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                        <p className="text-gray-900 whitespace-no-wrap">{data.phone}</p>
                                                     </td>
-                                                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                        <p class="text-gray-900 whitespace-no-wrap">{data.city}</p>
+                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                        <p className="text-gray-900 whitespace-no-wrap">{data.city}</p>
+                                                    </td>
+                                                    <td id={data._id} className="px-5 py-5 border-b border-gray-200 bg-white text-sm" > 
+                                                        <select className="bg-white"  name="studStatus" onChange={handleUpdateStatus}>
+                                                        <option disabled="disabled" selected="true">{data.status}</option>
+                                                        <option value="new" >New</option>
+                                                        <option value="contacted">Contacted</option>
+                                                        <option value="admitted">Admitted </option>
+												        </select>
                                                     </td>
                                                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                         <a
@@ -135,7 +175,7 @@ const StudentList = props => {
                                                                 aria-hidden="true"
                                                             ></i>{" "}</a>
                                                         <div>
-                                                            <i className="fa fa-trash cursor-pointer hover:text-red-500 " title="Delete" onClick={handleDelete} id={data._id}></i>
+                                                            <i className="fa fa-trash cursor-pointer hover:text-red-500 " title="Delete" onClick={handleDeleteStatus} id={data._id}></i>
                                                         </div>
                                                     </td>
                                                 </tr>)

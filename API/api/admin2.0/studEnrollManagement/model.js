@@ -7,6 +7,7 @@ const studEnrollForm = mongoose.Schema({
   email: String,  
   phone: Number,
   city :String,
+  status: String,
   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "user" },
   createdAt: Date,
   updatedAt: Date, 
