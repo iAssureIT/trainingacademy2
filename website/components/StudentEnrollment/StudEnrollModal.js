@@ -111,8 +111,8 @@ const StudEnrollModal = (props) => {
                             "Dear " +
                             fields.fullName +
                             ", <br/><br/>" +
-                            "In the meantime, feel free to explore our website to learn more about our solutions and the range of services we offer. Thank you once again for considering iAssure IT as your trusted technology partner. We look forward to the opportunity to work together and address your IT needs." +
-                            "<br/><br/> Best Regards, <br/> Team iAssure IT International Technologies.",
+                            "In the meantime, feel free to explore our website to learn more about our solutions and the range of services we offer. Thank you once again for considering iAspire IT as your trusted technology partner. We look forward to the opportunity to work together and address your IT needs." +
+                            "<br/><br/> Best Regards, <br/> Team iAspire IT Training Academy.",
                     };
                     axios
                         .post("/send-email", formValues1)
@@ -163,15 +163,7 @@ const StudEnrollModal = (props) => {
                     axios
                         .post("/send-email", formValues2)
                         .then((res) => {
-                            if (res.status === 200) {
-                                // Swal.fire({
-                                //     html: "<span className='p-5 mt-5'><span>Thank you for contacting us.<span></br><span>We will get back to you shortly.</span></span>",
-                                //     showConfirmButton: true,
-                                //     confirmButtonColor: "#376bff"
-                                // });
-                                // setTimeout(() => {
-                                //     window.location.href = "https://calendly.com/iassureit/discovery-call?back=1&month=2024-01";
-                                // }, 2000);
+                            if (res.status === 200) {                              
 
                                 setBtnLoading(false)
                                 setFields({

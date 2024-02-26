@@ -2,13 +2,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-const moment = require('moment');
 
-const StudentList = props => {
+const DeletedStudentList = props => {
     const [studList, setStudList] = useState(null);
     useEffect(() => {
         axios
-            .get("/api/students/get/list")
+            .get("/api/students/get/list/status-wise/deleted")
             .then(res => {
                 console.log("data -> ", res?.data);
                 // if (res?.data) {
@@ -81,7 +80,7 @@ const StudentList = props => {
         }).then((result) => {
             if (result.isConfirmed) {
                 var formValues = {
-                    status: "deleted",
+                    status: "Deleted",
                 };
                 axios.patch("/api/students/update/status/" + stud_id, formValues)
                     .then(res => {
@@ -227,5 +226,5 @@ const StudentList = props => {
     )
 }
 
-export default StudentList
+export default DeletedStudentList
 

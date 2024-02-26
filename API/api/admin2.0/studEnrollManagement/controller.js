@@ -94,8 +94,8 @@ exports.update_studData = (req, res, next) => {
 		})
 };
 
-exports.update_status_deleted = (req, res) => {
-	console.log("req.body => ",req.body);
+exports.update_stud_status = (req, res) => {
+	// console.log("req.body => ",req.body);
 	studModel.updateOne(
 		{ _id: req.params.stud_id },
 		{
@@ -119,3 +119,19 @@ exports.update_status_deleted = (req, res) => {
 			res.status(500).json({ message: "Error occured while updating Student Status" });
 		})
 };
+
+exports.getStatusWiseList = (req, res, next) => {
+	console.log("req.params.status_value",req.params.status_value)
+	studModel.find({"status":req.params.status_value})
+		.sort({ "createdAt": -1 })		
+		.then(List => {
+			// console.log("list",List)			
+			res.status(200).json(List);
+		})
+		.catch(error => {
+			res.status(500).json({
+				error: error,
+				message: "Some error occured while fetching  List"
+			})
+		});
+}

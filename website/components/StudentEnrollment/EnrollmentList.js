@@ -2,7 +2,6 @@ import Link from "next/link"
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
-const moment = require('moment');
 
 const EnrollmentList = props => {
     const [studList, setStudList] = useState(null);
