@@ -57,7 +57,7 @@ function App(props) {
           <div className="text-sm lg:flex-grow">
             <ul
               id="navBar"
-              className=" text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 border float-right border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              className=" text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 border float-right border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white "
             >
               {menuItems.map((data, index) => {
                 return (

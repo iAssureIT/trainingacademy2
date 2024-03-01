@@ -291,7 +291,6 @@ const DataTable =(props) => {
                   <input
                     type="checkbox"
                     className="h-5 w-5"
-                    // style={{marginRight:"10px"}}
                     checked={selectedRows.length === filteredData.length}
                     onChange={() => {
                       if (selectedRows.length === filteredData.length) {

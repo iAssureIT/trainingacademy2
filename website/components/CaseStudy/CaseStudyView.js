@@ -352,7 +352,7 @@ const BetterCottonInitiative = (props, data) => {
       "px-10 lg:px-20 mb-10 max-w-8xl text-center justify-evenly grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-x-4 lg:gap-x-6 lg:grid-cols-2 xl:grid-cols-4 xl:gap-x-6",
     classForCardTitle: "text-center font-semibold subTitle",
     classForCardTitle_2:
-      "font-bold text-md text-primary dark:text-primary-400 p-5",
+      "font-bold text-md text-primary  p-5",
     classForCardImage:
       "mx-auto h-40 sm:h-52 md:h-48 lg:h-48 xl:h-52 2xl:h-72 xxl:h-96 p-10 lazyload",
     // classForblockTitle  :" text-sky-500 w-full text-center font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl",

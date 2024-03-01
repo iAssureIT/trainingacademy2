@@ -1,114 +1,77 @@
-
-
-
 const React = require("react");
-import Image from "next/image"; // Import the Image component
-
 const CenterImgLeftRightRepeatableBlocks = (props) => {
-  var largeImageURL = props?.inputData?.bgImage;
-    var smallImageURL = props?.inputData?.smallBGImage;
+  const { inputData } = props;
+  const largeImageURL = inputData?.bgImage;
+  const smallImageURL = inputData?.smallBGImage;
+  const defaultImageURL = largeImageURL || 'none';
+  
   return (
-    <section className={` ${props.inputData?.classForLeftImageContainer}`}>
+    <section className={` ${inputData?.classForLeftImageContainer}`}>
       <div
-        className={
-          props?.inputData?.bgImgCss
-            ? props?.inputData?.bgImgCss
-            : "relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyload"
-        }
+        className={`relative bg-cover p-12 block bg-white bg-no-repeat max-w-full sm:bg-cover bg-center lg:bg-[image:var(--largeImage-url)] bg-[image:var(--smallImage-url)] lazyload ${inputData?.bgImgCss || ''}`}
         style={{
-          "--largeImage-url": `url(${largeImageURL})`,
-          "--smallImage-url": `url(${smallImageURL ? smallImageURL : largeImageURL
-            })`,
+          "--largeImage-url": `url(${defaultImageURL})`,
+          "--smallImage-url": `url(${smallImageURL || largeImageURL || 'none'})`,
           backgroundSize: "100% 100%",
         }}
       >
-        {props?.inputData?.dash ?
+        {inputData?.dash && (
           <div className="w-full mb-4">
             <ul className="place-content-center flex flex-wrap">
-              <li className={"dash1 " + props.inputData.dash}></li>
-              <li className={"dash2 " + props.inputData.dash}></li>
-              <li className={"dash3 " + props.inputData.dash}></li>
+              {[...Array(3)].map((_, index) => (
+                <li key={index} className={`dash${index + 1} ${inputData.dash}`}></li>
+              ))}
             </ul>
           </div>
-          :
-          null
-        }
-        {props.inputData?.blockTitle && (
-          <h2 className={props.inputData?.classForblockTitle}
-            dangerouslySetInnerHTML={{
-              __html: props?.inputData?.blockTitle,
-            }}></h2>
         )}
-        {props.inputData?.blockContent && (
-          <div className={props.inputData?.classForblockContent}>{props.inputData?.blockContent}</div>
+        {inputData?.blockTitle && (
+          <h2
+            className={inputData.classForblockTitle}
+            dangerouslySetInnerHTML={{ __html: inputData.blockTitle }}
+          ></h2>
         )}
-
-        <div className={props.inputData?.classForContainer}>
-          <div className={props.inputData?.classForLeftBlockContainer}>
-            {props.inputData?.leftBlocks.map((block, index) => (
-              <div key={index} className={props.inputData?.classForLeftContentContainer}>
+        {inputData?.blockContent && (
+          <div className={inputData.classForblockContent}>{inputData.blockContent}</div>
+        )}
+        <div className={inputData?.classForContainer}>
+          <div className={inputData?.classForLeftBlockContainer}>
+            {inputData?.leftBlocks.map((block, index) => (
+              <div key={index} className={inputData?.classForLeftContentContainer}>
                 <div className="grid grid-cols-5 md:grid-cols-4 md:py-5" style={{ justifyContent: "center" }}>
-                  {/* <div className={props.inputData?.classForLeftContentinsideContainer}> */}
-                    <div className="col-span-4 md:col-span-3 mr-10 md:mr-auto" ><h2 className={props.inputData?.classForRightContenTitleStyle}
-                    dangerouslySetInnerHTML={{
-                      __html: block.leftTitle,
-                    }}>
-                      
-                    </h2>
-                    { block?.leftSubTitle?
-                    <h3 className="text-gray-700 text-xs sm:text-base"
-                    dangerouslySetInnerHTML={{
-                      __html: block.leftSubTitle,
-                    }}></h3>
-                    :
-                    ""
-                  }
+                  <div className="col-span-4 md:col-span-3 mr-10 md:mr-auto">
+                    <h2 className={inputData?.classForRightContenTitleStyle} dangerouslySetInnerHTML={{ __html: block.leftTitle }}></h2>
+                    {block.leftSubTitle && (
+                      <h3 className="text-gray-700 text-xs sm:text-base" dangerouslySetInnerHTML={{ __html: block.leftSubTitle }}></h3>
+                    )}
                   </div>
-                  <div
-                    className=" order-first md:order-none items-center place-content-center content-center my-auto mx-auto md:ml-3 lg:mx-auto"
-                 >
-                    <div className=" relative mx-auto bg-white   rounded-full float-right">
-                      <img src={block?.img} alt={props.inputData?.imgAlt}  className="mx-auto p-2 md:w-16 lazyload object-cover" />
+                  <div className="order-first md:order-none items-center place-content-center content-center my-auto mx-auto md:ml-3 lg:mx-auto">
+                    <div className="relative mx-auto bg-white rounded-full float-right">
+                      <img src={block.img} alt={inputData?.imgAlt} className="mx-auto p-2 md:w-16 lazyload object-cover" />
                     </div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-
-          <div className={props.inputData?.classForImageContainer}>
-            <div className={props.inputData?.classForCardImage}>
-              <img src={props?.inputData?.imageSrc} alt={props.inputData?.imgAlt}   className="object-cover mx-auto lazyload"/>
+          <div className={inputData?.classForImageContainer}>
+            <div className={inputData?.classForCardImage}>
+              <img src={inputData?.imageSrc} alt={inputData?.imgAlt} className="object-cover mx-auto lazyload"/>
             </div>
           </div>
-
-          <div className={props.inputData?.classForRightBlockContainer}>
-            {props.inputData?.rightBlocks.map((block, index) => (
-              <div key={index} className={props.inputData?.classForRightContentContainer}>
-                <div className="grid grid-cols-5 md:grid-cols-4 md:py-5" style={{  }}>
-                <div
-                    className="items-center place-content-center content-center my-auto mx-auto  md:mr-3 lg:mx-auto"
-                 >
-                    <div className=" relative mx-auto bg-white   rounded-full float-left ">
-                      <img src={block?.img} alt={props.inputData?.imgAlt} className="mx-auto md:w-16   p-2 lazyload object-cover " />
+          <div className={inputData?.classForRightBlockContainer}>
+            {inputData?.rightBlocks.map((block, index) => (
+              <div key={index} className={inputData?.classForRightContentContainer}>
+                <div className="grid grid-cols-5 md:grid-cols-4 md:py-5">
+                  <div className="items-center place-content-center content-center my-auto mx-auto md:mr-3 lg:mx-auto">
+                    <div className="relative mx-auto bg-white rounded-full float-left">
+                      <img src={block.img} alt={inputData?.imgAlt} className="mx-auto md:w-16 p-2 lazyload object-cover" />
                     </div>
                   </div>
-                  {/* <div className={props.inputData?.classForRightContentinsideContainer}> */}
-                  <div className="col-span-4 md:col-span-3 mr-10 md:mr-auto" > <h2 className={props.inputData?.classForLeftContenTitleStyle}
-                    dangerouslySetInnerHTML={{
-                      __html: block.leftTitle,
-                    }}>
-                    </h2>
-                    {
-                      block?.leftSubTitle?
-
-                    <h3 className="text-gray-700 text-xs sm:text-base"
-                    dangerouslySetInnerHTML={{
-                      __html: block.leftSubTitle,
-                    }}></h3>
-                    :
-                    ""
-                  }
+                  <div className="col-span-4 md:col-span-3 mr-10 md:mr-auto">
+                    <h2 className={inputData?.classForLeftContenTitleStyle} dangerouslySetInnerHTML={{ __html: block.leftTitle }}></h2>
+                    {block.leftSubTitle && (
+                      <h3 className="text-gray-700 text-xs sm:text-base" dangerouslySetInnerHTML={{ __html: block.leftSubTitle }}></h3>
+                    )}
                   </div>
                 </div>
               </div>

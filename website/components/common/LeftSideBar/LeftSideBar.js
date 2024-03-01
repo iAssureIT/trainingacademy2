@@ -39,9 +39,9 @@ const LeftSideBar = () => {
           <li key={item.id}>
             <button
               className={`w-full flex container text-leftWhite transition duration-75 ${openItems.includes(item.id)
-                ? "bg-leftBlue dark:text-gray-400 group-hover:text-leftWhite dark:group-hover:text-leftWhite"
-                : "bg-leftGray dark:text-gray-400 group-hover:text-leftWhite dark:group-hover:text-leftWhite"
-                } border-y border-leftLightGray px-2 py-4 text-leftWhite dark:text-white hover:bg-leftBlue dark:hover:bg-leftBlue`}
+                ? "bg-leftBlue  group-hover:text-leftWhite "
+                : "bg-leftGray  group-hover:text-leftWhite "
+                } border-y border-leftLightGray px-2 py-4 text-leftWhite  hover:bg-leftBlue `}
               onClick={() => handleAccordionToggle(item.id)}
             >
               <i className="w-4 fa-solid fa-file text-xl text-left float-left "></i>
@@ -56,7 +56,7 @@ const LeftSideBar = () => {
                   <li key={index}>
                     <a
                       href={subItem.url}
-                      className="flex items-center bg-leftBlack p-2 pl-5 text-leftWhite dark:text-white hover:bg-leftBlue dark:hover:bg-leftBlue group"
+                      className="flex items-center bg-leftBlack p-2 pl-5 text-leftWhite  hover:bg-leftBlue  group"
                     >
                       <span className="flex-1 ml-5 whitespace-nowrap">{subItem.subLabel}</span>
                     </a>

@@ -128,7 +128,7 @@ class Login extends Component {
               localStorage.setItem("userDetails", JSON.stringify(userDetails));
               // this.props.SetUserLoggedIn();
               new Swal("Login successful", "", "success");
-              window.location.replace("/user/dashboard");
+              window.location.replace("/admin/dashboard");
 
               this.setState(
                 {

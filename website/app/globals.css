@@ -65,7 +65,7 @@ body {
 	  .stdInput2{
 		@apply shadow border   py-2.5  pl-12 block w-full border-gray-200 rounded-md 
 		text-sm focus:border-blue-500 focus:ring-blue-500  lg:py-2.5
-		dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 
+		 
 		focus:outline-slate-200
 		text-lightGray 
 		/* focus:drop-shadow-[0_0px_5px_rgba(0,0,255,0.4)] */
@@ -95,7 +95,7 @@ body {
 		@apply text-red-500 bg-blue-400 !important
 	   }
 	   /* .menuText{
-		@apply block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:text-gray-700  md:hover:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500
+		@apply block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:text-gray-700  md:hover:text-blue-700 md:p-0 
 	   } */
 	   .label{
 		@apply block text-gray-700 font-semibold 
@@ -166,14 +166,14 @@ body {
 	 }
 	
 	 .formLabel{
-	  @apply block text-sm font-medium dark:text-white
+	  @apply block text-sm font-medium 
 	 }
 	 .submitBtnForm{
 	  @apply bg-darkBlue py-1 px-8 rounded-md border border-transparent font-bold float-left
 			 text-white hover:border-white hover:text-white hover:bg-blue-600 focus:outline-none py-0  transition-all text-sm  sm:p-4
 	 } 
 	 .select {
-	  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+	  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  
 	 }
 	
 
@@ -394,7 +394,7 @@ a {
     transition-property: all;
 }
 .label2{
-	@apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+	@apply block mb-2 text-sm font-medium text-gray-900
 }
 
 .line-through{

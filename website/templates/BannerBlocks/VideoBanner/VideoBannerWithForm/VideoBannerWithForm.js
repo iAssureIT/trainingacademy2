@@ -5,7 +5,7 @@
   Reviewed By:  
   Review Date: 
 ==========================================================*/
-
+"use client"
 import React from 'react'
 import axios from "axios";
 import swal from "sweetalert2"; 
@@ -213,51 +213,51 @@ export default class VideoBannerWithForm  extends React.Component{
             <video id={this.props.inputData?.id} className={this.props.inputData?.class + ""} autoPlay loop muted>
                 <source src={this.props.inputData?.videoUrl} type="video/mp4" />
             </video>
-            {/* <div className=' top-0 absolute right-0 mx-12 lg:right-32 xxl:p-20 md:w-1/3 lg:w-1/4 xl:w-1/3'> */}
-			<div className='my-auto h-auto top-0 absolute w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 2xl:w-1/4 sm:right-48 lg:right-32 xl:right-36 sm:mb-96'>
-				<div className='mx-5   sm:mx-auto '>
+            {/* <div className='absolute top-0 right-0 mx-12 lg:right-32 xxl:p-20 md:w-1/3 lg:w-1/4 xl:w-1/3'> */}
+			<div className='absolute top-0 w-full h-auto my-auto sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 2xl:w-1/4 sm:right-48 lg:right-32 xl:right-36 sm:mb-96'>
+				<div className='mx-5 sm:mx-auto '>
 				<img src={this.props.inputData.fgImage1} className={"mx-auto relative top-80 sm:top-48 md:top-56 lg:top-28 xl:top-32 2xl:top-60"} height={80}></img>
                         
                 <div className='bg-white p-5 md:p-10 lg:p-4  xl:p-8 my-40 mt-64 sm:mt-32 md:mt-40 lg:mt-12 xl:mt-16 2xl:mt-44 rounded shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
                     <form>
-                        <div className='text-center mt-10'>
-                            <h1 className='text-xl lg:text-3xl font-bold mb-3 ' >Request a Free Quote</h1>
+                        <div className='mt-10 text-center'>
+                            <h1 className='mb-3 text-xl font-bold lg:text-3xl ' >Request a Free Quote</h1>
                             <h6 className='mb-10 lg:text-sm xl:mb-5'>Guaranteed response within one business day!</h6>
                         </div>
-                        <div className="mb-3 relative">
-                            <label for="fullName" className="block text-sm font-medium dark:text-white"><span className="sr-only">Full name</span></label>
+                        <div className="relative mb-3">
+                            <label htmlFor="fullName" className="block text-sm font-medium "><span className="sr-only">Full name</span></label>
                             <div className="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
-                                <i className="fa-regular fa-user w-5 h-5 mr-16"></i>
+                                <i className="w-5 h-5 mr-16 fa-regular fa-user"></i>
                             </div>
                             <input type="text" ref="fullName" id="fullName" value={this.state.fullName} name="fullName" placeholder="Name" className="formInput"  onChange={this.handleChange.bind(this)}/>
                             <div id="nameError" className={"errorMsg text-red-600"}></div>
                         </div>                    
                         
 
-                        <div className="mb-3 relative">
-                            <label for="mobile" className="block text-sm font-medium dark:text-white" ><span className="sr-only">Email</span></label>
+                        <div className="relative mb-3">
+                            <label htmlFor="mobile" className="block text-sm font-medium " ><span className="sr-only">Email</span></label>
                             <div className="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
-                                <i className="fa fa-mobile w-5 h-5 mr-16"></i>
+                                <i className="w-5 h-5 mr-16 fa fa-mobile"></i>
                             </div>
                             <input type="phone" id="mobile" name="mobile" className="formInput " placeholder="Mobile" value={this.state.mobile} onChange={this.handleChange.bind(this)}/>
                             <div id={"mobileError" } className={"errorMsg text-red-600"}></div>
                         </div>
-                        <div className="mb-3 relative">
-                            <label for="hs-hero-email-2" className="block text-sm font-medium dark:text-white" ><span className="sr-only">Email</span></label>
+                        <div className="relative mb-3">
+                            <label htmlFor="hs-hero-email-2" className="block text-sm font-medium " ><span className="sr-only">Email</span></label>
                             <div className="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
-                                <i className="fa-regular fa-envelope w-5 h-5 mr-16"></i>
+                                <i className="w-5 h-5 mr-16 fa-regular fa-envelope"></i>
                             </div>
                             <input type="email" id="email"  name="email" className="formInput " placeholder="Email address" value={this.state.email} onChange={this.handleChange.bind(this)}/>
                             <div id={"emailError" } className={"errorMsg text-red-600"}></div>
                         </div>
-                        <div className="mb-3 relative">
-                            <label for="hs-hero-message-2" className="block text-sm font-medium dark:text-white"><span className="sr-only">subject</span></label>
+                        <div className="relative mb-3">
+                            <label htmlFor="hs-hero-message-2" className="block text-sm font-medium "><span className="sr-only">subject</span></label>
                             <div className="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
-                                <i className="fa-regular fa-pen-to-square w-5 h-8 mr-16"></i>
+                                <i className="w-5 h-8 mr-16 fa-regular fa-pen-to-square"></i>
                             </div>
                             <textarea type="text" rows="4" cols="35" id="message" name="message" 
                                         refs="message" placeholder="Message"  value={this.state.message} 
-                                    className="py-5 px-12 formInput "
+                                    className="px-12 py-5 formInput "
                                      onChange={this.handleChange.bind(this)}>                            
                              </textarea>
                         </div>
@@ -269,7 +269,7 @@ export default class VideoBannerWithForm  extends React.Component{
                                 <button className="submitBtnForm ">Sending Message &nbsp;
                                 <span><i className="fa fa-spin fa-spinner"></i></span></button>
                                 :
-                            <button type="button" className="submitBtnForm  text-white bg-blue-800" onClick={this.submit.bind(this)}>SUBMIT</button>
+                            <button type="button" className="text-white bg-blue-800 submitBtnForm" onClick={this.submit.bind(this)}>SUBMIT</button>
                         }</div>
                     </form>
                 </div>

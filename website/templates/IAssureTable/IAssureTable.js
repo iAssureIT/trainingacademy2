@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Route} from 'react-router-dom';
-import { useNavigate }          from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import withRouter from '../ /withRouter.js';
 import Swal from 'sweetalert2';
 import axios from 'axios';
@@ -37,7 +37,7 @@ class IAssureTable extends Component {
 			"normalData": true,
 			"printhideArray": [],
 		}
-			console.log(props)
+		console.log(props)
 		this.edit = this.edit.bind(this);
 		this.delete = this.delete.bind(this);
 		this.printTable = this.printTable.bind(this);
@@ -74,7 +74,7 @@ class IAssureTable extends Component {
 	componentDidMount() {
 		axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem("token");
 		$("html,body").scrollTop(0);
-		
+
 		const center_ID = localStorage.getItem("center_ID");
 		const centerName = localStorage.getItem("centerName");
 		this.setState({
@@ -117,7 +117,7 @@ class IAssureTable extends Component {
 	}
 	delete(e) {
 		e.preventDefault();
-		console.log("this.props",this.props);
+		console.log("this.props", this.props);
 		var tableObjects = this.props.tableObjects;
 		let id = (e.target.id).replace(".", "/");
 		axios({
@@ -126,14 +126,14 @@ class IAssureTable extends Component {
 		}).then((response) => {
 			this.props.getData(this.state.startRange, this.state.limitRange);
 			if (this.props.tableObjects.editUrl1) {
-                this.props.navigate(this.props.tableObjects.editUrl1);
-            } else {
-                this.props.navigate(this.props.tableObjects.editUrl);
-            }
+				this.props.navigate(this.props.tableObjects.editUrl1);
+			} else {
+				this.props.navigate(this.props.tableObjects.editUrl);
+			}
 			// this.props.navigate(tableObjects.editUrl);
 			Swal({
-				title : " ",
-				text  : "Record deleted successfully",
+				title: " ",
+				text: "Record deleted successfully",
 			});
 		}).catch((error) => {
 		});
@@ -534,15 +534,24 @@ class IAssureTable extends Component {
 		$('#ActionContent').hide();
 		$('.modal').hide();
 		var DocumentContainer = document.getElementById('section-to-print');
-		var WindowObject = window.open('', 'PrintWindow', 'height=500,width=600');
-		WindowObject.document.write(DocumentContainer.innerHTML);
-		WindowObject.document.close();
-		WindowObject.focus();
-		WindowObject.print();
-		WindowObject.close();
+		var newWindow = window.open('', 'PrintWindow', 'height=500,width=600');
+		var newDocument = newWindow.document;
+
+		// Create a new HTML document
+		newDocument.open();
+		newDocument.write('<html><head><title>Print Window</title></head><body></body></html>');
+		newDocument.close();
+
+		// Append the content to the new document's body
+		newDocument.body.appendChild(DocumentContainer.cloneNode(true));
+
+		// Focus and print the new window
+		newWindow.focus();
+		newWindow.print();
+		newWindow.close();
 	}
 
-	
+
 	render() {
 		return (
 			<div id="tableComponent" className="col-lg-12 col-sm-12 col-md-12 col-xs-12">
@@ -567,7 +576,7 @@ class IAssureTable extends Component {
 								<ReactHTMLTableToExcel
 									id="table-to-xls"
 									className="download-table-xls-button fa fa-download tableicons pull-right"
-									table={"Download-"+this.state.id}
+									table={"Download-" + this.state.id}
 									sheet="tablexls"
 									filename={this.state.tableName}
 									buttonText="" />
@@ -679,10 +688,10 @@ class IAssureTable extends Component {
 															<span>
 																{this.props.tableObjects.editUrl ?
 																	<i className="fa fa-pencil" title="Edit" id={value._id.split("-").join("/")} onClick={this.edit.bind(this)}></i> : null}&nbsp; &nbsp;
-																	{this.props.editId && this.props.editId === value._id ? null : <i className={"fa fa-trash redFont " + value._id} id={value._id + '-Delete'} data-toggle="modal" title="Delete" data-target={"#showDeleteModal-" + value._id}></i>}
+																{this.props.editId && this.props.editId === value._id ? null : <i className={"fa fa-trash redFont " + value._id} id={value._id + '-Delete'} data-toggle="modal" title="Delete" data-target={"#showDeleteModal-" + value._id}></i>}
 															</span>
 															<div className="modal" id={"showDeleteModal-" + value._id} role="dialog">
-															{/* {console.log("this.props.tableObjects.editUrl",this.props.tableObjects.editUrl,"this.props.editId",this.props.editId,"value._id",value._id)} */}
+																{/* {console.log("this.props.tableObjects.editUrl",this.props.tableObjects.editUrl,"this.props.editId",this.props.editId,"value._id",value._id)} */}
 																<div className=" adminModal adminModal-dialog col-lg-12 col-md-12 col-sm-12 col-xs-12">
 																	<div className="modal-content adminModal-content col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 noPadding">
 																		<div className="modal-header adminModal-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -767,9 +776,9 @@ class IAssureTable extends Component {
 
 					</div>
 
-				{/*Export To Excel*/}
+					{/*Export To Excel*/}
 					<div className="table-responsive" id="HideTable">
-						<table className="table iAssureITtable-bordered table-striped table-hover fixedTable" id={"Download-"+this.state.id}>
+						<table className="table iAssureITtable-bordered table-striped table-hover fixedTable" id={"Download-" + this.state.id}>
 							<thead className="tempTableHeader fixedHeader">
 								<tr className="tempTableHeader">
 									{this.state.twoLevelHeader.apply === true ?
@@ -837,23 +846,23 @@ class IAssureTable extends Component {
 																	return k === key;
 																});
 
-																{/*console.log(i," | key = ",key, " | value = ",value1," | type = ",$.type(value1));*/}
-																
+																{/*console.log(i," | key = ",key, " | value = ",value1," | type = ",$.type(value1));*/ }
+
 
 																if (found.length > 0) {
 																	if (key !== 'id') {
 																		return (<td className={textAlign} key={i}>
-																					key
-																					<div className={textAlign} dangerouslySetInnerHTML={{ __html: value1 }}></div>
-																					value1
-																				</td>);
+																			key
+																			<div className={textAlign} dangerouslySetInnerHTML={{ __html: value1 }}></div>
+																			value1
+																		</td>);
 																	}
 																}
 
 															}
 														)
 													}
-													
+
 												</tr>
 											);
 										}
@@ -863,7 +872,7 @@ class IAssureTable extends Component {
 								}
 							</tbody>
 						</table>
-						</div>
+					</div>
 				</div>
 			</div>
 		);
@@ -874,8 +883,8 @@ class IAssureTable extends Component {
 
 
 function WithNavigate(props) {
-    let navigate = useNavigate();
-    return <IAssureTable {...props} navigate={navigate} />
+	let navigate = useNavigate();
+	return <IAssureTable {...props} navigate={navigate} />
 }
 
 export default withRouter(WithNavigate);

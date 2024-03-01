@@ -20,7 +20,7 @@ const BgImgRtGrid = (props) => {
             : "w-full bg-cover bg-center   h-[180px] sm:h-[200px]  mb-8 md:h-[300px] lg:h-[350px] "
         }
         style={{
-          backgroundImage: `url(${bgImg})`,
+          backgroundImage: bgImg? `url(${bgImg})` : "none", 
           backgroundSize: "100% 100%",
         }}
       >
@@ -89,7 +89,7 @@ const BgImgRtGrid = (props) => {
                             )
                           }
                           style={{
-                            backgroundImage: `url(${data.bgImg})`,
+                            backgroundImage: data.bgImg? `url(${data.bgImg})` : "none",
                             backgroundSize: "100% 100%",
                           }}
                         ></div>

@@ -45,13 +45,13 @@ const BlogsList = (props) => {
                                             <a className={""} href={"/consultant-profile/" + props.inputData?.user_id} target="_blank">{data.userFullName}</a>
                                         </div>
                                         <div className="px-3 mt-2">
-                                            <h6 className={"truncate text-left mb-2 text-2xl tracking-tight text-gray-900 dark:text-white"}>
+                                            <h6 className={"truncate text-left mb-2 text-2xl tracking-tight text-gray-900 "}>
                                                 <b>{data.blogTitle}</b>
                                             </h6>
                                         </div>
                                         <p className={"  w-full h-32 text-md p-4 overflow-hidden"} dangerouslySetInnerHTML={{ __html: data.blogSummary }}></p>
                                         <div className={"text-right px-3 mt-5"}>
-                                            <a className={"font-medium text-blue-600 dark:text-blue-500 hover:underline"} href={"/blogs/" + data.blogTitle + "-" + data?._id} target="_blank">Read More</a>
+                                            <a className={"font-medium text-blue-600  hover:underline"} href={"/blogs/" + data.blogTitle + "-" + data?._id} target="_blank">Read More</a>
                                         </div>
                                     </div>
                                 </div>

@@ -130,7 +130,7 @@ const TopTextImageRepeatBlocks = (props) => {
                           className={
                             props.inputData.classForCardTitle_2
                               ? props.inputData.classForCardTitle
-                              : "font-bold text-md text-primary dark:text-primary-400"
+                              : "font-bold text-md text-primary "
                           }
                         >
                           {card.cardTitle}
@@ -143,7 +143,7 @@ const TopTextImageRepeatBlocks = (props) => {
                           className={
                             props.inputData.classForCardTitle_2
                               ? props.inputData.classForCardTitle_2
-                              : "font-bold text-md text-primary dark:text-primary-400"
+                              : "font-bold text-md text-primary "
                           }
                         >
                           {card.cardTitle_2}

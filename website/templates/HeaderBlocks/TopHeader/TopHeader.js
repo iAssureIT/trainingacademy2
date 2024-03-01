@@ -3,7 +3,7 @@ import React from "react";
 const TopHeader = () => {
   return (
     <section>
-      <nav className="bg-gray-200  flex justify-end xl:px-9 bg-transparent border-gray-200 dark:bg-gray-900 dark:border-gray-700 ">
+      <nav className="bg-gray-200  flex justify-end xl:px-9 bg-transparent border-gray-200 ">
         {/* <div className="text-lg font-bold py-2 px-5  text-white  lg:ml-16 my-auto">
           District 3131 - Pune, Raigad
         </div> */}

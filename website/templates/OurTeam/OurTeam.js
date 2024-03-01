@@ -61,7 +61,7 @@ const OurTeam = (props) => {
                            card.cardTitle_2
                            ?
                               <span className='flex justify-center'>
-                                 <h3 className={props.inputData.classForCardTitle_2?props.inputData.classForCardTitle_2:"font-bold text-md text-primary dark:text-primary-400"}>{card.cardTitle_2}</h3>
+                                 <h3 className={props.inputData.classForCardTitle_2?props.inputData.classForCardTitle_2:"font-bold text-md text-primary "}>{card.cardTitle_2}</h3>
                               </span>
                            :null
                         }

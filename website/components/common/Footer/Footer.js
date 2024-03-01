@@ -4,7 +4,7 @@ const Footer = (props) => {
   console.log("props CategoriesArray => ", props);
   return (
     <section>
-      <footer className="bg-white dark:bg-gray-900 ">
+      <footer className="bg-white">
         <div className="mx-auto w-full max-w-screen-exLG  ">
           <div className="md:flex md:justify-between px-5 xl:px-20  bg-lightBlue py-20">
             <div className="grid xxl:grid-cols-4 gap-8 sm:gap-6 sm:grid-cols-4">
@@ -22,7 +22,7 @@ const Footer = (props) => {
                 <div className="flex mt-4 py-4 space-x-6 sm:justify-center sm:mt-0">
                   <a
                     href={props.fbLink}
-                    className="text-light hover:text-gray-900 dark:hover:text-white"
+                    className="text-light hover:text-gray-900 "
                   >
                     <svg
                       className="w-5 h-5"
@@ -40,19 +40,19 @@ const Footer = (props) => {
                   </a>
                   <a
                     href="https://www.instagram.com/"
-                    className="text-light hover:text-gray-900 dark:hover:text-white"
+                    className="text-light hover:text-gray-900 "
                   >
                     <i className="fa-brands fa-instagram"></i>{" "}
                   </a>
                   <a
                     href={props.linkedIn}
-                    className="text-light hover:text-gray-900 dark:hover:text-white"
+                    className="text-light hover:text-gray-900 "
                   >
                     <i className="fa-brands fa-linkedin"></i>
                   </a>
                   <a
                     href="https://twitter.com"
-                    className="text-light hover:text-gray-900 dark:hover:text-white"
+                    className="text-light hover:text-gray-900 "
                   >
                     <svg
                       className="w-5 h-5"
@@ -66,17 +66,17 @@ const Footer = (props) => {
                   </a>
                   <a
                     href="https://www.youtube.com/"
-                    className="text-light hover:text-gray-900 dark:hover:text-white"
+                    className="text-light hover:text-gray-900 "
                   >
                     <i className="fa-brands fa-youtube"></i>
                   </a>
                 </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm xxl:text-xl font-semibold text-RMByellow uppercase dark:text-white">
+                <h2 className="mb-6 text-sm xxl:text-xl font-semibold text-RMByellow uppercase">
                   {props.title1}
                 </h2>
-                <div className=" flex flex-wrap text-light dark:text-light-400 font-normal text-sm xxl:text-xl ">
+                <div className=" flex flex-wrap text-light  font-normal text-sm xxl:text-xl ">
                   {props.CategoriesArray?.length > 0
                     ? props?.CategoriesArray?.map((data, index) => {
                         console.log("CategoriesArray => ", data);
@@ -102,10 +102,10 @@ const Footer = (props) => {
                 </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm xxl:text-xl font-semibold text-RMByellow uppercase dark:text-white">
+                <h2 className="mb-6 text-sm xxl:text-xl font-semibold text-RMByellow uppercase">
                   {props.title2}
                 </h2>
-                <div className="flex flex-wrap text-light dark:text-light-400 font-normal text-sm xxl:text-xl">
+                <div className="flex flex-wrap text-light  font-normal text-sm xxl:text-xl">
                   {props.sitemapList.length > 0
                     ? props?.sitemapList.map((data, index) => {
                         return (
@@ -120,7 +120,7 @@ const Footer = (props) => {
                 </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm xxl:text-xl font-semibold  text-RMByellow uppercase dark:text-white">
+                <h2 className="mb-6 text-sm xxl:text-xl font-semibold  text-RMByellow uppercase">
                   {props.title3}
                 </h2>
                 <ul className="text-light  font-normal text-sm xxl:text-xl overflow-hidden">
@@ -162,7 +162,7 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="sm:flex sm:items-center sm:justify-between bg-darkBlue py-5 xl:px-20 px-8">
-            <span className="text-sm xxl:text-xl italic text-white sm:text-center dark:text-white">
+            <span className="text-sm xxl:text-xl italic text-white sm:text-center">
               Copyright © 2023 RMB Pune Business Circle | All Rights Reserved
             </span>
 

@@ -31,6 +31,7 @@ export const VideoBanner = (props) => {
       ) : (
         <video id={props.inputData?.id} className={props.inputData?.class} autoPlay loop muted>
           <source src={videoData.videoUrl} type="video/mp4" />
+          <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions"/>
         </video>
       )}
 

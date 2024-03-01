@@ -5,15 +5,19 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Footer from "@/templates/FooterBlocks/Footer/Footer.js";
 import Footer2 from "@/templates/FooterBlocks/Footer/Footer2";
 import MenuBar2 from "@/templates/HeaderBlocks/MenuBar/MenuBar2";
-import "./globals.css";
+import MenuBar from "@/templates/HeaderBlocks/MenuBar/MenuBar";
 
+import "./globals.css";
+import Navbar from "@/templates/HeaderBlocks/MenuBar/MenuTest";
 // const { publicRuntimeConfig } = getConfig();
 // axios.defaults.baseURL = publicRuntimeConfig.API_BASE_URL; // not working
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 console.log("NEXT_PUBLIC_BASE_URL", process.env.NEXT_PUBLIC_BASE_URL)
 axios.defaults.headers.post["Content-Type"] = "application/json";
-const scrollToTop = () => {window.scrollTo(0, 0), bahavior.scrollTo('smooth')};
+const scrollToTop = () => {window.scrollTo(0, 0), behavior.scrollTo('smooth')};
+var currentYear = new Date().getFullYear();
+
 const metadata = {
   title: "iAspire IT Training Academy",
   description:
@@ -21,217 +25,7 @@ const metadata = {
 };
 const menuItems = [
   { label: "HOME", link: "/" },
-  { label: "ABOUT", link: "#about" },
-  // {
-  //   label: "SERVICES",
-  //   link: "/services",
-  //   id: "dropdown",
-  //   showSubMenu: "true",
-  //   subMenu: [
-  //     {
-  //       id: "1",
-  //       submenutitle: "Application Development",
-  //       submenutiltleLink: "/service/type1",
-  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-2.webp",
-  //       bigImg: "/images/specific/MenuImages/Application-Development/5.webp",
-  //       NestedMenu: [
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Application-Development/1.webp",
-  //           title: "Web Development",
-  //           link: "/services/web-app-development",
-  //           subTypes: [
-  //             "Business Portal",
-  //             "Web Application",
-  //             " Corporate Website ",
-  //           ],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Application-Development/2.webp",
-  //           title: "Mobile App Development",
-  //           link: "/services/mobile-app-development",
-  //           subTypes: [
-  //             "iOS Native",
-  //             "Android Native",
-  //             "Hybrid Apps",
-  //             "Webview Apps",
-  //           ],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Application-Development/3.webp",
-  //           title: "eCommerce Online Store Development",
-  //           link: "/services/e-comm-online-store-development",
-  //           subTypes: [" D2C Store", " Order Management System"],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Application-Development/4.webp",
-  //           title: "UI/UX development",
-  //           link: "/services/ui-ux-development",
-  //           subTypes: [],
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       id: "2",
-  //       submenutitle: "Digital Transformation",
-  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-3.webp",
-  //       bigImg: "/images/specific/MenuImages/Digital-Transformation/5.webp",
-  //       NestedMenu: [
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Digital-Transformation/1.webp",
-  //           title: "Application Modernization",
-  //           link: "/services/application-modernization",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Digital-Transformation/2.webp",
-  //           title: "Enhance User Digital Experience",
-  //           link: "/services/enhance-user-digital-experience",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Digital-Transformation/3.webp",
-  //           title: "Manual Documents to Digital Asset",
-  //           link: "/services/manual-documents-to-digital-assets",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Digital-Transformation/4.webp",
-  //           title: "Develop Digital Strategy & Digital Applications",
-  //           link: "/services/develop-digital-strategy-and-digital-applications",
-  //           subTypes: [],
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       id: "3",
-  //       submenutitle: "Robotic Process Automation",
-  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-5.webp",
-  //       bigImg: "/images/specific/MenuImages/Robotic-Process-Automation/4.webp",
-  //       NestedMenu: [
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Robotic-Process-Automation/1.webp",
-  //           title: "Customer Service Automation",
-  //           link: "/services/customer-service-automation",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Robotic-Process-Automation/2.webp",
-  //           title: "Document Processing & Report Automation",
-  //           link: "/services/document-processing-and-report-automation",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/Robotic-Process-Automation/3.webp",
-  //           title: "Data migration & entry",
-  //           link: "/services/data-migration-entry",
-  //           subTypes: [],
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       id: "4",
-  //       submenutitle: "IT Infrastructure Management",
-  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-7.webp",
-  //       bigImg:
-  //         "/images/specific/MenuImages/IT-Infrastructure-Management/3.webp",
-  //       NestedMenu: [
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/IT-Infrastructure-Management/1.webp",
-  //           title: "Infrastructure Architecture & Technology Selection",
-  //           link: "/services/infrastructure-architech-selection",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc:
-  //             "/images/specific/MenuImages/IT-Infrastructure-Management/2.webp",
-  //           title: "IT Operations Management",
-  //           link: "/services/it-operation-mgmt",
-  //           subTypes: [],
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       id: "5",
-  //       submenutitle: "Cyber Security",
-  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-9.webp",
-  //       bigImg: "/images/specific/MenuImages/Cyber-Security/4.webp",
-  //       NestedMenu: [
-  //         {
-  //           imageSrc: "/images/specific/MenuImages/Cyber-Security/1.webp",
-  //           title: "Application & Information Security",
-  //           link: "/services/information-security",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc: "/images/specific/MenuImages/Cyber-Security/2.webp",
-  //           title: "Network Security",
-  //           link: "/services/network-security",
-  //           subTypes: [],
-  //         },
-  //         {
-  //           imageSrc: "/images/specific/MenuImages/Cyber-Security/3.webp",
-  //           title: "Cloud Security",
-  //           link: "/services/cloud-security",
-  //           subTypes: [],
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       id: "6",
-  //       submenutitle: "Software Testing & QA",
-  //       img: "/images/specific/MenuImages/iAssureIT-menu-icons/iAssureIT-menu-icon-11.webp",
-  //       bigImg: "/images/specific/MenuImages/Software-Testing-QA/5.webp",
-  //       NestedMenu: [
-  //         {
-  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/1.webp",
-  //           title: "Manual Testing",
-  //           link: "/services/manual-functional-testing",
-  //           subTypes: [" UI Testing, Functional Testing, Integration Testing"],
-  //         },
-  //         {
-  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/2.webp",
-  //           title: "Automation Testing",
-  //           link: "/services/automation-testing",
-  //           subTypes: [" Unit Tests, Integration Tests, Regression Tests"],
-  //         },
-  //         {
-  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/3.webp",
-  //           title: "Performance Testing",
-  //           link: "/services/performance-testing",
-  //           subTypes: [
-  //             " Stress Testing",
-  //             "Volume Testing",
-  //             "Load Testing ",
-  //             "Speed Testing ",
-  //           ],
-  //         },
-  //         {
-  //           imageSrc: "/images/specific/MenuImages/Software-Testing-QA/4.webp",
-  //           title: "Security Testing",
-  //           link: "/services/security-testing",
-  //           subTypes: [
-  //             " Vulnerability Scanning",
-  //             "Security Scanning",
-  //             "Penetration Testing",
-  //             "Security Audit/ Review",
-  //           ],
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  { label: "ABOUT", link: "#about" },  
   { label: "COURSES", link: "#course1" },
   { label: "TESTIMONIALS", link: "#testimonials" },
   { label: "CONTACT", link: "#footer" },
@@ -239,12 +33,10 @@ const menuItems = [
 
 const menuItemsAfterLogin = [
   { label: "HOME", link: "/" },
-  { label: "ABOUT US", link: "/about-us" },
-  { label: "BLOGS", link: "/user/blogs" },
-  { label: "TESTIMONIALS", link: "/user/testimonials" },
-  { label: "TYN", link: "/user/thank-you-notes" },
-  // { label: "CASE STUDY", link: "/case-study" },
-  { label: "CONTACT", link: "/contact-us" },
+  { label: "ABOUT", link: "#about" },  
+  { label: "COURSES", link: "#course1" },
+  { label: "TESTIMONIALS", link: "#testimonials" },
+  { label: "CONTACT", link: "#footer" },
 ];
 const content_Menubar = {
   menuItemsList: menuItems,
@@ -254,12 +46,12 @@ const content_Menubar = {
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-1 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/4 xl:w-auto",
-  classForLogo: "h-full w-1/3 md:w-full lg:w-1/3 xl:w-1/2 ", 
+  classForLogo: "h-full w-full md:w-full ", 
   showLoginbutton: false,
   customButton: false,
   showSubMenu: true,
   customButtonClass:
-    "text-ceyone_blue shadow-xl flex h-5 lg:h-12 items-center bg-white hover:bg-white  focus:ring-4 focus:ring-white font-sm rounded text-xs lg:text-sm py-2 px-2 lg:px-3 dark:bg-white float-right dark:hover:bg-white focus:outline-none dark:focus:ring-white",
+    "text-ceyone_blue shadow-xl flex h-5 lg:h-12 items-center bg-white hover:bg-white  focus:ring-4 focus:ring-white font-sm rounded text-xs lg:text-sm py-2 px-2 lg:px-3  float-right  focus:outline-none ",
   customButtonIcon: "",
   customButtonTitle: "Test Ride",
   customButtonTitleClass: "uppercase font-bold text-xs lg:text-sm",
@@ -362,8 +154,7 @@ const content_Footer2 = {
     "relative block shadow-lg  bg-no-repeat  max-w-full   bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] bg-[length:100%_100%] md:bg-[length:100%_100%]",
   bgImage: "/images/specific/Footer/Footer-2.webp",
   smallBGImage: "/images/specific/Footer/Footer-2.webp",
-  copyrightText:
-    '<span class="text-light font-normal">Copyright © <script>document.write(new Date().getFullYear())</script>, <span class="text-orangeColor hover:text-ftLink "><a href="/"  target="_blank" >iAspireIT</a></span> All Rights Reserved</span>',
+  copyrightText:'<span class="text-light font-normal">Copyright © ' + currentYear + ', <span class="text-orangeColor hover:text-ftLink "><a href="/" target="_blank" >iAspireIT</a></span> All Rights Reserved</span>',
   footerText:
     '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
@@ -399,21 +190,23 @@ export default function RootLayout({ children }) {
           content="V5Z5wlhvCU0Ix_33kkSekq7poDuHk4uK3MuZuN2lzOs"
         />
         <script
-          async
+          async defer
           src={
             "https://www.googletagmanager.com/gtag/js?id=" +
             process.env.REACT_APP_GOOGLE_ANALYTIC_KEY
           }
         ></script>
         {/* <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> */}
-        <script src="https://cdn.tailwindcss.com" async></script>
+        <script defer src="https://cdn.tailwindcss.com" async ></script>
+
         {/* <!-- Google tag (gtag.js) --> */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>        
        </head>
       <body className={" bg-white"}>
         
-        <MenuBar2 inputData={content_Menubar} />
-
+        {/* <MenuBar2 inputData={content_Menubar} /> */}
+        <MenuBar inputData={content_Menubar}/>
+{/* <Navbar/> */}
         {children}
 
         <Footer inputData={content_Footer} />

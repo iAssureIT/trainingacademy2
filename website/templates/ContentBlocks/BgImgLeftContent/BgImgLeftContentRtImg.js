@@ -1,286 +1,169 @@
+/*==========================================================
+  Developer  :  Sarika Ghanwat
+  Date       :  12st Sept 2023
+  ------------------------------------
+  Reviewed By:  
+  Review Date: 
+==========================================================*/
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import Image from 'next/image'
+import React, { useState, useRef } from "react";
 import Link from 'next/link';
-import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
+import LandingPageModal from '@/components/Modal/landingPageModal';
+import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
 
 const BgImgLeftContentRtImg = (props) => {
-    var largeImageURL = props?.inputData?.bgImage;
-    var smallImageURL = props?.inputData?.smallBGImage;
-    const data = props?.inputData?.pageTitle;
-    const [isModalOpen, setModalOpen] = useState(false);
-    const videoRef = useRef(null);
+    const { inputData } = props;
+    const largeImageURL = inputData?.bgImage;
+    const smallImageURL = inputData?.smallBGImage;
     const [isPlaying, setIsPlaying] = useState(false);
+    const videoRef = useRef(null);
 
-    
     const togglePlay = () => {
         const video = videoRef.current;
-        console.log("isplay 24", isPlaying)
         if (isPlaying) {
-            videoRef.current.pause();
+            video.pause();
             setIsPlaying(false);
         } else {
-            videoRef.current.play();
+            video.play();
             setIsPlaying(true);
         }
-
-
     };
+
     return (
-        <div id={props?.inputData?.id} >
-            {isModalOpen && <StudEnrollModal modalId={props?.inputData?.modalId ? props?.inputData?.modalId : "enrollModal"} />}
-            {/* <div className={props?.inputData?.bgImgCss ? props?.inputData?.bgImgCss : "relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center "} style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}> */}
+        <div id={inputData?.id}>
             <div
-                className={
-                    props?.inputData?.bgImgCss
-                        ?
-                        props?.inputData?.bgImgCss
-                        :
-                        " bg-cover p-12 block  shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]"
-                }
+                className={inputData?.bgImgCss || "bg-cover p-12 block shadow-lg bg-no-repeat max-w-full sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)] bg-[image:var(--smallImage-url)]"}
                 style={{
-                    '--largeImage-url': `url(${largeImageURL})`,
-                    '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
-                    'backgroundSize': "100% 100%"
+                    "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
+                    "--smallImage-url": smallImageURL ? `url(${smallImageURL})` : largeImageURL ? `url(${largeImageURL})` : 'none',
+                    backgroundSize: "100% 100%",
                 }}
-
             >
-                {
-                    props?.inputData?.pageTitle ?
-                        <div className={props?.inputData?.pageTitleCss}>
-
-                            {props?.inputData?.dash ?
-                                <div className="w-full mb-4">
-                                    <ul className="place-content-center flex flex-wrap">
-                                        <li className={"dash1 " + props.inputData.dash}></li>
-                                        <li className={"dash2 " + props.inputData.dash}></li>
-                                        <li className={"dash3 " + props.inputData.dash}></li>
-                                    </ul>
-                                </div>
-                                :
-                                null
-                            }
-                            <p className={props?.inputData?.pageTitleCss ? props?.inputData?.pageTitleCss : "block font-extrabold uppercase text-3xl text-center md:text-4xl lg:text-5xl xl:text-5xl xxl:text-6xl"} dangerouslySetInnerHTML={{ __html: data }} ></p>
-                        </div>
-                        :
-                        null
-                }
-                {props.inputData?.blockContent && (
-                    <div className={props.inputData?.classForblockContent}
-                        dangerouslySetInnerHTML={{ __html: props.inputData?.blockContent }}></div>
-                )}
-
-
-                <div className={props?.inputData?.gridCss ? props?.inputData?.gridCss : " grid grid-cols-1  sm:grid-cols-2  md:grid-cols-2   lg:grid-cols-2 2xl:grid-cols-2  xl:grid-cols-2 h-full w-full content-center "}>
-                    <div className={props?.inputData?.gridSubDivCss ? props?.inputData?.gridSubDivCss : "  text-white xs:pl-2 sm:pl-10 lg:pl-20 xl:pl-24 xxl:pl-40 my-auto text-center xs:text-left  py-10 sm:py-0 "}>
-                        {
-                            props?.inputData?.logo
-                                ?
-                                <img className={props?.inputData?.logoCss ? props?.inputData?.logoCss + " lazyload " : "lazyload "} src={props?.inputData?.logo} data-src={props?.inputData?.logo} alt="logo " />
-                                :
-                                null
+                {inputData?.pageTitle &&
+                    <div className={inputData?.pageTitleCss}>
+                        {inputData?.dash &&
+                            <div className="w-full mb-4">
+                                <ul className="place-content-center flex flex-wrap">
+                                    {[1, 2, 3].map((num) => (
+                                        <li key={num} className={`dash${num} ${inputData.dash}`}></li>
+                                    ))}
+                                </ul>
+                            </div>
                         }
-                        {
-                            props?.inputData?.h1Txt
-                                ?
-                                <div className={props?.inputData?.h1TxtCss}
-                                    dangerouslySetInnerHTML={{
-                                        __html: props?.inputData?.h1Txt,
-                                    }}></div>
-                                :
-                                null
-                        }
-                        {
-                            props?.inputData?.h1TxtLine1
-                                ?
-                                <div className={props?.inputData?.h1TxtLine1Css ? props?.inputData?.h1TxtLine1Css : ""}
-                                    dangerouslySetInnerHTML={{
-                                        __html: props?.inputData?.h1TxtLine1,
-                                    }}></div>
-                                :
-                                null
-                        }
-                        {
-                            props?.inputData?.h1TxtLine2
-                                ?
-                                <h2 className={props?.inputData?.h1TxtLine2Css ? props?.inputData?.h1TxtLine2Css : ""}>{props?.inputData?.h1TxtLine2}</h2>
-                                :
-                                null
-                        }
-                        {
-                            props?.inputData?.para
-                                ?
-                                <p className={props?.inputData?.paraCss ? props?.inputData?.paraCss : "py-5 mb-6 text-xl  font-normal  text-justify lg:w-auto"}
-                                    dangerouslySetInnerHTML={{ __html: props?.inputData?.para }} >
-                                </p>
-                                :
-                                null
-                        }
-                        {
-                                    props?.inputData?.modalDisplayLink
-                                        ?
-                                            <div className={props?.inputData?.linkDivCss ? props?.inputData?.linkDivCss : ""}>
-                                                <a className={props?.inputData?.linkCss ? props?.inputData?.linkCss : ""} href={props?.inputData?.linkUrl} >{props?.inputData?.linkName}</a>
-                                            </div>
-                                        :
-                                        ""
-                                }
-                        {
-                            props?.inputData?.listTitle
-                                ?
-                                <div className='lg:mt-20 xl:mt-28'>
-                                    <div className='flex  gap-4'>
-                                        <div className='bg-white rounded p-2 sm:p-1'>
-                                            <img src="/images/specific/Home/Icons/Chassis-icon.webp " className="lazyload " alt="logo" />
-                                        </div>
-                                        <h2 className="text-3xl  mt-2 lg:text-4xl  xl:text-4xl font-extrabold text-white ">{props?.inputData?.listTitle}</h2>
-                                    </div>
-                                    <ul className="max-w-md space-y-1 list-disc list-outside pl-20 xs:px-20">
-                                        <li className='text-lg sm:text-xl lg:text-4xl mt-2 text-left'>
-                                            {props?.inputData?.listTxt}
-                                        </li>
-                                    </ul>
-                                </div>
-                                :
-                                null
-                        }
-                        {
-                            props?.inputData?.urlName
-                                ?
-                                <div className={props?.inputData?.linkCss ? props?.inputData?.linkCss : "text-white hidden"}>
-                                    <Link href={props?.inputData?.url} >{props?.inputData?.urlName}
-                                        <i className={props?.inputData?.linkIconCss ? props?.inputData?.linkIconCss : "fa-solid  fa-angle-double-right"}></i>
-                                        {/* <a href={props?.inputData?.url} >{props?.inputData?.urlName} <i className={props?.inputData?.linkIconCss ? props?.inputData?.linkIconCss : "fa-solid  fa-angle-double-right"}></i></a> */}
-                                    </Link>
-                                </div>
-                                :
-                                null
-                        }
-                        {
-                            props?.inputData?.modalDisplay
-                                ?
-                                <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss ? props?.inputData?.modalBtnCss : "text-white hidden "} type="button"
-                                    dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName }}>
-                                </div>
-                                :
-                                ""
-                        }
+                        <p className={inputData?.pageTitleCss || "block font-extrabold uppercase text-3xl text-center md:text-4xl lg:text-5xl xl:text-5xl xxl:text-6xl"} dangerouslySetInnerHTML={{ __html: inputData.pageTitle }}></p>
                     </div>
-                    {
-                        props?.inputData?.image
-                            ?
-                            <div className={props?.inputData?.imageCss ? props?.inputData?.imageCss : ' object-fit '}>
-                                <img
-                                    className={props?.inputData?.imgTagcss ? props?.inputData?.imgTagcss + " lazyload" : 'h-full w-full lazyload'}
-                                    src={props?.inputData?.image}
-                                    alt="Banner image "
-
-                                />
-                                {props?.inputData?.imgCaption
-                                    ? <div className={props?.inputData?.imgCaptionCss}>{props?.inputData?.imgCaption}</div>
-                                    :
-                                    null
-                                }                                
-                                {
-                                    props?.inputData?.btn2
-                                        ?
-                                        <div className={props?.inputData?.btn2 ? props?.inputData?.btn2Css : "text-white hidden"}>
-                                            <a href={props?.inputData?.btn2Url} >{props?.inputData?.btn2UrlName} <i className="fa-solid  fa-angle-double-right"></i></a>
-                                        </div>
-                                        :
-                                        null
-                                }
-                                {
-                                    props?.inputData?.modalDisplay2
-                                        ?
-                                        <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss2 ? props?.inputData?.modalBtnCss2 : "text-white hidden"} type="button"
-                                            dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName2 }}>
-                                        </div>
-                                        :
-                                        ""
-                                }
-                            </div>
-                            :
-                            null
-                    }
-                    {
-                        props?.inputData?.videoUrl
-                        ? 
-                        <div className="group relative">
-                            <div className='px-3 lg:px-12  ' style={{}}>
-                                <video id={"vid"} className={" xl:mt-10 2xl:mt-0 rounded-xl "} loop autoPlay height="1000" controls muted controlsList="nodownload" >
-                                    <source src={props?.inputData?.videoUrl} type="video/mp4" />
-                                </video>
-                            </div>                            :
-                            ""
-                            {/* <button className={"btn btn-default absolute top-1/3 left-[50%] md:top-24 md:left-[50%] lg:top-1/4 lg:left-[50%] xl:top-1/3 xl:left-[50%] 2xl:top-1/3 2xl:left-[50%] "} onClick={togglePlay}>
-                                {
-                                    isPlaying
-                                        ?
-                                        <i class="fa-solid fa-pause bg-blue-700 rounded p-4 text-white  opacity-100 transition-opacity group-hover:opacity-100 cursor-pointer "></i>
-                                        :
-                                        <i class="fa-solid fa-play bg-blue-700 rounded p-4 text-white  opacity-100 transition-opacity group-hover:opacity-100 cursor-pointer"></i>
-                                }
-                            </button> */}
-                        </div> 
-                        :
-                        ""
-                    }
-                </div>
-                {
-                    props.inputData?.grid2 ?
-                        <div className={props?.inputData?.gridCss ? props?.inputData?.gridCss : " grid grid-cols-1  sm:grid-cols-2  md:grid-cols-2   lg:grid-cols-2 2xl:grid-cols-2  xl:grid-cols-2 h-full w-full content-center "}>
-                            {
-                                props?.inputData?.image2
-                                    ?
-                                    <div className={props?.inputData?.imageCss ? props?.inputData?.imageCss : ' object-fit '}>
-                                        <img
-                                            className={props?.inputData?.imgTagcss ? props?.inputData?.imgTagcss + " lazyload" : 'h-full w-full lazyload'}
-                                            src={props?.inputData?.image2}
-                                            alt="iAssureIT-Banner image "
-
-                                        />
-                                    </div>
-                                    :
-                                    null
-                            }
-                            <div className={props?.inputData?.gridSubDivCss ? props?.inputData?.gridSubDivCss : "  text-white xs:pl-2 sm:pl-10 lg:pl-20 xl:pl-24 xxl:pl-40 my-auto text-center xs:text-left  py-10 sm:py-0 "}>
-                                {
-                                    props?.inputData?.title2
-                                        ?
-                                        <div className={props?.inputData?.h1TxtLine1Css ? props?.inputData?.h1TxtLine1Css : ""}
-                                            dangerouslySetInnerHTML={{
-                                                __html: props?.inputData?.title2,
-                                            }}></div>
-                                        :
-                                        null
-                                }
-                                {/* {
-                                    props?.inputData?.para
-                                        ?
-                                        <p className={props?.inputData?.paraCss ? props?.inputData?.paraCss : "mb-6 text-xl  font-normal  text-justify lg:w-auto"}
-                                            dangerouslySetInnerHTML={{ __html: props?.inputData?.para }} >
-                                        </p>
-                                        :
-                                        null
-                                } */}
-                                {
-                                    props?.inputData?.para2
-                                        ?
-                                        <p className={props?.inputData?.paraCss ? props?.inputData?.paraCss : "mb-6 text-xl  font-normal  text-justify lg:w-auto"}
-                                            dangerouslySetInnerHTML={{ __html: props?.inputData?.para2 }} >
-                                        </p>
-                                        :
-                                        null
-                                }
-                            </div>
-                        </div>
-                        :
-                        null
                 }
-
+                {inputData?.blockContent &&
+                    <div className={inputData?.classForblockContent} dangerouslySetInnerHTML={{ __html: inputData.blockContent }} />
+                }
+                <div className={inputData?.gridCss || "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 h-full w-full content-center"}>
+                    <div className={inputData?.gridSubDivCss || "text-white xs:pl-2 sm:pl-10 lg:pl-20 xl:pl-24 xxl:pl-40 my-auto text-center xs:text-left py-10 sm:py-0"}>
+                        {inputData?.logo &&
+                            <img className={inputData?.logoCss || "lazyload"} src={inputData.logo} data-src={inputData.logo} alt="logo" />
+                        }
+                        {inputData?.h1Txt &&
+                            <div className={inputData?.h1TxtCss} dangerouslySetInnerHTML={{ __html: inputData.h1Txt }} />
+                        }
+                        {inputData?.h1TxtLine1 &&
+                            <div className={inputData?.h1TxtLine1Css || ""} dangerouslySetInnerHTML={{ __html: inputData.h1TxtLine1 }} />
+                        }
+                        {inputData?.h1TxtLine2 &&
+                            <h2 className={inputData?.h1TxtLine2Css || ""}>{inputData.h1TxtLine2}</h2>
+                        }
+                        {inputData?.para &&
+                            <p className={inputData?.paraCss || "mb-6 text-xl font-normal text-justify lg:w-auto"} dangerouslySetInnerHTML={{ __html: inputData.para }} />
+                        }
+                        {inputData?.listTitle &&
+                            <div className='lg:mt-20 xl:mt-28'>
+                                <div className='flex gap-4'>
+                                    <div className='bg-white rounded p-2 sm:p-1'>
+                                        <img src="/images/specific/Home/Icons/Chassis-icon.webp" className="lazyload" alt="logo" />
+                                    </div>
+                                    <h2 className="text-3xl mt-2 lg:text-4xl xl:text-4xl font-extrabold text-white">{inputData.listTitle}</h2>
+                                </div>
+                                <ul className="max-w-md space-y-1 list-disc list-outside pl-20 xs:px-20">
+                                    <li className='text-lg sm:text-xl lg:text-4xl mt-2 text-left'>{inputData.listTxt}</li>
+                                </ul>
+                            </div>
+                        }
+                        {inputData?.urlName &&
+                            <div className={inputData?.linkCss || "text-white hidden"}>
+                                <Link href={inputData.url}>{inputData.urlName}<i className={inputData?.linkIconCss || "fa-solid fa-angle-double-right"}></i></Link>
+                            </div>
+                        }
+                        
+                        {inputData?.modalDisplay &&
+                            <div><LandingPageModal btnTitle=" Let's Talk "modalId="contactFormModal" modalcss="w-48 p-2 mx-auto md:float-left mt-3 text-lg font-bold text-center bg-white text-darkGray border rounded cursor-pointer md:text-xl 2xl:px-2 xl:mt-8 2xl:mt-10 md:w-48 lg:w-44 xl:w-48 2xl:w-44 btn hover:bg-blue-800 hover:text-white" /></div>
+                        }
+                        {props?.inputData?.imageleftSec
+                        ? <div ><img className={props?.inputData?.imageleftSecCss} src={props.inputData.imageleftSec}/></div>
+                            :
+                            ""
+                    }
+                    </div>
+                    {inputData?.image &&
+                        <div className={inputData?.imageCss || 'object-fit'}>
+                            <img
+                                className={inputData?.imgTagcss || 'h-full w-full lazyload'}
+                                src={inputData.image}
+                                alt="Banner image"
+                                width="100%" height="auto"
+                            />
+                            {inputData?.imgCaption &&
+                                <div className={inputData?.imgCaptionCss}>{inputData.imgCaption}</div>
+                            }
+                            {inputData?.btn2 &&
+                                <div className={inputData?.btn2Css || "text-white hidden"}>
+                                    <a href={inputData?.btn2Url}>{inputData?.btn2UrlName} <i className="fa-solid fa-angle-double-right"></i></a>
+                                </div>
+                            }
+                            {inputData?.modalDisplay2 &&
+                                <div><LandingPageModal modalId="contactFormModal" modalcss="mx-auto font-bold text-lg md:text-xl p-3 2xl:px-2 text-center border w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 rounded btn bg-white text-darkGray mt-10 mb-10 md:mt-5 lg:mb-20 lg:mt-0 hover:bg-transparent hover:text-white cursor-pointer" /></div>
+                            }
+                            
+                        </div>
+                    }
+                    {inputData?.videoUrl &&
+                        <div className={inputData?.videoDivCss || "group relative"}>
+                            <div className='px-3 lg:px-12'>
+                                <video id={"vid"} className={inputData?.videoClass || "xl:mt-10 2xl:mt-0 rounded-xl"} loop autoPlay height="1000" controls muted controlsList="nodownload">
+                                    <source src={inputData.videoUrl} type="video/mp4" />
+                                </video>
+                            </div>                           
+                        </div>
+                    }
+                        {props?.inputData?.showForm && <InquiryForm formId={props?.inputData?.formId}
+                         mailId={props?.inputData?.adminEmailId} 
+                        subject={props?.inputData?.subject} 
+                        mailContent={props?.inputData?.mailContent} 
+                        formCss={props.inputData.formCss} 
+                        sectionCss={props.inputData.sectionCss}/>}
+                        
+                </div>
+                {inputData?.grid2 &&
+                    <div className={inputData?.gridCss || "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 h-full w-full content-center"}>
+                        {inputData?.image2 &&
+                            <div className={inputData?.imageCss || 'object-fit'}>
+                                <img
+                                    className={inputData?.imgTagcss || 'h-full w-full lazyload'}
+                                    src={inputData?.image2}
+                                    alt="iAssureIT-Banner image"
+                                />
+                            </div>
+                        }
+                        <div className={inputData?.gridSubDivCss || "text-white xs:pl-2 sm:pl-10 lg:pl-20 xl:pl-24 xxl:pl-40 my-auto text-center xs:text-left py-10 sm:py-0"}>
+                            {inputData?.title2 &&
+                                <div className={inputData?.h1TxtLine1Css || ""} dangerouslySetInnerHTML={{ __html: inputData.title2 }} />
+                            }
+                            {inputData?.para2 &&
+                                <p className={inputData?.paraCss || "mb-6 text-xl font-normal text-justify lg:w-auto"} dangerouslySetInnerHTML={{ __html: inputData.para2 }} />
+                            }
+                        </div>
+                    </div>
+                }
             </div>
         </div>
-    )
-}
+    );
+};
+
 export default BgImgLeftContentRtImg;

@@ -4,7 +4,7 @@ const StatementBlock = (props) => {
   return (
     <section className='bg-white'>
         <div id="imgLtContent" className=" mx-auto px-4 sm:px-16  bg-white mt-10 lg:mt-20">
-		    <hr className=" mx-auto w-16 h-1 mt-4 bg-RMByellow border-0 dark:bg-RMByellow "/>
+		    <hr className=" mx-auto w-16 h-1 mt-4 bg-RMByellow border-0  "/>
             <div className="mt-3 mb-10 flex justify-center text-3xl sm:text-4xl lg:text-6xl xxl:text-8xl" >
                 <h1 className="block  text-lightBlue lg:leading-tight font-extrabold"> {props?.inputData.title1}</h1>
                 <h1 className="block text-RMByellow lg:leading-tight font-extrabold">&nbsp; {props?.inputData.title2}</h1>
@@ -23,7 +23,7 @@ const StatementBlock = (props) => {
                                 <h1 className="block text-RMByellow lg:leading-tight font-extrabold">&nbsp; Statement</h1>
                             </div>
                             <div className="w-full">    
-                                <div className="mt-5 font-semibold text-xl text-justify xxl:text-3xl overflow-hidden text-darkGray dark:text-gray-400">
+                                <div className="mt-5 font-semibold text-xl text-justify xxl:text-3xl overflow-hidden text-darkGray ">
                                     To create a profitable, healthy, and vibrant
                                     <div className="flex flex-wrap">
                                     <div className="block text-RMByellow lg:leading-tight font-extrabold">BUSINESS COMMUNITY &nbsp; </div>
@@ -44,7 +44,7 @@ const StatementBlock = (props) => {
                             <h1 className="block text-RMByellow lg:leading-tight font-extrabold">&nbsp; Statement</h1>
                         </div>
                         <div className="w-full">    
-                            <p className="mt-5 font-semibold text-xl text-justify xxl:text-3xl overflow-hidden text-darkGray dark:text-gray-400">
+                            <p className="mt-5 font-semibold text-xl text-justify xxl:text-3xl overflow-hidden text-darkGray d">
                                 Reaching out to maximum number of Rotary Clubs locally, nation wide and internationally to increase the connects that create bonhomie amongst members which ultimately result in a long-lasting business relationship. RMB Pune Business Chapter is committed to this goal.
                             </p>
                         </div>

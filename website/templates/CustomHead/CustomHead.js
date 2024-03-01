@@ -2,7 +2,7 @@
 import Head from 'next/head';
 
 const CustomHead = ({ title, description,canonicalUrl,keywords,otherMetaTags}) => {
-    console.log(" title, description, otherMetaTags,canonicalUrl,keywords", title, description, otherMetaTags,canonicalUrl,keywords)
+    // console.log(" title, description, otherMetaTags,canonicalUrl,keywords", title, description, otherMetaTags,canonicalUrl,keywords)
     return (
         <Head>
             <title>{title}</title>

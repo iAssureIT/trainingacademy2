@@ -112,7 +112,7 @@ const CardsBlocks1 = (props) => {
                     className={
                       props?.inputData?.classForcardTitle_2
                         ? props?.inputData?.classForcardTitle_2
-                        : "text-md text-primary dark:text-primary-400 font-bold"
+                        : "text-md text-primary  font-bold"
                     }
                   >
                     {card?.cardTitle_2}
@@ -126,7 +126,7 @@ const CardsBlocks1 = (props) => {
                     className={
                       props?.inputData.classForCardTitle_3
                         ? props?.inputData.classForCardTitle_3
-                        : "mb-4 text-3xl text-primary dark:text-primary-400 font-bold"
+                        : "mb-4 text-3xl text-primary  font-bold"
                     }
                   >
                     {card?.cardTitle_3}

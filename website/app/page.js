@@ -1,10 +1,8 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import BgImgLeftContentRtImg from "@/templates/ContentBlocks/BgImgLeftContent/BgImgLeftContentRtImg";
 import BgImgRightContent from "@/templates/ContentBlocks/BgImgRightContent/BgImgRightContent";
 import CenterContentRepeatableBlocks from "@/templates/RepeatableBlocks/CenterContentRepeatableBlocks/CenterContentRepeatableBlocks";
-import CustomHead from "@/templates/CustomHead/CustomHead";
 import LeftImgRightRepeatableBlk from "@/templates/RepeatableBlocks/LeftImgRightRepeatableBlk/LeftImgRightRepeatableBlk";
 import SmallBanner from "@/templates/BannerBlocks/SmallBanner/SmallBanner";
 import Technology from "@/templates/ContentBlocks/Technology/Technology";
@@ -388,7 +386,7 @@ const HomePage = () => {
 			" border shadow-[0_3px_10px_rgb(0,0,0,0.2)] text-white p-10 mb-10 rounded-xl",
 		classForCardTitle: "text-center  text-darkGray title p-3",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		classForCardImage: "w-1/2 mx-auto p-10 lazyload bg-gray-100 rounded-full",
 		classForblockContent:
 			"px-10 lg:px-20  xl:pb-14 pb-10 h-auto text-justify my-auto text-md lg:text-lg justify-content",
@@ -476,7 +474,7 @@ const HomePage = () => {
 			"px-10 lg:px-20 mb-10 max-w-8xl text-center justify-evenly grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-x-4 lg:gap-x-6 lg:grid-cols-2 xl:grid-cols-4 xl:gap-x-6",
 		classForCardTitle: "text-center font-semibold subTitle",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		classForCardImage:
 			"mx-auto h-40 sm:h-52 md:h-48 lg:h-48 xl:h-52 2xl:h-72 xxl:h-96 p-10 lazyload",
 		// classForblockTitle  :" text-sky-500 w-full text-center font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl",
@@ -595,7 +593,7 @@ const HomePage = () => {
 		classForCardTitle:
 			"text-left font-bold text-xl md:text-xl lg:text-2xl p-3",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
 		classForCardImage: " px-2 w-full",
 		// classForblockContent:
@@ -653,7 +651,7 @@ const HomePage = () => {
 		classForCardTitle:
 			"text-left font-bold text-xl md:text-xl lg:text-2xl p-3",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
 		classForCardImage: " px-2 w-full",
 		bgImgCss:
@@ -859,9 +857,9 @@ const HomePage = () => {
 		classForCardTitle:
 			"text-center font-extrabold text-md md:text-md lg:text-lg p-3",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
-		classForCardImage: "",
+		classForCardImage: "lazyload",
 		classForblockContent:
 			"text-lg md:text-xl text-center font-[500] px-2 md:px-12 lg:px-32 xl:px-64  2xl:w-2/5 2xl:px-2  mx-auto ",
 		blockContent:
@@ -872,7 +870,7 @@ const HomePage = () => {
 		testimonial: true,
 		cardsArray: [
 			{
-				profileImage: "/images/specific/testimonials/Akshay_Madanepatil.JPG",
+				profileImage: "/images/specific/testimonials/Akshay_Madanepatil.webp",
 				designation: "Student",
 				// cardImage: "",
 				altImage: "imageDescription",
@@ -885,7 +883,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Siddhant_Kakade.jpeg",
+				profileImage: "/images/specific/testimonials/Siddhant_Kakade.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
 				classForContent: " mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
@@ -909,7 +907,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Rutika_Bankar.jpg",
+				profileImage: "/images/specific/testimonials/Rutika_Bankar.webp",
 				// profileImage:"/images/generic/userProfile.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
@@ -923,7 +921,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Ashwini_Kori.jpeg",
+				profileImage: "/images/specific/testimonials/Ashwini_Kori.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
@@ -939,7 +937,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Shubham_Ankushe.jpg",
+				profileImage: "/images/specific/testimonials/Shubham_Ankushe.webp",
 				// profileImage:"/images/generic/userProfile.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
@@ -952,7 +950,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Ankit_Kumar_Rai.jpg",
+				profileImage: "/images/specific/testimonials/Ankit_Kumar_Rai.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
@@ -964,7 +962,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Abhishek_Varma.jpeg",
+				profileImage: "/images/specific/testimonials/Abhishek_Varma.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
@@ -985,7 +983,7 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				// profileImage:"/images/generic/userProfile.webp",
-				profileImage: "/images/specific/testimonials/Mohit_Panjwani.jpg",
+				profileImage: "/images/specific/testimonials/Mohit_Panjwani.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
@@ -996,7 +994,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Archana_Kadam.jpeg",
+				profileImage: "/images/specific/testimonials/Archana_Kadam.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
@@ -1010,7 +1008,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Aniket_Pawar.jpeg",
+				profileImage: "/images/specific/testimonials/Aniket_Pawar.webp",
 				// cardImage: "",
 				altImage: "imageDescription",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
@@ -1036,7 +1034,7 @@ const HomePage = () => {
 		classForCardTitle:
 			"text-center font-extrabold text-md md:text-md lg:text-lg",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		// imgDivCss:"py-2",
 		classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
 		classForblockContent:
@@ -1118,7 +1116,7 @@ const HomePage = () => {
 		classForCardTitle:
 			"text-center font-extrabold text-md md:text-md lg:text-lg",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
 		classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
 		classForblockContent:
@@ -1207,7 +1205,7 @@ const HomePage = () => {
 		classForCardTitle:
 			"text-center font-extrabold text-md md:text-md lg:text-lg",
 		classForCardTitle_2:
-			"font-bold text-md text-primary dark:text-primary-400 p-5",
+			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
 		classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
 		classForblockContent:

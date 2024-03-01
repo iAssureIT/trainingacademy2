@@ -28,13 +28,15 @@ const Footer2 = (props) => {
       >
         <div className="mx-auto w-full max-w-screen-exLG  ">
          <div className="sm:flex sm:items-center sm:justify-between bg-Blue py-3 xl:px-20 px-8">
-            <span className="text-xs md:text-sm xxl:text-sm  sm:text-center ">
+            <div className="text-xs md:text-sm xxl:text-sm  sm:text-center ">
               <span
                 dangerouslySetInnerHTML={{
-                  __html: props.inputData.copyrightText,
+                  __html: props?.inputData?.copyrightText,
                 }}
               ></span>
-            </span>
+              
+            </div>
+            <span className=" md:px-10 text-xs md:text-sm xxl:text-sm  sm:text-center  text-white  hover:text-ftLink"><a href={props.inputData.PrivacyPageURL}>Privacy Policy</a></span>
             <div className="flex mt-0 md:mt-4 space-x-6 sm:justify-center sm:mt-0">
               <h2
                 className="text-xs md:text-sm xxl:text-sm sm:text-center md:flex"

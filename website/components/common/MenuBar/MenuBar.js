@@ -107,7 +107,7 @@ function MenuBar(props) {
               <button
                 onClick={() => setIsOpen2(!isOpen2)}
                 type="button"
-                className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 "
                 id="user-menu-button"
                 aria-expanded="false"
                 data-dropdown-toggle="user-dropdown"
@@ -122,9 +122,8 @@ function MenuBar(props) {
               </button>
 
               <div
-                className={`${
-                  isOpen2 ? "block" : "hidden"
-                } z-50 absolute  top-32 right-4 `}
+                className={`${isOpen2 ? "block" : "hidden"
+                  } z-50 absolute  top-32 right-4 `}
                 id="user-dropdown"
               >
                 <div
@@ -136,7 +135,7 @@ function MenuBar(props) {
                    shadow-2xl shadow-black-500/50"
                 ></div>
 
-                <div className="w-60 xs:w-48 p-4 text-base list-none bg-white divide-y divide-gray-100 shadow-2xl shadow-black-500/50 border border-gray-200 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+                <div className="w-60 xs:w-48 p-4 text-base list-none bg-white divide-y divide-gray-100 shadow-2xl shadow-black-500/50 border border-gray-200 rounded-lg shadow  ">
                   <div className="flex container">
                     <div className=" mx-auto flex-wrap flex p-2 ">
                       <img
@@ -146,18 +145,18 @@ function MenuBar(props) {
                       />
                     </div>
                     <div className=" px-1 py-3  flex-wrap flex overflow-hidden ellipsis">
-                      <div className="text-sm text-gray-900 dark:text-white">
+                      <div className="text-sm text-gray-900 ">
                         {userData.firstName}&nbsp;{userData.lastName}
                       </div>
 
-                      <div className="text-sm  text-gray-500 truncate dark:text-gray-400">
+                      <div className="text-sm  text-gray-500 truncate ">
                         {userData.email}
                       </div>
                     </div>
                   </div>
                   <div className="px-4 py-3">
                     <a
-                      className="block  py-2 text-sm text-gray-900  dark:hover:bg-blue-600 dark:text-gray-200 dark:hover:text-white"
+                      className="block  py-2 text-sm text-gray-900  "
                       href="/user/dashboard"
                     >
                       Dashboard
@@ -167,7 +166,7 @@ function MenuBar(props) {
                   <ul className="py-2" aria-labelledby="user-menu-button">
                     <li>
                       <button
-                        className="block mx-auto px-4 py-2 text-sm text-gray-300  bg-blue-900 hover:text-gray-100 hover:bg-blue-600 dark:hover:bg-blue-600 dark:text-gray-200 dark:hover:text-white"
+                        className="block mx-auto px-4 py-2 text-sm text-gray-300  bg-blue-900 hover:text-gray-100 hover:bg-blue-600"
                         onClick={signOut}
                       >
                         Sign out
@@ -218,7 +217,7 @@ function MenuBar(props) {
             {userData ? (
               <ul
                 id="navBar"
-                className=" text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 border float-right border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                className=" text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 border float-right border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
               >
                 {menuItemsAfterLogin.map((data, index) => {
                   return (
@@ -237,7 +236,7 @@ function MenuBar(props) {
             ) : (
               <ul
                 id="navBar"
-                className=" text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 border float-right border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                className=" text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 border float-right border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white "
               >
                 {menuItems.map((data, index) => {
                   return (
@@ -265,7 +264,7 @@ function MenuBar(props) {
             >
               <button
                 type="button"
-                className="flex flex-wrap m-2 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                className="flex flex-wrap m-2 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300"
                 id="user-menu-button"
                 aria-expanded="false"
                 data-dropdown-toggle="user-dropdown"
@@ -292,9 +291,8 @@ function MenuBar(props) {
             </div>
 
             <div
-              className={`${
-                isOpen1 ? "block" : "hidden"
-              } z-50 absolute  top-32 right-4 `}
+              className={`${isOpen1 ? "block" : "hidden"
+                } z-50 absolute  top-32 right-4 `}
               id="user-dropdown"
             >
               <div
@@ -306,7 +304,7 @@ function MenuBar(props) {
                   shadow-2xl shadow-black-500/50"
               ></div>
 
-              <div className="w-60 p-4 text-base list-none bg-white divide-y divide-gray-100 shadow-2xl shadow-black-500/50 border border-gray-200 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
+              <div className="w-60 p-4 text-base list-none bg-white divide-y divide-gray-100 shadow-2xl shadow-black-500/50 border border-gray-200 rounded-lg shadow  ">
                 <div className="flex container">
                   <div className=" mx-auto flex-wrap flex p-2 ">
                     <img
@@ -316,18 +314,18 @@ function MenuBar(props) {
                     />
                   </div>
                   <div className=" px-1 py-3  flex-wrap flex overflow-hidden ellipsis">
-                    <div className="text-sm text-gray-900 dark:text-white">
+                    <div className="text-sm text-gray-900 ">
                       {userData.firstName}&nbsp;{userData.lastName}
                     </div>
 
-                    <div className="text-sm  text-gray-500 truncate dark:text-gray-400">
+                    <div className="text-sm  text-gray-500 truncate ">
                       {userData.email}
                     </div>
                   </div>
                 </div>
                 <div className="px-4 py-3">
                   <a
-                    className="block  py-2 text-sm text-gray-900  dark:hover:bg-blue-600 dark:text-gray-200 dark:hover:text-white"
+                    className="block  py-2 text-sm text-gray-900    "
                     href="/user/dashboard"
                   >
                     Dashboard
@@ -337,7 +335,7 @@ function MenuBar(props) {
                 <ul className="py-2" aria-labelledby="user-menu-button">
                   <li>
                     <button
-                      className="block rounded-lg mx-auto px-2 py-1 text-medium text-gray-300  bg-blue-900 hover:text-gray-100 hover:bg-blue-600 dark:hover:bg-blue-600 dark:text-gray-200 dark:hover:text-white"
+                      className="block rounded-lg mx-auto px-2 py-1 text-medium text-gray-300  bg-blue-900 hover:text-gray-100 hover:bg-blue-600 "
                       onClick={signOut}
                     >
                       Sign Out
@@ -351,7 +349,7 @@ function MenuBar(props) {
           <div className="hidden lg:block flex flex-wrap items-center md:order-2 m-2">
             <button
               onClick={loginPage}
-              className=" hover:bg-skyBlue text-white bg-lightBlue hover:bg-blue-800  focus:ring-4 focus:ring-blue-300 font-sm rounded text-smpx-5 py-2 px-5 dark:bg-blue-600 float-right dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              className=" hover:bg-skyBlue text-white bg-lightBlue hover:bg-blue-800  focus:ring-4 focus:ring-blue-300 font-sm rounded text-smpx-5 py-2 px-5  float-right  focus:outline-none "
             >
               LOGIN
             </button>
