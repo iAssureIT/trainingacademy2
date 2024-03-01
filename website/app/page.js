@@ -52,7 +52,7 @@ const HomePage = () => {
 		// smallBGImage:
 		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
 		logo: "",
-		pageTitle: "Transform Your Skills with </br>Cutting-edge Technologies",
+		pageTitle: "Transform Your Skills with <br/>Cutting-edge Technologies",
 		pageTitleCss: " pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
 		// h1Txt:
 		//   "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
@@ -103,7 +103,7 @@ const HomePage = () => {
 		// smallBGImage:
 		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
 		logo: "",
-		pageTitle: "Unlock Your Potential </br>in Fullstack Development",
+		pageTitle: "Unlock Your Potential <br/>in Fullstack Development",
 		pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
 		para: "Are you ready to take your career to new heights? Our Fullstack ReactJS & NodeJS training program offers the perfect opportunity to unlock your potential and become a sought-after developer in the industry. With expert mentorship, hands-on projects, and job placement assistance, now is the time to invest in your future. Don't wait any longer – Enroll today and pave the way for a successful career in Fullstack Development!",
 		bgImgCss:
@@ -136,7 +136,7 @@ const HomePage = () => {
 		// smallBGImage:
 		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
 		logo: "",
-		pageTitle: "Join a Thriving Community </br>of Developers",
+		pageTitle: "Join a Thriving Community <br/>of Developers",
 		pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
 		para: "Join a vibrant community of like-minded individuals and embark on a journey of growth and discovery. Our training program not only equips you with technical skills but also provides networking opportunities, internships, and job placement assistance. Whether you're a beginner or an experienced developer, there's something for everyone here. Don't miss out on this chance to connect with industry professionals and elevate your career – Sign Up today!",
 		bgImgCss:
@@ -607,7 +607,7 @@ const HomePage = () => {
 			{
 				id: "course1",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-8.webp",
-				altImage: "imageDescription",
+				altImage: "iAssureIT-training-8",
 				cardTitle: "Course 1: Web Technologies Mastery",
 				classForContent:
 					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500] ",
@@ -617,7 +617,7 @@ const HomePage = () => {
 			{
 				id: "course2",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-9.webp",
-				altImage: "imageDescription",
+				altImage: "iAssureIT-training-9",
 				cardTitle: "Course 2: ReactJS Framework and Beyond",
 				classForContent:
 					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500]",
@@ -627,7 +627,7 @@ const HomePage = () => {
 			{
 				id: "course3",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-10.webp",
-				altImage: "imageDescription",
+				altImage: "iAssureIT-training-10",
 				cardTitle: "Course 3: NodeJS and Database Development ",
 				classForContent:
 					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500]",
@@ -663,9 +663,9 @@ const HomePage = () => {
 		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		cardsArray: [        
 			{
-				id: "course4",
+				id: "courses",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-11.webp",
-				altImage: "imageDescription",
+				altImage: "iAssureIT-training-11",
 				cardTitle: "Course 4: Advanced Skills and Beyond",
 				classForContent:
 					"justify-content h-auto text-justify my-auto text-md lg:text-lg p-3 font-[500]",
@@ -722,7 +722,7 @@ const HomePage = () => {
 			"<span class=' font-extrabold'>Meet your coach - Mr Ashish Naik:</span>  ",
 		pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
 		blockSubTitle:
-			"<div class='px-2 md:px-10 '> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</div> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
+			"<span class='px-2 md:px-10 '> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</span> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
 		classForblockSubTitle:
 			"text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0",
 		bgImage:
@@ -866,15 +866,12 @@ const HomePage = () => {
 			"",
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
 		testimonial: true,
 		cardsArray: [
 			{
 				profileImage: "/images/specific/testimonials/Akshay_Madanepatil.webp",
 				designation: "Student",
-				// cardImage: "",
-				altImage: "imageDescription",
-				// cardTitle: "Akshay Madanepatil",
+				altImage: "Akshay_Madanepatil",
 				name: "Akshay Madanepatil",
 				classForContent: " mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				content: `<p>I'm thrilled to share my positive feedback on the training program, and I must say it has been an enriching experience. The incorporation of a "learn with fun" approach made the sessions engaging, ensuring a positive and enjoyable learning environment. </p>` +
@@ -884,10 +881,8 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Siddhant_Kakade.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Siddhant_Kakade",
 				classForContent: " mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Siddhant Kakade",
 				name: "Siddhant Kakade",
 				content: `<p>I am writing to provide feedback on the training program conducted by Mr. Ashish Naik over a period of three months. The experience was truly remarkable, and I would like to highlight some key features that made it exceptional.</p>` +
 
@@ -908,11 +903,8 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Rutika_Bankar.webp",
-				// profileImage:"/images/generic/userProfile.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Rutika_Bankar",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Rutika Bankar",
 				name: "Rutika Bankar",
 				content: `<p>The Training Program has exceeded my expectations in every way. From the comprehensive curriculum to the exceptional instructor and supportive learning environment, this program has truly empowered me with the skills and confidence to excel in this field. One of the most impressive aspects of the program is its well-structured curriculum, which covers a wide range of topics.</p>` +
 					`<br /><p>The hands-on projects and real-world examples provided ample opportunities to apply theoretical knowledge to practical solutions, ensuring a deeper understanding of the concepts taught.</p>` +
@@ -921,11 +913,9 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Ashwini_Kori.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				profileImage: "/images/specific/testimonials/Rutika_Bankar.webp",
+				altImage: "Rutika_Bankar",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Ashwini Kori",
 				name: "Ashwini Kori",
 				content: `<p>The training program is particularly good and valuable for us as we must keep ourselves updated about newer technologies in the field. It strengthened my technical skills and proved to be a great learning experience, especially with the practical deigning and planning and learn with fun sessions.</p>` +
 					`<br /><p>I really enjoying the course and Mr. Ashish Naik's informal Learn with Fun approach to presenting his material.</p>` +
@@ -938,11 +928,8 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Shubham_Ankushe.webp",
-				// profileImage:"/images/generic/userProfile.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Shubham_Ankushe",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Shubham Ankushe",
 				name: "Shubham Ankushe",
 				content: `<p>I am absolutely delighted to express my profound gratitude for the transformative three-month training program conducted by Mr. Ashish Naik. The exceptional mastery he exhibited in the Full Stack Development enriched our learning experience with invaluable insights. From day one, Mr. Naik's engaging training style not only captivated our attention but also sparked an energetic and highly participative atmosphere. What truly sets his program apart is the innovative incorporation of the Scientific Method, a rarity in India.</p>` +
 					`<br /><p>Under Mr. Naik's guidance, the learning environment became not only informative but also positively enjoyable, seamlessly blending fun with knowledge. The training extended beyond technical skills, covering industry insights, client handling techniques, and mobile-first development approaches. Mr. Naik's dedication as an exceptional trainer is evident, providing unparalleled learning experiences that distinguish themselves in the market.</p>` +
@@ -951,10 +938,8 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Ankit_Kumar_Rai.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Ankit_Kumar_Rai",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Ankit Kumar Rai",
 				name: "Ankit Kumar Rai",
 				content: `<p>I am delighted to share my experience with the Advanced Full Stack Development training led by Ashish Naik. His expertise, dedication, and effective communication have been instrumental in my learning journey. The comprehensive curriculum covered all aspects of Full Stack Development, providing a robust foundation for real-world applications. </p>` +
 					`<br /><p>The hands-on projects were particularly beneficial, allowing me to bridge the gap between theory and practical implementation seamlessly. His passion for teaching and commitment to student success were evident in every session, creating a positive and encouraging learning atmosphere. His approachability and willingness to address doubts ensured a supportive and enriching experience. </p>` +
@@ -963,10 +948,8 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Abhishek_Varma.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Abhishek_Varma",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Abhishek Varma",
 				name: "Abhishek Varma",
 				content: `<p>I am pleased to provide feedback on the training conducted by Mr. Ashish Naik sir. The experience was truly remarkable, and I would like to highlight some points : </p>` +
 					`<br /><p>“Fun with Learn" Strategy: 
@@ -982,12 +965,9 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				// profileImage:"/images/generic/userProfile.webp",
 				profileImage: "/images/specific/testimonials/Mohit_Panjwani.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Mohit_Panjwani",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Mohit Panjwani",
 				name: "Mohit Panjwani",
 				content: `<p>I'm really excited and pleased to provide feedback on our Advanced and High level Software Development training program...</p>` +
 					`<br /><p>The training program offers well all rounded curriculum that covers all essential parts and topics of software development, from basic concepts to advanced technologies. The training conducted under Mr Ashish Naik sir was very enthusiastic and helped me to achieve more confidence in this field despite of me being from a non technical field. The dedication, expertise and passion of Mr Ashish Naik sir towards the goal of our training program is very impressive, the interacting style was not only informative but also engaging, and the title of learn with fun made it more interesting. The training program was not only about learning software related technologies but also understanding industry standards mainly stress management. Overall the training was highly informative and beneficial and the dedication of Mr Ashish Naik sir towards our growth and development as individuals has been truly inspiring.</p>`,
@@ -995,10 +975,8 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Archana_Kadam.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Archana_Kadam",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Archana Kadam",
 				name: "Archana Kadam",
 				content: `<p>I am very much delighted to share my experience on the training program provided in iAssureIT. It gives me immense pleasure to show my gratitude to the training that is been provided to me.</p>` +
 					`<br /><p>From my personal experience, I can say there is a distinctive difference in the approach of carrying out the training program . Mr.Ashish Naik, our Mentor, has an innate quality to present the most intricate concept in a much simpler form.</p>` +
@@ -1009,10 +987,8 @@ const HomePage = () => {
 			{
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Aniket_Pawar.webp",
-				// cardImage: "",
-				altImage: "imageDescription",
+				altImage: "Aniket_Pawar",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				// cardTitle:"Aniket Pawar",
 				name: "Aniket Pawar",
 				content: `<p>I am feeling grateful to share my feedback on the Full Stack Development learning experience under our best and always enthusiastic mentor Mr. Ashish Naik which has been incredibly positive and wonderful.</p>` +
 					`<br /><p>Ashish Sir's teaching methodology stands out for its unique "Learn with Fun" approach. This not only makes the learning process enjoyable but also enhances retention and understanding. His passion for the subject matter is evident, and his ability to communicate complex concepts in a clear and engaging manner contributes significantly to the overall quality of the training.</p>` +
@@ -1141,7 +1117,7 @@ const HomePage = () => {
 		blockSubTitle: "<span class='font-extrabold'>Unlock Your FullStack Potential: Affordable Fees, Boundless Opportunities</span>",
 		classForblockSubTitle: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-bold text-darkGray mb-10 bodyTxt",
 		classForblockDescription: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt my-5",
-		blockDescription: "<p>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</p>" +
+		blockDescription: "<span>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</span>" +
 			"<br /><span class='font-bold'>Course Fees Breakdown</span>",
 		classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-3 md:py-10  leading-tight",
 		classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",

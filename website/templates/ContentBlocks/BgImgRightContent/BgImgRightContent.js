@@ -237,7 +237,7 @@ const BgImgRightContent = (props) => {
                         {
                             props?.inputData?.modalDisplay1
                                 ?
-                                <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss1 ? props?.inputData?.modalBtnCss1 : "text-white hidden"} type="button"
+                                <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss1 ? props?.inputData?.modalBtnCss1 : "text-white hidden"} 
                                     dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName1 }}>
                                 </div>
                                 :

@@ -72,9 +72,9 @@ const Technology = (props) => {
                                backgroundSize: "100% 100%" }}>
                               {
                                  card.cardTitle ?
-                                    <span className='flex justify-center'>
-                                       <h3 className={"px-2 " + props.inputData?.classForCardTitle} dangerouslySetInnerHTML={{ __html: card?.cardTitle }} ></h3>
-                                    </span>
+                                    <div className='flex justify-center'>
+                                       <div className={"px-2 " + props.inputData?.classForCardTitle} dangerouslySetInnerHTML={{ __html: card?.cardTitle }} ></div>
+                                    </div>
                                  : null
                               }
                               
@@ -96,9 +96,9 @@ const Technology = (props) => {
                         {
                            card.cardTitle_2
                               ?
-                              <span className='flex justify-center'>
-                                 <h3 className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md text-primary dark:text-primary-400"} dangerouslySetInnerHTML={{ __html: card?.cardTitle_2 }} ></h3>
-                              </span>
+                              <div className='flex justify-center'>
+                                 <div className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md text-primary dark:text-primary-400"} dangerouslySetInnerHTML={{ __html: card?.cardTitle_2 }} ></div>
+                              </div>
                               : null
                         }
                      </div>
@@ -110,9 +110,9 @@ const Technology = (props) => {
          {
             props.inputData?.cardTitle_2
                ?
-               <span className='flex justify-center'>
-                  <span className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md "} dangerouslySetInnerHTML={{ __html: props.inputData?.cardTitle_2 }} ></span>
-               </span>
+               <div className='flex justify-center'>
+                  <div className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md "} dangerouslySetInnerHTML={{ __html: props.inputData?.cardTitle_2 }} ></div>
+               </div>
                : null
          }
       </section>

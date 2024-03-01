@@ -143,13 +143,14 @@ const CenterContentRepeatableBlocks = (props) => {
                                             <div className="flex object-cover my-2 px-9">
                                                 {card.profileImage ? (
                                                 <img
+                                                    loading="lazy"
                                                     className={"h-24 w-24   rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
-                                                    // src="/images/generic/logo1.png"
                                                     src={card.profileImage}
-                                                    alt={card.profileImage ? "logo-iassureit" : ""}
+                                                    alt={card.profileImage ? card.altImage : "iassureitProfile" }
                                                 />
                                                 ) : (
                                                 <img
+                                                    loading="lazy"
                                                     className="w-24 h-24 rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
                                                     src="/images/generic/noImage.jpg"
                                                     alt="logo-iassureit"
@@ -223,7 +224,7 @@ const CenterContentRepeatableBlocks = (props) => {
             {
                 props?.inputData?.modalDisplay
                     ?
-                    <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss ? props?.inputData?.modalBtnCss : "text-white hidden"} type="button"
+                    <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss ? props?.inputData?.modalBtnCss : "text-white hidden"} 
                         dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName }}>
                     </div>
                     :
