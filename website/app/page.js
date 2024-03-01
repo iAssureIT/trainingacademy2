@@ -14,9 +14,7 @@ const HomePage = () => {
     id: "Banner_Block",
     bgImage:
       "/images/specific/trainingAcademy/iAssureIT-training-1.webp",
-    // smallBGImage:
-    //   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
-    logo: "",    
+   logo: "",    
     h1Txt:
       "<span class='font-bold text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl'>Transforming Aspirations into Applications</span><br/><span class='text-base'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
     bgImgCss:
@@ -49,18 +47,13 @@ const HomePage = () => {
 		id: "CET_Block",
 		bgImage:
 			"/images/specific/trainingAcademy/iAssureIT-training-17.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
 		logo: "",
 		pageTitle: "Transform Your Skills with <br/>Cutting-edge Technologies",
 		pageTitleCss: " pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
-		// h1Txt:
-		//   "<h1 class='leading-tight'>ELEVATE YOUR BUSINESS </h1>WITH IASSUREIT YOUR  <br /> <span class='font-extrabold'> SPECIALIST IN LARGE  <br/>SCALABLE IT SYSTEMS </span> ",
 		para: "Stay ahead of the curve and master the latest technologies in Fullstack Development. Our comprehensive training program covers everything from ReactJS and NodeJS to advanced topics like Redux, MongoDB integration, and AWS integration. With flexible learning options and expert guidance from industry professionals, there's no limit to what you can achieve. Take the first step towards transforming your skills and shaping your future – Enroll Now!",
 		bgImgCss:
 			"lazyload object-fit py-0 lg:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
-		// h1TxtCss: "  text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center lg:text-left",
 		paraCss:
 			" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
 		gridCss:
@@ -84,8 +77,6 @@ const HomePage = () => {
 
 	const content_BSmallBlocks = {
 		id: "BSmall_Blocks",
-		// // bgImage:
-		//   "/images/specific/trainingAcademy/iAssureIT-training-3.webp",
 		bgImage1: "/images/specific/trainingAcademy/iAssureIT-training-3.webp",
 		bgImage2: "/images/specific/trainingAcademy/iAssureIT-training-4.webp",
 		bgImage3: "/images/specific/trainingAcademy/iAssureIT-training-5.webp",
@@ -100,8 +91,6 @@ const HomePage = () => {
 		id: "UnlockP_Block",
 		bgImage:
 			"/images/specific/trainingAcademy/iAssureIT-training-12.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
 		logo: "",
 		pageTitle: "Unlock Your Potential <br/>in Fullstack Development",
 		pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
@@ -133,8 +122,6 @@ const HomePage = () => {
 		id: "JTCD_Block",
 		bgImage:
 			"/images/specific/trainingAcademy/iAssureIT-training-19.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-1.webp",
 		logo: "",
 		pageTitle: "Join a Thriving Community <br/>of Developers",
 		pageTitleCss: "px-1 pb-5 pt-5 md:pt-2 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-5xl xl:!leading-[1.3] text-center text-white w-full text-center font-bold BlockTitle text-center uppercase ",
@@ -195,7 +182,6 @@ const HomePage = () => {
 			"Driven by a vision to propel India to new heights in the IT industry, Ashish Naik is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.",
 		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-white",
 		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-15.webp",
-		// smallBGImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
 		bgImgCss: "lazyload",
 		para:"Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.",
 		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-2xl text-justify text-white",
@@ -230,7 +216,6 @@ const HomePage = () => {
 		titleDivCss: "absolute mt-32 md:mt-10 lg:mt-32 xl:mt-32 2xl:mt-52 mx-auto z-10 w-full",
 		classForNoOfCards:
 			"px-5 md:px-20 mx-10 grid grid-cols-1 m-5 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mb-10 lg:mb-20 mt-60 xl:mt-72",
-		// "xl:px-32 2xl:w-3/4 mx-auto px-7 pb-10  max-w-8xl my-auto item-center text-center justify-evenly grid  sm:grid-cols-1 md:grid-cols-2 md:gap-x-9 lg:gap-x-9 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-9 mt-10",
 		classForCards:
 			"grid grid-cols-1 break-words p-5 px-9 text-center py-auto border mb-5 rounded-lg h-auto min-h-36 border-spacing-x-96 mb-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] 2xl:py-16",
 		classForCardTitle: "BlockTitle text-white font-extrabold py-auto",
@@ -323,261 +308,6 @@ const HomePage = () => {
 			},
 		],
 	};
-	const content_Statistics = {
-		mainCss: "lazyload object-fit py-32 lg:py-48 2xl:py-80 md:-mt-24 bg-cover bg-no-repeat relative  w-full   ",
-		title: "COMPANY AT <span class='font-extrabold leading-relaxed'> A GLANCE </span>",
-		titleCss: "text-center px-10 BlockTitle text-white font-extrabold py-auto mx-auto",
-		bgImage: '/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-2.webp',
-		gridDivCss: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-white gap-5 px-4 md:px-32",
-		gridSubDivCss: "border  rounded  py-10",
-		dash: "border-white mt-10 mb-5 md:mb-10",
-		StatisticsList: [
-			{ caption: "8+", address: "Years in Bussiness" },
-			{ caption: "60+ ", address: "Developers" },
-			{ caption: "400+", address: "Clients" },
-			{ caption: "600+", address: "Projects Completed" },
-			{ caption: "300+", address: "Websites" },
-			{ caption: "100+", address: "Mobile Apps" }
-		]
-	}
-	const content_whatWeDo = {
-		bgImage:
-			"/images/specific/Home/WhatWeDo/iAssureIT-home-page-background-14.webp",
-		smallBGImage:
-			"/images/specific/Home/WhatWeDo/iAssureIT-home-page-background-14.webp",
-
-		dash: "border-blue-700 md:mt-10 lg:mt-2",
-		blockTitle: "<span class='font-extrabold'>WHAT</span><span > WE DO</span>",
-		classForblockTitle: " w-full text-center BlockTitle",
-	};
-	const content_leftContentBgImg = {
-		id: "FastTrack_Framework",
-		bgImage: "/images/specific/Home/FastTrack_Framework/2.webp",
-		smallBGImage: "/images/specific/Home/FastTrack_Framework/2.webp",
-		logo: "",
-		pageTitle: "<span class='font-extrabold'>FASTTRACK</span> FRAMEWORK",
-		pageTitleCss: "  text-white w-full text-center BlockTitle",
-		para: "Enterprise Apps are always a little more complex as compared to other apps. Especially due to their customized approach for critical business requirements. Designing and developing such enterprise applications means satisfying hundreds or thousands of separate requirements. iAssureIT has those unique and special skills required for developing great quality enterprise applications.",
-		bgImgCss:
-			"lazyload object-fit py-32 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		logoCss: "lazyload justify-left align-left  mb-5 ",
-		paraCss:
-			"text-lg sm:text-lg md:text-2xl lg:text-2xl text-justify font-normal",
-		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 mb-0 md:mb-10 lg:h-full   xl:h-full h-full content-center  ",
-		gridSubDivCss:
-			" mt-12 mx-auto text-white content-center  place-content-center  justify-center mb-10 py-10 px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
-		image: "/images/specific/Home/FastTrack_Framework/1.webp",
-		imageCss: " py-32 md:py-20 object-fit lazyload",
-		imgTagcss: "mx-auto lazyload",
-		borderColor: "border-darkBlue",
-		dash: "border-white mb-5 md:mb-10 mt-32",
-		// url: "/about-us",
-		// urlName: "Read More",
-		// linkCss: "text-white underline font-bold text-lg md:text-xl mt-3",
-	};
-	const content_CenterContentRepeatableBlocks = {
-		id: "OurSpeciality",
-		blockTitle: "<span class='font-extrabold'>OUR</span> SPECIALITY",
-		classForblockTitle: " w-full text-center BlockTitle xl:py-5 py-5 ",
-		classForNoOfCards:
-			"px-10 lg:px-20  max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6",
-		classForCards:
-			" border shadow-[0_3px_10px_rgb(0,0,0,0.2)] text-white p-10 mb-10 rounded-xl",
-		classForCardTitle: "text-center  text-darkGray title p-3",
-		classForCardTitle_2:
-			"font-bold text-md text-primary  p-5",
-		classForCardImage: "w-1/2 mx-auto p-10 lazyload bg-gray-100 rounded-full",
-		classForblockContent:
-			"px-10 lg:px-20  xl:pb-14 pb-10 h-auto text-justify my-auto text-md lg:text-lg justify-content",
-		// blockContent           : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-		cardsArray: [
-			{
-				cardImage: "/images/specific/Home/Our_Speciality/1.webp",
-				altImage: "imageDescription",
-				cardTitle: "Enterprise",
-				// cardTitle_2       : 'Block subtitle',
-				classForContent:
-					"justify-content h-auto text-center text-lightGray my-auto text-lg md:text-2xl xl:text-xl 2xl:text-2xl",
-				content:
-					"Enterprise-grade web & mobile application development is becoming more agile & collaborative.",
-				url: "/about-us",
-				urlName: "READ MORE",
-				linkCss: "text-blue-700  font-medium text-md md:text-lg mt-3",
-			},
-			{
-				cardImage: "/images/specific/Home/Our_Speciality/2.webp",
-				altImage: "imageDescription",
-				cardTitle: "Startup World",
-				// cardTitle_2       : 'Block subtitle',
-				classForContent:
-					"justify-content h-auto text-center text-lightGray my-auto subTitle",
-				content:
-					"We provide all kinds of supports to startups such as business plans, investment funding, market launch, & daily operations.",
-				url: "/about-us",
-				urlName: "READ MORE",
-				linkCss: "text-blue-700  font-medium text-md md:text-lg mt-3",
-			},
-			{
-				cardImage: "/images/specific/Home/Our_Speciality/3.webp",
-				altImage: "imageDescription",
-				cardTitle: "eCommerce",
-				// cardTitle_2       : 'Block subtitle',
-				classForContent:
-					"justify-content h-auto text-center text-lightGray my-auto subTitle",
-				content:
-					"From simple design to extremely cutting-edge user experience, we develop any kind of eCommerce website",
-				url: "/about-us",
-				urlName: "READ MORE",
-				linkCss: "text-blue-700  font-medium text-md md:text-lg mt-3",
-			},
-		],
-		dash: "border-blue-700",
-	};
-	const content_BgImgRightTxt_3 = {
-		paraTitle:
-			"Our innovative eCommerce platform can not only do everything that a ready-made eCommerce, content management system, or website builder does but also what they can't do. Our customized eCommerce platform provides you absolute magical user experience and unlimited innovations. You can build a single-owner eCommerce shop, the multi-vendor marketplace, franchise model using our eCommerce platform.",
-		paraTitleClass: "subTitle text-justify font-normal",
-		bgImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
-		smallBGImage: "/images/specific/Home/AutoPiloteCommercePlatform/1.webp",
-		bgImgCss: "lazyload",
-		pageTitle:
-			"<span class='font-extrabold'> AUTOPILOT</span> ECOMMERCE PLATFORM",
-		pageTitleCss: " text-light w-full text-center BlockTitle",
-		gridColCss:
-			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-10 px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
-
-		gridCol1Css: "lg:pb-32",
-		gridClass:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-content-center md:grid-cols-2  lg:h-full   xl:h-full h-full content-center ",
-		// gridColCss:"text-white mx-auto my-auto content-center  place-content-center",
-		// gridClass: "grid grid-cols-1 xs:grid-cols-1 md:grid-cols-1  lg:grid-cols-2 2xl:grid-cols-2  xl:grid-cols-2 h-auto ",
-		// bannerClass: "py-32 p-5 lg:p-10 bg-cover bg-no-repeat relative  w-full  bg-center mb-8 lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
-		bannerClass:
-			"object-fit py-40 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		image: "/images/specific/Home/AutoPiloteCommercePlatform/2.webp",
-		imageCss:
-			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
-		imgTagcss: "mx-auto lazyload",
-		dash: "border-white mb-5 md:mb-10 sm:mt-32 lg:mt-20",
-		url: "/about-us",
-		urlName: "Read More",
-		linkCss: "text-white underline font-bold text-lg md:text-xl mt-5",
-	};
-	const content_CenterImgCenterContentRepeatableBlocks = {
-		blockTitle: "<span class='font-extrabold'>MOBILE APP </span>DEVELOPMENT",
-		classForblockTitle: "text-darkGray w-full text-center BlockTitle mb-4",
-		blockImage: "/images/specific/Home/Mobile_App_Devlopment/1.webp",
-		altImage: "imageDescription",
-		classForblockImage: "w-full rounded-md  mx-auto max-w-4xl p-10 lazyload",
-		classForNoOfCards:
-			"px-10 lg:px-20 mb-10 max-w-8xl text-center justify-evenly grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-x-4 lg:gap-x-6 lg:grid-cols-2 xl:grid-cols-4 xl:gap-x-6",
-		classForCardTitle: "text-center font-semibold subTitle",
-		classForCardTitle_2:
-			"font-bold text-md text-primary  p-5",
-		classForCardImage:
-			"mx-auto h-40 sm:h-52 md:h-48 lg:h-48 xl:h-52 2xl:h-72 xxl:h-96 p-10 lazyload",
-		// classForblockTitle  :" text-sky-500 w-full text-center font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl",
-
-		classForblockContent:
-			"lg:px-12 max-w-4xl mx-auto h-auto text-justify my-auto text-md lg:text-lg justify-content bodyTxt",
-		blockContent:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-		cardsArray: [
-			{
-				cardImage: "/images/specific/Home/Mobile_App_Devlopment/2.webp",
-				altImage: "imageDescription",
-				cardTitle: "User Friendly",
-				cardTitle_2: "",
-				classForContent: "justify-content h-auto text-justify my-auto subTitle",
-				content: "",
-				classForCards:
-					"text-darkGray p-10 mb-7  h-80 2xl:h-96 rounded-xl border border-1 shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
-			},
-			{
-				cardImage: "/images/specific/Home/Mobile_App_Devlopment/3.webp",
-				altImage: "imageDescription",
-				cardTitle: "Performance",
-				cardTitle_2: "",
-				classForContent:
-					"justify-content h-auto text-justify my-auto text-md lg:text-lg",
-				content: "",
-				classForCards:
-					"text-darkGray mt-12 h-80 2xl:h-96 p-10 mb-10 rounded-xl border border-1 shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
-			},
-			{
-				cardImage: "/images/specific/Home/Mobile_App_Devlopment/4.webp",
-				altImage: "imageDescription",
-				cardTitle: "Attractive UI",
-				cardTitle_2: "",
-				classForContent:
-					"justify-content h-auto text-justify my-auto text-md lg:text-lg",
-				content: "",
-				classForCards:
-					"text-darkGray h-80 2xl:h-96 p-10 mb-7 rounded-xl border border-1 shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
-			},
-			{
-				cardImage: "/images/specific/Home/Mobile_App_Devlopment/3.webp",
-				altImage: "imageDescription",
-				cardTitle: "Business Value",
-				cardTitle_2: "",
-				classForContent:
-					"justify-content h-auto text-justify my-auto text-md lg:text-lg",
-				content: "",
-				classForCards:
-					"text-darkGray  mt-12 h-80 2xl:h-96 p-10 mb-10 rounded-xl border border-1 shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
-			},
-		],
-		dash: "border-blue-700 mb-5 md:mb-5",
-	};
-	const content_content_mgmt_Syestem = {
-		id: "ContentMgmtSystem",
-		bgImage: "/images/specific/Home/FastTrack_Framework/2.webp",
-		smallBGImage: "/images/specific/Home/FastTrack_Framework/2.webp",
-		logo: "",
-		pageTitle: "<span class='font-extrabold'>CONTENT</span> MANAGEMENT SYSTEM",
-		pageTitleCss: "text-light w-full text-center BlockTitle",
-		para: "Enterprise Apps are always a little more complex as compared to other apps. Especially due to their customized approach for critical business requirements. Designing and developing such enterprise applications means satisfying hundreds or thousands of separate requirements. iAssureIT has those unique and special skills required for developing great quality enterprise applications.",
-		bgImgCss:
-			"object-fit py-32 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyload",
-		logoCss: " justify-left align-left  mb-5 lazyload",
-		paraCss: "subTitle text-justify font-normal",
-		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-content-center md:grid-cols-2  lg:h-full   xl:h-full h-full content-center  ",
-		gridSubDivCss:
-			"my-auto mt-12 mx-auto text-white content-center  place-content-center  justify-center py-10 px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
-		image: "/images/specific/Home/FastTrack_Framework/FastTrack_Framework.webp",
-		imageCss: "  mx-auto py-32 md:py-20 object-fit lazyload",
-		imgTagcss: "mx-auto lazyload",
-		dash: "border-white mb-5 md:mb-10 mt-32",
-		// url: "/about-us",
-		// urlName: "Read More",
-		// linkCss: "text-white underline font-bold text-lg md:text-xl mt-3",
-	};
-	const content_endLessPossibility = {
-		id: "EndLessPossibility",
-		// bgImage     : "/images/specific/Home/FastTrack_Framework/2.webp",
-		// smallBGImage: "/images/specific/Home/FastTrack_Framework/2.webp",
-		logo: "",
-		pageTitle: "<span class='font-extrabold'>ENDLESS</span> POSSIBILITIES",
-		pageTitleCss: " text-gray w-full text-center  BlockTitle leading-tight",
-		para: "Enterprise Apps are always a little more complex as compared to other apps. Especially due to their customized approach for critical business requirements. Designing and developing such enterprise applications means satisfying hundreds or thousands of separate requirements. iAssureIT has those unique and special skills required for developing great quality enterprise applications.",
-		bgImgCss:
-			"object-fit bg-cover bg-no-repeat relative  py-6 w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyload",
-		logoCss: " justify-left align-left  mb-5 lazyload",
-		paraCss: "subTitle text-justify font-normal text-gray",
-		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-content-center md:grid-cols-2  lg:h-full   xl:h-full h-full content-center  ",
-		gridSubDivCss:
-			"my-auto mt-12 mx-auto text-gray content-center  place-content-center  justify-center py-10 px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
-		image: "/images/specific/Home/Endless_Possibilities/1.webp",
-		imageCss: " py-32 md:py-20 object-fit lazyload",
-		imgTagcss: "mx-auto lazyload",
-		dash: "border-blue-700 mb-5 md:mb-3",
-		// url: "/about-us",
-		// urlName: "Read More",
-		// linkCss: "text-gray underline font-bold text-lg md:text-xl mt-5",
-	};
 
 	const content_Courses = {
 		id: "courses",
@@ -596,13 +326,8 @@ const HomePage = () => {
 			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
 		classForCardImage: " px-2 w-full",
-		// classForblockContent:
-		//   "text-lg md:text-xl text-center font-[500] px-2 md:px-12 lg:px-32 xl:px-64  2xl:w-2/5 2xl:px-2  mx-auto ",
-		// blockContent:
-		//   "We elevate businesses with our quest to innovation and expertise with tech advancement as per BFSI industry requisites.",
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
 		cardsArray: [
 			{
 				id: "course1",
@@ -675,49 +400,11 @@ const HomePage = () => {
 		],
 	};
 
-	const content_contactBlock = {
-		id: "contact",
-		bgImage:
-			"/images/specific/Home/HomeNewImg/iAssureIT-home-page-breaking-slide-1.webp",
-		smallBGImage:
-			"/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-4.webp",
-		logo: "",
-		h1Txt:
-			"Ready to Elevate Your BFSI  Operations? Harness the Power of  Large Scalable Apps with Us!",
-		h1TxtCss:
-			"title  text-center lg:text-left content-left  place-content-left  justify-center content-left leading-tight",
-		bgImgCss:
-			"py-10 lazyload object-fit bg-cover bg-no-repeat relative    lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		para: "Contact iAssureIT Today ",
-		paraCss: " text-light title text-center lg:text-left mt-5 ",
-		gridCss:
-			"pt-5 lg:pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1   lg:grid-cols-2 flex-row-reverse md:flex-none  lg:h-full   xl:h-full h-full px-10  md:px-20 lg:px-32 2xl:px-32 xxl:!px-48 ",
-		gridSubDivCss: " my-auto text-white 2xl:w-2/3 pt-10 ",
-		image: "/images/specific/Home/HomeNewImg/Rupee.webp",
-		imageCss:
-			"object-fit px-2 py-3 md:p-24 lg:p-0 w-full  lg:w-auto mx-auto  object-fit lazyload place-content-bottom object-bottom ",
-		borderColor: "border-darkBlue",
-		imgTagcss: "h-auto w-full",
-		// btn2: "true",
-		// btn2Url: "/contact-us",
-		// btn2UrlName: "Contact Us",
-		// btn2Css:
-		//   "mx-auto font-bold text-lg md:text-xl  p-3  2xl:px-2 text-center border w-full md:w-3/4  lg:w-3/4 xl:w-3/4 2xl:w-3/4 rounded btn bg-light text-darkGray mt-10 mb-10  md:mt-5 lg:mb-20 lg:mt-0 hover:bg-transparent hover:text-white",
-		modalId: "contactUsModal",
-		modalDisplay2: "true",
-		modalUrlName2: "Contact Us <span><i class='fa-solid  fa-angle-double-right'></i></span>",
-		modalBtnCss2: "mx-auto font-bold text-lg md:text-xl  p-3  2xl:px-2 text-center border w-full md:w-3/4  lg:w-3/4 xl:w-3/4 2xl:w-3/4 rounded btn bg-white text-darkGray mt-10 mb-10  md:mt-5 lg:mb-20 lg:mt-0 hover:bg-transparent hover:text-white cursor-pointer"
-
-	};
+	
 	const content_About = {
 		id: "about",
 		sectionClass:
 			"pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] pl-2 md:pl-2 lg:pl-10 xl:pl-16 2xl:pl-16 xxl:!pl-24",
-		// sectionBgImg:
-		//   "/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-3.webp",
-		// smallBGImage:
-		//   "/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-3.webp",
-
 		pageTitle:
 			"<span class=' font-extrabold'>Meet your coach - Mr Ashish Naik:</span>  ",
 		pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
@@ -774,7 +461,6 @@ const HomePage = () => {
 				title: "Expertise in more than 60 technologies, showcasing his versatility and adaptability in the ever-evolving tech landscape.",
 			},
 		],
-		// dash: "border-white mb-5 mt-5 md:mt-20 lg:mt-52 xl:mt-40 xxl:!mt-72",
 	};
 	const content_SmallBanner2 = {
 		id: "mbSmallBanner",
@@ -1011,7 +697,6 @@ const HomePage = () => {
 			"text-center font-extrabold text-md md:text-md lg:text-lg",
 		classForCardTitle_2:
 			"font-bold text-md text-primary  p-5",
-		// imgDivCss:"py-2",
 		classForCardImage: "bg-white rounded-xs w-16 h-16 my-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mx-auto",
 		classForblockContent:
 			"text-lg md:text-xl text-center font-[500] px-2 md:px-12 lg:px-32 xl:px-64  2xl:w-2/5 2xl:px-2  mx-auto ",
@@ -1019,7 +704,6 @@ const HomePage = () => {
 			"",
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
 		modalDisplay: "true",
 		modalUrlName: "Get Started",
 		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10  border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
@@ -1108,7 +792,6 @@ const HomePage = () => {
         and take the first step towards a rewarding career in the ever-evolving world of technology.</div>`,
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
 		cardsArray: [],
 	};
 	const content_CourseFees = {
@@ -1134,7 +817,6 @@ const HomePage = () => {
 			{
 				cardTitle: '<p>Course 1</p>' +
 					'<p class="wrap-text">HTML5, CSS3, JavaScript </p><p>etc</p>',
-				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
@@ -1143,7 +825,6 @@ const HomePage = () => {
 			}, {
 				cardTitle: '<p>Course 2</p>' +
 					'<p class="wrap-text">ReactJS, JSON,</p><p> API Integration</p>',
-				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
@@ -1152,7 +833,6 @@ const HomePage = () => {
 			}, {
 				cardTitle: '<p>Course 3</p>' +
 					'<p class="wrap-text">NodeJS, MongoDB,</p><p> REST API Development</p>',
-				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
@@ -1161,7 +841,6 @@ const HomePage = () => {
 			}, {
 				cardTitle: '<p>Course 4</p>' +
 					'<p class="wrap-text">Advanced Skills in ReactJS,</p><p> NodeJS, etc</p>',
-				// imageArr: []
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
@@ -1169,7 +848,6 @@ const HomePage = () => {
 					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
 			},
 		],
-		// dash: "border-blue-700 mb-0  md:mb-0 ",
 	}
 
 	const content_PAYMENT_OPTIONS = {
@@ -1191,7 +869,6 @@ const HomePage = () => {
 		to just Rs 90,000.<span class='text-xl font-bold text-lightGreen'> (Overall Discount of 50% discount)</span></div></div>`,
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		// dash: "border-blue-700 mb-5 lg:mb-0 lg:-mt-12 ",
 		cardsArray: [],
 		modalDisplay: "true",
 		modalUrlName: "Get Started",
@@ -1207,7 +884,6 @@ const HomePage = () => {
 			>
 
 				<a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf" target={"_blank"}><i className="text-white fa-solid fa-download">
-					{/* <br/><span className="text-[5px]">BROCHURE</span> */}
 				</i></a>
 			</div>
 
@@ -1222,7 +898,6 @@ const HomePage = () => {
 			<CenterContentRepeatableBlocks inputData={content_Courses2} />
 
 			<BgImgLeftContentRtImg inputData={content_UnlockP} />
-
 
 			<LeftImgRightRepeatableBlk
 				inputData={content_About}
