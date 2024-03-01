@@ -113,7 +113,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                                     {
                                                         card.cardImage
                                                             ?
-                                                            <img alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"}   />
+                                                            <img loading="lazy" alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"}   />
                                                             :
                                                             null
                                                     }
@@ -157,17 +157,17 @@ const CenterContentRepeatableBlocks = (props) => {
                                                 />
                                                 )}
                                                 <div className='object-center mx-5 my-auto'>
-                                                    <h5 className="my-2 text-lg font-bold text-left">
+                                                    <div className="my-2 text-lg font-bold text-left">
                                                     {card.name
                                                         ? card.name
                                                         : ""}
-                                                    </h5>
-                                                    <h6 className="my-2 text-sm font-bold text-left text-lightGray">
+                                                    </div>
+                                                    <div className="my-2 text-sm font-bold text-left text-lightGray">
                                                         {card.designation
                                                             ? card.designation
                                                             : ""}
 
-                                                    </h6>
+                                                    </div>
                                                 </div>
                                             </div>
                                         :null

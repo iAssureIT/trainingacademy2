@@ -250,6 +250,8 @@ function MenuBar(props) {
             }
             <div className="block  lg:hidden">
                <button
+               id="btn-mob-menubar"
+               aria-label="mobileDropdownBtn"
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex items-center px-3 mt-3 lg:mt-6 pl-6 rounded text-white hover:text-white smMenu"
                >

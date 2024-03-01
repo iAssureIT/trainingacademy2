@@ -13,7 +13,6 @@ import Navbar from "@/templates/HeaderBlocks/MenuBar/MenuTest";
 // axios.defaults.baseURL = publicRuntimeConfig.API_BASE_URL; // not working
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL;
-console.log("NEXT_PUBLIC_BASE_URL", process.env.NEXT_PUBLIC_BASE_URL)
 axios.defaults.headers.post["Content-Type"] = "application/json";
 const scrollToTop = () => {window.scrollTo(0, 0), behavior.scrollTo('smooth')};
 var currentYear = new Date().getFullYear();
@@ -72,10 +71,8 @@ const footerMenuItems = [
   { label: "Courses", link: "#course1" },
   { label: "Testimonials", link: "#testimonials" },
   { label: "Contact Us", link: "#footer" },
-  // { label: "Career", link: "/career/career1" },
 ];
-const siteMapItems = [
-  
+const siteMapItems = [  
   {
     label: "Web Technologies Mastery",
     link: "#course1",   
@@ -93,8 +90,6 @@ const siteMapItems = [
     link: "#course4",   
   },
 ];
-
-
 
 const content_Footer = {
   bannerClass:
@@ -148,7 +143,6 @@ const content_Footer = {
     "THE MOST INNOVATIVE IT COMPANY  2019",
   ],
 };
-
 const content_Footer2 = {
   bgImgCss:
     "relative block shadow-lg  bg-no-repeat  max-w-full   bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] bg-[length:100%_100%] md:bg-[length:100%_100%]",
@@ -200,7 +194,7 @@ export default function RootLayout({ children }) {
         <script defer src="https://cdn.tailwindcss.com" async ></script>
 
         {/* <!-- Google tag (gtag.js) --> */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>        
+        <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>        
        </head>
       <body className={" bg-white"}>
         

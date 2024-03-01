@@ -41,6 +41,7 @@ const LeftRightImgCenterContent = (props) => {
             <div className={props?.inputData?.gridCss ? props?.inputData?.gridCss : "grid grid-cols-1 lg:grid-cols-2 gap-10"}>
                 <div className={props?.inputData?.gridCol1Css ? props?.inputData?.gridCol1Css : "w-full h-auto relative my-auto "}>
                     <img
+                        loading='lazy'
                         src={props?.inputData?.bgImage}
                         alt="Big Image"
                         className={props?.inputData?.bgImageCss ? props?.inputData?.bgImageCss + " lazyload " : "w-full h-auto object-cover lazyload "}
