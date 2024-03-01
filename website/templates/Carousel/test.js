@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect, useRef } from "react";
 
 const MultipleImagesCarousel = (props) => {
@@ -55,7 +54,7 @@ const MultipleImagesCarousel = (props) => {
     return (
         <section
             data-carousel="slide"
-            className="relative text-center max-w-8xl justify-evenly "
+            className="relative  text-center  max-w-8xl justify-evenly "
             //   onMouseEnter={stopAutoScroll}
             //   onMouseLeave={startAutoScroll}
             onMouseEnter={() => setAutoScrolling(false)}
@@ -108,7 +107,7 @@ const MultipleImagesCarousel = (props) => {
                             >
                                 <video
                                     id="carousel"
-                                    className="flex-auto object-cover w-full h-full py-5 pr-4 rounded-lg cursor-pointer "
+                                    className="flex-auto  object-cover w-full h-full py-5 pr-4 rounded-lg cursor-pointer "
                                     loop
                                     muted
                                     onClick={() => handleVideoClick(video)}
@@ -124,7 +123,7 @@ const MultipleImagesCarousel = (props) => {
                                     key={image}
                                     src={image}
                                     alt={`Carousel Image ${index}`}
-                                    className="flex-auto object-cover w-1/2 h-full px-1 py-2 rounded-lg cursor-pointer lg:w-1/3 slide"
+                                    className="flex-auto w-1/2 lg:w-1/3 object-cover  h-full py-2 px-1 slide rounded-lg cursor-pointer"
                                 />
                             ))
                             : props.inputData.textBlock.map((data, index) => (
@@ -136,7 +135,7 @@ const MultipleImagesCarousel = (props) => {
                                             : "flex-auto object-cover w-full h-full p-1 slide rounded-lg cursor-pointer"
                                     }
                                 >
-                                    <div className="w-full h-auto p-10 break-all w-96">
+                                    <div className="break-all w-96 h-auto p-10 w-full">
                                         {data.content}
                                     </div>
                                     <div>{data.author}</div>

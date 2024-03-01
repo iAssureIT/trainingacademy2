@@ -12,72 +12,71 @@ const Footer = (props) => {
   var largeImageURL = props?.inputData?.bgImage;
   var smallImageURL = props?.inputData?.smallBGImage;
   return (
-    <section className="bg-white">
+    <section id="footer">
       <div
         className={
           props?.inputData?.bannerClass
             ? props?.inputData?.bannerClass
-            : "bg-white relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]"
+            : "relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]"
         }
         style={{
-          "--largeImage-url": `url(${largeImageURL})`,
-          "--smallImage-url": `url(${
-            smallImageURL ? smallImageURL : largeImageURL
-          })`,
-          // 'backgroundSize': "100% 100%"
-        }}
+          "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
+          "--smallImage-url": smallImageURL ? `url(${smallImageURL})` : largeImageURL ? `url(${largeImageURL})` : 'none',
+        //  backgroundSize: "100% 100%",
+      }}
       >
         <div className="mx-auto w-full max-w-screen-exLG  ">
-          <div className="md:flex md:justify-between px-8 md:px-8 xl:px-16 2xl:px-20 pt-32 xs:pt-0 sm:pt-28 md:pt-32 lg:pt-14 md:pb-0 lg:pb-8">
-            <div className="text-left lg:text-left grid grid-cols-1 md:grid-cols-1 lg:grid-cols-9 xl:grid-cols-9 2xl:grid-cols-9 lg:gap-8 2xl:gap-10 mt-10 lg:mt-0">
-              <div className="pb-5 lg:py-10">
+          <div className="md:flex md:justify-between px-8 md:px-8 xl:px-20 2xl:px-32 pt-2 xs:pt-0 sm:pt-4 md:pt-4 lg:pt-2 md:pb-0 lg:pb-0">
+            <div className="text-left lg:text-left grid grid-cols-1 md:grid-cols-1 lg:grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 lg:gap-8 2xl:gap-10 mt-10 lg:mt-0">
+              <div className="pb-5  lg:pt-10 normal-case	">
                 {props.inputData.title1 ? (
                   <h2
                     className={
-                      "mb-6 text-md xxl:text-lg font-extrabold  " +
+                      "mb-6 text-md xxl:text-lg font-extrabold text-orangeColor decoration-white underline-offset-4 " +
                       props.inputData?.titleCss
                     }
                   >
                     {props.inputData.title1}
                   </h2>
                 ) : null}
-                <ul className=" flex flex-wrap text-white  font-[500] lg:font-bold text-sm ">
+                <div className=" flex flex-wrap text-light dark:text-light-400 font-[500] lg:font-bold text-sm ">
                   {props?.inputData?.footerList?.length > 0
                     ? props?.inputData?.footerList?.map((data, index) => {
-                        return (
-                          <li key={index} className="mb-1 md:mb-1 w-full ">
-                            <div className="mx-auto lg:mx-0">
-                              <a
-                                href={data.link}
-                                target="_blank"
-                                className=" hover:underline text-sm lg:text-sm xl:text-lg"
-                                aria-label="FooterIcon"
-                              >
-                                {props.inputData?.icon ? (
-                                  <img
-                                    className="h-3 first-line:flex lazyload"
-                                    alt="icon"
-                                    src={
-                                      props.inputData?.icon
-                                        ? props.inputData?.icon
-                                        : ""
-                                    }
-                                  />
-                                ) : null}
-                                {data.label}
-                              </a>
-                            </div>
-                          </li>
-                        );
-                      })
+                      return (
+                        <div key={index} className="mb-1 md:mb-1 w-full ">
+                          <div className="mx-auto lg:mx-0">
+                            <a
+                              href={data.link}
+                              target="_self"
+                              className=" hover:underline text-sm lg:text-sm xl:text-lg "
+                              aria-label="FooterIcon"
+                              
+                            >
+                              {props.inputData?.icon ? (
+                                <img
+                                  className="h-3 first-line:flex lazyload"
+                                  alt="icon"
+                                  src={
+                                    props.inputData?.icon
+                                      ? props.inputData?.icon
+                                      : ""
+                                  }
+                                />
+                              ) : null}
+                              {data.label}
+                            </a>
+                          </div>
+                        </div>
+                      );
+                    })
                     : null}
-                </ul>
+                </div>
               </div>
-              <div className="md:col-span-2 py-0 lg:py-10">
+              <div className="md:col-span-2 pt-0 lg:py-10">
                 {props.inputData?.title2 ? (
                   <h2
                     className={
-                      "mb-6 text-md xxl:text-lg font-extrabold   " +
+                      "mb-6 text-md xxl:text-lg font-extrabold  text-orangeColor decoration-white  underline-offset-4 " +
                       props.inputData?.titleCss
                     }
                   >
@@ -85,87 +84,26 @@ const Footer = (props) => {
                   </h2>
                 ) : null}
                 {props.inputData?.sitemapList?.length > 0 ? (
-                  <ul className="flex flex-wrap text-white  font-normal text-sm ">
+                  <div className="flex flex-wrap text-light dark:text-light-400 font-normal text-sm poin">
                     {props.inputData?.sitemapList.map((data, index) => {
                       return (
-                        <li key={index} className="mb-6 w-full mx-auto ">
+                        <div key={index} className="mb-0 w-full mx-auto ">
                           <a
                             href={data.link}
-                            target="_blank"
-                            className="hover:underline text-lg md:text-sm lg:text-sm xl:text-base mb-10 font-bold"
-                            aria-label="FooterIcon1"
+                            target="_self"
+                            className="hover:underline text-lg md:text-sm lg:text-sm xl:text-base mb-10 font-bold capitalize "
+                            aria-label="FooterIcon"
                           >
                             <span className="font-bold  mb-4">
                               {data.label}
                             </span>
                           </a>
-                          <ul className="mt-3">
-                            {data?.subItem.map((subitem, index) => {
-                              return (
-                                <li key={index} className="mb-1">
-                                  <a
-                                    href={subitem.link}
-                                    target="_blank"
-                                    className="flex hover:underline text-sm lg:text-sm xl:text-sm"
-                                    aria-label="FooterIcon2"
-                                  >
-                                    <span>
-                                      <i className="fa-solid fa-angles-right mr-2 "></i>
-                                    </span>
-                                    <span>{subitem.label}</span>
-                                  </a>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                ) : null}
-              </div>
-              <div className="md:col-span-2 py-0 lg:py-10">
-                {props.inputData.title3 ? (
-                  <h2
-                    className={
-                      "-mt-6 lg:mt-0 mb-6 text-md xxl:text-xl font-extrabold    " +
-                      props.inputData?.titleCss
-                    }
-                  >
-                    {props.inputData.title3}
-                  </h2>
-                ) : null}
-                {props.inputData?.sitemapList1?.length > 0 ? (
-                  <ul className="lg:pt-12 flex flex-wrap text-white  font-normal text-sm ">
-                    {props.inputData?.sitemapList1.map((data, index) => {
-                      return (
-                        <li key={index} className="mb-6 w-full mx-auto ">
-                          <a
-                            href={data.link}
-                            target="_blank"
-                            className="hover:underline text-lg md:text-sm lg:text-sm xl:text-base font-bold "
-                            aria-label="FooterIcon"
-                          >
-                            {props.inputData?.icon ? (
-                              <img
-                                className="h-3 first-line:flex lazyload"
-                                alt="icon"
-                                src={
-                                  props.inputData?.icon
-                                    ? props.inputData?.icon
-                                    : ""
-                                }
-                              />
-                            ) : null}
-
-                            <span className="font-bold  mb-">{data.label}</span>
-                          </a>
-                          <ul className="mt-3">
+                          <div className="mt-3">
                             {data?.subItem?.map((subitem, index) => {
                               return (
-                                <li key={index} className="mb-1">
+                                <div key={index} className="mb-1">
                                   <a
-                                    href={subitem.link}
+                                    href={subitem?.link}
                                     target="_blank"
                                     className="flex hover:underline text-sm lg:text-sm xl:text-sm"
                                     aria-label="FooterIcon"
@@ -175,71 +113,64 @@ const Footer = (props) => {
                                     </span>
                                     <span>{subitem.label}</span>
                                   </a>
-                                </li>
+                                </div>
                               );
                             })}
-                          </ul>
-                        </li>
+                          </div>
+                        </div>
                       );
                     })}
-                  </ul>
+                  </div>
                 ) : null}
-
-                {/* <ul className="text-light  font-base text-xs xxl:text-sm">
-                  <li className="mb-4 flex flex-wrap">
-                    <i className="fa-solid fa-location-dot mr-1 mt-1 text-RMByellow"></i>
-                    <span className=" ">{props.inputData.addLine1},</span>
-                    <span className="ml-4">
-                      {props.inputData.addLine2
-                        ? props.inputData.addLine2 + ","
-                        : null}
-                      {props.inputData.addLine3 && props.inputData.addLine2 ? (
-                        <br />
-                      ) : null}
-                      {props.inputData.addLine3}
-                    </span>
-                  </li>
-                
-                  <li className="mb-3">
-                    <i className="fa-solid fa-mobile-screen mr-1 text-RMByellow"></i>
-                    Phone: {props.inputData.phone}
-                  </li>
-                  <li className="flex">
-                    <div>
-                      <i className="fa-regular fa-envelope mr-1 text-RMByellow"></i>
-                      Email: {props.inputData.email1}
-                    </div>
-                  </li>
-                </ul> */}
               </div>
-              <div className="md:col-span-2 pb-5 md:py-10 ">
-                {props.inputData?.title4 ? (
+              <div className="md:col-span-2 py-0 lg:pt-10 lg:pl-10 xl:pl-10">
+                {props.inputData?.title3 ? (
                   <h2
                     className={
-                      "text-left lg:text-center " + props.inputData?.titleCss
+                      "mb-6 text-md xxl:text-lg font-extrabold text-orangeColor decoration-white underline-offset-4 " +
+                      props.inputData?.titleCss
                     }
                   >
-                    {props.inputData?.title4}
+                    {props.inputData?.title3}
                   </h2>
-                ) : null}
-                <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-1 place-items-center ">
-                  {props.inputData?.awardData?.map((data, index) => {
-                    return (
-                      <div
-                        key={index}
-                        className={`${props?.inputData.classForAwards} flex items-center justify-center`}
-                        style={{
-                          backgroundImage: `url(${props?.inputData?.contentImg})`,
-                          backgroundSize: "100% 100%",
-                        }}
-                      >
-                        <span>{data}</span>
+                )
+                  : ""
+                }
+                <ul className="text-light text-sm lg:text-sm xl:text-base ">
+                  {/* <hr className='bg-gray-50 mb-3 w-10/12'/> */}
+                  <li className="mb-3 flex place-content-start sm:place-content-start">
+                    <i className="fa-solid fa-location-dot mr-1 mt-1 text-orangeColor "></i>
+                    <span className="">
+                      <span className=" ">{props.inputData.addLine1},</span><br />
+                      <span className="">
+                        {props.inputData.addLine2
+                          ? props.inputData.addLine2 + ","
+                          : null}
+                        {props.inputData.addLine3 &&
+                          props.inputData.addLine2 ? (
+                          <br />
+                        ) : null}
+                        {props.inputData.addLine3}
+                      </span>
+                    </span>
+                  </li>
+                  <li className="mb-5 flex  place-content-start lg:place-content-start">
+                    <i className="fa-solid fa-mobile-screen mr-1 text-orangeColor"></i>
+                    <div>
+                      <div className="flex">
+                        <div className=" left">Support</div>:&nbsp;
+                        <div className="left"> {props.inputData?.phone1}</div>
                       </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="md:col-span-2 2xl:col-span-2 lg:mb-6 md:mb-0 place-start-left md:py-10">
+                    </div>
+                  </li>
+                  <li className="mb-3">
+                    <i className="fa-regular fa-envelope mr-1 text-orangeColor"></i>
+                    {props.inputData.email1}
+                  </li>
+                </ul></div>
+
+
+              <div className="md:col-span-2 2xl:col-span-2 lg:mb-6 md:mb-0 place-start-left md:pt-10">
                 <a
                   href="/"
                   className="hidden md:hidden  lg:block  items-center  md:items-start"
@@ -273,30 +204,30 @@ const Footer = (props) => {
 
                 <div
                   className={
-                    " sm:justify-between py-5 text-md xl:pl-10 2xl:pl-0 " +
+                    " sm:justify-between py-5 text-md  " +
                     props.inputData?.iconColor
                   }
                 >
-                  <div className="flex  space-x-2 xl:space-x-5 place-content-start lg:place-content-start my-8">
+                  <div className="flex  space-x-2 xl:space-x-5 place-content-start lg:place-content-center my-8">
                     {props.inputData.fbLink ? (
                       <a
                         href={props.inputData.fbLink}
-                        className="  text-white hover:text-gray-900  "
+                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
                         aria-label="Facebook Link"
                       >
                         {/* <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg> */}
-                        <i className="fa-brands fa-facebook-f px-3 py-2 mx-auto w-10 h-10 rounded-full border-2  hover:bg-white"></i>
+                        <i className="fa-brands fa-facebook-f px-3 py-2 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
                         <span className="sr-only">Facebook page</span>
                       </a>
                     ) : null}
                     {props.inputData.twitterLink ? (
                       <a
                         href={props.inputData.twitterLink}
-                        className=" text-white hover:text-gray-900"
+                        className=" text-light hover:text-gray-900 dark:hover:text-blue-700"
                         aria-label="Twitter"
                       >
                         <svg
-                          className="p-2 mx-auto rounded-full border-2 w-10 h-10  hover:bg-white"
+                          className="p-2 mx-auto rounded-full border-2 w-10 h-10  hover:bg-white border-orangeColor  text-orangeColor"
                           fill="currentColor "
                           viewBox="0 0 24 24"
                           aria-hidden="true"
@@ -309,7 +240,7 @@ const Footer = (props) => {
                     {props.inputData.telegramLink ? (
                       <a
                         href={props.inputData.telegramLink}
-                        className="text-white hover:text-gray-900 "
+                        className="text-light hover:text-gray-900 dark:hover:text-blue-700"
                         aria-label="Telegram"
                       >
                         <i className="fa-brands fa-telegram"></i>
@@ -318,38 +249,40 @@ const Footer = (props) => {
                     {props.inputData.instagramLink ? (
                       <a
                         href={props.inputData.instagramLink}
-                        className="  text-white hover:text-gray-900 "
+                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
                         aria-label="Instagram"
                       >
-                        <i className="fa-brands fa-instagram  hover:bg-white w-10 h-10 p-2 mx-auto rounded-full border-2"></i>
+                        <i className="fa-brands fa-instagram px-2.5 py-2.5 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
+                        <span className="sr-only">Instagram page</span>
                       </a>
                     ) : null}
                     {props.inputData.linkedIn ? (
                       <a
                         href={props.inputData.linkedIn}
-                        className=" w-[38px] h-[38px] text-white hover:text-gray-900 "
+                        className=" w-[38px] h-[38px] text-light hover:text-gray-900 dark:hover:text-blue-700"
                         aria-label="LinkedIn"
                       >
-                        <i className="fa-brands fa-linkedin  hover:bg-white p-3 my-auto  mx-auto rounded-full border-2"></i>
+                        <i className="fa-brands fa-linkedin  hover:bg-white p-3 my-auto  mx-auto rounded-full border-2 border-orangeColor  text-orangeColor"></i>
                       </a>
                     ) : null}
 
                     {props.inputData.youtubeLink ? (
                       <a
                         href={props.inputData.youtubeLink}
-                        className="text-white hover:text-gray-900 "
+                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
                         aria-label="Youtube"
                       >
-                        <i className="fa-brands fa-youtube  hover:bg-white"></i>
+                        <i className="fa-brands fa-youtube px-2 py-2.5 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
+                        <span className="sr-only">Youtube page</span>
                       </a>
                     ) : null}
                     {props.inputData.whatsup ? (
                       <a
                         href={props.inputData.whatsup}
-                        className="m-auto  w-[38px] h-[38px]  text-white hover:text-gray-900 "
+                        className="m-auto  w-[38px] h-[38px]  text-light hover:text-gray-900 dark:hover:text-blue-700"
                         aria-label="Youtube"
                       >
-                        <i className="fa-brands fa-whatsapp p-3 mx-auto  hover:bg-white  rounded-full border-2"></i>
+                        <i className="fa-brands fa-whatsapp p-3 mx-auto  hover:bg-white  rounded-full border-2 border-orangeColor  text-orangeColor"></i>
                       </a>
                     ) : null}
                   </div>
@@ -374,42 +307,7 @@ const Footer = (props) => {
                     </div>
                   ) : null}
 
-                  <ul className="text-white text-sm lg:text-sm xl:text-base mt-10 ">
-                    {/* <hr className='bg-gray-50 mb-3 w-10/12'/> */}
-                    <li className="mb-3 flex place-content-start sm:place-content-start">
-                      <i className="fa-solid fa-location-dot mr-1 mt-1 "></i>
-                      <span className="">
-                        <span className=" ">{props.inputData.addLine1},</span><br/>
-                        <span className="">
-                          {props.inputData.addLine2
-                            ? props.inputData.addLine2 + ","
-                            : null}
-                          {props.inputData.addLine3 &&
-                          props.inputData.addLine2 ? (
-                            <br />
-                          ) : null}
-                          {props.inputData.addLine3}
-                        </span>
-                      </span>
-                    </li>
-                    <li className="mb-3 flex  place-content-start lg:place-content-start">
-                      <i className="fa-solid fa-mobile-screen mr-1 text-RMByellow"></i>
-                      <div>
-                        <div className="flex">
-                          <div className="w-10 xl:w-12 left">Sales</div>:&nbsp;
-                          <div className="left">{props.inputData?.phone1}</div>
-                        </div>
-                        <div className="flex">
-                          <div className="w-10 xl:w-12 left">HR</div>:&nbsp;
-                          <div className="left">{props.inputData?.phone2}</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="mb-3">
-                      <i className="fa-regular fa-envelope mr-1 text-RMByellow"></i>
-                      {props.inputData.email1}
-                    </li>
-                  </ul>
+
                 </div>
               </div>
             </div>

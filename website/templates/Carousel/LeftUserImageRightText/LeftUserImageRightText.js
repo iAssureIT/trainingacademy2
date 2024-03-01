@@ -131,7 +131,7 @@ export const LeftUserImageRightText = (props) => {
                 </div>
               </div>
               <div className=" w-full p-5 ">
-                <p className="text-gray-600  w-full  m-auto text-center "
+                <p className="text-gray-600 dark:text-white w-full  m-auto text-center "
                   dangerouslySetInnerHTML={{ __html: props?.inputData?.testimonials[currentIndex].testimonial }} >
 
                 </p>

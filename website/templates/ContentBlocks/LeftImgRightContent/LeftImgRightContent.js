@@ -1,15 +1,8 @@
-/*==========================================================
-  Developer  :  Sarika Ghanwat
-  Date       :  1st Sept 2023
-  ------------------------------------
-  Reviewed By:  
-  Review Date: 
-==========================================================*/
-
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 
-const LeftImgRightContent = (props) => {
+const LeftImgRightContent = (props) => {           
     return (
         <section  id="LeftImgRightcontent" className={props?.inputData?.classForblockWrapper ? props?.inputData?.classForblockWrapper:"block-wrapper "}>
             <div className={props?.inputData?.classForblockTitle ? props?.inputData?.classForblockTitle:'blockTitle '}>

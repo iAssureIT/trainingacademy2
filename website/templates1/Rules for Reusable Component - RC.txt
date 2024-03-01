@@ -1,5 +1,0 @@
-Rules for Reusable Component - RC
-
-1. Store all RC in Templates folder
-2. Never change anything in Template folder. If any changes are required, then copy the RC in components folder and then make changes. 
-3. 

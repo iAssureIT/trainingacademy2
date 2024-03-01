@@ -42,9 +42,9 @@ const BannerSmallBlocks = (props) => {
                         " grid  md:z-10 py-5 bg-cover px-5 md:px-12 block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]"
                 }
                 style={{
-                    '--largeImage-url': `url(${largeImageURL})`,
-                    '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
-                    'backgroundSize': "100% 100%"
+                    "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
+                    "--smallImage-url": smallImageURL ? `url(${smallImageURL})` : largeImageURL ? `url(${largeImageURL})` : 'none',
+                    backgroundSize: "100% 100%",
                 }}
 
             >  

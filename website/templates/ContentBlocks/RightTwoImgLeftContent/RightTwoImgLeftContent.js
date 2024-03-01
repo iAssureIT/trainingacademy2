@@ -13,11 +13,11 @@ const RightImgLeftContent = (props) => {
 						{
 							props?.inputData?.viewmore ?
 								<div>
-									<p className="mt-5 text-2xl text-justify xxl:mt-16 xxl:text-3xl lg:h-24 xxl:h-40 overflow-hidden text-darkGray  mb-4">{props?.inputData?.para}</p>
+									<p className="mt-5 text-2xl text-justify xxl:mt-16 xxl:text-3xl lg:h-24 xxl:h-40 overflow-hidden text-darkGray dark:text-gray-400 mb-4">{props?.inputData?.para}</p>
 									<a href='/about-us' className='cursor-pointer text-right float-right text-skyBlue underline text-xl'>Read More</a>
 								</div>
 								:
-								<p className="mt-5 h-auto text-xl text-justify xxl:mt-16 xxl:text-3xl text-darkGray  mb-4 flex items-center justify-center content-center">{props?.inputData?.para}</p>
+								<p className="mt-5 h-auto text-xl text-justify xxl:mt-16 xxl:text-3xl text-darkGray dark:text-gray-400 mb-4 flex items-center justify-center content-center">{props?.inputData?.para}</p>
 						}
 					</div>
 					<div className=" ">

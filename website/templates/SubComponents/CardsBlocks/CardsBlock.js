@@ -2,25 +2,24 @@ import React from "react";
 const CardsBlocks = (props) => {
   var largeImageURL = props?.inputData?.bgImage;
   var smallImageURL = props?.inputData?.smallBGImage;
-  const dash=props.inputData?.dash;
+  
   const data = props?.inputData?.pageTitle;
   var classForNoOfCards = props.inputData.classForNoOfCards
-
     ? props.inputData.classForNoOfCards
     : "grid  grid-cols-3 gap-x-6 md:grid-cols-3 md:gap-x-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6";
   return (
     <section className={props?.inputData?.sectionCss}>
        {
         <div className={props?.inputData?.titleDivCss}>
-          {dash && (
-          <div className="w-full mb-4">
-            <ul className="place-content-center flex flex-wrap">
-              {[1, 2, 3].map((index) => (
-                <li key={index} className={`dash${index} ${dash}`}></li>
-              ))}
-            </ul>
-          </div>
-        )}
+          {props?.inputData?.dash ? (
+            <div className="w-full mb-4">
+              <ul className="place-content-center flex flex-wrap">
+                <li className={"dash1 " + props.inputData.dash}></li>
+                <li className={"dash2 " + props.inputData.dash}></li>
+                <li className={"dash3 " + props.inputData.dash}></li>
+              </ul>
+            </div>
+          ) : null}
           {props?.inputData?.pageTitle ? (
             <div
               className={
@@ -53,12 +52,13 @@ const CardsBlocks = (props) => {
           ? props?.inputData?.bgImgCss + " lazyload "
           : "relative bg-cover p-12 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyload "
       }
-      
       style={{
-        "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
-        "--smallImage-url": smallImageURL ? `url(${smallImageURL})` : largeImageURL ? `url(${largeImageURL})`: 'none', 
+        "--largeImage-url": `url(${largeImageURL})`,
+        "--smallImage-url": `url(${
+          smallImageURL ? smallImageURL : ""
+        })`,
         backgroundSize: "100% 100%",
-    }}
+      }}
     >
      
       <div className={classForNoOfCards}>
@@ -69,11 +69,17 @@ const CardsBlocks = (props) => {
               key={index}
 
               style={{
-                "--largeCardImg": card?.bgImg ? `url(${card.bgImg})` : "none",
-                "--smallCardImg": 
-                  card?.smallBgImg ? `url(${card?.smallBgImg })` : card?.bgImg ? `url(${card.bgImg})` : "none",
+                "--largeCardImg": `url(${card.bgImg})`,
+                "--smallCardImg": `url(${
+                  card.smallBgImg ? card.smallBgImg : card.bgImg
+                })`,
                 backgroundSize: "100% 100%",
               }}
+
+              // style={{
+              //   backgroundImage: `url(${card.bgImg})`,
+              //   backgroundSize: "100% 100%",
+              // }}
             >
               <div className="block">
                 <div
@@ -87,12 +93,12 @@ const CardsBlocks = (props) => {
                     </span>
                   ) : null}
                   {card?.cardImage ? (
-                   <img loading="lazy"
+                    <img
                       alt = {card?.cardAltImage}
                       src={card?.cardImage}
                       className={
                         props.inputData?.classForCardImage
-                          ? props.inputData?.classForCardImage+ "lazyload "
+                          ? props.inputData?.classForCardImage
                           : "w-full"
                       }
                     />
@@ -105,7 +111,7 @@ const CardsBlocks = (props) => {
                 </div>
               ) : null}
               {card?.cardImage2 ? (
-                <img loading="lazy"
+                <img
                   alt = {card?.cardAltImage2}
                   src={card?.cardImage2}
                   className={
@@ -121,7 +127,7 @@ const CardsBlocks = (props) => {
                     className={
                       props?.inputData?.classForcardTitle_2
                         ? props?.inputData?.classForcardTitle_2
-                        : "text-md text-primary  font-bold"
+                        : "text-md text-primary dark:text-primary-400 font-bold"
                     }
                   >
                     {card?.cardTitle_2}
@@ -135,7 +141,7 @@ const CardsBlocks = (props) => {
                     className={
                       props?.inputData.classForCardTitle_3
                         ? props?.inputData.classForCardTitle_3
-                        : "mb-4 text-3xl text-primary  font-bold"
+                        : "mb-4 text-3xl text-primary dark:text-primary-400 font-bold"
                     }
                   >
                     {card?.cardTitle_3}

@@ -1,4 +1,6 @@
 "use client";
+
+import Image from "next/image";
 import React, { useState } from "react";
 const BgImgLeftImgRtGrid = (props) => {
   var largeImageURL = props?.inputData?.bgImage;
@@ -13,6 +15,7 @@ const BgImgLeftImgRtGrid = (props) => {
     setShowMe(!showMe);
   }
   const handleChangeColor = (index, img, txt, colorCode, para, link, fgImg) => {
+    /// setBgImg(img);
     setcolorTxt(txt);
     setcolorCode(colorCode);
     setpara(para);
@@ -20,7 +23,8 @@ const BgImgLeftImgRtGrid = (props) => {
     setFgImg(fgImg)
   };
   return (
-    <section id={props?.inputData?.id} className="bg-white">
+    <section id={props?.inputData?.id}>
+      {/* <div className={props?.inputData?.bgImgCss ? props?.inputData?.bgImgCss : "relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center "} style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}> */}
       <div
         className={
           props?.inputData?.bgImgCss
@@ -28,11 +32,11 @@ const BgImgLeftImgRtGrid = (props) => {
             : "relative bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyload "
         }
         style={{
-          "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
-          "--smallImage-url": smallImageURL ? `url(${smallImageURL})` : largeImageURL ? `url(${largeImageURL})`: 'none', 
+          "--largeImage-url": `url(${largeImageURL})`,
+          "--smallImage-url": `url(${smallImageURL ? smallImageURL : largeImageURL
+            })`,
           backgroundSize: "100% 100%",
         }}
-        loading="lazy" // Lazy load the background image
       >
         {props?.inputData?.dash ?
           <div className="w-full mb-4">
@@ -80,7 +84,8 @@ const BgImgLeftImgRtGrid = (props) => {
                         ? props?.inputData?.imageCss
                         : " object-fit "
                     }
-                  >                    
+                  >
+                    
                     <img
                       className={
                         props?.inputData?.imgTagcss
@@ -88,8 +93,7 @@ const BgImgLeftImgRtGrid = (props) => {
                           : "h-full w-full lazyload "
                       }
                       src={fgImg}
-                      alt="National Awards"
-                      width="100%" height="auto"
+                      alt="Picture of the author"
                     />
                   </div>
                 :null
@@ -109,9 +113,18 @@ const BgImgLeftImgRtGrid = (props) => {
                   }
                 >
                   <div
+                    className={
+                      props?.inputData?.contentSubDiv
+                        ? props?.inputData?.contentSubDiv
+                        : "lg:h-64 xl:h-96 w-full p-10 justify-center  items-center  rounded-lg shadow-2xl text-center"
+                    }
+                  >
+                    <div className="text-left ">
+                      {/* <span className="font-bold text-lg md:text-3xl ">COLORS</span>{" "} */}
+                      <div
                         className={
                           `${colorCode}` === "white"
-                            ? "text-lg sm:text-2xl ml-3 text-gray text-left "
+                            ? "text-lg sm:text-2xl ml-3 text-gray"
                             : `text-lg sm:text-2xl ml-3 text-${colorCode} `
                         }
                       >
@@ -134,13 +147,18 @@ const BgImgLeftImgRtGrid = (props) => {
                         {
                             props?.inputData?.urlName
                             ?
-                             
-                                <div onClick={toggle} className={props?.inputData?.linkCss ? props?.inputData?.linkCss +" cursor-pointer " : "text-white hidden"} >{showMe?"Read less" :props?.inputData?.urlName}
-                                </div>
-                             
+                              <div className={props?.inputData?.linkCss ? props?.inputData?.linkCss : "text-white hidden"}>
+                                <a onClick={toggle} className="cursor-pointer" >{showMe?"Read less" :props?.inputData?.urlName}
+                                  {/* <i className="fa-solid  fa-angle-double-right"></i> */}
+                                </a>
+                              </div>
                             :null
                           }
                       </div>
+                    </div>
+
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -155,6 +173,7 @@ const BgImgLeftImgRtGrid = (props) => {
         >
           {props?.inputData?.colorArr
             ? props?.inputData?.colorArr.map((data, index) => {
+              // var activeClass = (data.color===colorCode) ? ` border-double border-4 border-${data.color}  ` : "";
               var activeClass =
                 data.color === colorCode
                   ? ` border-2 md:border-4 xl:border-8 border-offWhite shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]`
@@ -176,10 +195,11 @@ const BgImgLeftImgRtGrid = (props) => {
                       data.link,
                       data.fgImg
                     )
-                  }                  
+                  }
+                  
                 >
                   <div className="h-20 w-20 xl:h-24 xl:w-24 2xl:h-20 2xl:w-20 bg-no-repeat absolute left-2 top-2 xl:left-4 xl:top-4 lazyload " style={{
-                    backgroundImage: data?.bgImg ? `url(${data.bgImg})` : "none",
+                    backgroundImage: `url(${data.bgImg})`,
                     backgroundSize: "100% 100%",
                   }}></div>
                   

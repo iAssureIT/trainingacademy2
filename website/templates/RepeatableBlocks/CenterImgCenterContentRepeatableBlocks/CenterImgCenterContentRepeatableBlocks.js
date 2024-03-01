@@ -24,12 +24,13 @@ const CenterContentRepeatableBlocks = (props) => {
                         props?.inputData?.bgImgCss
                         :
                         "relative bg-cover p-12 block    bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]"
-                }               
+                }
                 style={{
-                  "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
-                  "--smallImage-url": smallImageURL ? `url(${smallImageURL})` : largeImageURL ? `url(${largeImageURL})`: 'none', 
-                  backgroundSize: "100% 100%",
-              }}
+                    '--largeImage-url': `url(${largeImageURL})`,
+                    '--smallImage-url': `url(${smallImageURL ? smallImageURL : largeImageURL})`,
+                     'backgroundSize': "100% 100%"
+                }}
+
             >
       {props?.inputData?.dash ?
         <div className="w-full mb-4">
@@ -120,7 +121,7 @@ const CenterContentRepeatableBlocks = (props) => {
                         className={
                           props.inputData.classForCardTitle_2
                             ? props.inputData.classForCardTitle_2
-                            : "font-bold text-md text-primary "
+                            : "font-bold text-md text-primary dark:text-primary-400"
                         }
                       >
                         {card.cardTitle_2}
