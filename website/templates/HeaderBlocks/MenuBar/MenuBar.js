@@ -90,11 +90,13 @@ function MenuBar(props) {
 
    if (typeof window !== 'undefined') {
       var nav1 = document.querySelector(".menubar");
-      var menuItemElements = document.querySelectorAll(".menuText");
+      
 
       window.addEventListener('scroll', () => {
 			// var shouldAddClass = window.scrollY > nav1.clientHeight;
 			var shouldAddClass = window.scrollY;
+         var menuItemElements = document.querySelectorAll(".menuText");
+         var crossIcon = document.querySelectorAll(".crossIcon");
 			nav1.classList.toggle("bg-white", shouldAddClass);
 			nav1.classList.toggle("bg-transparent", !shouldAddClass);
          var imageElement = document.querySelector("#navLogo");
@@ -102,7 +104,10 @@ function MenuBar(props) {
          var smMenuIcon = document.querySelector(".smMenu");
          smMenuIcon.classList.toggle("text-black", shouldAddClass);
 			smMenuIcon.classList.toggle("text-white", !shouldAddClass);
-
+         crossIcon.forEach(icon => {
+            icon.classList.toggle("text-black", shouldAddClass);
+            icon.classList.toggle("text-white", !shouldAddClass);
+        });
          menuItemElements.forEach((menuItem) => {
 				menuItem.classList.toggle("md:!text-black", shouldAddClass);
 			});
@@ -262,13 +267,14 @@ function MenuBar(props) {
                   >
                      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                   </svg>
-                  <svg
-                     className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
+                  <i class={`fa fa-times text-white crossIcon ${isOpen ? "block" : "hidden"}`} aria-hidden="true"></i>
+                  {/* <svg
+                     className={`fill-current h-3 w-3 crossIcon ${isOpen ? "block" : "hidden"}`}
                      viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg"
                   >
                      <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-                  </svg>
+                  </svg> */}
                </button>
             </div>
             <div><TopHeader />
