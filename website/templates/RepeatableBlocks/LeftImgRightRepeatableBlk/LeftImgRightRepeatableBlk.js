@@ -54,6 +54,7 @@ const LeftRightImgCenterContent = (props) => {
                         <div key={index} className={props.inputData?.repeatedBlkCss ? props.inputData?.repeatedBlkCss : ' my-10 flex shadow-xl sm:h-36 md:h-32 py-5'}>
                             <div className={props.inputData?.imgCss ? props.inputData?.imgCss : ' border-gray-500 px-5 md:px-6 my-auto '}>
                                 <img
+                                loading='lazy'
                                     src={data.imageSrc}
                                     alt={`Image ${index}`}
                                     className="lazyload "

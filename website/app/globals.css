@@ -2,9 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
 @font-face {
   font-family: 'Montserrat', sans-serif;
@@ -15,8 +12,6 @@
 	font-family: 'DrukText';
 	src: url('../fonts/DrukText-Super-Trial.otf');
 	src:url('../fonts/DrukText-Medium-Trial.otf');
-	/* src:url('../fonts/DrukWide-Bold-Trial.otf') */
-	/* src:url('../fonts/DrukTextWide-Heavy-Trial.otf') */
 	font-display: swap;
 }
 :root {
@@ -68,15 +63,12 @@ body {
 		 
 		focus:outline-slate-200
 		text-lightGray 
-		/* focus:drop-shadow-[0_0px_5px_rgba(0,0,255,0.4)] */
-	  }
+	 }
 	   
 	   .insideIcon{
 		@apply absolute inset-y-0  text-sm left-0 flex items-center pl-5 pointer-events-none
 	   }
-	   /* .blogForm{
-		@apply border-gray-300
-	   } */
+	  
 	   .stdBtn{
 		  @apply w-full text-white bg-blue-600
 		  hover:bg-white  focus:outline-none focus:ring-0
@@ -94,9 +86,7 @@ body {
 	   .active{
 		@apply text-red-500 bg-blue-400 !important
 	   }
-	   /* .menuText{
-		@apply block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:text-gray-700  md:hover:text-blue-700 md:p-0 
-	   } */
+	  
 	   .label{
 		@apply block text-gray-700 font-semibold 
 	   }
@@ -110,7 +100,6 @@ body {
 	   }
 	   
 	   .otpInputBox>div>input{
-		/* @apply w-full mr-10 rounded-xl px-4 border mx-auto text-red-600 */
 		@apply text-black border  mx-auto w-7 !important
 	   }
 	   .picBack{
@@ -137,9 +126,7 @@ body {
 	  @apply p-5 md:p-20 h-auto 
 	}
 	
-	/* .blockTitle{
-	  @apply text-center font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl xxl:text-6xl
-	} */
+	
 	.image-wrapper{
 	  @apply w-auto object-cover
 	}
@@ -175,22 +162,14 @@ body {
 	 .select {
 	  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  
 	 }
-	
-
-}
-.swal2-title{
-	/* @apply bg-blue-500 */
 }
 .swal2-confirm{
 	@apply bg-blue-500
 }
-
-
  .dash1{
 	height: 1px;
     width: 20px;
-    /* border: 3px solid #376bff; */
-	border: 2px ;
+   border: 2px ;
 	border-style: solid;	
     border-radius: 10px;
 }
@@ -198,8 +177,7 @@ body {
 	height: 2px;
     width: 50px;
     margin-left: 2px;
-    /* border: 3px solid #376bff; */
-	border: 2px ;
+   border: 2px ;
 	border-style: solid;	
     border-radius: 10px;
 }
@@ -211,24 +189,20 @@ body {
 	border-style: solid;	
     border-radius: 10px;
 }
-
 .smTxt{
 	font-weight: 500;
 	font-size: 20px;
 }
-
 a {
 	@apply underline text-blue-600
- }
- 
+ } 
  .outline-title {
 	color: rgba(0, 0, 0, 0);
 	-webkit-text-stroke: 1px white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-  }
-  
+  } 
 
   .formIcon{
 	@apply absolute border-r inset-y-0 left-0 flex items-center pl-5 pointer-events-none text-lightGray
@@ -263,12 +237,8 @@ a {
 }
 .bodyTxt{
 	@apply  text-lg md:text-2xl xl:text-xl leading-relaxed
-}
-
+}  
   
-  .mars-spin {
-	animation: spin-right 68.7s linear infinite;
-  }
   input::placeholder {
 	font-weight: 600;
 	font-size: 14px;
@@ -320,14 +290,11 @@ a {
 	padding: 0;
 	margin: 0;
   }
-
   .diamond-list li {
 	position: relative;
-	/* display: inline-block; */
-	margin-right: 1em; /* Adjust as needed */
-	padding-left: 1em; /* Adjust as needed */
+	margin-right: 1em; 
+	padding-left: 1em; 
   }
-
   .diamond-list li::before {
 	content: '';
     position: absolute;
@@ -342,29 +309,21 @@ a {
     transform-origin: 50% 44%;
   }
 .mainShareBtn{
-	/* position: fixed; */
 	right: 51px;
     bottom: 6px;
     height: 50px;
     width: 50px;
     line-height: 50px;
     z-index: 1000;
-    margin-top: 10px;
-	
+    margin-top: 10px;	
 }
   .sharebtn {
-	/* position: fixed; */
-    /* right: 34px; */
-    bottom: 34px;
+	 bottom: 34px;
     height: 50px;
     width: 50px;
     line-height: 50px;
     z-index: 1000;
-	/* @apply relative flex z-10 bg-white border rounded-md p-2 opacity-50 hover:opacity-100 focus:outline-none focus:border-blue-400; */
-  }
-  .mainShareBtn:hover{
-	/* height: 340px; */
-  }
+}  
   .sharebtn:hover + .sharebtn-dropdown,
   .sharebtn:focus + .sharebtn-dropdown {
 	display: block;
@@ -374,17 +333,12 @@ a {
 	display: block;
   }
   .sharebtn-dropdown {
-	/* position: absolute; */
-    height: auto;
+	height: auto;
     width: 50px;
-    /* bottom: 50px; */
     left: 0;
     z-index: 1;
     text-align: center;
-	/* margin-bottom: 10px; */
-
-	/* @apply absolute right-0 mt-0 w-48 bg-white rounded-sm overflow-hidden shadow-lg z-20 hidden border border-gray-100; */
-  }
+	}
 
   .navBar1 {
     transform: translateY(0);

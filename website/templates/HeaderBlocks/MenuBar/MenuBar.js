@@ -128,7 +128,7 @@ function MenuBar(props) {
             className={" flex justify-between flex-wrap px-6 md:px-20 py-3 bg-cover  bg-no-repeat sm:bg-cover lg:h-20 xl:h-20 h-20 bg-right "} 
             style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}> */}
          <nav
-            className={pathname !== "/" ? "bg-cover  bg-no-repeat sm:bg-cover  bg-[image:var(--largeImage-url)]  flex justify-between flex-wrap px-6 md:px-20 py-3 lg:h-20 xl:h-20 h-20 bg-blue-500  " : " fixed z-20  w-full  flex justify-between flex-wrap px-6 md:px-20 lg:py-3 lg:h-28 xl:h-28 h-10 bg-[image:var(--largeImage-url)] lg:bg-none menubar"}
+            className={pathname !== "/" ? "bg-cover  bg-no-repeat sm:bg-cover  bg-[image:var(--largeImage-url)]  flex justify-between flex-wrap px-6 md:px-20 py-3 lg:h-20 xl:h-20 h-20 bg-blue-500  " : " fixed z-20  w-full  flex md:justify-between md:flex-wrap px-6 md:px-20 lg:py-3 lg:h-28 xl:h-28 h-10 bg-[image:var(--largeImage-url)] lg:bg-none menubar"}
             style={{
                '--largeImage-url': `url(${imageURL})`,
                backgroundSize: "100% 100%"
@@ -253,12 +253,12 @@ function MenuBar(props) {
                   :
                   null
             }
-            <div className="block  lg:hidden">
+            <div className="block  lg:hidden w-full">
                <button
                id="btn-mob-menubar"
                aria-label="mobileDropdownBtn"
                   onClick={() => setIsOpen(!isOpen)}
-                  className="flex items-center px-3 mt-3 lg:mt-6 pl-6 rounded text-white hover:text-white smMenu"
+                  className="flex float-right items-center px-3 mt-3 lg:mt-6 pl-6 rounded text-white hover:text-white smMenu"
                >
                   <svg
                      className={`fill-current h-4 w-4 ${isOpen ? "hidden" : "block"}`}
@@ -286,7 +286,7 @@ function MenuBar(props) {
                      {userData ? (
                         <ul
                            id="navBar"
-                           className=" text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 float-right  md:flex-row md:space-x-8 md:mt-0 text-black lg:text-white bg-white lg:bg-transparent shadow-xl lg:shadow-none"
+                           className="rounded-lg text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 float-right  md:flex-row md:space-x-8 md:mt-0 text-black lg:text-white bg-white lg:bg-transparent shadow-xl lg:shadow-none"
                         >
                            {
                               menuItemsAfterLogin.map((data, index) => {

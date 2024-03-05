@@ -15,6 +15,7 @@ import Navbar from "@/templates/HeaderBlocks/MenuBar/MenuTest";
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 const scrollToTop = () => {window.scrollTo(0, 0), behavior.scrollTo('smooth')};
+
 var currentYear = new Date().getFullYear();
 
 const metadata = {
@@ -165,7 +166,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth'},{scrollPaddingTop:'25%'}} suppressHydrationWarning={true}>
+    <html lang="en" className='scroll-smooth'  suppressHydrationWarning={true}>
       <head>
         <title>{metadata.title}</title>        
         <link rel="icon" href="/favicon.ico" sizes="any"></link>        

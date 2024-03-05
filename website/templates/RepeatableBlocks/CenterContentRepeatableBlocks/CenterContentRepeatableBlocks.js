@@ -144,14 +144,14 @@ const CenterContentRepeatableBlocks = (props) => {
                                                 {card.profileImage ? (
                                                 <img
                                                     loading="lazy"
-                                                    className={"h-24 w-24   rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
+                                                    className={"  rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
                                                     src={card.profileImage}
                                                     alt={card.profileImage ? card.altImage : "iassureitProfile" }
                                                 />
                                                 ) : (
                                                 <img
                                                     loading="lazy"
-                                                    className="w-24 h-24 rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                                                    className=" rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
                                                     src="/images/generic/noImage.jpg"
                                                     alt="logo-iassureit"
                                                 />

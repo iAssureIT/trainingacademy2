@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 
@@ -89,16 +89,12 @@ const StudEnrollModal = (props) => {
         var adminEmail = process.env.CONTACT_EMAIL
         if (validateForm()) {
             setSubmitted(true);
-
             var formValues = {
                 fullName: fields.fullName,
                 email: fields.email,
                 phone: fields.phone,
                 city: fields.city,
-
             };
-
-
             axios
                 .post("/api/students/post", formValues)
                 .then((data) => {
@@ -234,7 +230,7 @@ const StudEnrollModal = (props) => {
                             </div>
                             <div className='grid grid-cols-2 gap-3'><div>
                                 <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Number <span className="my-auto text-red-600">*</span></label>
-                                <input type="number" name="phone" id="phone" onChange={handleChange}
+                                <input type="phone" name="phone" id="phone" onChange={handleChange}
                                     value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
                                 {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
                             </div>
@@ -260,7 +256,6 @@ const StudEnrollModal = (props) => {
                 </div>
             </div>
         </div>
-
     )
 }
 export default StudEnrollModal;

@@ -427,7 +427,7 @@ const HomePage = () => {
 		gridCol1Css: "order-first lg:order-last  w-full h-auto relative my-auto ",
 		repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 lg:my-4 2xl:my-5  border-b  border-black	leading-tight ",
 		imgCss:
-			"flex-none h-auto  w-12  items-start rounded mr-3 md:mr-10 object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
+			"flex-none   items-start rounded mr-3 md:mr-10 object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
 		titleCss: " text-lg md:text-lg lg:text-[14px] xl:text-[16px] 2xl:text-lg overflow-hidden mb-3 xl:mb-5",
 		desCss: "",
 		linkCss: "float-right px-4 text-skyBlue",
@@ -562,7 +562,7 @@ const HomePage = () => {
 		testimonial: true,
 		cardsArray: [
 			{
-				profileImage: "/images/specific/testimonials/Akshay_Madanepatil.webp",
+				profileImage: "/images/specific/testimonials/Akshay-Madanepatil.webp",
 				designation: "Student",
 				altImage: "Akshay_Madanepatil",
 				name: "Akshay Madanepatil",
@@ -573,7 +573,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Siddhant_Kakade.webp",
+				profileImage: "/images/specific/testimonials/Siddhant-Kakade.webp",
 				altImage: "Siddhant_Kakade",
 				classForContent: " mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Siddhant Kakade",
@@ -595,7 +595,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Rutika_Bankar.webp",
+				profileImage: "/images/specific/testimonials/Rutika-Bankar.webp",
 				altImage: "Rutika_Bankar",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Rutika Bankar",
@@ -606,8 +606,8 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Rutika_Bankar.webp",
-				altImage: "Rutika_Bankar",
+				profileImage: "/images/specific/testimonials/Ashwini-Kori.webp",
+				altImage: "Ashwini-Kori",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Ashwini Kori",
 				content: `<p>The training program is particularly good and valuable for us as we must keep ourselves updated about newer technologies in the field. It strengthened my technical skills and proved to be a great learning experience, especially with the practical deigning and planning and learn with fun sessions.</p>` +
@@ -620,8 +620,8 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Shubham_Ankushe.webp",
-				altImage: "Shubham_Ankushe",
+				profileImage: "/images/specific/testimonials/Shubham-Ankushe.webp",
+				altImage: "Shubham-Ankushe",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Shubham Ankushe",
 				content: `<p>I am absolutely delighted to express my profound gratitude for the transformative three-month training program conducted by Mr. Ashish Naik. The exceptional mastery he exhibited in the Full Stack Development enriched our learning experience with invaluable insights. From day one, Mr. Naik's engaging training style not only captivated our attention but also sparked an energetic and highly participative atmosphere. What truly sets his program apart is the innovative incorporation of the Scientific Method, a rarity in India.</p>` +
@@ -630,8 +630,8 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Ankit_Kumar_Rai.webp",
-				altImage: "Ankit_Kumar_Rai",
+				profileImage: "/images/specific/testimonials/Ankit-Kumar-Rai.webp",
+				altImage: "Ankit-Kumar-Rai",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Ankit Kumar Rai",
 				content: `<p>I am delighted to share my experience with the Advanced Full Stack Development training led by Ashish Naik. His expertise, dedication, and effective communication have been instrumental in my learning journey. The comprehensive curriculum covered all aspects of Full Stack Development, providing a robust foundation for real-world applications. </p>` +
@@ -640,7 +640,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Abhishek_Varma.webp",
+				profileImage: "/images/specific/testimonials/Abhishek-Varma.webp",
 				altImage: "Abhishek_Varma",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Abhishek Varma",
@@ -658,7 +658,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Mohit_Panjwani.webp",
+				profileImage: "/images/specific/testimonials/Mohit-Panjwani.webp",
 				altImage: "Mohit_Panjwani",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Mohit Panjwani",
@@ -667,7 +667,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Archana_Kadam.webp",
+				profileImage: "/images/specific/testimonials/Archana-Kadam.webp",
 				altImage: "Archana_Kadam",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Archana Kadam",
@@ -679,7 +679,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Aniket_Pawar.webp",
+				profileImage: "/images/specific/testimonials/Aniket-Pawar.webp",
 				altImage: "Aniket_Pawar",
 				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Aniket Pawar",
