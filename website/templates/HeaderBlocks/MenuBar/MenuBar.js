@@ -97,8 +97,8 @@ function MenuBar(props) {
 			var shouldAddClass = window.scrollY;
          var menuItemElements = document.querySelectorAll(".menuText");
          var crossIcon = document.querySelectorAll(".crossIcon");
-			nav1.classList.toggle("bg-white", shouldAddClass);
-			nav1.classList.toggle("bg-transparent", !shouldAddClass);
+			nav1?.classList.toggle("bg-white", shouldAddClass);
+			nav1?.classList.toggle("bg-transparent", !shouldAddClass);
          var imageElement = document.querySelector("#navLogo");
          var imageElement2 = document.querySelector("#navLogo1");
          var smMenuIcon = document.querySelector(".smMenu");
@@ -128,7 +128,7 @@ function MenuBar(props) {
             className={" flex justify-between flex-wrap px-6 md:px-20 py-3 bg-cover  bg-no-repeat sm:bg-cover lg:h-20 xl:h-20 h-20 bg-right "} 
             style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}> */}
          <nav
-            className={pathname !== "/" ? "bg-cover  bg-no-repeat sm:bg-cover  bg-[image:var(--largeImage-url)]  bg-right  flex justify-between flex-wrap px-6 md:px-20 py-3 lg:h-20 xl:h-20 h-20 " : " fixed z-10  w-full  flex justify-between flex-wrap px-6 md:px-20 lg:py-3 lg:h-28 xl:h-28 h-10 bg-[image:var(--largeImage-url)] lg:bg-none menubar"}
+            className={pathname !== "/" ? "bg-cover  bg-no-repeat sm:bg-cover  bg-[image:var(--largeImage-url)]  flex justify-between flex-wrap px-6 md:px-20 py-3 lg:h-20 xl:h-20 h-20 bg-blue-500  " : " fixed z-20  w-full  flex justify-between flex-wrap px-6 md:px-20 lg:py-3 lg:h-28 xl:h-28 h-10 bg-[image:var(--largeImage-url)] lg:bg-none menubar"}
             style={{
                '--largeImage-url': `url(${imageURL})`,
                backgroundSize: "100% 100%"
@@ -267,7 +267,7 @@ function MenuBar(props) {
                   >
                      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                   </svg>
-                  <i class={`fa fa-times text-white crossIcon ${isOpen ? "block" : "hidden"}`} aria-hidden="true"></i>
+                  <i className={`fa fa-times text-white crossIcon ${isOpen ? "block" : "hidden"}`} aria-hidden="true"></i>
                   {/* <svg
                      className={`fill-current h-3 w-3 crossIcon ${isOpen ? "block" : "hidden"}`}
                      viewBox="0 0 20 20"

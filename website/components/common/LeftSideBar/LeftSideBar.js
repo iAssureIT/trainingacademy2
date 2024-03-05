@@ -12,9 +12,10 @@ const LeftSideBar = () => {
     //   { subLabel: "Users List", url: "/user/user-management/users-list" }]
     // },
     {
-      id: 4, label: "Student Management", submenu: [{ subLabel: "Add Student", url: "/user/student/add-new-stud" },
-      { subLabel: "Student List", url: "/user/student-management/student-list" },
-      { subLabel: "Deleted Students", url: "/user/student-management/deleted-student-list" }]
+      id: 4, label: "Student Management", submenu: [
+        // { subLabel: "Add Student", url: "/admin/student/add-new-stud" },
+      { subLabel: "Student List", url: "/admin/student-management/student-list" },
+      { subLabel: "Deleted Students", url: "/admin/student-management/deleted-student-list" }]
     },
     // {
     //   id: 5, label: "Case Study Management", submenu: [{ subLabel: "Add Case Study", url: "/user/case-study/create-new-case-study" },]

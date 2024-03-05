@@ -95,6 +95,7 @@ const BgImgRightContent = (props) => {
                             ) : null}
                             {props?.inputData?.image ? (
                                 <div
+                                    
                                     className={
                                         props?.inputData?.imageCss
                                             ? props?.inputData?.imageCss
@@ -102,6 +103,7 @@ const BgImgRightContent = (props) => {
                                     }
                                 >
                                     <img
+                                         loading="lazy"
                                         className={
                                             props?.inputData?.imgTagcss
                                                 ? props?.inputData?.imgTagcss + " lazyload "

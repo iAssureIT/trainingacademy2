@@ -25,7 +25,7 @@ const BgImgLeftContentRtImg = (props) => {
     return (
         <div id={props?.inputData?.id}>
             {isModalOpen && <StudEnrollModal modalId={props?.inputData?.modalId || "enrollModal"} />}
-            <div className={props?.inputData?.bgImgCss || "bg-cover p-12 block shadow-lg bg-no-repeat max-w-full sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)] bg-[image:var(--smallImage-url)]"}
+            <div rel="preload" className={props?.inputData?.bgImgCss || "bg-cover p-12 block shadow-lg bg-no-repeat max-w-full sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)] bg-[image:var(--smallImage-url)]"}
                 style={{
                     "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
                     "--smallImage-url": smallImageURL ? `url(${smallImageURL})` : largeImageURL ? `url(${largeImageURL})` : 'none',
@@ -94,8 +94,10 @@ const BgImgLeftContentRtImg = (props) => {
                     </div>
                     {props?.inputData?.image && (
                         <div className={props?.inputData?.imageCss || 'object-fit'}>
-                            <img loading="lazy" className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`} src={props?.inputData?.image} alt="Banner image" />
-                            {props?.inputData?.imgCaption && (
+                            {/* <link rel="preload" as="image" href="/images/specific/trainingAcademy/iAssureIT-training-7.webp"></link> */}
+                            <img rel="preload" loading="lazy" as="image" className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`} src={props?.inputData?.image} alt="Banner image" />
+                            {/* <link rel="preload" href={props?.inputData?.image} as="image"  className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`}/> */}
+                    {props?.inputData?.imgCaption && (
                                 <div className={props?.inputData?.imgCaptionCss}>{props?.inputData?.imgCaption}</div>
                             )}
                             {props?.inputData?.btn2 && (

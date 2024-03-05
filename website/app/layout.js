@@ -192,14 +192,14 @@ export default function RootLayout({ children }) {
         ></script>
         {/* <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> */}
         <script defer src="https://cdn.tailwindcss.com" async ></script>
-
+          
         {/* <!-- Google tag (gtag.js) --> */}
         <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>        
        </head>
       <body className={" bg-white"}>
         
         {/* <MenuBar2 inputData={content_Menubar} /> */}
-        <MenuBar inputData={content_Menubar}/>
+        <MenuBar inputData={content_Menubar} />
 {/* <Navbar/> */}
         {children}
 

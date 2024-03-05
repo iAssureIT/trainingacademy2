@@ -20,7 +20,7 @@ const SmallBanner = (props) => {
       {!props?.inputData?.singlebgImage
         ?
         // <div className={props.inputData?.bgImgCss ? props.inputData?.bgImgCss : " bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center lg:h-72 xl:h-96 h-96 "} style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}>
-        <div
+        <div loading="lazy"
           className={
             props?.inputData?.bgImgCss
               ?

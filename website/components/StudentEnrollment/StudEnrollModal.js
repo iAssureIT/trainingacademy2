@@ -117,15 +117,25 @@ const StudEnrollModal = (props) => {
                     axios
                         .post("/send-email", formValues1)
                         .then((res) => {
+                            
                             if (res.status === 200) {
+                                console.log("props.inputData.downloadBrochure",props?.downloadBrochure)
+                                if (props?.downloadBrochure) {
+                                    const link = document.createElement('a');
+                                    link.href = "https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf";
+                                    link.setAttribute('download', 'Brochure.pdf');
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    document.body.removeChild(link);
+                                }
                                 Swal.fire({
                                     html: "<span className='mt-5'><span>Thanks for Enrollement<span></span>",
                                     showConfirmButton: true,
                                     confirmButtonColor: "#376bff"
                                 });
-                                setTimeout(() => {
-                                    window.location.href = "/";
-                                }, 2000);
+                                // setTimeout(() => {
+                                //     window.location.href = "/";
+                                // }, 2000);
                                 setBtnLoading(false)
                                 setCloseModal(true)
                                 props.modalId.close()

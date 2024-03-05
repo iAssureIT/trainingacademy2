@@ -17,6 +17,7 @@
     "compression-webpack-plugin": "^10.0.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "font-awesome": "^4.7.0",
     "moment": "^2.29.4",
     "next": "13.4.19",
     "next-progressbar": "^1.0.0",

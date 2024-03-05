@@ -55,13 +55,13 @@ export default function UserLayout({ children }) {
       </div>
       <div
         id="logo-sidebar"
-        className={"  w-64   h-full pb-24  bg-leftGray  duration-300  "}
+        className={"  w-64   h-auto pb-24  bg-leftGray  duration-300  "}
         aria-label="Sidebar"
       >
         <LeftSideBar />
       </div>
 
-      <div className=" overflow-x-scroll relative w-full bg-gray-200 p-4">
+      <div className=" overflow-x-scroll relative w-full bg-white p-4">
         {children}
       </div>
     </div>
