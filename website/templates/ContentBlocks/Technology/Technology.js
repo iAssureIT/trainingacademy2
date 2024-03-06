@@ -105,8 +105,7 @@ const Technology = (props) => {
                   )
                })
             }
-         </div>
-         
+         </div>         
          {
             props.inputData?.cardTitle_2
                ?

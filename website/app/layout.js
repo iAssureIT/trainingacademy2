@@ -4,7 +4,7 @@ import axios from "axios";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Footer from "@/templates/FooterBlocks/Footer/Footer.js";
 import Footer2 from "@/templates/FooterBlocks/Footer/Footer2";
-import MenuBar2 from "@/templates/HeaderBlocks/MenuBar/MenuBar2";
+// import MenuBar2 from "@/templates/HeaderBlocks/MenuBar/MenuBar2";
 import MenuBar from "@/templates/HeaderBlocks/MenuBar/MenuBar";
 
 import "./globals.css";
