@@ -97,7 +97,7 @@ class Login extends Component {
     var formValues = {
       email: this.state.email,
       password: this.state.password,
-      role: "user",
+      role: "admin",
     };
     console.log("formValues", formValues);
     if (this.validateForm()) {
