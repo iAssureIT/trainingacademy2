@@ -123,7 +123,7 @@ const Dashboard = () => {
             </div>
           </div> */}
           <div class=" justify-center  border border-gray-300 rounded-l  bg-white">
-            <div className="grid grid-cols-1 w-full px-2 border-b border-gray-300 text-m py-1 font-normal text-gray-800">
+            {/* <div className="grid grid-cols-1 w-full px-2 border-b border-gray-300 text-m py-1 font-normal text-gray-800">
               <div className="flex container">
                 <span className="w-1/2 flex ">Blogs</span>
                 <span className="w-1/2 flex ">
@@ -139,7 +139,7 @@ const Dashboard = () => {
                 </span>
               </div>
               
-            </div>
+            </div> */}
             <div className="flex container">
               {/* <div className="flex w-1/2 flex justify-center  py-2 text-xl font-normal border-r border-gray-300">
                 Given

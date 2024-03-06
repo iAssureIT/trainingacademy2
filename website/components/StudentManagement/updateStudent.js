@@ -114,7 +114,7 @@ const UpdateStudent = (props) => {
                 .then((data) => {
                     setSubmitted(false);  
                     Swal.fire("Student data updated ", "success");
-                    window.location.href = `/user/student-management/student-list`;
+                    window.location.href = `/admin/student-management/student-list`;
                })
                 .catch((error) => {
                     setSubmitted(false);

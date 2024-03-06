@@ -196,7 +196,7 @@ const StudentList = props => {
                                                         <a
                                                             title="Edit Student"
                                                             href={
-                                                                "/user/student-management/" + data?._id
+                                                                "/admin/student-management/" + data?._id
                                                             }
                                                         >
                                                             {" "}

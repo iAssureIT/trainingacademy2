@@ -94,6 +94,7 @@ const StudEnrollModal = (props) => {
                 email: fields.email,
                 phone: fields.phone,
                 city: fields.city,
+                status: "new"
             };
             axios
                 .post("/api/students/post", formValues)
@@ -113,9 +114,9 @@ const StudEnrollModal = (props) => {
                     axios
                         .post("/send-email", formValues1)
                         .then((res) => {
-                            
+
                             if (res.status === 200) {
-                                console.log("props.inputData.downloadBrochure",props?.downloadBrochure)
+                                console.log("props.inputData.downloadBrochure", props?.downloadBrochure)
                                 if (props?.downloadBrochure) {
                                     const link = document.createElement('a');
                                     link.href = "https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf";
@@ -164,12 +165,12 @@ const StudEnrollModal = (props) => {
                             "<br/>" +
                             "<b>City: </b>" +
                             fields.city +
-                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>" + process.env.WEBSITE_NAME+"/stud-enrollment-list/<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
+                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>" + process.env.WEBSITE_NAME + "/stud-enrollment-list/<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
                     };
                     axios
                         .post("/send-email", formValues2)
                         .then((res) => {
-                            if (res.status === 200) {                              
+                            if (res.status === 200) {
 
                                 setBtnLoading(false)
                                 setFields({
