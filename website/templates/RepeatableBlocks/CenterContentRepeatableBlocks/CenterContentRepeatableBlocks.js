@@ -9,6 +9,7 @@
 
 "use client"
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 
 const CenterContentRepeatableBlocks = (props) => {
@@ -16,24 +17,24 @@ const CenterContentRepeatableBlocks = (props) => {
     const MouseOver = (index) => {
         const rotateBlk = document.getElementById("rotateBlk" + index);
         const rotateBlk2 = document.getElementById("rotateBlk2" + index);
-    
+
         if (rotateBlk && rotateBlk2) {
             rotateBlk.classList.add('animatedCircle1Animation');
             rotateBlk.classList.remove('animatedCircle');
-            
+
             rotateBlk2.classList.add('animatedCircle2Animation');
             rotateBlk2.classList.remove('animatedCircle2');
         }
     };
-    
+
     const MouseLeave = (index) => {
         const rotateBlk = document.getElementById("rotateBlk" + index);
         const rotateBlk2 = document.getElementById("rotateBlk2" + index);
-    
+
         if (rotateBlk && rotateBlk2) {
             rotateBlk.classList.remove('animatedCircle1Animation');
             rotateBlk.classList.add('animatedCircle');
-            
+
             rotateBlk2.classList.remove('animatedCircle2Animation');
             rotateBlk2.classList.add('animatedCircle2');
         }
@@ -45,7 +46,7 @@ const CenterContentRepeatableBlocks = (props) => {
         "grid  grid-cols-3 gap-x-6 md:grid-cols-3 md:gap-x-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
     return (
         <section id={props.inputData?.id} className={props?.inputData?.sectionCss}>
-            {isModalOpen && <StudEnrollModal modalId="StudEnrollModal"/>}
+            {isModalOpen && <StudEnrollModal modalId="StudEnrollModal" />}
             {props?.inputData?.dash ?
                 <div className="w-full mb-0 md:mb-4">
                     <ul className="flex flex-wrap place-content-center">
@@ -97,7 +98,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                             props?.inputData?.bgImgCss
                                             :
                                             ""
-                                    }                                    
+                                    }
                                     style={{
                                         "--largeImage-url": card?.bgImg ? `url(${card?.bgImg})` : 'none',
                                         "--smallImage-url": card?.smBgImg ? `url(${card?.smBgImg})` : card?.bgImg ? `url(${card?.bgImg})` : 'none',
@@ -106,71 +107,73 @@ const CenterContentRepeatableBlocks = (props) => {
 
                                 >
                                     {
-                                        card?.cardImage?
-                                        
-                                            <div className={props?.inputData?.imgDivCss? props?.inputData?.imgDivCss:" py-5"}>
+                                        card?.cardImage ?
+
+                                            <div className={props?.inputData?.imgDivCss ? props?.inputData?.imgDivCss : " py-5"}>
                                                 <div className="relative z-0">
                                                     {
                                                         card.cardImage
                                                             ?
-                                                            <img loading="lazy" alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"}   />
+                                                            <img loading="lazy" alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"} />
                                                             :
                                                             null
                                                     }
-                                                {   props.inputData?.displayAnimation === "true"
-                                                                ?<div  className="">
+                                                    {props.inputData?.displayAnimation === "true"
+                                                        ? <div className="">
 
-                                                        {/* <div className={props.inputData?.classForImg ? props.inputData?.classForImg : " overflow-hidden bg-cover bg-no-repeat"}> */}
-                                                        
-                                                        
-                                                                <>
-                                                                    <img id={"rotateBlk" + card?.id}  src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload "  />
-                                                                    <img  id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute animatedCircle2 lazyload" />
+                                                            {/* <div className={props.inputData?.classForImg ? props.inputData?.classForImg : " overflow-hidden bg-cover bg-no-repeat"}> */}
 
-                                                                </>
-                                                            
-                                                    
-                                                        {/* </div> */}
-                                                    </div>
-                                                    : null
+
+                                                            <>
+                                                                <img id={"rotateBlk" + card?.id} src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload " />
+                                                                <img id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute animatedCircle2 lazyload" />
+
+                                                            </>
+
+
+                                                            {/* </div> */}
+                                                        </div>
+                                                        : null
                                                     }
                                                 </div>
                                             </div>
-                                        :null
+                                            : null
                                     }
                                     {props?.inputData?.testimonial
                                         ?
-                                            <div className="flex object-cover my-2 px-9">
-                                                {card.profileImage ? (
-                                                <img
+                                        <div className="flex my-2 md:px-9">
+                                            {card.profileImage ? (
+                                                <Image
+                                                    width="100"
+                                                    height="100"
                                                     loading="lazy"
-                                                    className={"  rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
+                                                    className={" rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
                                                     src={card.profileImage}
-                                                    alt={card.profileImage ? card.altImage : "iassureitProfile" }
+                                                    alt={card.profileImage ? card.altImage : "iassureitProfile"}
                                                 />
-                                                ) : (
+                                            ) : (
                                                 <img
                                                     loading="lazy"
                                                     className=" rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
                                                     src="/images/generic/noImage.jpg"
                                                     alt="logo-iassureit"
                                                 />
-                                                )}
-                                                <div className='object-center mx-5 my-auto'>
-                                                    <div className="my-2 text-lg font-bold text-left">
+                                            )}
+                                            <div className='object-center mx-5 my-auto'>
+                                                <div className="my-2 text-lg font-bold text-left">
                                                     {card.name
                                                         ? card.name
                                                         : ""}
-                                                    </div>
-                                                    <div className="my-2 text-sm font-bold text-left text-lightGray">
-                                                        {card.designation
-                                                            ? card.designation
-                                                            : ""}
+                                                </div>
+                                                <div className="my-2 text-sm font-bold text-left text-lightGray">
+                                                    {card.designation
+                                                        ? card.designation
+                                                        : ""}
 
-                                                    </div>
                                                 </div>
                                             </div>
-                                        :null
+                                        </div>
+                                        : null
                                     }
 
                                     {
@@ -182,10 +185,10 @@ const CenterContentRepeatableBlocks = (props) => {
                                         card.content
                                             ?
                                             <div className={card.classForContent ? card.classForContent : 'content-wrapper'}
-                                            dangerouslySetInnerHTML={{
-                                                __html: card?.content,
-                                            }}>
-                                               
+                                                dangerouslySetInnerHTML={{
+                                                    __html: card?.content,
+                                                }}>
+
                                             </div>
                                             :
                                             null
@@ -203,13 +206,13 @@ const CenterContentRepeatableBlocks = (props) => {
                                         card?.urlName
                                             ?
                                             <div >
-                                                <a className={card?.linkCss ? card?.linkCss : "font-medium text-white hidden"} href={card?.url} >{card?.urlName} 
-                                                {
-                                                    props?.inputData?.linkIcon
-                                                    ?
-                                                    <i className={props?.inputData?.linkIconCss ? props?.inputData?.linkIconCss : "fa-solid  fa-angle-double-right"}></i>
-                                                    :""
-                                                }
+                                                <a className={card?.linkCss ? card?.linkCss : "font-medium text-white hidden"} href={card?.url} >{card?.urlName}
+                                                    {
+                                                        props?.inputData?.linkIcon
+                                                            ?
+                                                            <i className={props?.inputData?.linkIconCss ? props?.inputData?.linkIconCss : "fa-solid  fa-angle-double-right"}></i>
+                                                            : ""
+                                                    }
                                                 </a>
                                             </div>
                                             :
@@ -224,7 +227,7 @@ const CenterContentRepeatableBlocks = (props) => {
             {
                 props?.inputData?.modalDisplay
                     ?
-                    <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss ? props?.inputData?.modalBtnCss : "text-white hidden"} 
+                    <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss ? props?.inputData?.modalBtnCss : "text-white hidden"}
                         dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName }}>
                     </div>
                     :

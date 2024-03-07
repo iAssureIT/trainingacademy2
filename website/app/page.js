@@ -28,7 +28,8 @@ const HomePage = () => {
       " lg:mt-0 xl:mt-12 2xl:mt-16 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
     image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
     imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pb-8",
-    borderColor:
+    imgTagcss:"lazyload",
+	borderColor:
       "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 	dash: "",
 	// modalDisplayLink:"true",
@@ -180,7 +181,9 @@ const HomePage = () => {
 		modalId: "UnlockPModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
-		modalBtnCss1: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss1: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		layout:"fill",
+		objectFit:"cover"
 	};
 
 	const content_VisionBlock = {

@@ -8,8 +8,9 @@
 
 "use client";
 import React, { useState, useEffect } from "react";
-import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
 import Link from 'next/link';
+import Image from "next/image";
+import InquiryForm from "@/widgets/InquiryForm/InquiryForm";
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 
 const BgImgRightContent = (props) => {
@@ -103,8 +104,7 @@ const BgImgRightContent = (props) => {
                                     }
                                 >
                                     <img
-                                         loading="lazy"
-                                        className={
+                                      className={
                                             props?.inputData?.imgTagcss
                                                 ? props?.inputData?.imgTagcss + " lazyload "
                                                 : "h-full w-full lazyload "

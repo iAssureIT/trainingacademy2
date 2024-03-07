@@ -90,36 +90,36 @@ function MenuBar(props) {
 
    if (typeof window !== 'undefined') {
       var nav1 = document.querySelector(".menubar");
-      
+
 
       window.addEventListener('scroll', () => {
-			// var shouldAddClass = window.scrollY > nav1.clientHeight;
-			var shouldAddClass = window.scrollY;
+         // var shouldAddClass = window.scrollY > nav1.clientHeight;
+         var shouldAddClass = window.scrollY;
          var menuItemElements = document.querySelectorAll(".menuText");
          var crossIcon = document.querySelectorAll(".crossIcon");
-			nav1?.classList.toggle("bg-white", shouldAddClass);
-			nav1?.classList.toggle("bg-transparent", !shouldAddClass);
+         nav1?.classList.toggle("bg-white", shouldAddClass);
+         nav1?.classList.toggle("bg-transparent", !shouldAddClass);
          var imageElement = document.querySelector("#navLogo");
          var imageElement2 = document.querySelector("#navLogo1");
          var smMenuIcon = document.querySelector(".smMenu");
          smMenuIcon.classList.toggle("text-black", shouldAddClass);
-			smMenuIcon.classList.toggle("text-white", !shouldAddClass);
+         smMenuIcon.classList.toggle("text-white", !shouldAddClass);
          crossIcon.forEach(icon => {
             icon.classList.toggle("text-black", shouldAddClass);
             icon.classList.toggle("text-white", !shouldAddClass);
-        });
+         });
          menuItemElements.forEach((menuItem) => {
-				menuItem.classList.toggle("md:!text-black", shouldAddClass);
-			});
+            menuItem.classList.toggle("md:!text-black", shouldAddClass);
+         });
          if (shouldAddClass) {
-				// Change to the image source you want when scrolling down
-				imageElement.src = "/images/specific/trainingAcademy/Logo-2.png";
+            // Change to the image source you want when scrolling down
+            imageElement.src = "/images/specific/trainingAcademy/Logo-2.png";
             imageElement2.src = "/images/specific/trainingAcademy/Logo-2.png";
-			} else {
-				// Change to the image source you want when scrolling up
-				imageElement.src = "/images/specific/trainingAcademy/White-Logo.png";
+         } else {
+            // Change to the image source you want when scrolling up
+            imageElement.src = "/images/specific/trainingAcademy/White-Logo.png";
             imageElement2.src = "/images/specific/trainingAcademy/White-Logo.png";
-			}
+         }
       });
    }
    return (
@@ -147,15 +147,16 @@ function MenuBar(props) {
             <div className="block lg:hidden  items-center h-14 flex-shrink-0 text-white mr-6 object-fit">
                <a href="/">
                   <img
-                  id="navLogo1"
+                     id="navLogo1"
                      src={props.inputData.smallLogo}
                      className={props.inputData?.classForLogo}
                      alt="Logo"
                   />
                </a>
             </div>
+
             {
-               props.showLoginbutton
+               props?.inputData?.showLoginbutton && pathname.includes("/admin")
                   ?
                   userData
                      ?
@@ -172,7 +173,7 @@ function MenuBar(props) {
                            >
                               <img
                                  className="w-8 h-8 rounded-full"
-                                 src="/images/specific/profile_1.jpeg"
+                                 src="/images/generic/userProfile.webp"
                                  alt="user photo"
                               />
                            </button>
@@ -191,12 +192,12 @@ function MenuBar(props) {
                               // shadow-2xl shadow-black-500/50"
                               ></div>
 
-                              <div className="w-60 p-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg  dark:bg-gray-700 ">
+                              <div className="w-60 p-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg  dark:bg-gray-700 border shadow-lg">
                                  <div className="flex flex-wrap">
                                     <div className=" mx-auto flex p-2 ">
                                        <img
                                           className="w-12 h-12 rounded-full mx-auto"
-                                          src="/images/specific/profile_1.jpeg"
+                                          src="/images/generic/userProfile.webp"
                                           alt="user photo"
                                        />
                                     </div>
@@ -253,82 +254,90 @@ function MenuBar(props) {
                   :
                   null
             }
-            <div className="block  lg:hidden w-full">
-               <button
-               id="btn-mob-menubar"
-               aria-label="mobileDropdownBtn"
-                  onClick={() => setIsOpen(!isOpen)}
-                  className="flex float-right items-center px-3 mt-3 lg:mt-6 pl-6 rounded text-white hover:text-white smMenu"
-               >
-                  <svg
-                     className={`fill-current h-4 w-4 ${isOpen ? "hidden" : "block"}`}
-                     viewBox="0 0 20 20"
-                     xmlns="http://www.w3.org/2000/svg"
-                  >
-                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                  </svg>
-                  <i className={`fa fa-times text-white crossIcon ${isOpen ? "block" : "hidden"}`} aria-hidden="true"></i>
-                  {/* <svg
+            {
+               !pathname.includes("/admin")
+                  ?
+                  <>
+                     <div className="block  lg:hidden w-full">
+                        <button
+                           id="btn-mob-menubar"
+                           aria-label="mobileDropdownBtn"
+                           onClick={() => setIsOpen(!isOpen)}
+                           className="flex float-right items-center px-3 mt-3 lg:mt-6 pl-6 rounded text-white hover:text-white smMenu"
+                        >
+                           <svg
+                              className={`fill-current h-4 w-4 ${isOpen ? "hidden" : "block"}`}
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                           </svg>
+                           <i className={`fa fa-times text-white crossIcon ${isOpen ? "block" : "hidden"}`} aria-hidden="true"></i>
+                           {/* <svg
                      className={`fill-current h-3 w-3 crossIcon ${isOpen ? "block" : "hidden"}`}
                      viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg"
                   >
                      <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
                   </svg> */}
-               </button>
-            </div>
-            <div><TopHeader />
-               <div className={`w-full block  flex-wrap lg:flex lg:items-right float-right
+                        </button>
+                     </div>
+                     <div><TopHeader />
+                        <div className={`w-full block  flex-wrap lg:flex lg:items-right float-right
                            lg:w-auto ${isOpen ? "block" : "hidden"}`}
-               >
+                        >
 
-                  <div className="text-sm lg:flex lg:flex-wrap h-8 ">
-                     {userData ? (
-                        <ul
-                           id="navBar"
-                           className="rounded-lg text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 float-right  md:flex-row md:space-x-8 md:mt-0 text-black lg:text-white bg-white lg:bg-transparent shadow-xl lg:shadow-none"
-                        >
-                           {
-                              menuItemsAfterLogin.map((data, index) => {
-                                 return (
-                                    <li key={"li-" + index}>
-                                       <a
-                                          key={index}
-                                          href={data.link}
-                                          className="menuText text-black lg:text-white text-sm font-bold "
-                                          aria-current="page"
-                                       >
-                                          {data.label}
-                                       </a>
-                                    </li>
-                                 );
-                              })
-                           }
-                        </ul>
-                     ) : (
-                        <ul
-                           id="navBar"
-                           className=" text-xs xl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4  float-right  rounded-lg  md:flex-row md:space-x-8 md:mt-0 text-black lg:text-white bg-white lg:bg-transparent shadow-xl lg:shadow-none"
-                        >
-                           {menuItems.map((data, index) => {
-                              return (
-                                 <li key={"id-" + index}>
-                                    <a
-                                       key={index}
-                                       href={data.link}
-                                       className="menuText text-black lg:text-white"
-                                       aria-current="page"
-                                    >
-                                       {data.label}
-                                    </a>
-                                 </li>
-                              );
-                           })}
-                        </ul>
-                     )}
-                  </div>
-               </div>
-            </div>
+                           <div className="text-sm lg:flex lg:flex-wrap h-8 ">
+                              {userData ? (
+                                 <ul
+                                    id="navBar"
+                                    className="rounded-lg text-xs xxl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4 float-right  md:flex-row md:space-x-8 md:mt-0 text-black lg:text-white bg-white lg:bg-transparent shadow-xl lg:shadow-none"
+                                 >
+                                    {
+                                       menuItemsAfterLogin.map((data, index) => {
+                                          return (
+                                             <li key={"li-" + index}>
+                                                <a
+                                                   key={index}
+                                                   href={data.link}
+                                                   className="menuText text-black lg:text-white text-sm font-bold "
+                                                   aria-current="page"
+                                                >
+                                                   {data.label}
+                                                </a>
+                                             </li>
+                                          );
+                                       })
+                                    }
+                                 </ul>
+                              ) : (
+                                 <ul
+                                    id="navBar"
+                                    className=" text-xs xl:text-lg font-semibold flex flex-col p-4 md:p-0 mt-4  float-right  rounded-lg  md:flex-row md:space-x-8 md:mt-0 text-black lg:text-white bg-white lg:bg-transparent shadow-xl lg:shadow-none"
+                                 >
+                                    {menuItems.map((data, index) => {
+                                       return (
+                                          <li key={"id-" + index}>
+                                             <a
+                                                key={index}
+                                                href={data.link}
+                                                className="menuText text-black lg:text-white"
+                                                aria-current="page"
+                                             >
+                                                {data.label}
+                                             </a>
+                                          </li>
+                                       );
+                                    })}
+                                 </ul>
+                              )}
+                           </div>
+                        </div>
+                     </div>
+                  </>
+                  :
+                  null
+            }
          </nav>
       </div>
    );

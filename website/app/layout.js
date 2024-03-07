@@ -47,7 +47,7 @@ const content_Menubar = {
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-1 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/4 xl:w-auto",
   classForLogo: "h-full w-full md:w-full ", 
-  showLoginbutton: false,
+  showLoginbutton: true,
   customButton: false,
   showSubMenu: true,
   customButtonClass:
