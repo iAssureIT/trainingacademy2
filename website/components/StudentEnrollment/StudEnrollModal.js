@@ -65,10 +65,10 @@ const StudEnrollModal = (props) => {
             errors["phone"] = "Please enter valid Mobile Number";
             formIsValid = false;
         }
-        // if (!fields["companyName"]) {
-        //     formIsValid = false;
-        //     errors["companyName"] = "This field is required.";
-        // }
+        if (!fields["city"]) {
+            formIsValid = false;
+            errors["city"] = "This field is required.";
+        }
         // if (!fields["comments"]) {
         //     formIsValid = false;
         //     errors["comments"] = "This field is required.";
@@ -87,6 +87,7 @@ const StudEnrollModal = (props) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         var adminEmail = process.env.CONTACT_EMAIL
+        var adminEmailSubject = process.env.STUD_ENROLL_FORM_SUBJECT
         if (validateForm()) {
             setSubmitted(true);
             var formValues = {
@@ -125,11 +126,11 @@ const StudEnrollModal = (props) => {
                                     link.click();
                                     document.body.removeChild(link);
                                 }
-                                Swal.fire({
-                                    html: "<span className='mt-5'><span>Thanks for Enrollement<span></span>",
-                                    showConfirmButton: true,
-                                    confirmButtonColor: "#376bff"
-                                });
+                                // Swal.fire({
+                                //     html: "<span className='mt-5'><span>Thanks for Enrollement<span></span>",
+                                //     showConfirmButton: true,
+                                //     confirmButtonColor: "#376bff"
+                                // });
                                 // setTimeout(() => {
                                 //     window.location.href = "/";
                                 // }, 2000);
@@ -149,7 +150,7 @@ const StudEnrollModal = (props) => {
                         });
                     const formValues2 = {
                         toEmail: adminEmail,
-                        subject: "New Enrollment from Training Academy Website",
+                        subject: adminEmailSubject ,
                         text: "",
                         mail:
                             "Dear Admin, <br/>" +
@@ -171,7 +172,7 @@ const StudEnrollModal = (props) => {
                         .post("/send-email", formValues2)
                         .then((res) => {
                             if (res.status === 200) {
-
+                                window.location.href = "/thank-you-page"
                                 setBtnLoading(false)
                                 setFields({
                                     fullName: "",
@@ -236,9 +237,10 @@ const StudEnrollModal = (props) => {
                                 {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
                             </div>
                                 <div>
-                                    <label for="city" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">City</label>
+                                    <label for="city" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">City<span className="my-auto text-red-600">*</span></label>
                                     <input type="text" name="city" id="city" onChange={handleChange}
                                         value={fields.city} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
+                                    {errors.city && <p className="mt-1 text-xs text-red-500">{errors.city}</p>}
                                 </div>
                             </div>
                             {(btnLoading == true) ? (
