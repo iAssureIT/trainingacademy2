@@ -27,7 +27,7 @@ const ThankYouPage = ({ data }) => {
                         <div className="py-10 text-center">
                             {/* <i class="fa-brands fa-square-whatsapp"></i> */}
                             <a href={process.env.WHATSUP_GROUP_NAME} className="px-12 bg-green-500 hover:bg-indigo-500 text-white font-semibold py-3">
-                                Join the WhatsApp Group for detailed info
+                                Chat on WhatsApp
                             </a>
                         </div>
                     </div>
