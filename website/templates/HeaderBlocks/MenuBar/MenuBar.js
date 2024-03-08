@@ -102,8 +102,8 @@ function MenuBar(props) {
          var imageElement = document.querySelector("#navLogo");
          var imageElement2 = document.querySelector("#navLogo1");
          var smMenuIcon = document.querySelector(".smMenu");
-         smMenuIcon.classList.toggle("text-black", shouldAddClass);
-         smMenuIcon.classList.toggle("text-white", !shouldAddClass);
+         smMenuIcon?.classList.toggle("text-black", shouldAddClass);
+         smMenuIcon?.classList.toggle("text-white", !shouldAddClass);
          crossIcon.forEach(icon => {
             icon.classList.toggle("text-black", shouldAddClass);
             icon.classList.toggle("text-white", !shouldAddClass);
