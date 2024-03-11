@@ -139,8 +139,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                             </div>
                                             : null
                                     }
-                                    {props?.inputData?.testimonial
-                                        ?
+                                  
                                         <div className="flex my-2 md:px-9">
                                             {card.profileImage ? (
                                                 <Image
@@ -173,8 +172,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        : null
-                                    }
+                                       
 
                                     {
                                         card.cardTitle ?

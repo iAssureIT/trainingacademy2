@@ -258,7 +258,7 @@ function MenuBar(props) {
                !pathname.includes("/admin")
                   ?
                   <>
-                     <div className="block  lg:hidden w-full">
+                     <div className="  w-full  md:w-auto block  lg:hidden">
                         <button
                            id="btn-mob-menubar"
                            aria-label="mobileDropdownBtn"

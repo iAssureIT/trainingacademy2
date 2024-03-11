@@ -37,6 +37,8 @@ const ThankYouPage = ({ data }) => {
     )
 }
 
+
+
 {/* PB added metaData */ }
 // export async function generateMetadata({ params }, parent) {
 //     try {
