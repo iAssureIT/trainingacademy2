@@ -142,13 +142,12 @@ const CenterContentRepeatableBlocks = (props) => {
                                   
                                         <div className="flex my-2 md:px-9">
                                             {card?.profileImage ? (
-                                                <Image
-                                                    width="100"
-                                                    height="100"
+                                                <img
+                                                    
                                                     loading="lazy"
                                                     className={" rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
-                                                    src={card.profileImage}
-                                                    alt={card.profileImage ? card.altImage : "iassureitProfile"}
+                                                    src={card?.profileImage}
+                                                    alt={card?.altImage ? card?.altImage : "iassureitProfile"}
                                                 />
                                             ) : 
                                             ""
