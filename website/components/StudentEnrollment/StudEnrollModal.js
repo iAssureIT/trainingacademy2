@@ -9,7 +9,11 @@ const StudEnrollModal = (props) => {
     const [submitted, setSubmitted] = useState(false);
     const closeModal = () => {
         console.log("test")
-        const modal = document.getElementById(props.modalId);
+        const modal = document.getElementById(props?.modalId);
+        console.log("modal",modal)
+       
+        
+             
         modal.classList.add('hidden'); // You might need to adjust this based on your modal library or styling
     };
     const [fields, setFields] = useState({

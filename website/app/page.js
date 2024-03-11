@@ -10,40 +10,40 @@ import AccordionBlock from '@/templates/Accordion/AccordionBlock.js';
 import BannerSmallBlocks from '@/templates/BannerSmallBlocks/BannerSmallBlocks'
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 
-const HomePage = () => { 
-  const content_Banner = {
-    id: "Banner_Block",
-    bgImage:
-      "/images/specific/trainingAcademy/iAssureIT-training-1.webp",
-   logo: "",    
-    h1Txt:
-      "<span class='font-bold text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl'>Transforming Aspirations into Applications</span><br/><span class='text-base'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
-    bgImgCss:
-      "lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-    logoCss: "lazyload justify-left align-left  mb-5 ",
-    h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 xl:!leading-[1.3] mt-10 md:mt-0 3xl:mt-20 text-left",
-    gridCss:
-      " pt-10 md:pt-20  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32",
-    gridSubDivCss:
-      " lg:mt-0 xl:mt-12 2xl:mt-16 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
-    image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
-    imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pb-8",
-    imgTagcss:"lazyload",
-	borderColor:
-      "border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
-	dash: "",
-	// modalDisplayLink:"true",
-	// linkName:"Enroll Now",
-	// linkUrl:"/",
-	// linkDivCss:"ml-5 md:ml-10 mt-2",
-	// linkCss:"underline text-orange-500 font-bold text-base",
-	modalId: "UnlockPModal",
-	modalDisplay: "true",
-	// modalUrlName: "Download Brochure",
-	modalUrlName: "Enroll Now",
-	modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-sm  ml-5 md:ml-10 py-2 px-2 md:px-5  2xl:px-6  mt-3 lg:mt-5 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
-        
-    };
+const HomePage = () => {
+	const content_Banner = {
+		id: "Banner_Block",
+		bgImage:
+			"/images/specific/trainingAcademy/iAssureIT-training-1.webp",
+		logo: "",
+		h1Txt:
+			"<span class='font-bold text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl'>Transforming Aspirations into Applications</span><br/><span class='text-base'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
+		bgImgCss:
+			"lazyload z-0 object-fit py-5 md:py-10 md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+		logoCss: "lazyload justify-left align-left  mb-5 ",
+		h1TxtCss: " ml-5 md:ml-10 mr-10 md:mr-0 xl:!leading-[1.3] mt-10 md:mt-0 3xl:mt-20 text-left",
+		gridCss:
+			" pt-10 md:pt-20  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32",
+		gridSubDivCss:
+			" lg:mt-0 xl:mt-12 2xl:mt-16 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
+		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-0 md:pb-8",
+		imgTagcss: "lazyload",
+		borderColor:
+			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
+		dash: "",
+		// modalDisplayLink:"true",
+		// linkName:"Enroll Now",
+		// linkUrl:"/",
+		// linkDivCss:"ml-5 md:ml-10 mt-2",
+		// linkCss:"underline text-orange-500 font-bold text-base",
+		modalId: "UnlockPModal",
+		modalDisplay: "true",
+		// modalUrlName: "Download Brochure",
+		modalUrlName: "Enroll Now",
+		modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-sm  ml-5 md:ml-10 py-2 px-2 md:px-5  2xl:px-6  mt-3 lg:mt-5 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+
+	};
 
 	const content_CET = {
 		id: "CET_Block",
@@ -87,7 +87,7 @@ const HomePage = () => {
 		smallBGImage2: "/images/specific/trainingAcademy/2.webp",
 		smallBGImage3: "/images/specific/trainingAcademy/3.webp",
 		smallBGImage4: "/images/specific/trainingAcademy/4.webp",
-		blockTitles:[
+		blockTitles: [
 			"Advanced Skills and Beyond",
 			"Web Technologie Mastery",
 			"ReactJS Framework and Beyond",
@@ -117,7 +117,7 @@ const HomePage = () => {
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
-		modalId: "UnlockPModal",
+		modalId: "Registration_form",
 		modalDisplay: "true",
 		modalUrlName: "Enroll Now",
 		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
@@ -148,7 +148,7 @@ const HomePage = () => {
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
-		modalId: "UnlockPModal",
+		modalId: "FormModal",
 		modalDisplay: "true",
 		modalUrlName: "Join Our Community",
 		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
@@ -178,12 +178,12 @@ const HomePage = () => {
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
 		imgTagcss: "mx-auto lazyload",
-		modalId: "UnlockPModal",
+		modalId: "registrationModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
 		modalBtnCss1: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
-		layout:"fill",
-		objectFit:"cover"
+		layout: "fill",
+		objectFit: "cover"
 	};
 
 	const content_VisionBlock = {
@@ -193,7 +193,7 @@ const HomePage = () => {
 		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-white",
 		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-15.webp",
 		bgImgCss: "lazyload",
-		para:"Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.",
+		para: "Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.",
 		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-2xl text-justify text-white",
 		pageTitle:
 			"<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
@@ -375,7 +375,7 @@ const HomePage = () => {
 	const content_Courses2 = {
 		id: "course4",
 		sectionCss: "pb-10 lg:pb-20 bg-offWhite",
-	
+
 		blockTitle:
 			"",
 		classForblockTitle: "w-full text-center",
@@ -391,12 +391,12 @@ const HomePage = () => {
 		classForCardImage: " px-2 w-full",
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		
-		modalId: "UnlockPModal",
+
+		modalId: "studFormModal",
 		modalDisplay: "true",
 		modalUrlName: "Enroll Now",
 		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
-		cardsArray: [        
+		cardsArray: [
 			{
 				id: "courses",
 				cardImage: "/images/specific/trainingAcademy/iAssureIT-training-11.webp",
@@ -410,7 +410,7 @@ const HomePage = () => {
 		],
 	};
 
-	
+
 	const content_About = {
 		id: "about",
 		sectionClass:
@@ -715,6 +715,7 @@ const HomePage = () => {
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		modalDisplay: "true",
+		modalId: "stdRegModal",
 		modalUrlName: "Get Started",
 		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10  border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		cardsArray: [
@@ -881,6 +882,7 @@ const HomePage = () => {
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		cardsArray: [],
 		modalDisplay: "true",
+		modalId: "RegModal",
 		modalUrlName: "Get Started",
 		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-5 lg:mt-20 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 	};
@@ -895,7 +897,7 @@ const HomePage = () => {
 			>
 
 				{/* <a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf" target={"_blank"} aria-label="Downlod Brochure"> */}
-					<i className="text-white fa-solid fa-download">
+				<i className="text-white fa-solid fa-download">
 				</i>
 				{/* </a> */}
 			</div>

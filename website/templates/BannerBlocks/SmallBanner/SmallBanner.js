@@ -16,7 +16,7 @@ const SmallBanner = (props) => {
   var smallImageURL = props?.inputData?.smallBGImage;
   return (
     <section id={props.inputData.id}>
-      {isModalOpen && <StudEnrollModal modalId="StudEnrollModal"/>}
+      {isModalOpen && <StudEnrollModal modalId="EnrollModal"/>}
       {!props?.inputData?.singlebgImage
         ?
         // <div className={props.inputData?.bgImgCss ? props.inputData?.bgImgCss : " bg-cover p-12 block shadow-lg  bg-no-repeat  max-w-full  sm:bg-cover bg-center lg:h-72 xl:h-96 h-96 "} style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}>

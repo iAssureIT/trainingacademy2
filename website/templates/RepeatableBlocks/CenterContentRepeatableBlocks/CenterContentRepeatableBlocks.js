@@ -46,7 +46,7 @@ const CenterContentRepeatableBlocks = (props) => {
         "grid  grid-cols-3 gap-x-6 md:grid-cols-3 md:gap-x-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
     return (
         <section id={props.inputData?.id} className={props?.inputData?.sectionCss}>
-            {isModalOpen && <StudEnrollModal modalId="StudEnrollModal" />}
+            {isModalOpen && <StudEnrollModal modalId={props?.inputData?.modalId ? props?.inputData?.modalId :"StudEnrollModal"} />}
             {props?.inputData?.dash ?
                 <div className="w-full mb-0 md:mb-4">
                     <ul className="flex flex-wrap place-content-center">
