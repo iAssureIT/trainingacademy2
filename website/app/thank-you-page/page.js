@@ -21,13 +21,15 @@ const ThankYouPage = ({ data }) => {
                     </svg> */}
                     <img src="/images/videos/check.gif" className="h-52 mx-auto z-4" />
                     <div className="text-center -mt-8">
-                        <h3 className="text-3xl md:text-5xl  text-gray-900 font-semibold text-center">Thank You</h3>
-                        <p className="text-gray-600 my-2 md:text-2xl">Thank you for your interest, we'll get back to you shortly.</p>
-                        <p className=" md:text-xl"> Have a great day!  </p>
+                        <h3 className="text-3xl md:text-8xl  text-blue-600  text-center font-GreatVibes ">Thank You!</h3>
+                        <p className=" my-5 md:text-2xl font-bold md:px-10 xl:px-12">We appreciate your decision to
+select us as your learning companion. </p>
+                        <p className=" md:text-xl"> To become a part of our training
+WhatsApp group, kindly click on the provided link  </p>
                         <button className="my-5 px-1 md:py-3 md:px-1 h-16 md:h-auto  bg-green-500 md:text-center rounded-lg">
                             {/* <i class="fa-brands fa-square-whatsapp"></i> */}
                             <a href={process.env.WHATSUP_GROUP_NAME} className="overflow-auto px-1  md:px-6 text-lg   hover:bg-indigo-500 text-white font-bold py-3">
-                            Join the WhatsApp Group for detailed info
+                            Click here to join the group
                             </a>
                         </button>
                     </div>

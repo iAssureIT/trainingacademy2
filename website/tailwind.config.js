@@ -76,9 +76,9 @@ module.exports = {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
       },
 
-      // fontFamily: {
-      //   DrukText: ["DrukText", "sans-serif"],
-      // },
+      fontFamily: {
+        GreatVibes: ["GreatVibes", "sans-serif"],
+      },
       screens: {
         // "xxl": "2660px",
         exLG: "2736px",
