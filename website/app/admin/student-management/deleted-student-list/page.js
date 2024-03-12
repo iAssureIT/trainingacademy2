@@ -112,7 +112,7 @@ const DeletedStudentList = props => {
                 :
                 null
             }
-            <h2 className="text-black mt-32 w-full text-center leading-10 text-3xl md:text-3xl xl:text-5xl px-2 mb-10"
+            <h2 className="text-black mt-4 w-full text-center leading-10 text-xl md:text-3xl xl:text-5xl px-2 mb-10"
             >
                 Deleted Students List
             </h2>
@@ -129,7 +129,7 @@ const DeletedStudentList = props => {
                     null
             }
 
-            <div className="px-32 ">
+            <div className="px-3 lg:px-10 2xl:px-32 ">
                 <div className=" ">
                     <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                         <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">

@@ -14,7 +14,10 @@ import Navbar from "@/templates/HeaderBlocks/MenuBar/MenuTest";
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
-const scrollToTop = () => {window.scrollTo(0, 0), behavior.scrollTo('smooth')};
+const scrollToTop = () => {window.scrollTo({
+  top: 0,
+  behavior: 'smooth'
+});};
 
 var currentYear = new Date().getFullYear();
 

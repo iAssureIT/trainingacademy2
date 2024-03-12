@@ -115,7 +115,7 @@ const StudentList = props => {
                 :
                 null
             }
-            <h2 className="text-black md:mt-32 w-full text-center leading-10 text-3xl md:text-3xl xl:text-5xl px-2 mb-10"
+            <h2 className="text-black md:mt-4 w-full text-center leading-10 text-xl md:text-3xl xl:text-5xl px-2 md:mb-10 "
             >
                 Student Enrollment List
             </h2>
@@ -202,13 +202,15 @@ const StudentList = props => {
                                                             {" "}
                                                             <i
                                                                 className={
-                                                                    "fa fa-pencil float-right mr-3 right hover:cursor-pointer"
+                                                                    "fa fa-pencil  mr-3 right hover:cursor-pointer"
                                                                 }
                                                                 aria-hidden="true"
                                                             ></i>{" "}</a>
-                                                        <div>
-                                                            <i className="fa fa-trash cursor-pointer hover:text-red-500 " title="Delete" onClick={handleDeleteStatus} id={data._id}></i>
-                                                        </div>
+                                                       
+                                                            <i className="fa fa-trash cursor-pointer hover:text-red-500  mr-3" title="Delete" onClick={handleDeleteStatus} id={data._id}></i>
+                                                            <i className="fa-brands fa-whatsapp   mx-auto cursor-pointer text-lg  "></i>
+                                                            {/* <i className="fa-brands fa-ev   mx-auto cursor-pointer text-lg  "></i> */}
+
                                                     </td>
                                                 </tr>)
                                         })

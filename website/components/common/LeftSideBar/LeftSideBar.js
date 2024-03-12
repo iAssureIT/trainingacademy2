@@ -47,9 +47,15 @@ const LeftSideBar = () => {
             >
               <i className="w-4 fa-solid fa-file text-xl text-left float-left "></i>
               <span className="w-48 pl-4 text-left float-left">{item.label}</span>
-              <span className="w-4 text-sm font-semibold float-right">
+              {
+                item?.submenu?
+                <span className="w-4 text-sm font-semibold float-right">
                 {openItems.includes(item.id) ? " - " : " + "}
               </span>
+              :
+              ""
+              }
+             
             </button>
             {openItems.includes(item.id) && item.submenu && (
               <ul className="bg-leftBlack text-xs">

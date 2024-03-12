@@ -155,7 +155,7 @@ const Footer = (props) => {
                     </span>
                   </li>
                   <li className="mb-5 flex  place-content-start lg:place-content-start">
-                    <i className="fa-solid fa-mobile-screen mr-1 text-orangeColor"></i>
+                    <i className="fa-solid fa-mobile-screen mr-1 text-orangeColor my-auto"></i>
                     <div>
                       <div className="flex">
                         <div className=" left">Support</div>:&nbsp;
@@ -262,7 +262,7 @@ const Footer = (props) => {
                         className=" w-[38px] h-[38px] text-light hover:text-gray-900 dark:hover:text-blue-700"
                         aria-label="LinkedIn"
                       >
-                        <i className="fa-brands fa-linkedin  hover:bg-white p-3 my-auto  mx-auto rounded-full border-2 border-orangeColor  text-orangeColor"></i>
+                        <i className="fa-brands fa-linkedin  hover:bg-white px-2.5 py-2.5 my-auto  mx-auto rounded-full border-2 border-orangeColor  text-orangeColor"></i>
                       </a>
                     ) : null}
 

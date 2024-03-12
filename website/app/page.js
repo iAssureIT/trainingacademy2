@@ -107,7 +107,7 @@ const HomePage = () => {
 			"lazyload object-fit py-0 lg:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		paraCss:
-			" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
+			" text-white text-sm md:text-lg lg:text-2xl text-left md:mt-5 ",
 		gridCss:
 			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-20 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
@@ -190,11 +190,11 @@ const HomePage = () => {
 		id: "Vision_Block",
 		paraTitle:
 			"Driven by a vision to propel India to new heights in the IT industry, Ashish Naik is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.",
-		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-white",
+		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-left text-white",
 		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-15.webp",
 		bgImgCss: "lazyload",
 		para: "Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.",
-		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-2xl text-justify text-white",
+		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-2xl text-left text-white",
 		pageTitle:
 			"<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
 		pageTitleCss: " mb-5 sm:mb-10 md:mb-20 text-white w-full text-center BlockTitle",
@@ -345,7 +345,7 @@ const HomePage = () => {
 				altImage: "iAssureIT-training-8",
 				cardTitle: "Course 1: Web Technologies Mastery",
 				classForContent:
-					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500] ",
+					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg p-3 font-[500] ",
 				content:
 					"<div class='font-semibold text-left'> HTML5, CSS3, Bootstrap6, Tailwind CSS, JavaScript </div>  <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Dive into the fundamentals of web development with HTML5, CSS3, and Bootstrap6. Learn to craft stunning, responsive designs with Tailwind CSS, and unleash the power of interactivity with JavaScript. From building beautiful UIs to ensuring seamless user experiences, this course lays the groundwork for your FullStack journey.</div>",
 			},
@@ -355,7 +355,7 @@ const HomePage = () => {
 				altImage: "iAssureIT-training-9",
 				cardTitle: "Course 2: ReactJS Framework and Beyond",
 				classForContent:
-					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500]",
+					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg p-3 font-[500]",
 				content:
 					"<div class='font-semibold text-left'>ReactJS Framework, JSON, API Integration </div> <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Unlock the potential of ReactJS and harness the versatility of JSON for dynamic data manipulation. Explore the art of API integration and discover how to seamlessly connect your applications with external services. With hands-on projects and real-world scenarios, you'll master the art of building modern, interactive web applications. </div>",
 			},
@@ -365,7 +365,7 @@ const HomePage = () => {
 				altImage: "iAssureIT-training-10",
 				cardTitle: "Course 3: NodeJS and Database Development ",
 				classForContent:
-					"justify-content h-auto text-left xl:text-justify my-auto text-md lg:text-lg p-3 font-[500]",
+					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg p-3 font-[500]",
 				content:
 					"<div class='font-semibold text-left'>REST API Development, Database Integration </div><br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'> Delve into the world of server-side development with NodeJS and Express. Learn to harness the power of MongoDB for efficient data storage and retrieval. From REST API development to database management, this course empowers you to create robust backend systems that power your applications with speed and reliability.</div>",
 			},
