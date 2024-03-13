@@ -129,10 +129,10 @@ const landingPage = () => {
 		gridCss:
             "grids h-full",
         gridSubDivCss:"text-black my-auto text-center xs:text-left px-10 py-5",
-		modalId: "UnlockPModal",
-		modalDisplay: "true",
-		modalUrlName: "Secure Your Seat Now",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-10 lg:mt-10 rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+		// modalId: "UnlockPModal",
+		secureModalDisplay: "true",
+		secureModalUrlName: "Secure Your Seat Now",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-10 lg:mt-10 btn bg-red-600 hover:bg-blue-500  cursor-pointer",
 
     };
 

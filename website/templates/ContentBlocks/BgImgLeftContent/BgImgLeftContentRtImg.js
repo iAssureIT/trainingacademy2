@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import Link from 'next/link';
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
+import LPStudEnrollModal from '@/components/StudentEnrollment/LandingPageStudEnrollModal';
 
 const BgImgLeftContentRtImg = (props) => {
     const largeImageURL = props?.inputData?.bgImage;
@@ -10,6 +11,7 @@ const BgImgLeftContentRtImg = (props) => {
     const [isModalOpen, setModalOpen] = useState(false);
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isSecureModalOpen, setSecureModalOpen] = useState(false);
 
     const togglePlay = () => {
         const video = videoRef.current;
@@ -25,6 +27,7 @@ const BgImgLeftContentRtImg = (props) => {
     return (
         <div id={props?.inputData?.id}>
             {isModalOpen && <StudEnrollModal modalId={props?.inputData?.modalId || "enrollModal"} />}
+            {isSecureModalOpen && <LPStudEnrollModal modalId="EnrollModal"/>}
             <div rel="preload" className={props?.inputData?.bgImgCss || "bg-cover p-12 block shadow-lg bg-no-repeat max-w-full sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)] bg-[image:var(--smallImage-url)]"}
                 style={{
                     "--largeImage-url": largeImageURL ? `url(${largeImageURL})` : 'none',
@@ -91,6 +94,11 @@ const BgImgLeftContentRtImg = (props) => {
                         {props?.inputData?.modalDisplay && (
                             <div onClick={() => setModalOpen(!isModalOpen)} className={props?.inputData?.modalBtnCss || "text-white hidden"} dangerouslySetInnerHTML={{ __html: props?.inputData?.modalUrlName }}></div>
                         )}
+
+                        {props?.inputData?.secureModalDisplay && (
+                            <div onClick={() => setSecureModalOpen(!isSecureModalOpen)} className={props?.inputData?.modalBtnCss || "text-white hidden"} dangerouslySetInnerHTML={{ __html: props?.inputData?.secureModalUrlName }}></div>
+                        )}
+
                     </div>
                     {props?.inputData?.image && (
                         <div className={props?.inputData?.imageCss || 'object-fit'}>
