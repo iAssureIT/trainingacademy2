@@ -140,7 +140,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                             : null
                                     }
                                   
-                                        <div className="flex my-2 md:px-9">
+                                        <div className={props.inputData?.profileImageCss? props.inputData?.profileImageCss:"flex my-2 md:px-9"}>
                                             {card?.profileImage ? (
                                                 <img
                                                     

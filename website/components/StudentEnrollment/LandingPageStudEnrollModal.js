@@ -176,7 +176,7 @@ const StudEnrollModal = (props) => {
                         .post("/send-email", formValues2)
                         .then((res) => {
                             if (res.status === 200) {
-                                window.location.href = "/thank-you-page"
+                                window.location.href = "/lp-thank-you-page"
                                 setBtnLoading(false)
                                 setFields({
                                     fullName: "",

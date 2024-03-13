@@ -22,13 +22,13 @@ const landingPage = () => {
     };
     const content_VideoWithGrid = {
         id: "landingPageBanner",
-        bgImage: "/images/specific/LandingPage/Website/iAssureIT-landing-page-1.webp",
-        smallBGImage: "/images/specific/LandingPage/Responsive/iAssureIT-landing-page-responsive-1.webp",
+        bgImage: "",
+        smallBGImage: "",
         bgImgCss: " bg-blue-100 py-20 h-auto   2xl:py-10 lazyload object-fit bg-cover bg-no-repeat relative  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         gridCss: "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2   md:grid-cols-2   lg:py-10 xl:py-0 2xl:py-10 h-auto md:h-full lg:h-full   xl:h-full 2xl:h-full px-2 md:px-10 gap-x-10 gap-y-4",
         gridSubDivCss: "  grid grid-cols-2 gap-3 sm:gap-2 md:gap-6 lg:gap-5 xl:gap-10 my-auto ",
         videoUrl: "/images/videos/WorkShop_video.mp4",
-        imgUrl: "/images/specific/Home/HomeVideoImg.webp",
+        // imgUrl: "/images/specific/Home/HomeVideoImg.webp",
         gridBlockTitle1Css: "font-extrabold text-lg ",
         gridBlockTitle2Css: "font-medium",
         cardsArray: [
@@ -265,6 +265,7 @@ const landingPage = () => {
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		testimonial: true,
+        profileImageCss:"flex my-2 md:px-5",
 		cardsArray: [
 			{
 				// profileImage: "/images/specific/testimonials/Akshay-Madanepatil.webp",

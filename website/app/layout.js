@@ -207,7 +207,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={" bg-white"}>
       { 
-          pathname === "/lp-workshop" ?
+          pathname === "/lp-workshop" || pathname === "/lp-thank-you-page" ?
             children
           :
        
