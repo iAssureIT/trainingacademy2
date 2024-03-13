@@ -72,7 +72,7 @@ const Technology = (props) => {
                                backgroundSize: "100% 100%" }}>
                               {
                                  card.cardTitle ?
-                                    <div className='flex justify-center'>
+                                    <div className='flex'>
                                        <div className={"px-2 " + props.inputData?.classForCardTitle} dangerouslySetInnerHTML={{ __html: card?.cardTitle }} ></div>
                                     </div>
                                  : null
@@ -110,7 +110,7 @@ const Technology = (props) => {
             props.inputData?.cardTitle_2
                ?
                <div className='flex justify-center'>
-                  <div className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md "} dangerouslySetInnerHTML={{ __html: props.inputData?.cardTitle_2 }} ></div>
+                  <div className={props.inputData.cssCardTitle_2 ? props.inputData.cssCardTitle_2 : "font-bold text-md "} dangerouslySetInnerHTML={{ __html: props.inputData?.cardTitle_2 }} ></div>
                </div>
                : null
          }
