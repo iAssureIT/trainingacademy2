@@ -230,13 +230,13 @@ const landingPage = () => {
     const content_Block2 = {
 		id: "Block2",
 		h1Txt:
-			"<span class='font-bold text-black text-3xl mx-auto'>Who should attend this Workshop?</span><hr class='w-1/5 mx-auto border-blue-400 border'/><br/><br/><ul class='list-disc text-left text-2xl'><li>Engineering Graduates – BE / BTECH / ME / MTECH</li><li>Any Engineering Streams – IT / Comp Sc / Mechanical / Production / Electionics / Electrical / Civil / Chemical etc</li><li>Science Graduates – BSC / BCA / MSC / MCA </li><li>Anyone who wants to enter into IT Industry from other industries</li></ul><br/>",
+			"<span class='font-bold text-white text-3xl mx-auto'>Who should attend this Workshop?</span><hr class='w-1/5 mx-auto border-blue-400 border'/><br/><br/><ul class='list-disc text-left text-2xl'><li>Engineering Graduates – BE / BTECH / ME / MTECH</li><li>Any Engineering Streams – IT / Comp Sc / Mechanical / Production / Electionics / Electrical / Civil / Chemical etc</li><li>Science Graduates – BSC / BCA / MSC / MCA </li><li>Anyone who wants to enter into IT Industry from other industries</li></ul><br/>",
 		bgImgCss:
 			"lazyload z-0 py-5 lg:py-10 object-fit bg-skyBlue bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		h1TxtCss: "mt-10 md:mt-0 3xl:mt-20",
 		gridCss:
             "grids h-full",
-        gridSubDivCss:"text-black my-auto text-center xs:text-left px-10 py-5",
+        gridSubDivCss:"text-white mx-3 lg:mx-10 my-auto text-center xs:text-left px-10 py-5",
 		// modalId: "UnlockPModal",
 		secureModalDisplay: "true",
 		secureModalUrlName: "Secure Your Seat Now",
