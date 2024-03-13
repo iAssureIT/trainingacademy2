@@ -110,7 +110,7 @@ const StudEnrollModal = (props) => {
                         subject: "Confirmation: Registration for March 17th Workshop Successful!",
                         text: "",
                         mail:
-                            "Dear Candidate" +
+                            "Dear " +
                             fields.fullName +
                             ", <br/><br/>" +
                             "Thank you for registering! We're excited to have you join our workshop on March 17th, covering in-demand technologies, career roadmaps, and interview strategies. Stay tuned for workshop details!" +
