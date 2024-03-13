@@ -208,10 +208,13 @@ export default function RootLayout({ children }) {
       <body className={" bg-white"}>
       { 
           pathname === "/lp-workshop" || pathname === "/lp-thank-you-page" ?
-            children
+            <>
+              {children}
+            </>
+
           :
        
-            <div>
+            <>
               {/* <MenuBar2 inputData={content_Menubar} /> */}
                 <MenuBar inputData={content_Menubar} />
                 
@@ -226,7 +229,7 @@ export default function RootLayout({ children }) {
                 >
                   <i className="text-white fa-solid fa-arrow-up"></i>
                 </div>
-            </div>
+            </>
       }
       </body>
     </html>
