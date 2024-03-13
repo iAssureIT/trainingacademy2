@@ -123,7 +123,7 @@ const landingPage = () => {
 		h1Txt:
 			"<span class='font-bold text-black text-3xl mx-auto'>Who should attend this Workshop?</span><hr class='w-1/5 mx-auto border-blue-400 border'/><br/><br/><ul class='list-disc text-left text-2xl'><li>Engineering Graduates – BE / BTECH / ME / MTECH</li><li>Any Engineering Streams – IT / Comp Sc / Mechanical / Production / Electionics / Electrical / Civil / Chemical etc</li><li>Science Graduates – BSC / BCA / MSC / MCA </li><li>Anyone who wants to enter into IT Industry from other industries</li></ul><br/>",
 		bgImgCss:
-			"lazyload z-0 object-fit bg-[#ffcc99] bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+			"lazyload z-0 py-5 lg:py-10 object-fit bg-[#ffcc99] bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		h1TxtCss: "mt-10 md:mt-0 3xl:mt-20",
 		gridCss:
             "grids h-full",
@@ -131,7 +131,7 @@ const landingPage = () => {
 		modalId: "UnlockPModal",
 		modalDisplay: "true",
 		modalUrlName: "Secure Your Seat Now",
-		modalBtnCss: "w-fit mx-auto md:mb-10 lg:mb-0 text-white text-center font-bold text-sm py-2 lg:py-3 px-8 lg:px-12 mt-3 lg:mt-5 btn bg-red-600 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-10 lg:mt-10 rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
 
     };
 
