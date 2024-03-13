@@ -7,9 +7,12 @@
 ==========================================================*/
 
 "use client"
-import React from 'react'
+import React, { useState } from "react";
+import LPStudEnrollModal from '@/components/StudentEnrollment/LandingPageStudEnrollModal';
 
 const Technology = (props) => {
+   const [isModalOpen, setModalOpen] = useState(false);
+
    var classForNoOfCards = props.inputData.classForNoOfCards
       ?
       props.inputData.classForNoOfCards
@@ -17,6 +20,7 @@ const Technology = (props) => {
       "grid  grid-cols-3 gap-x-6 md:grid-cols-3 md:gap-x-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
    return (
       <section className={props?.inputData?.sectionCss}>
+          {isModalOpen && <LPStudEnrollModal modalId="RegModal"/>}
          {props?.inputData?.dash ?
             <div className="w-full mb-4">
                <ul className="flex flex-wrap place-content-center">
@@ -114,6 +118,17 @@ const Technology = (props) => {
                </div>
                : null
          }
+
+{
+                           props.inputData?.modalDisplay
+                                ?
+                                <div onClick={() => setModalOpen(!isModalOpen)} className={props.inputData?.modalBtnCss ? props.inputData?.modalBtnCss : "text-white hidden"} type="button">
+                                    {props.inputData?.modalUrlName}{" "}
+                                        <i className="fa-solid fa-angle-double-right"></i>
+                                </div>
+                                :
+                                ""
+                        }
       </section>
    )
 }

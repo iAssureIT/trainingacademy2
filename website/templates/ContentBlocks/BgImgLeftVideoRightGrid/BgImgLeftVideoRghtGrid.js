@@ -3,11 +3,11 @@
   Date       :  13 March 2024
   ------------------------------------
   Reviewed By:  
-  Review Date: 
+  Review Date:    
 ==========================================================*/
 "use client";
 import React, { useState, useRef } from "react";
-import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
+import LPStudEnrollModal from '@/components/StudentEnrollment/LandingPageStudEnrollModal';
 
 const BgImgLeftVideoRghtGrid = (props) => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -19,7 +19,7 @@ const BgImgLeftVideoRghtGrid = (props) => {
 
     return (
         <section id={inputData?.id}>
-             {isModalOpen && <StudEnrollModal modalId="StudEnrollModal"/>}
+             {isModalOpen && <LPStudEnrollModal modalId="EnrollModal"/>}
             <div
                 className={inputData?.bgImgCss || "bg-cover p-12 block shadow-lg bg-no-repeat max-w-full sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)] bg-[image:var(--smallImage-url)]"}
                 style={{

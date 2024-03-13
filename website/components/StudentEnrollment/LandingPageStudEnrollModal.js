@@ -91,7 +91,7 @@ const StudEnrollModal = (props) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         var adminEmail = process.env.CONTACT_EMAIL
-        var adminEmailSubject = process.env.STUD_ENROLL_FORM_SUBJECT
+        var adminEmailSubject = process.env.LP_STUD_ENROLL_FORM_SUBJECT
         if (validateForm()) {
             setSubmitted(true);
             var formValues = {
@@ -110,7 +110,7 @@ const StudEnrollModal = (props) => {
                         subject: "Confirmation: Registration for March 17th Workshop Successful!",
                         text: "",
                         mail:
-                            "Dear " +
+                            "Dear Candidate" +
                             fields.fullName +
                             ", <br/><br/>" +
                             "Thank you for registering! We're excited to have you join our workshop on March 17th, covering in-demand technologies, career roadmaps, and interview strategies. Stay tuned for workshop details!" +
