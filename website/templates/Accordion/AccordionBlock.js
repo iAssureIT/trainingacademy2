@@ -55,7 +55,7 @@ const AccordionBlock = ({ inputData }) => {
                                 ?
                                 <div onClick={() => setModalOpen(!isModalOpen)} className={modalBtnCss ? modalBtnCss : "text-white hidden"} type="button">
                                     {modalUrlName}{" "}
-                                        <i className="fa-solid fa-angle-double-right"></i>
+                                        {/* <i className="fa-solid fa-angle-double-right"></i> */}
                                 </div>
                                 :
                                 ""

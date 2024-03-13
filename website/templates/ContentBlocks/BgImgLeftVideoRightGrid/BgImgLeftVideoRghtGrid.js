@@ -76,7 +76,7 @@ const BgImgLeftVideoRghtGrid = (props) => {
                                 ?
                                 <div onClick={() => setModalOpen(!isModalOpen)} className={inputData?.modalBtnCss ? inputData?.modalBtnCss : "text-white hidden"} type="button">
                                     {inputData?.modalUrlName}{" "}
-                                        <i className="fa-solid fa-angle-double-right"></i>
+                                        {/* <i className="fa-solid fa-angle-double-right"></i> */}
                                 </div>
                                 :
                                 ""
