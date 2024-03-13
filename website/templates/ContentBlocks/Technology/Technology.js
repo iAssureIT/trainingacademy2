@@ -124,7 +124,7 @@ const Technology = (props) => {
                                 ?
                                 <div onClick={() => setModalOpen(!isModalOpen)} className={props.inputData?.modalBtnCss ? props.inputData?.modalBtnCss : "text-white hidden"} type="button">
                                     {props.inputData?.modalUrlName}{" "}
-                                        <i className="fa-solid fa-angle-double-right"></i>
+                                        {/* <i className="fa-solid fa-angle-double-right"></i> */}
                                 </div>
                                 :
                                 ""
