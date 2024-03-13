@@ -37,7 +37,7 @@ const Block1 = ({ data }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     return (
-        <div className="">
+        <div className=" s">
             {isModalOpen && <LandingPageStudEnrollModal modalId={"DownloadBrochure"} />}
             <BgImgLeftContentRtImg inputData={content_FirstBlock} />
             <BgImgLeftContentRtImg inputData={content_Block2} />
