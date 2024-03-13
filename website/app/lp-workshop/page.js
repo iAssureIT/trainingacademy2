@@ -11,9 +11,9 @@ const landingPage = () => {
     const content_FirstBlock = {
 		id: "Banner_Block",
 		h1Txt:
-			"<span class='text-2xl lg:text-4xl'>India’s the most Powerful & the most appreciated 3 Hours LIVE Workshop</span><br/><br/><br/><br class='hidden lg:block'/><span class='font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl 2xl:text-3xl'>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY?</span><br/><br/><br/><br class='hidden lg:block'/><span class='text-2xl lg:text-4xl'>Only for IT Industry Aspirants. Don’t miss this workshop if you want to make a great career in IT Industry</span>",
+			"<span class='text-2xl lg:text-4xl'>India’s the most Powerful & the most appreciated 3 Hours LIVE Workshop</span><br/><br/><br/><br class='hidden lg:block'/><span class='font-bold text-3xl lg:text-5xl'>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY?</span><br/><br/><br/><br class='hidden lg:block'/><span class='text-2xl lg:text-4xl'>Only for IT Industry Aspirants. Don’t miss this workshop if you want to make a great career in IT Industry</span>",
 		bgImgCss:
-			"lazyload z-0 object-fit bg-[#6600cc] bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+			"lazyload z-0 object-fit bg-skyBlue bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		h1TxtCss: "mt-10 md:mt-0 3xl:mt-20 text-center",
 		gridCss:
             "grid place-content-center h-full content-center py-10",
@@ -24,7 +24,7 @@ const landingPage = () => {
         id: "landingPageBanner",
         bgImage: "",
         smallBGImage: "",
-        bgImgCss: " bg-blue-100 py-10 h-auto   2xl:py-10 lazyload object-fit bg-cover bg-no-repeat relative  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+        bgImgCss: " bg-offWhite py-10 h-auto   2xl:py-10 lazyload object-fit bg-cover bg-no-repeat relative  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         gridCss: "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2   md:grid-cols-2   lg:py-10 xl:py-0 2xl:py-10 h-auto md:h-full lg:h-full   xl:h-full 2xl:h-full px-2 md:px-10 gap-x-10 gap-y-4",
         gridSubDivCss: "  grid grid-cols-2 gap-3 sm:gap-2 md:gap-6 lg:gap-5 xl:gap-10 my-auto ",
         videoUrl: "/images/videos/WorkShop_video.mp4",
@@ -33,24 +33,24 @@ const landingPage = () => {
         gridBlockTitle2Css: "font-medium",
         cardsArray: [
             {
-                gridBlockTitle1: "Date",
-                gridBlockTitle2: "Sunday",
-                gridBlockTitle3: "17th Mar 2024",
+                gridBlockTitle1: "DATE",
+                gridBlockTitle2: "17th Mar 2024",
+                gridBlockTitle3: "(Sunday)",
             },
             {
-                gridBlockTitle1: "Time",
+                gridBlockTitle1: "TIME",
                 gridBlockTitle2: "",
                 gridBlockTitle3: "4:00PM to 7:00PM",
             },
             {
-                gridBlockTitle1: "Date",
-                gridBlockTitle2: "Sunday",
-                gridBlockTitle3: "17th Mar 2024",
+                gridBlockTitle1: "LIVE",
+                gridBlockTitle2: "",
+                gridBlockTitle3: "3 Hours of Workshop",
             },
             {
-                gridBlockTitle1: "Time",
+                gridBlockTitle1: "LANGUAGE",
                 gridBlockTitle2: "",
-                gridBlockTitle3: "4:00PM to 7:00PM",
+                gridBlockTitle3: "English/Hindi",
             },
         ],
         modalDisplay: "true",
@@ -122,13 +122,13 @@ const landingPage = () => {
     const content_Block2 = {
 		id: "Block2",
 		h1Txt:
-			"<span class='font-bold text-black text-3xl mx-auto'>Who should attend this Workshop?</span><hr class='w-1/5 mx-auto border-blue-400 border'/><br/><br/><ul class='list-disc text-left text-2xl'><li>Engineering Graduates – BE / BTECH / ME / MTECH</li><li>Any Engineering Streams – IT / Comp Sc / Mechanical / Production / Electionics / Electrical / Civil / Chemical etc</li><li>Science Graduates – BSC / BCA / MSC / MCA </li><li>Anyone who wants to enter into IT Industry from other industries</li></ul><br/>",
+			"<span class='font-bold text-3xl mx-auto'>Who should attend this Workshop?</span><hr class='w-1/5 mx-auto border-blue-400 border'/><br/><br/><ul class='list-disc text-left text-2xl'><li>Engineering Graduates – BE / BTECH / ME / MTECH</li><li>Any Engineering Streams – IT / Comp Sc / Mechanical / Production / Electionics / Electrical / Civil / Chemical etc</li><li>Science Graduates – BSC / BCA / MSC / MCA </li><li>Anyone who wants to enter into IT Industry from other industries</li></ul><br/>",
 		bgImgCss:
-			"lazyload z-0 py-5 lg:py-10 object-fit bg-[#ffcc99] bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+			"lazyload z-0 py-5 lg:py-10 object-fit text-white bg-skyBlue bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		h1TxtCss: "mt-10 md:mt-0 3xl:mt-20",
 		gridCss:
-            "grids h-full py-10",
-        gridSubDivCss:"text-black my-auto text-center xs:text-left px-10 py-5",
+            "grid",
+        gridSubDivCss:"mx-2 lg:mx-14 my-auto text-center xs:text-left px-10 py-5",
 		// modalId: "UnlockPModal",
 		secureModalDisplay: "true",
 		secureModalUrlName: "Secure Your Seat Now",
@@ -186,24 +186,24 @@ const landingPage = () => {
 
     
     }
-    const content_CourseFees = {
-        sectionCss: "md:mt-5 lg:mt-20",
-        blockTitle: "<span class='font-extrabold uppercase'>WHAT YOU WILL LEARN?</span>",
+    const content_Learn = {
+        sectionCss: "bg-skyBlue",
+        blockTitle: "<span class='font-extrabold uppercase text-white'>WHAT YOU WILL LEARN?</span>",
         // blockSubTitle: "<span class='font-extrabold'>Unlock Your FullStack Potential: Affordable Fees, Boundless Opportunities</span>",
         // classForblockSubTitle: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-bold text-darkGray mb-10 bodyTxt",
         // classForblockDescription: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt my-5",
         // blockDescription: "<span>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</span>" +
         // 	"<br /><span class='font-bold'>Course Fees Breakdown</span>",
-        classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-10 md:py-10  leading-tight",
-        classForNoOfCards: "px-10 pb-0 md:pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 mx-auto",
+        classForblockTitle: "w-full text-center BlockTitle xl:py-10 py-10 md:py-10  leading-tight",
+        classForNoOfCards: "px-10 pb-0 md:pb-10 lg:px-20 2xl:px-52  max-w-8xl justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 mx-auto",
         classForCards: "border-dashed border border-black bg-white p-4 mb-7 rounded-2xl",
         classForCardTitle: "text-center font-bold text-lg md:text-xl lg:text-2xl p-3",
         classForCardTitle_2: "text-md md:text-lg lg:text-xl m-5",
         cssCardTitle_2: "text-md md:text-lg lg:text-xl m-5 text-center",
         classForCardImage: "w-full rounded-full pb-5 object-cover",
         bgImgCss: "relative bg-cover p-2 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload rounded-t-lg leading-tight",
-        cardTitle_2: "<span class='w-full text-center BlockTitle xl:py-5 py-2 md:py-10  leading-tight font-extrabold'>Statutory Warning</span>" +
-            "<br /> <p class='lg:flex font-semibold text-xl BlockTitle text-center p-4'>This workshop will literally change your whole life!</p>",
+        cardTitle_2: "<span class='w-full text-center text-white BlockTitle xl:py-5 py-2 md:py-10  leading-tight font-extrabold'>Statutory Warning</span>" +
+            "<br /> <p class='lg:flex font-semibold text-white text-xl BlockTitle text-center p-4'>This workshop will literally change your whole life!</p>",
 
         cardsArray: [
             {
@@ -238,20 +238,20 @@ const landingPage = () => {
         ],
         modalDisplay: "true",
         modalUrlName: "Secure Your Seat Now",
-        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    md:mt-10 lg:mt-3 md:mb-10 lg:mb-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    md:mt-10 lg:mt-3 mb-10 lg:mb-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
 
    
     }
     const content_Testimonials = {
 		id: "testimonials",
-		sectionCss: "md:my-5 lg:my-0",
+		sectionCss: "bg-offWhite",
 		blockTitle:
 			" <span  class='uppercase font-extrabold leading-relaxed' >What our Students Say?</span>",
 		classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl px-10 py-10 md:py-14",
 		classForNoOfCards:
 			"px-10 lg:px-32 2xl:px-48 max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-10 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10",
 		classForCards:
-			" p-3 mb-10 rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
+			"bg-white p-3 mb-10 rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
 		classForCardTitle:
 			"text-center font-extrabold text-md md:text-md lg:text-lg p-3",
 		classForCardTitle_2:
@@ -339,7 +339,7 @@ const landingPage = () => {
         <main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
             <BgImgLeftContentRtImg inputData={content_FirstBlock} />
             <BgImgLeftVideoRghtGrid inputData={content_VideoWithGrid} />
-            <Technology inputData={content_CourseFees} />
+            <Technology inputData={content_Learn} />
             <CenterContentRepeatableBlocks inputData={content_Testimonials} />
             <BgImgLeftContentRtImg inputData={content_Block2} />
             <LeftImgRightRepeatableBlk

@@ -59,7 +59,7 @@ const BgImgLeftVideoRghtGrid = (props) => {
                         {
                             inputData?.cardsArray.map((data, index) => {
                                 return (
-                                    <div key={index} className="border-dashed border-2 bg-white text-center inline-block align-middle p-2 md:p-4 lg:p-4 xl:p-8 2xl:p-10 xxl:!p-20 rounded-lg">
+                                    <div key={index} className="border-dashed border-2 border-black bg-white text-center inline-block align-middle p-2 md:p-4 lg:p-4 xl:p-8 2xl:p-10 xxl:!p-20 rounded-lg">
                                         <div className={inputData?.gridBlockTitle1Css}>{data?.gridBlockTitle1}</div>
                                         <div className={inputData?.gridBlockTitle2Css}>{data?.gridBlockTitle2 ? data?.gridBlockTitle2 : ""}</div>
                                         <div className={inputData?.gridBlockTitle2Css}>{data?.gridBlockTitle3}</div>

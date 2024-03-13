@@ -211,23 +211,23 @@ export default function RootLayout({ children }) {
             children
           :
        
-        <div>
-           {/* <MenuBar2 inputData={content_Menubar} /> */}
-        <MenuBar inputData={content_Menubar} />
-        
-        {children}
+            <div>
+              {/* <MenuBar2 inputData={content_Menubar} /> */}
+                <MenuBar inputData={content_Menubar} />
+                
+                {children}
 
-        <Footer inputData={content_Footer} />
-        <Footer2 inputData={content_Footer2} />
+                <Footer inputData={content_Footer} />
+                <Footer2 inputData={content_Footer2} />
 
-        <div
-          onClick={scrollToTop}
-          className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
-        >
-          <i className="text-white fa-solid fa-arrow-up"></i>
-        </div>
-        </div>
-}
+                <div
+                  onClick={scrollToTop}
+                  className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
+                >
+                  <i className="text-white fa-solid fa-arrow-up"></i>
+                </div>
+            </div>
+      }
       </body>
     </html>
   );
