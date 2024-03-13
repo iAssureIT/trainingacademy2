@@ -11,12 +11,12 @@ const landingPage = () => {
     const content_FirstBlock = {
 		id: "Banner_Block",
 		h1Txt:
-			"<span class='text-2xl lg:text-4xl'>India’s the most Powerful & the most appreciated 3 Hours LIVE Workshop</span><br/><br/><br/><span class='font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl 2xl:text-3xl'>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY?</span><br/><br/><br/><span class='text-2xl lg:text-4xl'>Only for IT Industry Aspirants. Don’t miss this workshop if you want to make a great career in IT Industry</span>",
+			"<span class='text-2xl lg:text-4xl'>India’s the most Powerful & the most appreciated 3 Hours LIVE Workshop</span><br/><br/><br/><br class='hidden lg:block'/><span class='font-bold text-lg md:text-xl lg:text-3xl xl:text-5xl 2xl:text-3xl'>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY?</span><br/><br/><br/><br class='hidden lg:block'/><span class='text-2xl lg:text-4xl'>Only for IT Industry Aspirants. Don’t miss this workshop if you want to make a great career in IT Industry</span>",
 		bgImgCss:
 			"lazyload z-0 object-fit bg-[#6600cc] bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		h1TxtCss: "mt-10 md:mt-0 3xl:mt-20 text-center",
 		gridCss:
-            "grid place-content-center h-full content-center",
+            "grid place-content-center h-full content-center py-10",
         gridSubDivCss:"text-white my-auto text-center xs:text-left px-10 py-5",
 		
     };
@@ -127,12 +127,12 @@ const landingPage = () => {
 			"lazyload z-0 py-5 lg:py-10 object-fit bg-[#ffcc99] bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		h1TxtCss: "mt-10 md:mt-0 3xl:mt-20",
 		gridCss:
-            "grids h-full",
+            "grids h-full py-10",
         gridSubDivCss:"text-black my-auto text-center xs:text-left px-10 py-5",
 		// modalId: "UnlockPModal",
 		secureModalDisplay: "true",
 		secureModalUrlName: "Secure Your Seat Now",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-5 md:mt-10 lg:mt-10 btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-5 lg:mt-10 btn bg-red-600 hover:bg-blue-500  cursor-pointer",
 
     };
 
