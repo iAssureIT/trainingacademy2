@@ -24,7 +24,7 @@ const landingPage = () => {
         id: "landingPageBanner",
         bgImage: "",
         smallBGImage: "",
-        bgImgCss: " bg-blue-100 py-20 h-auto   2xl:py-10 lazyload object-fit bg-cover bg-no-repeat relative  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+        bgImgCss: " bg-blue-100 py-10 h-auto   2xl:py-10 lazyload object-fit bg-cover bg-no-repeat relative  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         gridCss: "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2   md:grid-cols-2   lg:py-10 xl:py-0 2xl:py-10 h-auto md:h-full lg:h-full   xl:h-full 2xl:h-full px-2 md:px-10 gap-x-10 gap-y-4",
         gridSubDivCss: "  grid grid-cols-2 gap-3 sm:gap-2 md:gap-6 lg:gap-5 xl:gap-10 my-auto ",
         videoUrl: "/images/videos/WorkShop_video.mp4",
@@ -132,7 +132,7 @@ const landingPage = () => {
 		// modalId: "UnlockPModal",
 		secureModalDisplay: "true",
 		secureModalUrlName: "Secure Your Seat Now",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-10 lg:mt-10 btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-5 md:mt-10 lg:mt-10 btn bg-red-600 hover:bg-blue-500  cursor-pointer",
 
     };
 
@@ -238,7 +238,7 @@ const landingPage = () => {
         ],
         modalDisplay: "true",
         modalUrlName: "Secure Your Seat Now",
-        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    md:mt-10 lg:mt-3 mb-10 lg:mb-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    md:mt-10 lg:mt-3 md:mb-10 lg:mb-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
 
    
     }
@@ -247,7 +247,7 @@ const landingPage = () => {
 		sectionCss: "md:my-5 lg:my-0",
 		blockTitle:
 			" <span  class='uppercase font-extrabold leading-relaxed' >What our Students Say?</span>",
-		classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl px-10 py-14",
+		classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl px-10 py-10 md:py-14",
 		classForNoOfCards:
 			"px-10 lg:px-32 2xl:px-48 max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-10 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10",
 		classForCards:
