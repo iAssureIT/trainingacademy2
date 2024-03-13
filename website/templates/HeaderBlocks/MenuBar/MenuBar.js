@@ -111,14 +111,18 @@ function MenuBar(props) {
          menuItemElements.forEach((menuItem) => {
             menuItem.classList.toggle("md:!text-black", shouldAddClass);
          });
-         if (shouldAddClass) {
-            // Change to the image source you want when scrolling down
-            imageElement.src = "/images/specific/trainingAcademy/Logo-2.png";
-            imageElement2.src = "/images/specific/trainingAcademy/Logo-2.png";
+         if(pathname === "/lp-workshop" || pathname === "/lp-thank-you-page"){
+            null
          } else {
-            // Change to the image source you want when scrolling up
-            imageElement.src = "/images/specific/trainingAcademy/White-Logo.png";
-            imageElement2.src = "/images/specific/trainingAcademy/White-Logo.png";
+               if (shouldAddClass) {
+                  // Change to the image source you want when scrolling down
+                  imageElement.src = "/images/specific/trainingAcademy/Logo-2.png";
+                  imageElement2.src = "/images/specific/trainingAcademy/Logo-2.png";
+               } else {
+                  // Change to the image source you want when scrolling up
+                  imageElement.src = "/images/specific/trainingAcademy/White-Logo.png";
+                  imageElement2.src = "/images/specific/trainingAcademy/White-Logo.png";
+               }
          }
       });
    }
