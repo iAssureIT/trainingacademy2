@@ -61,7 +61,7 @@ const landingPage = () => {
     
     const content_Learn = {
         sectionCss: "bg-skyBlue" ,
-        blockTitle: "<span class='font-extrabold uppercase'>WHAT YOU WILL LEARN?</span>",
+        blockTitle: "<span class='font-extrabold text-white uppercase'>WHAT YOU WILL LEARN?</span>",
         // blockSubTitle: "<span class='font-extrabold'>Unlock Your FullStack Potential: Affordable Fees, Boundless Opportunities</span>",
         // classForblockSubTitle: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-bold text-darkGray mb-10 bodyTxt",
         // classForblockDescription: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt my-5",
