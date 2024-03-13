@@ -188,8 +188,11 @@ const CenterContentRepeatableBlocks = (props) => {
                                     {
                                         card?.cardTitle_2
                                             ?
-                                            <span className='flex justify-center'>
-                                                <h3 className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md text-primary dark:text-primary-400"}>{card.cardTitle_2}</h3>
+                                            <span className='flex justify-left px-2 md:px-10 font-semibold'>
+                                                <h3 className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md text-primary dark:text-primary-400"}
+                                                dangerouslySetInnerHTML={{
+                                                    __html: card.cardTitle_2,
+                                                }}></h3>
                                             </span>
                                             : null
                                     }
