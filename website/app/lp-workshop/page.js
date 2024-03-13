@@ -266,71 +266,88 @@ const landingPage = () => {
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		testimonial: true,
         profileImageCss:"flex my-2 md:px-5",
+        classForCardTitle_2:"text-left  ",
 		cardsArray: [
 			{
 				// profileImage: "/images/specific/testimonials/Akshay-Madanepatil.webp",
 				// designation: "Student",
 				// altImage: "Akshay_Madanepatil",
-				name: "Pooja Rawat",
-				classForContent: " mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				content: `<p>The roadmap to high-paying IT roles guided my journey from a Junior Developer to a Cloud Solutions Architect, ensuring a fulfilling career with competitive compensation. </p>`,
+				cardTitle_2: "Priya Sharma, <br/><span class='text-sm text-lightGray'>Information Technology Engineering</span>",
+				classForContent: " mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Insightful</b>*</p><p>The workshop provided valuable insights into the current trends of the IT industry. It helped me understand which technologies to focus on for a successful career. Highly recommend it! </p>`,
 			},
 			{
 				// designation: "Student",
 				// profileImage: "/images/specific/testimonials/Siddhant-Kakade.webp",
 				// altImage: "Siddhant_Kakade",
-				classForContent: " mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				name: "Anjali Joshi",
-				content: `<p>Learning React.js and Node.js was a career-changing move, aligning my skills with industry demand and propelling me into the forefront of IT opportunities.</p>`,},
+				classForContent: " mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Rahul Gupta, <br/><span class='text-sm text-lightGray'>Information Technology Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Informative</b>*</p> <p>Attending this workshop was a game-changer for me. I learned about the most sought-after frontend frameworks, backend programming languages, and databases in the IT industry. It gave me a clear direction for my career path.</p>`,},
 			{
 				// designation: "Student",
 				// profileImage: "/images/specific/testimonials/Rutika-Bankar.webp",
 				// altImage: "Rutika_Bankar",
-				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				name: "Kalyani Mhatre",
-				content: `<p>Avoiding common resume mistakes and crafting an impactful document transformed my job search, leading to increased callbacks and securing my desired positions.</p>`
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Sneha Patel,  <br/><span class='text-sm text-lightGray'>Electronics and Communication Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Eye-opening</b>*</p> <p>The roadmap to high salary jobs session was eye-opening. It shed light on the positions that offer the highest salaries and provided a clear path from entry-level to senior positions. A must-attend workshop for all aspiring IT professionals!</p>`
 						},
 			{
 				// designation: "Student",
 				// profileImage: "/images/specific/testimonials/Ashwini-Kori.webp",
 				// altImage: "Ashwini-Kori",
-				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				name: "Advait Mane",
-				content: `<p>Understanding and avoiding common resume pitfalls highlighted in the content was a game-changer, turning rejection into acceptance and opening doors to my desired roles.</p>` 
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Ankit Verma,  <br/><span class='text-sm text-lightGray'>Mechanical Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Transformative</b>*</p> <p>This workshop completely transformed my understanding of resume writing. I learned about common mistakes to avoid and how to format my resume effectively. Thanks to this workshop, I feel confident about presenting my achievements and skills to potential employers.</p>` 
 					
 			},
 			{
 				// designation: "Student",
 				// profileImage: "/images/specific/testimonials/Shubham-Ankushe.webp",
 				// altImage: "Shubham-Ankushe",
-				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				name: "Rahul Kumar",
-				content: `<p>Adopting a professional resume format not only enhanced readability but also played a crucial role in making a strong first impression during job applications and interviews.</p>` ,
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Neha Singh,  <br/><span class='text-sm text-lightGray'> Electrical Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Empowering</b>*</p> <p>I can't thank the organizers enough for this insightful workshop. It empowered me with the knowledge and strategies needed to crack interviews in the first attempt. From interview etiquettes to showcasing depth of knowledge, this workshop covered it all!</p>` ,
 			},
 			{
 				// designation: "Student",
 				// profileImage: "/images/specific/testimonials/Ankit-Kumar-Rai.webp",
 				// altImage: "Ankit-Kumar-Rai",
-				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				name: "Amara Das",
-				content: `<p>Highlighting measurable achievements and aligning my skills with job requirements truly made my resume stand out, setting the stage for successful job applications. </p>` 
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Karan Mehta,  <br/><span class='text-sm text-lightGray'>Computer Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Invaluable</b>*</p> <p>The 'Secrets of Impressive Resume' session was invaluable. I learned about the key elements that make a resume stand out and how to avoid common pitfalls. I'm confident that my resume now truly reflects my skills and experiences.</p>` 
 					
 			},
 			{
 				// designation: "Student",
 				// profileImage: "/images/specific/testimonials/Abhishek-Varma.webp",
 				// altImage: "Abhishek_Varma",
-				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				name: "Nithya Sundaram",
-				content: `<p>Mastering interview etiquettes and manners provided the essential edge, making me memorable to employers and ensuring a positive and successful interview experience.</p>` 
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Pooja Jain,  <br/><span class='text-sm text-lightGray'>Civil Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Enlightening</b>*</p> <p>I found the session on interview etiquette extremely enlightening. It taught me the importance of professionalism and how to conduct myself during interviews. This workshop equipped me with the tools to make a lasting impression on potential employers.</p>` 
 					},
 			{
 				// designation: "Student",
 				// profileImage: "/images/specific/testimonials/Mohit-Panjwani.webp",
 				// altImage: "Mohit_Panjwani",
-				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
-				name: "Janani Rajagopal",
-				content: `<p>Following the recommended technologies highlighted in the content significantly elevated my market value. Embracing React.js for frontend and Node.js for backend propelled me into high-demand IT roles, ensuring a successful and fulfilling career.</p>` 
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Akash Mishra,  <br/><span class='text-sm text-lightGray'>Electronics and Instrumentation Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Empowering</b>*</p> <p>Attending this workshop was empowering. I gained valuable insights into the depth and breadth of knowledge required to excel in interviews. The 'Brahmastra' shared in the session was a game-changer!</p>` 
+			},
+            {
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Mohit-Panjwani.webp",
+				// altImage: "Mohit_Panjwani",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: "Ravi Kumar,  <br/><span class='text-sm text-lightGray'>Computer Science Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Game-changer</b>*</p> <p>This workshop was a game-changer for me. It provided practical tips and strategies for cracking interviews in the first attempt. I feel more confident and prepared to tackle any interview now.</p>` 
+			},
+            {
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Mohit-Panjwani.webp",
+				// altImage: "Mohit_Panjwani",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-lg lg:text-lg p-3 font-[500]",
+				cardTitle_2: " Ananya Gupta,  <br/><span class='text-sm text-lightGray'>Information Technology Engineering</span>",
+				content: `<p>*⭐⭐⭐⭐⭐ <b>Essential</b>*</p> <p>The workshop covered essential topics that every IT professional should be aware of. It was informative, engaging, and packed with useful tips and advice. Highly recommended!</p>` 
 			},
 			
 		],
