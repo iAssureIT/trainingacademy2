@@ -5,6 +5,7 @@ import LeftImgRightRepeatableBlk from "@/templates/RepeatableBlocks/LeftImgRight
 import AccordionBlock from '@/templates/Accordion/AccordionBlock.js';
 import Technology from "@/templates/ContentBlocks/Technology/Technology";
 import BgImgLeftContentRtImg from "@/templates/ContentBlocks/BgImgLeftContent/BgImgLeftContentRtImg";
+import CenterContentRepeatableBlocks from "@/templates/RepeatableBlocks/CenterContentRepeatableBlocks/CenterContentRepeatableBlocks";
 
 const landingPage = () => {
     const content_FirstBlock = {
@@ -26,7 +27,7 @@ const landingPage = () => {
         bgImgCss: " bg-blue-100 py-20 h-auto   2xl:py-10 lazyload object-fit bg-cover bg-no-repeat relative  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         gridCss: "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2   md:grid-cols-2   lg:py-10 xl:py-0 2xl:py-10 h-auto md:h-full lg:h-full   xl:h-full 2xl:h-full px-2 md:px-10 gap-x-10 gap-y-4",
         gridSubDivCss: "  grid grid-cols-2 gap-3 sm:gap-2 md:gap-6 lg:gap-5 xl:gap-10 my-auto ",
-        videoUrl: "/images/videos/Scalable-application.mp4",
+        videoUrl: "/images/videos/WorkShop_video.mp4",
         imgUrl: "/images/specific/Home/HomeVideoImg.webp",
         gridBlockTitle1Css: "font-extrabold text-lg ",
         gridBlockTitle2Css: "font-medium",
@@ -67,7 +68,7 @@ const landingPage = () => {
         blockSubTitle:
             "<span class='px-2 md:px-10 '> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</span> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  BlockTitle float-left leading-tight'>Ashish Naik’s Career <br/> Highlights:</span>",
         classForblockSubTitle:
-            "text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0",
+            "text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0 px-3 md:px-auto",
         bgImage:
             "/images/specific/trainingAcademy/iAssureIT-training-14.webp",
         bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto 2xl:-mt-32  xxl:!w-3/4 h-full ",
@@ -178,7 +179,12 @@ const landingPage = () => {
                 content: "The 'Brahmastra' signifies showcasing adaptability and a continuous learning mindset, illustrating readiness to evolve with industry trends and excel in the chosen role."
             }
         ],
-        titleDescription_2: "Have more questions? Feel free to reach out to us! We're here to help you embark on your journey to becoming a successful Fullstack Developer."
+        titleDescription_2: "Have more questions? Feel free to reach out to us! We're here to help you embark on your journey to becoming a successful Fullstack Developer.",
+        modalDisplay: "true",
+        modalUrlName: "Secure Your Seat Now",
+        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    mt-10 lg:mt-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+
+    
     }
     const content_CourseFees = {
         sectionCss: "md:mt-5 lg:mt-20",
@@ -189,14 +195,14 @@ const landingPage = () => {
         // blockDescription: "<span>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</span>" +
         // 	"<br /><span class='font-bold'>Course Fees Breakdown</span>",
         classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-10 md:py-10  leading-tight",
-        classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 mx-auto",
+        classForNoOfCards: "px-10 pb-0 md:pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10 mx-auto",
         classForCards: "border-dashed border border-black bg-white p-4 mb-7 rounded-2xl",
         classForCardTitle: "text-center font-bold text-lg md:text-xl lg:text-2xl p-3",
         classForCardTitle_2: "text-md md:text-lg lg:text-xl m-5",
         cssCardTitle_2: "text-md md:text-lg lg:text-xl m-5 text-center",
         classForCardImage: "w-full rounded-full pb-5 object-cover",
         bgImgCss: "relative bg-cover p-2 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload rounded-t-lg leading-tight",
-        cardTitle_2: "<span class='w-full text-center BlockTitle xl:py-5 py-10 md:py-10  leading-tight font-extrabold'>Statutory Warning</span>" +
+        cardTitle_2: "<span class='w-full text-center BlockTitle xl:py-5 py-2 md:py-10  leading-tight font-extrabold'>Statutory Warning</span>" +
             "<br /> <p class='lg:flex font-semibold text-xl BlockTitle text-center p-4'>This workshop will literally change your whole life!</p>",
 
         cardsArray: [
@@ -232,15 +238,108 @@ const landingPage = () => {
         ],
         modalDisplay: "true",
         modalUrlName: "Secure Your Seat Now",
-        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    mt-10 lg:mt-3 mb-10 lg:mb-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    md:mt-10 lg:mt-3 mb-10 lg:mb-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
 
    
     }
+    const content_Testimonials = {
+		id: "testimonials",
+		sectionCss: "md:my-5 lg:my-0",
+		blockTitle:
+			" <span  class='uppercase font-extrabold leading-relaxed' >What our Students Say?</span>",
+		classForblockTitle: "w-full text-center text-3xl md:text-3xl xl:text-4xl px-10 py-14",
+		classForNoOfCards:
+			"px-10 lg:px-32 2xl:px-48 max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-10 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-10",
+		classForCards:
+			" p-3 mb-10 rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
+		classForCardTitle:
+			"text-center font-extrabold text-md md:text-md lg:text-lg p-3",
+		classForCardTitle_2:
+			"font-bold text-md text-primary  p-5",
+		imgDivCss: "py-2",
+		classForCardImage: "lazyload",
+		classForblockContent:
+			"text-lg md:text-xl text-center font-[500] px-2 md:px-12 lg:px-32 xl:px-64  2xl:w-2/5 2xl:px-2  mx-auto ",
+		blockContent:
+			"",
+		bgImgCss:
+			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+		testimonial: true,
+		cardsArray: [
+			{
+				// profileImage: "/images/specific/testimonials/Akshay-Madanepatil.webp",
+				// designation: "Student",
+				// altImage: "Akshay_Madanepatil",
+				name: "Pooja Rawat",
+				classForContent: " mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				content: `<p>The roadmap to high-paying IT roles guided my journey from a Junior Developer to a Cloud Solutions Architect, ensuring a fulfilling career with competitive compensation. </p>`,
+			},
+			{
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Siddhant-Kakade.webp",
+				// altImage: "Siddhant_Kakade",
+				classForContent: " mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				name: "Anjali Joshi",
+				content: `<p>Learning React.js and Node.js was a career-changing move, aligning my skills with industry demand and propelling me into the forefront of IT opportunities.</p>`,},
+			{
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Rutika-Bankar.webp",
+				// altImage: "Rutika_Bankar",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				name: "Kalyani Mhatre",
+				content: `<p>Avoiding common resume mistakes and crafting an impactful document transformed my job search, leading to increased callbacks and securing my desired positions.</p>`
+						},
+			{
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Ashwini-Kori.webp",
+				// altImage: "Ashwini-Kori",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				name: "Advait Mane",
+				content: `<p>Understanding and avoiding common resume pitfalls highlighted in the content was a game-changer, turning rejection into acceptance and opening doors to my desired roles.</p>` 
+					
+			},
+			{
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Shubham-Ankushe.webp",
+				// altImage: "Shubham-Ankushe",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				name: "Rahul Kumar",
+				content: `<p>Adopting a professional resume format not only enhanced readability but also played a crucial role in making a strong first impression during job applications and interviews.</p>` ,
+			},
+			{
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Ankit-Kumar-Rai.webp",
+				// altImage: "Ankit-Kumar-Rai",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				name: "Amara Das",
+				content: `<p>Highlighting measurable achievements and aligning my skills with job requirements truly made my resume stand out, setting the stage for successful job applications. </p>` 
+					
+			},
+			{
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Abhishek-Varma.webp",
+				// altImage: "Abhishek_Varma",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				name: "Nithya Sundaram",
+				content: `<p>Mastering interview etiquettes and manners provided the essential edge, making me memorable to employers and ensuring a positive and successful interview experience.</p>` 
+					},
+			{
+				// designation: "Student",
+				// profileImage: "/images/specific/testimonials/Mohit-Panjwani.webp",
+				// altImage: "Mohit_Panjwani",
+				classForContent: "mb-4 breakWord h-auto md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				name: "Janani Rajagopal",
+				content: `<p>Following the recommended technologies highlighted in the content significantly elevated my market value. Embracing React.js for frontend and Node.js for backend propelled me into high-demand IT roles, ensuring a successful and fulfilling career.</p>` 
+			},
+			
+		],
+	};
     return (
         <main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
             <BgImgLeftContentRtImg inputData={content_FirstBlock} />
             <BgImgLeftVideoRghtGrid inputData={content_VideoWithGrid} />
             <Technology inputData={content_CourseFees} />
+            <CenterContentRepeatableBlocks inputData={content_Testimonials} />
             <BgImgLeftContentRtImg inputData={content_Block2} />
             <LeftImgRightRepeatableBlk
                 inputData={content_About}

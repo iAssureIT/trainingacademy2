@@ -1,6 +1,8 @@
 "use client";
-import React, {$,useEffect } from "react";
+import React, { $, useEffect } from "react";
 import axios from "axios";
+import { usePathname } from "next/navigation";
+
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Footer from "@/templates/FooterBlocks/Footer/Footer.js";
 import Footer2 from "@/templates/FooterBlocks/Footer/Footer2";
@@ -14,10 +16,12 @@ import Navbar from "@/templates/HeaderBlocks/MenuBar/MenuTest";
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
-const scrollToTop = () => {window.scrollTo({
-  top: 0,
-  behavior: 'smooth'
-});};
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
 
 var currentYear = new Date().getFullYear();
 
@@ -28,7 +32,7 @@ const metadata = {
 };
 const menuItems = [
   { label: "HOME", link: "/" },
-  { label: "ABOUT", link: "#about" },  
+  { label: "ABOUT", link: "#about" },
   { label: "COURSES", link: "#course1" },
   { label: "TESTIMONIALS", link: "#testimonials" },
   { label: "CONTACT", link: "#footer" },
@@ -36,7 +40,7 @@ const menuItems = [
 
 const menuItemsAfterLogin = [
   { label: "HOME", link: "/" },
-  { label: "ABOUT", link: "#about" },  
+  { label: "ABOUT", link: "#about" },
   { label: "COURSES", link: "#course1" },
   { label: "TESTIMONIALS", link: "#testimonials" },
   { label: "CONTACT", link: "#footer" },
@@ -49,7 +53,7 @@ const content_Menubar = {
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-1 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/4 xl:w-auto",
-  classForLogo: "h-full w-full md:w-full ", 
+  classForLogo: "h-full w-full md:w-full ",
   showLoginbutton: true,
   customButton: false,
   showSubMenu: true,
@@ -76,22 +80,22 @@ const footerMenuItems = [
   { label: "Testimonials", link: "#testimonials" },
   { label: "Contact Us", link: "#footer" },
 ];
-const siteMapItems = [  
+const siteMapItems = [
   {
     label: "Web Technologies Mastery",
-    link: "#course1",   
+    link: "#course1",
   },
   {
     label: "ReactJS Framework and Beyond",
-    link: "#course2",    
+    link: "#course2",
   },
   {
     label: "NodeJS and Database Development",
-    link: "#course3",    
+    link: "#course3",
   },
   {
     label: "Advanced Skills and Beyond",
-    link: "#course4",   
+    link: "#course4",
   },
 ];
 
@@ -105,7 +109,7 @@ const content_Footer = {
   smallLogo: "/images/specific/trainingAcademy/White-Logo.png",
   logoCss: "w-1/2 md:w-1/3 xl:w-2/3  lg:mx-auto   ",
   // icon: "/images/specific/Footer/Footer_Icon.webp",
-  titleCss:"text-orangeColor",
+  titleCss: "text-orangeColor",
   titleCss: "mb-6 text-xl xxl:text-xl font-extrabold  underline  text-light",
   title1: "MENU",
   title2: " COURSES",
@@ -152,11 +156,12 @@ const content_Footer2 = {
     "relative block shadow-lg  bg-no-repeat  max-w-full   bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] bg-[length:100%_100%] md:bg-[length:100%_100%]",
   bgImage: "/images/specific/Footer/Footer-2.webp",
   smallBGImage: "/images/specific/Footer/Footer-2.webp",
-  copyrightText:'<span class="text-light font-normal">Copyright © ' + currentYear + ', <span class="text-orangeColor hover:text-ftLink "><a href="/" target="_blank" >iAspireIT</a></span> All Rights Reserved</span>',
+  copyrightText: '<span class="text-light font-normal">Copyright © ' + currentYear + ', <span class="text-orangeColor hover:text-ftLink "><a href="/" target="_blank" >iAspireIT</a></span> All Rights Reserved</span>',
   footerText:
     '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -165,14 +170,14 @@ export default function RootLayout({ children }) {
     gtag("js", new Date());
     gtag("config", process.env.REACT_APP_GOOGLE_ANALYTIC_KEY);
     gtag('config', 'AW-11480106532');
-    gtag('event', 'conversion', {'send_to': 'AW-11480106532/hWDtCOXd_4oZEKSMkuIq'});
+    gtag('event', 'conversion', { 'send_to': 'AW-11480106532/hWDtCOXd_4oZEKSMkuIq' });
   }, []);
 
   return (
-    <html lang="en" className='scroll-smooth'  suppressHydrationWarning={true}>
+    <html lang="en" className='scroll-smooth' suppressHydrationWarning={true}>
       <head>
-        <title>{metadata.title}</title>        
-        <link rel="icon" href="/favicon.ico" sizes="any"></link>        
+        <title>{metadata.title}</title>
+        <link rel="icon" href="/favicon.ico" sizes="any"></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,500;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
           rel="stylesheet"
@@ -196,15 +201,20 @@ export default function RootLayout({ children }) {
         ></script>
         {/* <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> */}
         <script defer src="https://cdn.tailwindcss.com" async ></script>
-          
+
         {/* <!-- Google tag (gtag.js) --> */}
-        <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>        
-       </head>
+        <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>
+      </head>
       <body className={" bg-white"}>
-        
-        {/* <MenuBar2 inputData={content_Menubar} /> */}
+      { 
+          pathname === "/lp-workshop" ?
+            children
+          :
+       
+        <div>
+           {/* <MenuBar2 inputData={content_Menubar} /> */}
         <MenuBar inputData={content_Menubar} />
-{/* <Navbar/> */}
+        
         {children}
 
         <Footer inputData={content_Footer} />
@@ -216,6 +226,8 @@ export default function RootLayout({ children }) {
         >
           <i className="text-white fa-solid fa-arrow-up"></i>
         </div>
+        </div>
+}
       </body>
     </html>
   );

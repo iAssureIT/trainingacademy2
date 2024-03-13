@@ -5,11 +5,18 @@
   Reviewed By:  
   Review Date: 
 ==========================================================*/
+"use client";
+import React, { useState } from "react";
 import Accordion from "@/templates/Accordion/accordion.js";
+import LPStudEnrollModal from '@/components/StudentEnrollment/LandingPageStudEnrollModal';
+
 const AccordionBlock = ({ inputData }) => {
-  const { dash, pageTitle, pageTitleCss, accordionData, titleDescriptionCss, titleDescription, titleDescription_2, titleDescription_2Css } = inputData;
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const { dash, pageTitle, pageTitleCss, accordionData, titleDescriptionCss, titleDescription, titleDescription_2, titleDescription_2Css, modalUrlName, modalDisplay,modalBtnCss} = inputData;
   return (
     <div className="max-w-5xl px-10 mx-auto mb-10 lg:px-32 xl:px-32 mt-20">
+        {isModalOpen && <LPStudEnrollModal modalId="stud_enroll_modal"/>}
       {dash && (
         <div className="w-full mb-4">
           <ul className="place-content-center flex flex-wrap">
@@ -43,6 +50,16 @@ const AccordionBlock = ({ inputData }) => {
             dangerouslySetInnerHTML={{ __html: titleDescription_2 }} ></div>
         )
       }
+       {
+                      modalDisplay
+                                ?
+                                <div onClick={() => setModalOpen(!isModalOpen)} className={modalBtnCss ? modalBtnCss : "text-white hidden"} type="button">
+                                    {modalUrlName}{" "}
+                                        <i className="fa-solid fa-angle-double-right"></i>
+                                </div>
+                                :
+                                ""
+                        }
     </div>
   );
 };

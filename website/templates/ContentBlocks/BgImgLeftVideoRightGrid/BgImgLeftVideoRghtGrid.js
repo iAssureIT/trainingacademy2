@@ -49,7 +49,7 @@ const BgImgLeftVideoRghtGrid = (props) => {
                     {inputData?.videoUrl &&
                         <div className={inputData?.videoDivCss || "group relative"}>
                             <div className=''>
-                                <video id={"vid"} className={inputData?.videoClass || " rounded-xl"} loop autoPlay height="600" controls muted controlsList="nodownload">
+                                <video id={"vid"} className={inputData?.videoClass || " rounded-xl"} loop autoPlay height="600" controls muted controlsList="nodownload"    >
                                     <source src={inputData.videoUrl} type="video/mp4" />
                                 </video>
                             </div>
@@ -57,9 +57,9 @@ const BgImgLeftVideoRghtGrid = (props) => {
                     }
                     <div className={inputData?.gridSubDivCss || "text-white xs:pl-2 sm:pl-10 lg:pl-20 xl:pl-24 xxl:pl-40 my-auto text-center xs:text-left py-10 sm:py-0"}>
                         {
-                            inputData?.cardsArray.map((data) => {
+                            inputData?.cardsArray.map((data, index) => {
                                 return (
-                                    <div className="border-dashed border-2 bg-white text-center inline-block align-middle p-2 md:p-4 lg:p-4 xl:p-8 2xl:p-10 xxl:!p-20 rounded-lg">
+                                    <div key={index} className="border-dashed border-2 bg-white text-center inline-block align-middle p-2 md:p-4 lg:p-4 xl:p-8 2xl:p-10 xxl:!p-20 rounded-lg">
                                         <div className={inputData?.gridBlockTitle1Css}>{data?.gridBlockTitle1}</div>
                                         <div className={inputData?.gridBlockTitle2Css}>{data?.gridBlockTitle2 ? data?.gridBlockTitle2 : ""}</div>
                                         <div className={inputData?.gridBlockTitle2Css}>{data?.gridBlockTitle3}</div>
