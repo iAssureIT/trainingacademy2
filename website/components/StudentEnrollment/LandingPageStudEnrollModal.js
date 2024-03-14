@@ -109,7 +109,8 @@ const StudEnrollModal = (props) => {
 
         return formIsValid;
     };
-
+    
+    
     const handleSubmit = async (event) => {
         event.preventDefault();
         var adminEmail = process.env.CONTACT_EMAIL
@@ -135,9 +136,19 @@ const StudEnrollModal = (props) => {
                             "Dear " +
                             fields.fullName +
                             ", <br/><br/>" +
-                            "Thank you for registering! We're excited to have you join our workshop on March 17th, covering in-demand technologies, career roadmaps, and interview strategies. Stay tuned for workshop details!" +
-                            "<br/><br/> Best Regards, <br/> Team iAspireIT Training Academy.",
-                    };
+                            "Congratulations! You've successfully registered for our workshop on HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY!" +
+                            `<div style="color: #333; background: #f2f2f2; padding: 20px; margin: 25px 0 25px 0" ><b>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY | 17th March, Sunday | Hindi/English</b>
+                            <div style="margin-top:15px"> Date & Time <span style="margin-left:10px">Mar 17, 2024; 4:00 PM to 7:00 PM India</span> </div>
+                            </div>`+
+                            "Please Click the Link below to Join our WhatsApp Group"+
+                            "<br/>" 
+                            +`https://chat.whatsapp.com/K7AZJRAkRWm17FwLDXflqu`+
+                            "<br/> <br/>"+
+                            "WAYS TO JOIN THIS WEBINAR:	"+
+                            "<br/> Join from PC, Mac, iPad, or Android "+
+                            "<br/><br/> Thanks & Regards, <br/> iAspireIT Training Academy<br/> Office #1B, 2nd Floor, B3, Cerebrum IT Park, Kalyani Nagar, Pune, 411014 <br/> Phone: +91- 7770003690 | www.iaspireit.com | info@iaspireit.com     ",
+                           
+                        };
                     axios
                         .post("/send-email", formValues1)
                         .then((res) => {
