@@ -132,7 +132,7 @@ function MenuBar(props) {
             className={" flex justify-between flex-wrap px-6 md:px-20 py-3 bg-cover  bg-no-repeat sm:bg-cover lg:h-20 xl:h-20 h-20 bg-right "} 
             style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}> */}
          <nav
-            className={pathname !== "/" ? "bg-cover  bg-no-repeat sm:bg-cover  bg-[image:var(--largeImage-url)]  flex justify-between flex-wrap px-6 md:px-20 py-3 lg:h-20 xl:h-24 h-20 bg-blue-500  " : " fixed z-20  w-full  flex md:justify-between md:flex-wrap px-6 lg:px-20 lg:py-3 lg:h-28 xl:h-28 h-10 bg-[image:var(--largeImage-url)] lg:bg-none menubar"}
+            className={pathname !== "/" ? "bg-cover  bg-no-repeat sm:bg-cover  bg-[image:var(--largeImage-url)]  flex justify-between flex-wrap px-6 md:px-20 py-3 lg:h-20 xl:h-24 h-20 bg-blue-500  " : " fixed z-20  w-full  flex md:justify-between md:flex-wrap px-6 lg:px-20 lg:py-3 lg:h-28 xl:h-28 h-12 bg-[image:var(--largeImage-url)] lg:bg-none menubar"}
             style={{
                '--largeImage-url': `url(${imageURL})`,
                backgroundSize: "100% 100%"
@@ -148,7 +148,7 @@ function MenuBar(props) {
                   />
                </a>
             </div>
-            <div className="block lg:hidden  items-center h-14 flex-shrink-0 text-white mr-6 object-fit">
+            <div className="block lg:hidden  items-center h-12  lg:h-14 flex-shrink-0 text-white mr-6 object-fit">
                <a href="/">
                   <img
                      id="navLogo1"

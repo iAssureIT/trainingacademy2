@@ -38,7 +38,9 @@ const StudEnrollModal = (props) => {
         var tempEmail = fields.email.trim();
         var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
         var illegalChars = /[()<>,;:\\"[\]]/;
-        var phoneno = /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
+        // var phoneno = /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
+        var phoneno = /^[7-9][0-9]{9}$/;
+
 
         if (!fields["fullName"]) {
             formIsValid = false;
@@ -65,13 +67,22 @@ const StudEnrollModal = (props) => {
             errors["email"] = "Email contains invalid characters.";
             formIsValid = false;
         }
+        if (fields["phone"].length > 10) {
+            errors["phone"] = "Please enter 10 digit mobile number";
+            formIsValid = false;
+        }
         if (!fields["phone"].match(phoneno)) {
             errors["phone"] = "Please enter valid Mobile Number";
             formIsValid = false;
         }
+
         if (!fields["city"]) {
             formIsValid = false;
             errors["city"] = "This field is required.";
+        }
+        if (!fields["city"].match(regSpaceName)) {
+            errors["city"] = "Please valid city name ";
+            formIsValid = false;
         }
         // if (!fields["comments"]) {
         //     formIsValid = false;
@@ -209,8 +220,8 @@ const StudEnrollModal = (props) => {
                 <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
 
                     <div className="flex items-center justify-between p-4 border-b rounded-t md:p-5 dark:border-gray-600">
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                            Connect with us
+                        <h3 className="text-center  text-xl font-semibold text-gray-900 dark:text-white">
+                        Register for 17th march 2024
                         </h3>
                         <button onClick={closeModal} type="button" className="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="authentication-modal">
                             <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -225,7 +236,7 @@ const StudEnrollModal = (props) => {
                             <div>
                                 <label for="fullName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name <span className="my-auto text-red-600">*</span></label>
                                 <input type="text" name="fullName" id="fullName" onChange={handleChange}
-                                    value={fields.fullName} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Your Name" />
+                                    value={fields.fullName} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Write your full name" />
                                 {errors.fullName && <p className="mt-1 text-xs text-red-500">{errors.fullName}</p>}
                             </div>
                             <div>
@@ -237,7 +248,7 @@ const StudEnrollModal = (props) => {
                             <div className='grid grid-cols-2 gap-3'><div>
                                 <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Number <span className="my-auto text-red-600">*</span></label>
                                 <input type="phone" name="phone" id="phone" onChange={handleChange}
-                                    value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
+                                    value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="10 digit number" />
                                 {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
                             </div>
                                 <div>
