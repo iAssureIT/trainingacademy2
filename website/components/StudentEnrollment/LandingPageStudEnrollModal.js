@@ -23,9 +23,20 @@ const StudEnrollModal = (props) => {
         city: "",
     });
     const handleChange = (event) => {
+        let errorMessage = '';
+        if (event.target.name === 'phone') {
+            // Check if the value is a number and has exactly 10 digits
+            const isValidPhone = /^\d{10}$/.test(event.target.value);
+            errorMessage = isValidPhone ? '' : 'Please enter a 10-digit number';
+        }
         setFields((prevFields) => ({
             ...prevFields,
             [event.target.name]: event.target.value,
+        }));
+
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            [event.target.name]: errorMessage,
         }));
     };
 
