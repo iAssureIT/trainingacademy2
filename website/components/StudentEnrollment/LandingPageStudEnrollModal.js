@@ -269,7 +269,7 @@ const StudEnrollModal = (props) => {
                             </div>
                             <div className='grid grid-cols-2 gap-3'><div>
                                 <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 ">Mobile Number <span className="my-auto text-red-600">*</span></label>
-                                <input type="phone" name="phone" id="phone" onChange={handleChange}
+                                <input type="phone" name="phone" id="phone" onChange={handleChange}   maxLength={10}
                                     value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="10 digit number" />
                                 {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
                             </div>
