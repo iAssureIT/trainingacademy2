@@ -49,7 +49,7 @@ const BgImgLeftVideoRghtGrid = (props) => {
                     {inputData?.videoUrl &&
                         <div className={inputData?.videoDivCss || "group relative"}>
                             <div className=''>
-                                <video id={"vid"} className={inputData?.videoClass || " rounded-xl"} loop autoPlay height="600" controls muted controlsList="nodownload"    >
+                                <video id={"vid"} className={inputData?.videoClass || " rounded-xl"} loop autoPlay height="600" controls  controlsList="nodownload"    >
                                     <source src={inputData.videoUrl} type="video/mp4" />
                                 </video>
                             </div>
