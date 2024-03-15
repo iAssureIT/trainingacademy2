@@ -7,7 +7,7 @@ const Accordion = ({ title, content }) => {
   };
 
   return (
-    <div className="mb-4 border-2 rounded-md border-Accordion">
+    <div className="mb-1 border-2 rounded-md border-Accordion">
       <div className="flex items-center justify-between"
         onClick={handleAccordionToggle}
       >

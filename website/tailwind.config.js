@@ -70,7 +70,11 @@ module.exports = {
         darkGray: "#333333",
         blueC    :"#1654F2",
         darkBlueC:"#0F1EAF",
-        lightGreen:"#228B22"
+        lightGreen:"#228B22",
+        danger:"#ff4444",
+        yelloC:"#ffbb33",
+        success:"#00c851",
+        info:"#33b5e5",
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",

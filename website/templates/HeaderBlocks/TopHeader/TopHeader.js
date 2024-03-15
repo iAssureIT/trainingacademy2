@@ -31,7 +31,7 @@ const TopHeader = () => {
         {/* <div className="text-lg font-bold py-2 px-5  text-white  lg:ml-16 my-auto">
           District 3131 - Pune, Raigad
         </div> */}
-        <ul className="px-1  py-3  lg:flex xl:flex  space-x-5 justify-end text-sm font-semibold hidden">
+        <ul className="px-1  py-3 md:py-2 lg:flex xl:flex  space-x-5 justify-end text-sm font-semibold hidden">
           <li className="text-white text-sm font-normal listItem1 ">
             <i className="mr-1 fa fa-phone " aria-hidden="true"></i>
             +91 7770003690

@@ -17,7 +17,7 @@ const HomePage = () => {
 			"/images/specific/trainingAcademy/iAssureIT-training-1.webp",
 		logo: "",
 		h1Txt:
-			"<span class='font-bold text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl'>Transforming Aspirations into Applications</span><br/><span class='text-lg lg:text-xl'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
+			"<span class='uppercase font-bold text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl'>Transforming Aspirations into Applications</span><br/><span class='text-lg lg:text-xl'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
 		bgImgCss:
 			"lazyload z-0 object-fit   md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
@@ -87,11 +87,12 @@ const HomePage = () => {
 		smallBGImage2: "/images/specific/trainingAcademy/2.webp",
 		smallBGImage3: "/images/specific/trainingAcademy/3.webp",
 		smallBGImage4: "/images/specific/trainingAcademy/4.webp",
-		blockTitles: [
-			"Advanced Skills and Beyond",
-			"Web Technologies Mastery",
-			"ReactJS Framework and Beyond",
-			" NodeJS and Database Development"
+		cardData: [
+			{img:"/images/specific/trainingAcademy/bannerIcons/1.webp", title:"Advanced Skills and Beyond",bgColor:"bg-danger" },
+			{img:"/images/specific/trainingAcademy/bannerIcons/2.webp", title:"Web Technologies Mastery", bgColor:"bg-yelloC"},
+			{img:"/images/specific/trainingAcademy/bannerIcons/3.webp", title:"ReactJS Framework and Beyond", bgColor:"bg-success"},
+			{img:"/images/specific/trainingAcademy/bannerIcons/4.webp", title:"NodeJS and Database Development",bgColor:"bg-info" },
+
 		]
 	};
 
@@ -417,10 +418,10 @@ const HomePage = () => {
 		sectionClass:
 			"pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		pageTitle:
-			"<span class=' font-extrabold'>Meet your coach - Mr Ashish Naik:</span>  ",
+			"<span class=' font-extrabold uppercase'>Meet your coach - Mr Ashish Naik:</span>  ",
 		pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
 		blockSubTitle:
-			"<span class=' '> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</span> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  text-2xl md:text-3xl float-left leading-tight pl-2 md:pl-2 lg:pl-10 xl:pl-16 2xl:pl-12 xxl:!pl-20'>Ashish Naik’s Career <br/> Highlights:</span>",
+			"<span class=' '> At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.</span> <br/><span class='my-4 md:my-5 w-full text-left font-extrabold  uppercase  text-2xl md:text-3xl float-left leading-tight pl-2 md:pl-2 lg:pl-10 xl:pl-16 2xl:pl-12 xxl:!pl-20'>Ashish Naik’s Career  Highlights:</span>",
 		classForblockSubTitle:
 			"text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0 px-4 md:px-10",
 		bgImage:
@@ -483,7 +484,7 @@ const HomePage = () => {
 		className: "h-auto w-full mx-auto",
 		alt: "reserve",
 		bgImgCss: "bg-blue-600 py-3 md:py-10 2xl:py-10 bg-cover bg-no-repeat  bg-left-bottom lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
-		gridCss: "grid grid-cols-1 sm:grid-cols-1   lg:grid-cols-1 2xl:grid-cols-1 gap-x-10 h-full w-full content-center  place-content-center my-auto xl:py-10",
+		gridCss: "grid grid-cols-1 sm:grid-cols-1   lg:grid-cols-1 2xl:grid-cols-1 gap-x-10 h-full w-full content-center  place-content-center my-auto xl:pb-10",
 		gridCol1Class: "my-auto  sm:w-auto  text-white text-center  ",
 		// para: "",
 		// paraCss: "text-xs md:text-2xl xl:text-2xl text-light text-center "
@@ -812,9 +813,9 @@ const HomePage = () => {
 		blockTitle: "<span class='font-extrabold uppercase'>COURSE PRICE</span>",
 		blockSubTitle: "<span class='font-extrabold'>Unlock Your FullStack Potential: Affordable Fees, Boundless Opportunities</span>",
 		classForblockSubTitle: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-bold text-darkGray mb-10 bodyTxt",
-		classForblockDescription: "lg:w-3/4 xl:w-4/5 2xl:w-4/5  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt my-5",
+		classForblockDescription: "lg:w-3/4 xl:w-4/5 2xl:w-5/6  mx-auto text-center font-normal text-darkGray mb-10 bodyTxt my-5",
 		blockDescription: "<span>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</span>" +
-			"<br /><span class='font-bold'>Course Fees Breakdown</span>",
+			"<br /><br />	<span class='font-bold '>Course Fees Breakdown</span>",
 		classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-3 md:py-10  leading-tight",
 		classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",
 		classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",

@@ -23,9 +23,20 @@ const StudEnrollModal = (props) => {
         city: "",
     });
     const handleChange = (event) => {
+        let errorMessage = '';
+        if (event.target.name === 'phone') {
+            // Check if the value is a number and has exactly 10 digits
+            const isValidPhone = /^\d{10}$/.test(event.target.value);
+            errorMessage = isValidPhone ? '' : 'Please enter a 10-digit number';
+        }
         setFields((prevFields) => ({
             ...prevFields,
             [event.target.name]: event.target.value,
+        }));
+
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            [event.target.name]: errorMessage,
         }));
     };
 
@@ -72,6 +83,10 @@ const StudEnrollModal = (props) => {
         if (!fields["city"]) {
             formIsValid = false;
             errors["city"] = "This field is required.";
+        }
+        if (!fields["city"].match(regSpaceName)) {
+            errors["city"] = "Please valid city name ";
+            formIsValid = false;
         }
         // if (!fields["comments"]) {
         //     formIsValid = false;
@@ -225,7 +240,7 @@ const StudEnrollModal = (props) => {
                             <div>
                                 <label for="fullName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name <span className="my-auto text-red-600">*</span></label>
                                 <input type="text" name="fullName" id="fullName" onChange={handleChange}
-                                    value={fields.fullName} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Your Name" />
+                                    value={fields.fullName} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Write your full name" />
                                 {errors.fullName && <p className="mt-1 text-xs text-red-500">{errors.fullName}</p>}
                             </div>
                             <div>
@@ -236,14 +251,14 @@ const StudEnrollModal = (props) => {
                             </div>
                             <div className='grid grid-cols-2 gap-3'><div>
                                 <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile Number <span className="my-auto text-red-600">*</span></label>
-                                <input type="phone" name="phone" id="phone" onChange={handleChange}
-                                    value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
+                                <input type="phone" name="phone" id="phone" onChange={handleChange}  maxLength={10}
+                                    value={fields.phone} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="10 digit number" />
                                 {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
                             </div>
                                 <div>
                                     <label for="city" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">City<span className="my-auto text-red-600">*</span></label>
                                     <input type="text" name="city" id="city" onChange={handleChange}
-                                        value={fields.city} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" />
+                                        value={fields.city} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter city" />
                                     {errors.city && <p className="mt-1 text-xs text-red-500">{errors.city}</p>}
                                 </div>
                             </div>

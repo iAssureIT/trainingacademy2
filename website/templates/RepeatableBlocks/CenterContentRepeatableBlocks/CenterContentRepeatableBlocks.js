@@ -152,8 +152,9 @@ const CenterContentRepeatableBlocks = (props) => {
                                             ) : 
                                             ""
                                             }
-                                             </div>
-                                            <div className='object-center mx-5 my-auto'>
+                                             {card?.name
+                                             ?
+                                            <div className='object-center mx-2 md:mx-5 my-auto'>
                                                 <div className="my-2 text-lg font-bold text-left">
                                                     {card.name
                                                         ? card.name
@@ -166,7 +167,10 @@ const CenterContentRepeatableBlocks = (props) => {
 
                                                 </div>
                                             </div>
-                                       
+                                            :
+                                            ""
+                                                    }
+                                            </div>
                                        
 
                                     {
