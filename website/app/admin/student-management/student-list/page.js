@@ -222,9 +222,9 @@ const handleSendNotification=(event)=>{
                                                             ></i>{" "}</a>
                                                        
                                                             <i className="fa fa-trash cursor-pointer hover:text-red-500  mr-3" title="Delete" onClick={handleDeleteStatus} id={data._id}></i>
-                                                            {/* <i class="fa-regular fa-message mx-auto cursor-pointer text-lg mr-3"></i>
+                                                            <i class="fa-regular fa-message mx-auto cursor-pointer text-lg mr-3"></i>
                                                             <i class="fa-regular fa-envelope mx-auto cursor-pointer text-lg mr-3" onClick={handleSendNotification} id={data._id}></i>
-                                                             <i className="fa-brands fa-whatsapp   mx-auto cursor-pointer text-lg  "></i> */}
+                                                             <i className="fa-brands fa-whatsapp   mx-auto cursor-pointer text-lg  "></i>
                                                             {/* <i className="fa-brands fa-ev   mx-auto cursor-pointer text-lg  "></i> */}
 
                                                     </td>

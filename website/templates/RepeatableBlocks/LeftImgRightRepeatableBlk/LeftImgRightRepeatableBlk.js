@@ -49,7 +49,7 @@ const LeftRightImgCenterContent = (props) => {
                     />
                 </div>
 
-                <div className=''>
+                <div className={props?.inputData?.gridCol2Css}>
                     {props.inputData?.repeatedBlocks.map((data, index) => (
                         <div key={index} className={props.inputData?.repeatedBlkCss ? props.inputData?.repeatedBlkCss : ' my-10 flex shadow-xl sm:h-36 md:h-32 py-5'}>
                             <div className={props.inputData?.imgCss ? props.inputData?.imgCss : ' border-gray-500 px-5 md:px-6 my-auto '}>

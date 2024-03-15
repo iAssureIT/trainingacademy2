@@ -145,13 +145,14 @@ const CenterContentRepeatableBlocks = (props) => {
                                                 <img
                                                     
                                                     loading="lazy"
-                                                    className={" rounded-full p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
+                                                    className={" rounded-full shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
                                                     src={card?.profileImage}
                                                     alt={card?.altImage ? card?.altImage : "iassureitProfile"}
                                                 />
                                             ) : 
                                             ""
                                             }
+                                             </div>
                                             <div className='object-center mx-5 my-auto'>
                                                 <div className="my-2 text-lg font-bold text-left">
                                                     {card.name
@@ -165,7 +166,7 @@ const CenterContentRepeatableBlocks = (props) => {
 
                                                 </div>
                                             </div>
-                                        </div>
+                                       
                                        
 
                                     {
