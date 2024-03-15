@@ -101,7 +101,21 @@ const StudentList = props => {
             }
         });
     };
+const handleSendNotification=(event)=>{
+    const stud_id = event.target.id;
 
+    axios.get("/api/students/send/notification/Email/" + stud_id)
+                    .then(res => {
+                      console.log(res)
+                    })
+                    .catch((error) => {
+                        Swal.fire(
+                            "Mail not sent",
+                            error.message,
+                            "error"
+                        );
+                    });
+}
     return (
         <section id={"Search"} className=''>
             {props?.inputData?.dash ?
@@ -208,7 +222,9 @@ const StudentList = props => {
                                                             ></i>{" "}</a>
                                                        
                                                             <i className="fa fa-trash cursor-pointer hover:text-red-500  mr-3" title="Delete" onClick={handleDeleteStatus} id={data._id}></i>
-                                                            <i className="fa-brands fa-whatsapp   mx-auto cursor-pointer text-lg  "></i>
+                                                            <i class="fa-regular fa-message mx-auto cursor-pointer text-lg mr-3"></i>
+                                                            <i class="fa-regular fa-envelope mx-auto cursor-pointer text-lg mr-3" onClick={handleSendNotification} id={data._id}></i>
+                                                             <i className="fa-brands fa-whatsapp   mx-auto cursor-pointer text-lg  "></i>
                                                             {/* <i className="fa-brands fa-ev   mx-auto cursor-pointer text-lg  "></i> */}
 
                                                     </td>

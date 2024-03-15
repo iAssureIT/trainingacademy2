@@ -10,4 +10,6 @@ router.patch('/update/stud-data', Controller.update_studData);
 router.patch('/update/status/:stud_id', Controller.update_stud_status);
 router.get('/get/list/status-wise/:status_value',Controller.getStatusWiseList)
 router.delete('/delete-student/:stud_id', Controller.deleteSingleStudent);
+router.get('/send/notification/:template_type/:stud_id',Controller.sendMailToStudent)
+
 module.exports = router;

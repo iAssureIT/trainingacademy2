@@ -818,6 +818,7 @@ const HomePage = () => {
 		classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
 		classForCardTitle: "text-white text-center font-bold text-sm md:text-sm lg:text-md p-3",
 		classForCardTitle_2: "",
+		cardTitle2Css:"text-center",
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
 		bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><div class='font-extrabold '>Total Investment</div>" +

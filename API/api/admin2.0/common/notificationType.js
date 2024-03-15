@@ -94,7 +94,7 @@ exports.sendNotification = async (inputObj) => {
         { ...variables, user_name: userContacts.user_name },
         "Email"
       );
-      // console.log("sendNotification emailTemplate => ", emailTemplate);
+      console.log("sendNotification emailTemplate => ", emailTemplate);
       if (emailTemplate.success) {
         sendEmail(
           userContacts.email,

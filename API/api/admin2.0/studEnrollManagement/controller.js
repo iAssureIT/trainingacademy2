@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const studModel = require('./model.js');
+const { sendNotification, getUserDetailsWith_id } = require("../../admin2.0/common/notificationType");
 
 exports.insertStudentDetails = (req, res, next) => {
 
@@ -9,7 +10,7 @@ exports.insertStudentDetails = (req, res, next) => {
 		email: req.body.email,
 		phone: req.body.phone,
 		city: req.body.city,
-		status:req.body.status,
+		status: req.body.status,
 		createdAt: new Date(),
 	});
 
@@ -32,7 +33,7 @@ exports.insertStudentDetails = (req, res, next) => {
 
 exports.getStudentDetails = (req, res, next) => {
 	studModel.find({})
-		.sort({ "createdAt": -1 })		
+		.sort({ "createdAt": -1 })
 		.then(List => {
 			// console.log("list",List)			
 			res.status(200).json(List);
@@ -61,7 +62,7 @@ exports.fetch_stud_data_using_id = (req, res, next) => {
 
 exports.update_studData = (req, res, next) => {
 
-	console.log("update_studData req.body => ",req.body);
+	console.log("update_studData req.body => ", req.body);
 
 	studModel.updateOne(
 		{ _id: req.body.stud_id },
@@ -71,21 +72,21 @@ exports.update_studData = (req, res, next) => {
 				email: req.body.email,
 				phone: req.body.phone,
 				city: req.body.city,
-				status:req.body.status,
+				status: req.body.status,
 			}
 		},
 	)
 		.then(result => {
-			console.log("update student -> ",result);			
-			if (result.nModified === 1) {				
-					res.status(200).json({
-						message: "Student data updated successfully",
-						success: true,
-					});
-				
+			console.log("update student -> ", result);
+			if (result.nModified === 1) {
+				res.status(200).json({
+					message: "Student data updated successfully",
+					success: true,
+				});
+
 			} else {
 				res.status(404).json({ message: "No changes were made", success: false });
-			}		
+			}
 
 		})
 		.catch(error => {
@@ -99,18 +100,18 @@ exports.update_stud_status = (req, res) => {
 	studModel.updateOne(
 		{ _id: req.params.stud_id },
 		{
-			$set: {				
-				status:req.body.status,
+			$set: {
+				status: req.body.status,
 			}
 		},
 	)
 		.then(result => {
-			console.log("update student status -> ",result);			
-			if (result.nModified === 1) {				
-					res.status(200).json({
-						message: "Status updated successfully",
-						success: true,
-					});				
+			console.log("update student status -> ", result);
+			if (result.nModified === 1) {
+				res.status(200).json({
+					message: "Status updated successfully",
+					success: true,
+				});
 			} else {
 				res.status(404).json({ message: "No changes were made", success: false });
 			}
@@ -122,8 +123,8 @@ exports.update_stud_status = (req, res) => {
 
 exports.getStatusWiseList = (req, res, next) => {
 	// console.log("req.params.status_value",req.params.status_value)
-	studModel.find({"status":req.params.status_value})
-		.sort({ "createdAt": -1 })		
+	studModel.find({ "status": req.params.status_value })
+		.sort({ "createdAt": -1 })
 		.then(List => {
 			// console.log("list",List)			
 			res.status(200).json(List);
@@ -135,20 +136,49 @@ exports.getStatusWiseList = (req, res, next) => {
 			})
 		});
 }
-exports.deleteSingleStudent  = (req,res,next)=>{
-	studModel.deleteOne({_id:req.params.stud_id})
+exports.deleteSingleStudent = (req, res) => {
+	studModel.deleteOne({ _id: req.params.stud_id })
 		.exec()
-		.then(data=>{
-			
-			if(data.deletedCount === 1){
-				res.status(200).json({message:"STUDENT_DELETED"});
-			}else{
-				res.status(200).json({message:"STUDENT_NOT_DELETED"});
+		.then(data => {
+
+			if (data.deletedCount === 1) {
+				res.status(200).json({ message: "STUDENT_DELETED" });
+			} else {
+				res.status(200).json({ message: "STUDENT_NOT_DELETED" });
 			}
 		})
-		.catch(err =>{
+		.catch(err => {
 			res.status(500).json({
 				error: err
 			});
+		});
+};
+
+exports.sendMailToStudent = async (req, res) => {
+
+	studModel.find({ _id: req.params.stud_id })
+		.then(async (data) => {
+
+			console.log("data", data)
+
+			var userNotificationValues = {
+				"templateType": req.params.template_type,
+				"event": "student - Invite Consultant",
+				"toUser_id": data._id.toString(),
+				"toEmail": data.email,
+				"toMobileNumber": data.phone,
+				"variables": {
+					studentName: data.fullName,
+				}
+			}
+			var sendStudNotification = await sendNotification(userNotificationValues)
+			console.log("sendStudNotification", userNotificationValues)
+			res.status(200).json(List);
+		})
+		.catch(error => {
+			res.status(500).json({
+				error: error,
+				message: "Some error occured while fetching  List"
+			})
 		});
 };
