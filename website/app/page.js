@@ -17,17 +17,17 @@ const HomePage = () => {
 			"/images/specific/trainingAcademy/iAssureIT-training-1.webp",
 		logo: "",
 		h1Txt:
-			"<span class='uppercase font-bold text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl'>Transforming Aspirations into Applications</span><br/><span class='text-lg lg:text-xl'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
+			"<span class='uppercase font-bold text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl'>Transforming Aspirations into Applications</span><br/><br/><span class='text-lg lg:text-xl'>Explore courses of the highest quality, discover your ideal learning path, and elevate your skills to new heights</span>",
 		bgImgCss:
 			"lazyload z-0 object-fit   md:py-0 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		h1TxtCss: " ml-2 md:ml-10 md:mr-0 xl:!leading-[1.3] mt-10 md:mt-0 3xl:mt-20 text-left",
 		gridCss:
-			" pt-10 md:pt-20 lg:pt-32  xl:pt-40 2xl:pt-36  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
+			" pt-10 md:pt-20 lg:pt-32  xl:pt-32 2xl:pt-28  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
 		gridSubDivCss:
-			" lg:mt-0 xl:mt-12 2xl:mt-16 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
+			" lg:mt-0 xl:mt-12 2xl:mt-24 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
-		imageCss: "  object-fit lazyload  lg:w-2/3 xl:w-4/5 2xl:w-4/5 mx-auto mb-0 lg:pb-16",
+		imageCss: "  object-fit lazyload  lg:w-2/3 xl:w-full 2xl:w-full mx-auto mb-0 lg:pb-16",
 		imgTagcss: "lazyload",
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
@@ -57,13 +57,13 @@ const HomePage = () => {
 			"lazyload object-fit py-0 lg:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		paraCss:
-			" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
+			" text-white text-sm md:text-lg lg:text-lg text-justify md:mt-5 ",
 		gridCss:
 			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-20 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-10",
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-3/4 2xl:w-3/4 mx-auto mb-10 pb-5 md:py-10",
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
@@ -140,7 +140,7 @@ const HomePage = () => {
 			"lazyload object-fit py-0 sm:py-0 lg:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		paraCss:
-			" text-white text-sm md:text-lg lg:text-2xl text-justify md:mt-5 ",
+			" text-white text-sm md:text-lg lg:text-lg font-medium text-justify md:mt-5 ",
 		gridCss:
 			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-20 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
@@ -192,16 +192,16 @@ const HomePage = () => {
 		id: "Vision_Block",
 		paraTitle:
 			"Driven by a vision to propel India to new heights in the IT industry, Ashish Naik is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.",
-		paraTitleClass: "subTitle text-sm md:text-lg lg:text-xl text-left text-white",
+		paraTitleClass: "subTitle text-sm md:text-lg lg:text-lg text-left text-white",
 		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-15.webp",
 		bgImgCss: "lazyload",
 		para: "Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.",
-		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-xl text-left text-white",
+		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-lg text-left text-white",
 		pageTitle:
 			"<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
 		pageTitleCss: " mb-5 sm:mb-10 md:mb-20 text-white w-full text-center BlockTitle",
 		gridColCss:
-			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 sm:px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
+			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-0 sm:px-10   ",
 
 		gridCol1Css: "  ",
 		gridClass:
@@ -333,7 +333,7 @@ const HomePage = () => {
 		classForCards:
 			" p-3 mb-7 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
 		classForCardTitle:
-			"text-left font-bold text-xl md:text-xl lg:text-2xl p-3",
+			"text-left font-bold text-xl md:text-xl lg:text-2xl px-3",
 		classForCardTitle_2:
 			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
@@ -347,7 +347,7 @@ const HomePage = () => {
 				altImage: "iAssureIT-training-8",
 				cardTitle: "Course 1: Web Technologies Mastery",
 				classForContent:
-					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg p-3 font-[500] ",
+					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg px-3 font-[500] ",
 				content:
 					"<div class='font-semibold text-left'> HTML5, CSS3, Bootstrap6, Tailwind CSS, JavaScript </div>  <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Dive into the fundamentals of web development with HTML5, CSS3, and Bootstrap6. Learn to craft stunning, responsive designs with Tailwind CSS, and unleash the power of interactivity with JavaScript. From building beautiful UIs to ensuring seamless user experiences, this course lays the groundwork for your FullStack journey.</div>",
 			},
@@ -357,7 +357,7 @@ const HomePage = () => {
 				altImage: "iAssureIT-training-9",
 				cardTitle: "Course 2: ReactJS Framework and Beyond",
 				classForContent:
-					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg p-3 font-[500]",
+					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg px-3 font-[500]",
 				content:
 					"<div class='font-semibold text-left'>ReactJS Framework, JSON, API Integration </div> <br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'>Unlock the potential of ReactJS and harness the versatility of JSON for dynamic data manipulation. Explore the art of API integration and discover how to seamlessly connect your applications with external services. With hands-on projects and real-world scenarios, you'll master the art of building modern, interactive web applications. </div>",
 			},
@@ -367,7 +367,7 @@ const HomePage = () => {
 				altImage: "iAssureIT-training-10",
 				cardTitle: "Course 3: NodeJS and Database Development ",
 				classForContent:
-					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg p-3 font-[500]",
+					"justify-content h-auto text-left xl:text-left my-auto text-md lg:text-lg px-3 font-[500]",
 				content:
 					"<div class='font-semibold text-left'>REST API Development, Database Integration </div><br/> <div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36 overflow-y-scroll'> Delve into the world of server-side development with NodeJS and Express. Learn to harness the power of MongoDB for efficient data storage and retrieval. From REST API development to database management, this course empowers you to create robust backend systems that power your applications with speed and reliability.</div>",
 			},
@@ -386,11 +386,11 @@ const HomePage = () => {
 		classForCards:
 			" p-3 mb-7 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
 		classForCardTitle:
-			"text-left font-bold text-xl md:text-xl lg:text-2xl p-3",
+			"text-left font-bold text-xl md:text-xl lg:text-2xl px-3",
 		classForCardTitle_2:
 			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
-		classForCardImage: " px-2 md:h-[25rem] w-full",
+		classForCardImage: " px-2 md:h-[25rem] xl:h-[28em] w-full",
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 
@@ -405,9 +405,9 @@ const HomePage = () => {
 				altImage: "iAssureIT-training-11",
 				cardTitle: "Course 4: Advanced Skills and Beyond",
 				classForContent:
-					"justify-content h-auto text-justify my-auto text-md lg:text-lg p-3 font-[500]",
+					"justify-content h-auto text-justify my-auto text-md lg:text-lg px-3 font-[500]",
 				content:
-					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36'><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
+					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><div class='h-auto md:h-44 lg:h-44 xl:h-36 2xl:h-36'><br/><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
 			},
 		],
 	};
@@ -426,7 +426,7 @@ const HomePage = () => {
 			"text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0 px-4 md:px-10",
 		bgImage:
 			"/images/specific/trainingAcademy/iAssureIT-training-14.webp",
-		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto 2xl:-mt-32  xxl:!w-3/4 h-full ",
+		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto xl:-mt-20 2xl:-mt-32  xxl:!w-3/4 h-full ",
 		bigImageAlt: "iAssureIT-infra",
 		gridCss: "grid grid-cols-1 lg:grid-cols-2 float-right lg:float-left px-3",
 		gridCol1Css: "order-first lg:order-last  w-full h-auto relative my-auto ",
@@ -897,7 +897,7 @@ const HomePage = () => {
 			{isModalOpen && <StudEnrollModal modalId={"DownloadBrochure"} downloadBrochure={true} />}
 			<div
 				onClick={() => setModalOpen(!isModalOpen)}
-				className=" fixed top-12 md:top-14 lg:top-10 xl:top-16 z-30 right-2 xs:right-5 md:right-2 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
+				className=" fixed top-12 md:top-14 lg:top-10 xl:top-10 z-30 right-2 xs:right-5 md:right-0 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
 			>
 
 				{/* <a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf" target={"_blank"} aria-label="Downlod Brochure"> */}
