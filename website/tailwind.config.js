@@ -74,7 +74,8 @@ module.exports = {
         danger:"#ff4444",
         yelloC:"#ffbb33",
         success:"#00c851",
-        info:"#33b5e5",
+        info:"#aa66cc",
+        bgblack:"#241442"
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",

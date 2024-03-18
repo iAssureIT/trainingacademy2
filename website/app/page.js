@@ -23,7 +23,7 @@ const HomePage = () => {
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		h1TxtCss: " ml-2 md:ml-10 md:mr-0 xl:!leading-[1.3] mt-10 md:mt-0 3xl:mt-20 text-left",
 		gridCss:
-			" pt-10 md:pt-20 lg:pt-32  xl:pt-20  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
+			" pt-10 md:pt-20 lg:pt-32  xl:pt-40 2xl:pt-36  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
 		gridSubDivCss:
 			" lg:mt-0 xl:mt-12 2xl:mt-16 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
@@ -192,11 +192,11 @@ const HomePage = () => {
 		id: "Vision_Block",
 		paraTitle:
 			"Driven by a vision to propel India to new heights in the IT industry, Ashish Naik is committed to empowering IT aspirants and equipping them with the skills needed to excel in the digital age. His mission is to ensure that every individual with a passion for technology not only finds success but thrives in the IT industry.",
-		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-left text-white",
+		paraTitleClass: "subTitle text-sm md:text-lg lg:text-xl text-left text-white",
 		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-15.webp",
 		bgImgCss: "lazyload",
 		para: "Join Ashish Naik and embark on a transformative journey in Fullstack Development. With his guidance and mentorship, you'll gain invaluable insights, hone your skills, and emerge as a proficient Fullstack Developer ready to tackle the challenges of tomorrow's Tech-World.",
-		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-2xl text-left text-white",
+		paraCss: "subTitle mt-2 md:mt-8 text-sm md:text-lg lg:text-xl text-left text-white",
 		pageTitle:
 			"<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
 		pageTitleCss: " mb-5 sm:mb-10 md:mb-20 text-white w-full text-center BlockTitle",
@@ -407,7 +407,7 @@ const HomePage = () => {
 				classForContent:
 					"justify-content h-auto text-justify my-auto text-md lg:text-lg p-3 font-[500]",
 				content:
-					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><br/><div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36'><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
+					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><div class='h-auto md:h-32 lg:h-36 xl:h-28 2xl:h-36'><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
 			},
 		],
 	};
@@ -827,7 +827,7 @@ const HomePage = () => {
 		cardTitle_2: "<div class='text-center text-xl'><div class='font-extrabold  text-xl md:text-2xl xl:text-3xl '>Total Investment</div>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +
-			"<br /><p class='text-2xl font-bold text-lightGreen'>Discount of 45% discount</p></div>",
+			"<br /><p class='text-2xl font-bold text-success'>Discount of 45% discount</p></div>",
 		cardsArray: [
 			{
 				cardTitle: '<p>Course 1</p>' +
@@ -836,7 +836,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 17% discount</p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 17% discount</p>"
 			}, {
 				cardTitle: '<p>Course 2</p>' +
 					'<p class="wrap-text">ReactJS, JSON,</p><p> API Integration</p>',
@@ -844,7 +844,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 50% discount</p>"
 			}, {
 				cardTitle: '<p>Course 3</p>' +
 					'<p class="wrap-text">NodeJS, MongoDB,</p><p> REST API Development</p>',
@@ -852,7 +852,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 50% discount</p>"
 			}, {
 				cardTitle: '<p>Course 4</p>' +
 					'<p class="wrap-text">Advanced Skills in ReactJS,</p><p> NodeJS, etc</p>',
@@ -860,7 +860,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-lightGreen mt-3'>Discount of 50% discount</p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 50% discount</p>"
 			},
 		],
 	}
@@ -881,7 +881,7 @@ const HomePage = () => {
 			"text-lg text-center font-[500] mx-auto ",
 		blockContent: `<div class="flex mb-3 text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>` +
 			`<div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
-		to just Rs 90,000.<span class='text-xl font-bold text-lightGreen'> (Overall Discount of 50% discount)</span></div></div>`,
+		to just Rs 90,000.<span class='text-xl font-bold text-success'> (Overall Discount of 50% discount)</span></div></div>`,
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		cardsArray: [],

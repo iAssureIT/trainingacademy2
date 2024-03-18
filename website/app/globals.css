@@ -353,3 +353,16 @@ textarea::placeholder {
   text-decoration-color: red;
   text-decoration-width: 6px;
 }
+
+
+.bannerBlocks{
+  background: linear-gradient(to left, rgb(237, 243, 245) 50%, #241442 50%) right;
+  background-size: 200%;
+  transition: all .21s ease-in-out;
+}
+.bannerBlocks:hover {
+background-position: left;
+}
+.border-Accordion{
+border-color: #fd641f;
+}
