@@ -41,7 +41,7 @@ const HomePage = () => {
 		modalDisplay: "true",
 		// modalUrlName: "Download Brochure",
 		modalUrlName: "Enroll Now",
-		modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-lg   ml-3 md:ml-10 py-1 md:py-2 px-6 md:px-4  xl:px-6  2xl:px-10  mt-3 lg:mt-5 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-lg   ml-3 md:ml-10 py-1 md:py-2 px-6 md:px-4  xl:px-6  2xl:px-10  mt-3 lg:mt-5   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
 
 	};
 
@@ -110,7 +110,7 @@ const HomePage = () => {
 		paraCss:
 			" text-white text-sm md:text-lg lg:text-xl font-medium text-left md:mt-5 ",
 		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-20 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10  lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-13.webp",
