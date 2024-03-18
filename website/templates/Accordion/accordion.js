@@ -16,7 +16,7 @@ const Accordion = ({ title, content }) => {
             ?
             <div className="items-center object-center w-20 px-8 py-10 md:py-3 text-3xl font-semibold text-white lg:py-4 place-content-center bg-orangeColor" > <span>-</span></div>
             :
-            <div className="items-center object-center w-20 px-8 py-10 md:py-5 my-auto text-3xl font-semibold text-white lg:py-4 place-content-center bg-orangeColor"> <span>+</span></div>
+            <div className="items-center object-center w-20 px-8 py-10 md:py-5 my-auto text-3xl font-semibold text-white lg:py-7 place-content-center bg-orangeColor"> <span>+</span></div>
           }
           <div className="w-0 h-0 my-auto
             border-t-[12px] border-t-transparent
