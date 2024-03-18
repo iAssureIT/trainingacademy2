@@ -172,21 +172,6 @@ export default function RootLayout({ children }) {
     gtag('config', 'AW-11480106532');
     gtag('event', 'conversion', { 'send_to': 'AW-11480106532/hWDtCOXd_4oZEKSMkuIq' });
 
-    {/* <!-- Meta Pixel Code --> */}
-    // <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '357106483981046');
-    fbq('track', 'PageView');
-    // </script>
-    
-    {/* <!-- End Meta Pixel Code --> */}
   }, []);
 
   return (
@@ -221,9 +206,7 @@ export default function RootLayout({ children }) {
 
         {/* <!-- Google tag (gtag.js) --> */}
         <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>
-        {/* <noscript><img height="1" width="1" style={{"display":"none"}}
-          src="https://www.facebook.com/tr?id=357106483981046&ev=PageView&noscript=1"
-          /></noscript> */}
+       
       </head>
       <body className={" bg-white"}>
       { 

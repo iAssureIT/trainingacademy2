@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Head from 'next/head';
 import BgImgLeftContentRtImg from "@/templates/ContentBlocks/BgImgLeftContent/BgImgLeftContentRtImg";
 import BgImgRightContent from "@/templates/ContentBlocks/BgImgRightContent/BgImgRightContent";
 import CenterContentRepeatableBlocks from "@/templates/RepeatableBlocks/CenterContentRepeatableBlocks/CenterContentRepeatableBlocks";
@@ -11,6 +12,7 @@ import BannerSmallBlocks from '@/templates/BannerSmallBlocks/BannerSmallBlocks'
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
 
 const HomePage = () => {
+
 	const content_Banner = {
 		id: "Banner_Block",
 		bgImage:
@@ -787,8 +789,33 @@ const HomePage = () => {
 	};
 	const [isModalOpen, setModalOpen] = useState(false);
 
+	useEffect(() => {
+		{/* <!-- Meta Pixel Code --> */}
+		// <script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '357106483981046');
+		fbq('track', 'PageView');
+		// </script>
+		
+		{/* <!-- End Meta Pixel Code --> */}
+	}, []);
+	
 	return (
 		<main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
+			<Head>
+				<noscript>
+					<img height="1" width="1" style="display:none"
+					src="https://www.facebook.com/tr?id=357106483981046&ev=PageView&noscript=1"
+					/>
+				</noscript>
+			</Head>
 			{isModalOpen && <StudEnrollModal modalId={"DownloadBrochure"} downloadBrochure={true} />}
 			<div
 				onClick={() => setModalOpen(!isModalOpen)}
