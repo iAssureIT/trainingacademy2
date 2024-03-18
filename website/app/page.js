@@ -59,7 +59,7 @@ const HomePage = () => {
 		paraCss:
 			" text-white text-sm md:text-lg lg:text-lg text-justify ",
 		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-0 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-20 lg:pb-0 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
