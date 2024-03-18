@@ -73,7 +73,7 @@ const HomePage = () => {
 		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		modalDisplay2: "true",
 		modalUrlName2: "Explore Courses",
-		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
 
 	};
 
@@ -125,7 +125,7 @@ const HomePage = () => {
 		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		modalDisplay2: "true",
 		modalUrlName2: "Enroll Now",
-		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
 	};
 
 	const content_JTCD = {
@@ -156,7 +156,7 @@ const HomePage = () => {
 		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		modalDisplay2: "true",
 		modalUrlName2: "Join Our Community",
-		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
 
 	};
 
