@@ -20,7 +20,7 @@ const Technology = (props) => {
       "grid  grid-cols-3 gap-x-6 md:grid-cols-3 md:gap-x-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
    return (
       <section className={props?.inputData?.sectionCss}>
-          {isModalOpen && <LPStudEnrollModal modalId="RegModal"/>}
+         {isModalOpen && <LPStudEnrollModal modalId="RegModal" />}
          {props?.inputData?.dash ?
             <div className="w-full mb-4">
                <ul className="flex flex-wrap place-content-center">
@@ -48,7 +48,7 @@ const Technology = (props) => {
                :
                null
          }
-         
+
          {
             props?.inputData?.blockDescription
                ?
@@ -72,35 +72,47 @@ const Technology = (props) => {
                                     :
                                     "relative bg-cover p-12 block  object-cover bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload "
                               }
-                              style={{ backgroundImage: card.cardImage?`url(${card.cardImage})` : "none",
-                               backgroundSize: "100% 100%" }}>
+                              style={{
+                                 backgroundImage: card.cardImage ? `url(${card.cardImage})` : "none",
+                                 backgroundSize: "100% 100%"
+                              }}>
                               {
                                  card.cardTitle ?
                                     <div className=' w-full text-center'>
                                        <div className={"px-2 " + props.inputData?.classForCardTitle} dangerouslySetInnerHTML={{ __html: card?.cardTitle }} ></div>
                                     </div>
-                                 : null
+                                    : null
                               }
-                              
+
                            </div>
+                          { props?.inputData?.displayTriangle
+                          ?
+                           <div className="w-0 h-0 mx-auto
+                                          border-l-[25px] border-l-transparent 
+                                          border-t-[25px] border-t-skyBlue
+                                          border-r-[25px] border-r-transparent">
+                           </div>
+                           :
+                           ""
+                          }
                            {
-                              card.imageArr?
+                              card.imageArr ?
                                  <div className={'grid grid-cols-1 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 px-3 md:px-5 py-2 md:py-10 mx-auto'}>
                                     {card.imageArr.map((img, index) => {
                                        return (
-                                          <img className="mx-auto lazyload" alt={ "technology "+index}   src={img}  />
+                                          <img className="mx-auto lazyload" alt={"technology " + index} src={img} />
                                        )
                                     })
                                     }
                                  </div>
-                              :null
+                                 : null
                            }
                         </div>
 
                         {
                            card.cardTitle_2
                               ?
-                              <div className={props.inputData?.cardTitle2Css?props.inputData.cardTitle2Css:'flex justify-start'}>
+                              <div className={props.inputData?.cardTitle2Css ? props.inputData.cardTitle2Css : 'flex justify-start'}>
                                  <div className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md text-primary dark:text-primary-400"} dangerouslySetInnerHTML={{ __html: card?.cardTitle_2 }} ></div>
                               </div>
                               : null
@@ -109,7 +121,7 @@ const Technology = (props) => {
                   )
                })
             }
-         </div>         
+         </div>
          {
             props.inputData?.cardTitle_2
                ?
@@ -119,16 +131,16 @@ const Technology = (props) => {
                : null
          }
 
-{
-                           props.inputData?.modalDisplay
-                                ?
-                                <div onClick={() => setModalOpen(!isModalOpen)} className={props.inputData?.modalBtnCss ? props.inputData?.modalBtnCss : "text-white hidden"} type="button">
-                                    {props.inputData?.modalUrlName}{" "}
-                                        {/* <i className="fa-solid fa-angle-double-right"></i> */}
-                                </div>
-                                :
-                                ""
-                        }
+         {
+            props.inputData?.modalDisplay
+               ?
+               <div onClick={() => setModalOpen(!isModalOpen)} className={props.inputData?.modalBtnCss ? props.inputData?.modalBtnCss : "text-white hidden"} type="button">
+                  {props.inputData?.modalUrlName}{" "}
+                  {/* <i className="fa-solid fa-angle-double-right"></i> */}
+               </div>
+               :
+               ""
+         }
       </section>
    )
 }

@@ -23,7 +23,7 @@ const HomePage = () => {
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		h1TxtCss: " ml-2 md:ml-10 md:mr-0 xl:!leading-[1.3] mt-10 md:mt-0 3xl:mt-20 text-left",
 		gridCss:
-			" pt-10 md:pt-20 lg:pt-32  xl:pt-32 2xl:pt-28  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
+			" pt-10 md:pt-20 lg:pt-32  xl:pt-28 2xl:pt-24  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
 		gridSubDivCss:
 			" lg:mt-0 xl:mt-12 2xl:mt-24 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
@@ -70,7 +70,7 @@ const HomePage = () => {
 		modalId: "CetModal",
 		modalDisplay: "true",
 		modalUrlName: "Explore Courses",
-		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		modalDisplay2: "true",
 		modalUrlName2: "Explore Courses",
 		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
@@ -122,7 +122,7 @@ const HomePage = () => {
 		modalId: "Registration_form",
 		modalDisplay: "true",
 		modalUrlName: "Enroll Now",
-		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		modalDisplay2: "true",
 		modalUrlName2: "Enroll Now",
 		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
@@ -142,18 +142,18 @@ const HomePage = () => {
 		paraCss:
 			" text-white text-sm md:text-lg lg:text-lg font-medium text-justify md:mt-5 ",
 		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-20 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10  lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-20.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-10",
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-0",
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
 		modalId: "FormModal",
 		modalDisplay: "true",
 		modalUrlName: "Join Our Community",
-		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss: "hidden lg:block w-fit mx-auto md:float-left text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6  mt-3 lg:mt-10   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 		modalDisplay2: "true",
 		modalUrlName2: "Join Our Community",
 		modalBtnCss2: "block lg:hidden w-fit mx-auto text-white text-center font-bold text-sm md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  my-5 py-2 px-2 md:px-10  2xl:px-6 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
@@ -201,11 +201,11 @@ const HomePage = () => {
 			"<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
 		pageTitleCss: " mb-5 sm:mb-10 md:mb-20 text-white w-full text-center BlockTitle",
 		gridColCss:
-			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-0 sm:px-10   ",
+			" mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-0 sm:px-10   ",
 
 		gridCol1Css: "  ",
 		gridClass:
-			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center  ",
+			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center  md:px-5 lg:px-10",
 		bannerClass:
 			"object-fit py-5 md:pt-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-16.webp",
@@ -214,113 +214,7 @@ const HomePage = () => {
 		imgTagcss: "mx-auto lazyload",
 	};
 
-	const content_GlanceBlk = {
-		sectionCss: "z-0",
-		bgImage:
-			"/images/specific/Home/HomeNewImg/iAssureIT-home-page-background-2.webp",
-		smallBGImage:
-			"/images/specific/Home/HomeNewImg/Responsive/iAssureIT-home-page-background-2.webp",
-		bgImgCss:
-			"lazyload object-fit py-32 lg:py-48 2xl:py-64 md:-mt-24 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
-		pageTitle: "COMPANY AT <span class='font-extrabold leading-relaxed'> A GLANCE </span>",
-		pageTitleCss: "text-light w-full text-center BlockTitle text-center",
-		dash: "border-white mb-0 md:mb-5 mt-28 md:mt-20",
-		titleDivCss: "absolute mt-32 md:mt-10 lg:mt-32 xl:mt-32 2xl:mt-52 mx-auto z-10 w-full",
-		classForNoOfCards:
-			"px-5 md:px-20 mx-10 grid grid-cols-1 m-5 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mb-10 lg:mb-20 mt-60 xl:mt-72",
-		classForCards:
-			"grid grid-cols-1 break-words p-5 px-9 text-center py-auto border mb-5 rounded-lg h-auto min-h-36 border-spacing-x-96 mb-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)] 2xl:py-16",
-		classForCardTitle: "BlockTitle text-white font-extrabold py-auto",
-		classForcardTitle_2: " smTxt text-white  font-extrabold",
-		classForCardImage: "w-full px-7 ",
-		cardsArray: [
-			{
-				cardImage: "",
-				cardTitle: "8+",
-				cardImage2: "",
-				cardTitle_2: "Years of Resilient Journey",
-				cardTitle_3_Icon: (
-					<i className="mt-1 text-2xl fa-solid fa-indian-rupee-sign"></i>
-				),
-				cardTitle_3: "",
-				cardButton: "",
-				cardButtonTitle: "",
-				cardButtonColor: "",
-				link: "",
-			},
-			{
-				cardImage: "",
-				cardTitle: "60+",
-				cardImage2: "",
-				cardTitle_2: "Tech Experts",
-				cardTitle_3_Icon: (
-					<i className="mt-1 text-2xl fa-solid fa-indian-rupee-sign"></i>
-				),
-				cardTitle_3: "",
-				cardButton: "",
-				cardButtonTitle: "",
-				cardButtonColor: "",
-				link: "",
-			},
-			{
-				cardImage: "",
-				cardTitle: "400+",
-				cardImage2: "",
-				cardTitle_2: "Global Clientele",
-				cardTitle_3_Icon: (
-					<i className="mt-1 text-2xl fa-solid fa-indian-rupee-sign"></i>
-				),
-				cardTitle_3: "",
-				cardButton: "",
-				cardButtonTitle: "",
-				cardButtonColor: "",
-				link: "",
-			},
-			{
-				cardImage: "",
-				cardTitle: "600+",
-				cardImage2: "",
-				cardTitle_2: "Triumphs in Project Deliveries",
-				cardTitle_3_Icon: (
-					<i className="mt-1 text-2xl fa-solid fa-indian-rupee-sign"></i>
-				),
-				cardTitle_3: "",
-				cardButton: "",
-				cardButtonTitle: "",
-				cardButtonColor: "",
-				link: "",
-			},
-			{
-				cardImage: "",
-				cardTitle: "300+",
-				cardImage2: "",
-				cardTitle_2: "Websites",
-				cardTitle_3_Icon: (
-					<i className="mt-1 text-2xl fa-solid fa-indian-rupee-sign"></i>
-				),
-				cardTitle_3: "",
-				cardButton: "",
-				cardButtonTitle: "",
-				cardButtonColor: "",
-				link: "",
-			},
-			{
-				cardImage: "",
-				cardTitle: "100+",
-				cardImage2: "",
-				cardTitle_2: "Mobile Apps",
-				cardTitle_3_Icon: (
-					<i className="mt-1 text-2xl fa-solid fa-indian-rupee-sign"></i>
-				),
-				cardTitle_3: "",
-				cardButton: "",
-				cardButtonTitle: "",
-				cardButtonColor: "",
-				link: "",
-			},
-		],
-	};
-
+	
 	const content_Courses = {
 		id: "courses",
 		sectionCss: "md:mt-5 lg:mt-0 pt-10 lg:pt-20 bg-offWhite",
@@ -426,7 +320,7 @@ const HomePage = () => {
 			"text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0 px-4 md:px-10",
 		bgImage:
 			"/images/specific/trainingAcademy/iAssureIT-training-14.webp",
-		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto xl:-mt-20 2xl:-mt-32  xxl:!w-3/4 h-full ",
+		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto xl:-mt-20 2xl:-mt-32  xxl:!w-3/4 h-full xl:h-[800px] xxl:!h-full ",
 		bigImageAlt: "iAssureIT-infra",
 		gridCss: "grid grid-cols-1 lg:grid-cols-2 float-right lg:float-left px-3",
 		gridCol1Css: "order-first lg:order-last  w-full h-auto relative my-auto ",
@@ -490,7 +384,7 @@ const HomePage = () => {
 		// paraCss: "text-xs md:text-2xl xl:text-2xl text-light text-center "
 		modalDisplay: "true",
 		modalUrlName: "Connect With Us",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
 	}
 
 	const accordionData = {
@@ -726,55 +620,55 @@ const HomePage = () => {
 				cardImage: "/images/specific/Icons-2/1.webp",
 				altImage: "imageDescription",
 				cardTitle: "1. Comprehensive Curriculum",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				content: "Our training program covers all facets of FullStack Development, including Web Technologies, ReactJS Framework, NodeJS, MongoDB, and more. Each course is meticulously designed to provide in-depth understanding and practical skills.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/2.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "2. Expert Mentorship",
 				content: "With Mr. Ashish Naik at the helm, students benefit from personalized mentorship and guidance from an industry expert. Mr. Naik's extensive experience and practical insights enrich the learning experience, ensuring students are well-prepared for the challenges of the real world."
 			},
 			{
 				cardImage: "/images/specific/Icons-2/3.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "3. Cutting-edge Technologies",
 				content: "Stay ahead of the curve with our focus on the latest technologies and frameworks. From HTML5 and CSS3 to advanced topics like AWS integration and Next.js, our curriculum is constantly updated to reflect industry trends.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/4.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "4. Hands-on Learning",
 				content: "Our program emphasizes hands-on learning through practical projects, assignments, and real-world case studies. Students gain valuable experience by working on industry-relevant projects under the guidance of experienced mentors.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/5.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "5. Internship Opportunities",
 				content: "Students who enroll in all four courses are eligible for a three-month internship at iAssure International Technologies Pvt Ltd, with the possibility of securing a full-time job based on performance. ",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/6.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "6. Job Assistance",
 				content: "We provide 100% job assistance to our students, equipping them with the skills and confidence to ace interviews and secure lucrative positions in top IT companies.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/7.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "7. Flexible Learning Options",
 				content: "Whether you're a beginner or an experienced developer looking to upskill, our program caters to individuals at all levels. Choose from flexible payment options and customize your learning journey based on your goals and schedule.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/8.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[16px] lg:text-lg p-3 font-[500]",
+				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "8. Community and Networking",
 				content: "Join a vibrant community of like-minded individuals, network with industry professionals, and participate in workshops, seminars, and networking events to broaden your horizons and foster professional growth.",
 			}
@@ -828,7 +722,8 @@ const HomePage = () => {
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +
 			"<br /><p class='text-2xl font-bold text-success'>Discount of 45% discount</p></div>",
-		cardsArray: [
+			displayTriangle:"true",
+			cardsArray: [
 			{
 				cardTitle: '<p>Course 1</p>' +
 					'<p class="wrap-text">HTML5, CSS3, JavaScript </p><p>etc</p>',

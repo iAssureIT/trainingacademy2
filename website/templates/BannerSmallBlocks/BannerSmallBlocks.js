@@ -12,12 +12,12 @@ const BannerSmallBlocks = (props) => {
                 backgroundSize: "100% 100%",
             }}>
             <div className="mx-1 md:mx-20 lg:mx-10 xl:mx-10 2xl:mx-12 lg:-mt-24 h-auto">
-                <div className="grid p-5 block bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl grid-cols-1 lg:grid-cols-4 lg:gap-4">
+                <div className="grid p-5  bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl grid-cols-1 lg:grid-cols-4 lg:gap-4">
                     {props.inputData?.cardData.map((data, index) => (
-                        <div key={index} className={` rounded-lg min-h-24 md:h-auto px-2 my-5 lg:my-0 py-4    hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]  font-bold  flex gap-4 items-center  ${data.bgColor} `}
+                        <div key={index} className={` rounded-lg min-h-24 md:h-auto px-2 my-5 lg:my-0 py-4    hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]  font-bold  flex gap-4 items-center text-white hover:text-black  ${data.bgColor} `}
                             >
                             <div><img src={data.img} className="rounded-full p-3 lg:p-1 xl:p-3 bg-white" /></div>
-                            <div className="text-[1rem]  pr-5 lg:pr-0 text-left text-white font-bold">
+                            <div className="text-[1rem]  pr-5 lg:pr-0 text-left  font-bold">
                                 {data.title}
                             </div>
                         </div>

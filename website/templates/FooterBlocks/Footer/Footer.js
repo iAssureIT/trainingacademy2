@@ -209,21 +209,11 @@ const Footer = (props) => {
                   }
                 >
                   <div className="flex  space-x-2 xl:space-x-5 place-content-start lg:place-content-center my-8">
-                    {props.inputData.fbLink ? (
-                      <a
-                        href={props.inputData.fbLink}
-                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
-                        aria-label="Facebook Link"
-                      >
-                        {/* <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg> */}
-                        <i className="fa-brands fa-facebook-f px-3 py-2 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
-                        <span className="sr-only">Facebook page</span>
-                      </a>
-                    ) : null}
+                   
                     {props.inputData.twitterLink ? (
                       <a
                         href={props.inputData.twitterLink}
-                        className=" text-light hover:text-gray-900 dark:hover:text-blue-700"
+                        className=" text-light hover:text-gray-900 "
                         aria-label="Twitter"
                       >
                         <svg
@@ -240,46 +230,58 @@ const Footer = (props) => {
                     {props.inputData.telegramLink ? (
                       <a
                         href={props.inputData.telegramLink}
-                        className="text-light hover:text-gray-900 dark:hover:text-blue-700"
+                        className="text-light hover:text-gray-900 "
                         aria-label="Telegram"
                       >
                         <i className="fa-brands fa-telegram"></i>
                       </a>
                     ) : null}
-                    {props.inputData.instagramLink ? (
-                      <a
-                        href={props.inputData.instagramLink}
-                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
-                        aria-label="Instagram"
-                      >
-                        <i className="fa-brands fa-instagram px-2.5 py-2.5 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
-                        <span className="sr-only">Instagram page</span>
-                      </a>
-                    ) : null}
-                    {props.inputData.linkedIn ? (
-                      <a
-                        href={props.inputData.linkedIn}
-                        className=" w-[38px] h-[38px] text-light hover:text-gray-900 dark:hover:text-blue-700"
-                        aria-label="LinkedIn"
-                      >
-                        <i className="fa-brands fa-linkedin  hover:bg-white px-2.5 py-2.5 my-auto  mx-auto rounded-full border-2 border-orangeColor  text-orangeColor"></i>
-                      </a>
-                    ) : null}
+                    <div className="flex justify-center">
+  {props.inputData.fbLink ? (
+    <a
+      href={props.inputData.fbLink}
+      className="flex items-center justify-center relative text-light hover:text-gray-900 w-10 h-10 mx-2 rounded-full border-2 hover:bg-white border-orangeColor"
+      aria-label="Facebook Link"
+    >
+      <i className="absolute px-auto fa-brands fa-facebook-f text-orangeColor"></i>
+      <span className="sr-only">Facebook page</span>
+    </a>
+  ) : null}
+  {props.inputData.instagramLink ? (
+    <a
+      href={props.inputData.instagramLink}
+      className="flex items-center justify-center text-light hover:text-gray-900 mx-2 w-10 h-10 relative rounded-full border-2 hover:bg-white border-orangeColor"
+      aria-label="Instagram"
+    >
+      <i className="fa-brands fa-instagram absolute px-auto  text-orangeColor"></i>
+      <span className="sr-only">Instagram page</span>
+    </a>
+  ) : null}
+  {props.inputData.linkedIn ? (
+    <a
+      href={props.inputData.linkedIn}
+      className="flex items-center justify-center w-10 h-10 text-light hover:text-gray-900 mx-2 rounded-full border-2 hover:bg-white border-orangeColor relative  "
+      aria-label="LinkedIn"
+    >
+      <i className="fa-brands fa-linkedin absolute px-auto  text-orangeColor"></i>
+    </a>
+  ) : null}
+  {props.inputData.youtubeLink ? (
+    <a
+      href={props.inputData.youtubeLink}
+      className="flex items-center justify-center text-light hover:text-gray-900 mx-2 w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor relative "
+      aria-label="Youtube"
+    >
+      <i className="fa-brands fa-youtube absolute px-auto text-orangeColor"></i>
+      <span className="sr-only">Youtube page</span>
+    </a>
+  ) : null}
+</div>
 
-                    {props.inputData.youtubeLink ? (
-                      <a
-                        href={props.inputData.youtubeLink}
-                        className="  text-light hover:text-gray-900 dark:hover:text-blue-700 "
-                        aria-label="Youtube"
-                      >
-                        <i className="fa-brands fa-youtube px-2 py-2.5 mx-auto w-10 h-10 rounded-full border-2 hover:bg-white border-orangeColor  text-orangeColor"></i>
-                        <span className="sr-only">Youtube page</span>
-                      </a>
-                    ) : null}
                     {props.inputData.whatsup ? (
                       <a
                         href={props.inputData.whatsup}
-                        className="m-auto  w-[38px] h-[38px]  text-light hover:text-gray-900 dark:hover:text-blue-700"
+                        className="m-auto  w-[38px] h-[38px]  text-light hover:text-gray-900 "
                         aria-label="Youtube"
                       >
                         <i className="fa-brands fa-whatsapp p-3 mx-auto  hover:bg-white  rounded-full border-2 border-orangeColor  text-orangeColor"></i>
