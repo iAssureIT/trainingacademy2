@@ -57,13 +57,13 @@ const HomePage = () => {
 			"lazyload object-fit py-0 lg:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		paraCss:
-			" text-white text-sm md:text-lg lg:text-lg text-justify md:mt-5 ",
+			" text-white text-sm md:text-lg lg:text-lg text-justify ",
 		gridCss:
-			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-20 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
+			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-0 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-3/4 2xl:w-3/4 mx-auto mb-10 pb-5 md:py-10",
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-3/4 2xl:w-3/4 mx-auto ",
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
@@ -108,14 +108,14 @@ const HomePage = () => {
 			"lazyload object-fit py-0 lg:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		paraCss:
-			" text-white text-sm md:text-lg lg:text-2xl text-left md:mt-5 ",
+			" text-white text-sm md:text-lg lg:text-xl font-medium text-left md:mt-5 ",
 		gridCss:
 			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10 lg:pb-20 lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-13.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-auto mx-auto 2xl:mx-0 2xl:float-right mb-10 md:mb-0 pb-5 md:pb-0 md:py-10",
-		imgTagcss : '2xl:float-right lazyload',
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-auto mx-auto 2xl:mx-0 2xl:float-right md:mb-0 pb-5 md:pb-0 md:py-10",
+		imgTagcss : '2xl:float-right mx-auto lazyload',
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
@@ -164,22 +164,22 @@ const HomePage = () => {
 		id: "Banner_Block2",
 		paraTitle:
 			"At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
-		paraTitleClass: "subTitle text-sm md:text-lg lg:text-2xl text-justify text-black",
+		paraTitleClass: "subTitle text-sm md:text-lg lg:text-xl text-justify text-black",
 		pageTitle:
 			"<span class='font-extrabold'> Welcome to India's Premier Training Program in FullStack Development</span>",
 		pageTitleCss: " mb-10 md:mb-20 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black w-full text-center BlockTitle ",
 		gridColCss:
-			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 sm:px-10 md:px-20 md:pl-6 md:pl-16 lg:pl-20 xl:pl-24 xxl:pl-40",
+			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 ",
 
 		gridCol1Css: "  ",
 		gridClass:
-			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center ",
+			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center lg:px-20 md:gap-x-3",
 		bannerClass:
 			"object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
 		imageCss:
-			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload xl:ml-20",
-		imgTagcss: "mx-auto xl:float-left lazyload",
+			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload ",
+		imgTagcss: "mx-auto  lazyload",
 		modalId: "registrationModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
@@ -205,9 +205,9 @@ const HomePage = () => {
 
 		gridCol1Css: "  ",
 		gridClass:
-			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center ",
+			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center  ",
 		bannerClass:
-			"object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+			"object-fit py-5 md:pt-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-16.webp",
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
