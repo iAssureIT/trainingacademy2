@@ -103,7 +103,7 @@ const BgImgLeftContentRtImg = (props) => {
                     {props?.inputData?.image && (
                         <div className={props?.inputData?.imageCss || 'object-fit'}>
                             {/* <link rel="preload" as="image" href="/images/specific/trainingAcademy/iAssureIT-training-7.webp"></link> */}
-                            <img rel="preload" as="image" className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`} src={props?.inputData?.image} alt="Banner image" />
+                            <img rel="preload" as="image" draggable="false" className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`} src={props?.inputData?.image} alt="Banner image" />
                             {/* <link rel="preload" href={props?.inputData?.image} as="image"  className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`}/> */}
                     {props?.inputData?.imgCaption && (
                                 <div className={props?.inputData?.imgCaptionCss}>{props?.inputData?.imgCaption}</div>

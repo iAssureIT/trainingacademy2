@@ -23,7 +23,7 @@ const HomePage = () => {
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		h1TxtCss: " ml-2 md:ml-10 md:mr-0 xl:!leading-[1.3] mt-10 md:mt-0 3xl:mt-20 text-left",
 		gridCss:
-			" pt-10 md:pt-20 lg:pt-32  xl:pt-28 2xl:pt-24  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
+			" pt-10 md:pt-20 lg:pt-32  xl:pt-28 2xl:pt-20  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
 		gridSubDivCss:
 			" lg:mt-0 xl:mt-12 2xl:mt-24 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
@@ -320,7 +320,7 @@ const HomePage = () => {
 			"text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0 px-4 md:px-10",
 		bgImage:
 			"/images/specific/trainingAcademy/iAssureIT-training-14.webp",
-		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto xl:-mt-20 2xl:-mt-32  xxl:!w-3/4 h-full xl:h-[800px] xxl:!h-full ",
+		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto xl:-mt-20 2xl:-mt-32  xxl:!w-3/4 h-full xl:h-[800px] xxl:!h-full float-right ",
 		bigImageAlt: "iAssureIT-infra",
 		gridCss: "grid grid-cols-1 lg:grid-cols-2 float-right lg:float-left px-3",
 		gridCol1Css: "order-first lg:order-last  w-full h-auto relative my-auto ",
@@ -466,7 +466,7 @@ const HomePage = () => {
 				designation: "Student",
 				altImage: "Akshay_Madanepatil",
 				name: "Akshay Madanepatil",
-				classForContent: " mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: " mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				content: `<p>I'm thrilled to share my positive feedback on the training program, and I must say it has been an enriching experience. The incorporation of a "learn with fun" approach made the sessions engaging, ensuring a positive and enjoyable learning environment. </p>` +
 					"<br /><p>What stood out for me was the program's problem-oriented methodology, allowing us to practically face challenges and fostering critical thinking for effective solution-building. This unique approach significantly contributed to enhancing my logic and problem-solving skills. The emphasis on concept clarity has been instrumental in enhancing my understanding. </p>" +
 					"<br /><p>The unique, multidirectional and assignment oriented focus has made the training exceptionally practical and relevant. Overall, I highly appreciate the program's quality and effectiveness. I feel more confident and equipped with new skills, thanks to this impactful training.</p>",
@@ -475,7 +475,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Siddhant-Kakade.webp",
 				altImage: "Siddhant_Kakade",
-				classForContent: " mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: " mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Siddhant Kakade",
 				content: `<p>I am writing to provide feedback on the training program conducted by Mr. Ashish Naik over a period of three months. The experience was truly remarkable, and I would like to highlight some key features that made it exceptional.</p>` +
 
@@ -497,7 +497,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Rutika-Bankar.webp",
 				altImage: "Rutika_Bankar",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Rutika Bankar",
 				content: `<p>The Training Program has exceeded my expectations in every way. From the comprehensive curriculum to the exceptional instructor and supportive learning environment, this program has truly empowered me with the skills and confidence to excel in this field. One of the most impressive aspects of the program is its well-structured curriculum, which covers a wide range of topics.</p>` +
 					`<br /><p>The hands-on projects and real-world examples provided ample opportunities to apply theoretical knowledge to practical solutions, ensuring a deeper understanding of the concepts taught.</p>` +
@@ -508,7 +508,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Ashwini-Kori.webp",
 				altImage: "Ashwini-Kori",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Ashwini Kori",
 				content: `<p>The training program is particularly good and valuable for us as we must keep ourselves updated about newer technologies in the field. It strengthened my technical skills and proved to be a great learning experience, especially with the practical deigning and planning and learn with fun sessions.</p>` +
 					`<br /><p>I really enjoying the course and Mr. Ashish Naik's informal Learn with Fun approach to presenting his material.</p>` +
@@ -522,7 +522,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Shubham-Ankushe.webp",
 				altImage: "Shubham-Ankushe",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Shubham Ankushe",
 				content: `<p>I am absolutely delighted to express my profound gratitude for the transformative three-month training program conducted by Mr. Ashish Naik. The exceptional mastery he exhibited in the Full Stack Development enriched our learning experience with invaluable insights. From day one, Mr. Naik's engaging training style not only captivated our attention but also sparked an energetic and highly participative atmosphere. What truly sets his program apart is the innovative incorporation of the Scientific Method, a rarity in India.</p>` +
 					`<br /><p>Under Mr. Naik's guidance, the learning environment became not only informative but also positively enjoyable, seamlessly blending fun with knowledge. The training extended beyond technical skills, covering industry insights, client handling techniques, and mobile-first development approaches. Mr. Naik's dedication as an exceptional trainer is evident, providing unparalleled learning experiences that distinguish themselves in the market.</p>` +
@@ -532,7 +532,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Ankit-Kumar-Rai.webp",
 				altImage: "Ankit-Kumar-Rai",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Ankit Kumar Rai",
 				content: `<p>I am delighted to share my experience with the Advanced Full Stack Development training led by Ashish Naik. His expertise, dedication, and effective communication have been instrumental in my learning journey. The comprehensive curriculum covered all aspects of Full Stack Development, providing a robust foundation for real-world applications. </p>` +
 					`<br /><p>The hands-on projects were particularly beneficial, allowing me to bridge the gap between theory and practical implementation seamlessly. His passion for teaching and commitment to student success were evident in every session, creating a positive and encouraging learning atmosphere. His approachability and willingness to address doubts ensured a supportive and enriching experience. </p>` +
@@ -542,7 +542,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Abhishek-Varma.webp",
 				altImage: "Abhishek_Varma",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Abhishek Varma",
 				content: `<p>I am pleased to provide feedback on the training conducted by Mr. Ashish Naik sir. The experience was truly remarkable, and I would like to highlight some points : </p>` +
 					`<br /><p>“Fun with Learn" Strategy: 
@@ -560,7 +560,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Mohit-Panjwani.webp",
 				altImage: "Mohit_Panjwani",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Mohit Panjwani",
 				content: `<p>I'm really excited and pleased to provide feedback on our Advanced and High level Software Development training program...</p>` +
 					`<br /><p>The training program offers well all rounded curriculum that covers all essential parts and topics of software development, from basic concepts to advanced technologies. The training conducted under Mr Ashish Naik sir was very enthusiastic and helped me to achieve more confidence in this field despite of me being from a non technical field. The dedication, expertise and passion of Mr Ashish Naik sir towards the goal of our training program is very impressive, the interacting style was not only informative but also engaging, and the title of learn with fun made it more interesting. The training program was not only about learning software related technologies but also understanding industry standards mainly stress management. Overall the training was highly informative and beneficial and the dedication of Mr Ashish Naik sir towards our growth and development as individuals has been truly inspiring.</p>`,
@@ -569,7 +569,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Archana-Kadam.webp",
 				altImage: "Archana_Kadam",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Archana Kadam",
 				content: `<p>I am very much delighted to share my experience on the training program provided in iAssureIT. It gives me immense pleasure to show my gratitude to the training that is been provided to me.</p>` +
 					`<br /><p>From my personal experience, I can say there is a distinctive difference in the approach of carrying out the training program . Mr.Ashish Naik, our Mentor, has an innate quality to present the most intricate concept in a much simpler form.</p>` +
@@ -581,7 +581,7 @@ const HomePage = () => {
 				designation: "Student",
 				profileImage: "/images/specific/testimonials/Aniket-Pawar.webp",
 				altImage: "Aniket_Pawar",
-				classForContent: "mb-4 breakWord h-[100px] md:h-[150px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
+				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Aniket Pawar",
 				content: `<p>I am feeling grateful to share my feedback on the Full Stack Development learning experience under our best and always enthusiastic mentor Mr. Ashish Naik which has been incredibly positive and wonderful.</p>` +
 					`<br /><p>Ashish Sir's teaching methodology stands out for its unique "Learn with Fun" approach. This not only makes the learning process enjoyable but also enhances retention and understanding. His passion for the subject matter is evident, and his ability to communicate complex concepts in a clear and engaging manner contributes significantly to the overall quality of the training.</p>` +
