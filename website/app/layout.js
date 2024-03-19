@@ -220,7 +220,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth', scrollPaddingTop:'25%'}}  suppressHydrationWarning={true}>
+    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth', scrollPaddingTop:'28%'}}  suppressHydrationWarning={true}>
       <head>
         <title>{metadata.title}</title>
         <link rel="icon" href="/favicon.ico" sizes="any"></link>

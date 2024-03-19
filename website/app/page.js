@@ -185,7 +185,7 @@ const HomePage = () => {
 		modalId: "registrationModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
-		modalBtnCss1: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss1: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-orange-400  cursor-pointer",
 		layout: "fill",
 		objectFit: "cover"
 	};
@@ -293,7 +293,7 @@ const HomePage = () => {
 		modalId: "studFormModal",
 		modalDisplay: "true",
 		modalUrlName: "Enroll Now",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10 border  rounded btn bg-orangeColor hover:bg-orange-700 cursor-pointer",
 		cardsArray: [
 			{
 				id: "courses",
@@ -616,7 +616,7 @@ const HomePage = () => {
 		modalDisplay: "true",
 		modalId: "stdRegModal",
 		modalUrlName: "Get Started",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10  border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-0 lg:mt-10  border  rounded btn bg-orange-500 hover:bg-orange-700 cursor-pointer",
 		cardsArray: [
 			{
 				cardImage: "/images/specific/Icons-2/1.webp",
@@ -723,7 +723,7 @@ const HomePage = () => {
 		cardTitle_2: "<div class='text-center text-xl'><div class='font-extrabold  text-xl md:text-2xl xl:text-3xl '>Total Investment</div>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +
-			"<br /><p class='text-2xl font-bold text-success'>Discount of 45% </p></div>",
+			"<br /><p class='text-2xl font-bold text-success'> 45% of Discount </p></div>",
 			displayTriangle:"true",
 			cardsArray: [
 			{
@@ -733,7 +733,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 17% </p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'> 17% of Discount  </p>"
 			}, {
 				cardTitle: '<p>Course 2</p>' +
 					'<p class="wrap-text">ReactJS, JSON,</p><p> API Integration</p>',
@@ -741,7 +741,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 50% </p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'>50% of Discount </p>"
 			}, {
 				cardTitle: '<p>Course 3</p>' +
 					'<p class="wrap-text">NodeJS, MongoDB,</p><p> REST API Development</p>',
@@ -749,7 +749,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 50% </p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'> 50% of Discount </p>"
 			}, {
 				cardTitle: '<p>Course 4</p>' +
 					'<p class="wrap-text">Advanced Skills in ReactJS,</p><p> NodeJS, etc</p>',
@@ -757,7 +757,7 @@ const HomePage = () => {
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
-					"<p class='text-sm mb-6 font-semibold text-success mt-3'>Discount of 50% </p>"
+					"<p class='text-sm mb-6 font-semibold text-success mt-3'> 50% of Discount </p>"
 			},
 		],
 	}
@@ -778,14 +778,14 @@ const HomePage = () => {
 			"text-lg text-center font-[500] mx-auto ",
 		blockContent: `<div class="flex mb-3 text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">Instalment Plan:</span> Pay in 4 equal instalments for ease of budgeting.</div></div>` +
 			`<div class="flex text-left"><i class="fa-solid fa-angles-right text-skyBlue m-1"></i><div><span class="font-extrabold">One-Time Payment Discount:</span>  Avail a further discount by paying the total fees upfront, reducing the total
-		to just Rs 90,000.<span class='text-xl font-bold text-success'> (Overall Discount of 50% )</span></div></div>`,
+		to just Rs 90,000.<span class='text-xl font-bold text-success'> (Overall 50% of Discount)</span></div></div>`,
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		cardsArray: [],
 		modalDisplay: "true",
 		modalId: "RegModal",
 		modalUrlName: "Get Started",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-5 lg:mt-20 border  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-5 lg:mt-20 border  rounded btn bg-orange-500 hover:bg-orange-700 cursor-pointer",
 	};
 	const [isModalOpen, setModalOpen] = useState(false);
 

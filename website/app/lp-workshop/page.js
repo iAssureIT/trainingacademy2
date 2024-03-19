@@ -75,7 +75,7 @@ const landingPage = () => {
         ],
         modalDisplay: "true",
         modalUrlName: "Secure Your Seat Now",
-        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    mt-10 lg:mt-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    mt-10 lg:mt-10 border  rounded btn bg-red-600 hover:bg-orangeColor  cursor-pointer",
 
     }
     
@@ -131,7 +131,7 @@ const landingPage = () => {
         ],
         modalDisplay: "true",
         modalUrlName: "Secure Your Seat Now",
-        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    md:mt-10 lg:mt-3 mb-10 lg:mb-10   rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    md:mt-10 lg:mt-3 mb-10 lg:mb-10   rounded btn bg-red-600 hover:bg-orangeColor  cursor-pointer",
 
    
     }
@@ -262,7 +262,7 @@ const landingPage = () => {
 		// modalId: "UnlockPModal",
 		secureModalDisplay: "true",
 		secureModalUrlName: "Secure Your Seat Now",
-		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-5 md:mt-10 lg:mt-10 btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-8 lg:px-12 mt-5 md:mt-10 lg:mt-10 btn bg-red-600 hover:bg-orangeColor  cursor-pointer",
 
     };
     const content_About = {
@@ -374,7 +374,7 @@ const landingPage = () => {
         titleDescription_2: "Have more questions? Feel free to reach out to us! We're here to help you embark on your journey to becoming a successful Fullstack Developer.",
         modalDisplay: "true",
         modalUrlName: "Secure Your Seat Now",
-        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    mt-10 lg:mt-10 border  rounded btn bg-red-600 hover:bg-blue-500  cursor-pointer",
+        modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-lg xl:text-xl 2xl:text-lg py-2 px-5 md:px-5  2xl:px-10    mt-10 lg:mt-10 border  rounded btn bg-red-600 hover:bg-orangeColor  cursor-pointer",
 
     
     }
