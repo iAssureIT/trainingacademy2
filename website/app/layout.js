@@ -2,6 +2,7 @@
 import React, { $, useEffect } from "react";
 import axios from "axios";
 import { usePathname } from "next/navigation";
+import { animateScroll } from 'react-scroll';
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Footer from "@/templates/FooterBlocks/Footer/Footer.js";
@@ -16,12 +17,48 @@ import Navbar from "@/templates/HeaderBlocks/MenuBar/MenuTest";
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-};
+// const scrollToTop = () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   });
+// };
+
+// const scrollToTop = () => {
+//   const scrollStep = () => {
+//     const currentY = window.scrollY;
+
+//     if (currentY === 0) {
+//       return;
+//     }
+
+//     window.scrollTo(0, currentY - Math.min(20, currentY));
+//     requestAnimationFrame(scrollStep);
+//   };
+
+//   requestAnimationFrame(scrollStep);
+// };
+// const scrollToTop = () => {
+//   const duration = 5000; // 5 seconds in milliseconds
+//   const startTime = performance.now(); // Get the start time
+
+//   const scrollStep = (timestamp) => {
+//     const elapsed = timestamp - startTime; // Calculate elapsed time
+//     const progress = Math.min(elapsed / duration, 1); // Calculate progress ratio
+
+//     window.scrollTo(0, Math.max(0, window.scrollY - (window.scrollY * progress))); // Scroll smoothly
+
+//     if (elapsed < duration) {
+//       // Continue scrolling if not finished
+//       requestAnimationFrame(scrollStep);
+//     }
+//   };
+
+//   // Start scrolling animation
+//   requestAnimationFrame(scrollStep);
+// };
+
+
 
 var currentYear = new Date().getFullYear();
 
@@ -160,7 +197,15 @@ const content_Footer2 = {
   footerText:
     '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
+
+const options = {
+  duration: 1500, // Duration of the scroll animation in milliseconds
+  smooth: 'linear', // Enable smooth scrolling
+};
 export default function RootLayout({ children }) {
+  const handleScrollToTop = () => {
+    animateScroll.scrollToTop(options);
+  };
   const pathname = usePathname();
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
@@ -175,7 +220,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className='scroll-smooth' suppressHydrationWarning={true}>
+    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth', scrollPaddingTop:'25%'}}  suppressHydrationWarning={true}>
       <head>
         <title>{metadata.title}</title>
         <link rel="icon" href="/favicon.ico" sizes="any"></link>
@@ -227,7 +272,7 @@ export default function RootLayout({ children }) {
               <Footer2 inputData={content_Footer2} />
 
               <div
-                onClick={scrollToTop}
+                onClick={handleScrollToTop}
                 className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
               >
                 <i className="text-white fa-solid fa-arrow-up"></i>
