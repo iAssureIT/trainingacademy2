@@ -114,7 +114,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                                     {
                                                         card.cardImage
                                                             ?
-                                                            <img loading="lazy" alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"} />
+                                                            <img loading="lazy" alt={card.altImage ? card.altImage : "imageDescription"} src={card?.cardImage} className={props?.inputData?.classForCardImage ? props?.inputData?.classForCardImage + " noAnimation transform-none animate-none lazyload " : "lazyload w-full"} draggable="false" />
                                                             :
                                                             null
                                                     }
@@ -125,8 +125,8 @@ const CenterContentRepeatableBlocks = (props) => {
 
 
                                                             <>
-                                                                <img id={"rotateBlk" + card?.id} src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload " />
-                                                                <img id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute animatedCircle2 lazyload" />
+                                                                <img id={"rotateBlk" + card?.id} src="/images/generic/11.webp" alt="smallHexagon" className="absolute animatedCircle lazyload " draggable="false"/>
+                                                                <img id={"rotateBlk2" + card?.id} src="/images/specific/Services/MobileApp/Icons/2.png" alt="smallHexagon" className="absolute animatedCircle2 lazyload" draggable="false" />
 
                                                             </>
 
@@ -148,6 +148,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                                     className={" rounded-full shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
                                                     src={card?.profileImage}
                                                     alt={card?.altImage ? card?.altImage : "iassureitProfile"}
+                                                    draggable="false"
                                                 />
                                             ) : 
                                             ""

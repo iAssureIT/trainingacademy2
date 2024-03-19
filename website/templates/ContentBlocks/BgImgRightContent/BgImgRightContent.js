@@ -104,6 +104,7 @@ const BgImgRightContent = (props) => {
                                     }
                                 >
                                     <img
+                                    draggable="false"
                                       className={
                                             props?.inputData?.imgTagcss
                                                 ? props?.inputData?.imgTagcss + " lazyload "
@@ -124,6 +125,7 @@ const BgImgRightContent = (props) => {
                         >
                             {props?.inputData?.logo ? (
                                 <img
+                                draggable="false"
                                     src={props?.inputData?.logo}
                                     className={props?.inputData?.logoClassName + " lazyload "}
                                     alt="logo"
@@ -140,6 +142,7 @@ const BgImgRightContent = (props) => {
                                                 >
                                                     <div>
                                                         <img
+                                                            draggable="false"
                                                             className=" lazyload rounded-sm  border-spacing-x-96 p-0 md:px-0 md:py-0  lg:px-2 lg:py-1 xl:px-3 xl:py-1 "
                                                             src={data.icon}
                                                             alt="icon "
@@ -249,6 +252,7 @@ const BgImgRightContent = (props) => {
             ) : (
                 <section className="w-full bg-cover">
                     <img
+                        draggable="false"
                         className={
                             props?.inputData?.className
                                 ? props?.inputData?.className + " lazyload "

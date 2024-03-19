@@ -54,7 +54,7 @@ const BgImgLeftContentRtImg = (props) => {
                 <div className={props?.inputData?.gridCss || "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 h-full w-full content-center"}>
                     <div className={props?.inputData?.gridSubDivCss || "text-white xs:pl-2 sm:pl-10 lg:pl-20 xl:pl-24 xxl:pl-40 my-auto text-center xs:text-left py-10 sm:py-0"}>
                         {props?.inputData?.logo && (
-                            <img className={`${props?.inputData?.logoCss || ""} lazyload`} src={props?.inputData?.logo} data-src={props?.inputData?.logo} alt="logo" />
+                            <img className={`${props?.inputData?.logoCss || ""} lazyload`} src={props?.inputData?.logo} data-src={props?.inputData?.logo} alt="logo" draggable="false"/>
                         )}
                         {props?.inputData?.h1Txt && (
                             <div className={props?.inputData?.h1TxtCss} dangerouslySetInnerHTML={{ __html: props?.inputData?.h1Txt }}></div>
@@ -77,7 +77,7 @@ const BgImgLeftContentRtImg = (props) => {
                             <div className='lg:mt-20 xl:mt-28'>
                                 <div className='flex gap-4'>
                                     <div className='bg-white rounded p-2 sm:p-1'>
-                                        <img src="/images/specific/Home/Icons/Chassis-icon.webp" className="lazyload" alt="logo" />
+                                        <img src="/images/specific/Home/Icons/Chassis-icon.webp" className="lazyload" alt="icon" draggable="false"/>
                                     </div>
                                     <h2 className="text-3xl mt-2 lg:text-4xl xl:text-4xl font-extrabold text-white">{props?.inputData?.listTitle}</h2>
                                 </div>
@@ -132,7 +132,7 @@ const BgImgLeftContentRtImg = (props) => {
                     <div className={props?.inputData?.gridCss || "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 h-full w-full content-center"}>
                         {props?.inputData?.image2 && (
                             <div className={props?.inputData?.imageCss || 'object-fit'}>
-                                <img className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`} src={props?.inputData?.image2} alt="iAssureIT-Banner image" />
+                                <img className={`${props?.inputData?.imgTagcss || 'h-full w-full lazyload'}`} src={props?.inputData?.image2} alt="iAssureIT-Banner image" draggable="false" />
                             </div>
                         )}
                         <div className={props?.inputData?.gridSubDivCss || "text-white xs:pl-2 sm:pl-10 lg:pl-20 xl:pl-24 xxl:pl-40 my-auto text-center xs:text-left py-10 sm:py-0"}>

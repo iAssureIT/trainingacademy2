@@ -47,15 +47,15 @@ const landingPage = () => {
         bgImgCss: " bg-offWhite py-10 h-auto   2xl:py-10 lazyload object-fit bg-cover bg-no-repeat relative  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
         gridCss: "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2   md:grid-cols-2   lg:py-10 xl:py-0 2xl:py-10 h-auto md:h-full lg:h-full   xl:h-full 2xl:h-full px-2 md:px-10 gap-x-10 gap-y-4",
         gridSubDivCss: "  grid grid-cols-2 gap-3 sm:gap-2 md:gap-6 lg:gap-5 xl:gap-10 my-auto ",
-        videoUrl: "/images/videos/WorkShop_video.mp4",
+        videoUrl: "/images/videos/28-March.mp4",
         // imgUrl: "/images/specific/Home/HomeVideoImg.webp",
         gridBlockTitle1Css: "font-extrabold text-lg ",
         gridBlockTitle2Css: "font-medium",
         cardsArray: [
             {
                 gridBlockTitle1: "DATE",
-                gridBlockTitle2: "17th Mar 2024",
-                gridBlockTitle3: "(Sunday)",
+                gridBlockTitle2: "28th Mar 2024",
+                gridBlockTitle3: "(Thursday)",
             },
             {
                 gridBlockTitle1: "TIME",

@@ -145,6 +145,7 @@ function MenuBar(props) {
                      src={props.inputData.logo}
                      className={props.inputData?.classForLogo}
                      alt="Logo"
+                     draggable="false"
                   />
                </a>
             </div>
@@ -155,6 +156,7 @@ function MenuBar(props) {
                      src={props.inputData.smallLogo}
                      className={props.inputData?.classForLogo}
                      alt="Logo"
+                     draggable="false"
                   />
                </a>
             </div>
@@ -179,6 +181,7 @@ function MenuBar(props) {
                                  className="w-8 h-8 rounded-full"
                                  src="/images/generic/userProfile.webp"
                                  alt="user photo"
+                                 draggable="false"
                               />
                            </button>
 
@@ -203,6 +206,7 @@ function MenuBar(props) {
                                           className="w-12 h-12 rounded-full mx-auto"
                                           src="/images/generic/userProfile.webp"
                                           alt="user photo"
+                                          draggable="false"
                                        />
                                     </div>
                                     <div className=" px-1 py-3">
@@ -251,7 +255,7 @@ function MenuBar(props) {
                         onClick={customUrl}
                         className={props.inputData.customButtonClass}
                      >
-                        <img src={props.inputData.customButtonIcon} className="object-fit h-5" alt="img" />
+                        <img src={props.inputData.customButtonIcon} className="object-fit h-5" alt="img" draggable="false" />
                         <div className={props.inputData.customButtonTitleClass}>{props.inputData.customButtonTitle}</div>
                      </button>
                   </div>

@@ -55,7 +55,7 @@ const SmallBanner = (props) => {
                 props?.inputData?.logo
                   ?
                   <div className={props?.inputData?.logoClassName ? props?.inputData?.logoClassName : 'flex '}>
-                    <img src={props?.inputData?.logo} data-src={props?.inputData?.logo}  className="lazyload"/>
+                    <img src={props?.inputData?.logo} data-src={props?.inputData?.logo}  className="lazyload" draggable="false" />
                   </div>
                   :
                   null
@@ -78,7 +78,7 @@ const SmallBanner = (props) => {
                     className={props?.inputData?.imgTagcss ? props?.inputData?.imgTagcss+" lazyload" : 'h-full w-full lazyload'}
                     src={props?.inputData?.image}
                     alt="Picture of the author"  
-                    
+                    draggable="false"
                   />
                 </div>
                 :
@@ -115,7 +115,7 @@ const SmallBanner = (props) => {
         </div>
         :
         <section className="w-full bg-cover">
-          <img className={props?.inputData?.className ? props?.inputData?.className+" lazyload" : "h-96 w-auto mx-auto mt-10 xxl:my-16 pb-10 lazyload"} data-src={props?.inputData?.singlebgImage} alt={props?.inputData?.alt} />
+          <img className={props?.inputData?.className ? props?.inputData?.className+" lazyload" : "h-96 w-auto mx-auto mt-10 xxl:my-16 pb-10 lazyload"} data-src={props?.inputData?.singlebgImage} alt={props?.inputData?.alt} draggable="false" />
         </section>
       }
     </section>

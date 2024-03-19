@@ -45,7 +45,7 @@ const LeftRightImgCenterContent = (props) => {
                         src={props?.inputData?.bgImage}
                         alt="Big Image"
                         className={props?.inputData?.bgImageCss ? props?.inputData?.bgImageCss + " lazyload " : "w-full h-auto object-cover lazyload "}
-
+                        draggable="false"
                     />
                 </div>
 
@@ -58,7 +58,7 @@ const LeftRightImgCenterContent = (props) => {
                                     src={data.imageSrc}
                                     alt={`Image ${index}`}
                                     className="lazyload "
-
+                                    draggable="false"
                                  />
                             </div>
                             <div className='text-left'>
@@ -95,7 +95,7 @@ const LeftRightImgCenterContent = (props) => {
                                 return (
                                     <>
                                         <div id={index} className={props.inputData?.gridSubDivCss ? props.inputData?.gridSubDivCss : "flex flex-col items-center justify-center "}>
-                                            {data.icon ? <img src={data.icon} className="mx-auto lazyload " alt={"contactIcon" + index} />
+                                            {data.icon ? <img src={data.icon} className="mx-auto lazyload " alt={"contactIcon" + index} draggable="false" />
                                                 :
                                                 null
                                             }

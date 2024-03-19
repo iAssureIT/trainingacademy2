@@ -100,7 +100,7 @@ const Technology = (props) => {
                                  <div className={'grid grid-cols-1 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 px-3 md:px-5 py-2 md:py-10 mx-auto'}>
                                     {card.imageArr.map((img, index) => {
                                        return (
-                                          <img className="mx-auto lazyload" alt={"technology " + index} src={img} />
+                                          <img className="mx-auto lazyload" alt={"technology " + index} src={img} draggable="false" />
                                        )
                                     })
                                     }

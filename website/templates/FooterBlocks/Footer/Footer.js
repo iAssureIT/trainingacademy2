@@ -61,6 +61,7 @@ const Footer = (props) => {
                                       ? props.inputData?.icon
                                       : ""
                                   }
+                                  draggable="false"
                                 />
                               ) : null}
                               {data.label}
@@ -184,6 +185,7 @@ const Footer = (props) => {
                         : " lazyload mr-3 "
                     }
                     alt="Logo"
+                    draggable="false"
                   />
                 </a>
                 <a
@@ -199,6 +201,7 @@ const Footer = (props) => {
                         : " mr-3 lazyload"
                     }
                     alt="Logo"
+                    draggable="false"
                   />
                 </a>
 
