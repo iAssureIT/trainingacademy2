@@ -138,7 +138,7 @@ function MenuBar(props) {
                backgroundSize: "100% 100%"
             }}
          >
-            <div className="hidden md:hidden lg:block items-center h-20 flex-shrink-0 text-white mr-6 object-fit md:mt-5">
+            <div className="hidden md:hidden lg:block items-center h-20 md:h-16 flex-shrink-0 text-white mr-6 object-fit md:mt-7">
                <a href="/">
                   <img
                      id="navLogo"
