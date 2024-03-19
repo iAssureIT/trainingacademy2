@@ -29,13 +29,13 @@ const ThankYouPage = ({ data }) => {
     return (
         <main className=" bg-white font-TerminaTest h-full z-4">
            
-            <div className="h-auto pt-10 md:py-20 lg:py-28">
+            <div className="h-auto pt-10 md:py-20 lg:py-28 2xl:py-24">
                 <div className="bg-white my-4 mx-3 p-2 md:p-6 md:w-3/4 lg:w-1/2 xl:w-2/4 2xl:w-1/3 md:mx-auto border shadow-[0_3px_10px_rgb(0,0,0,0.2)] " >
                    <img src="/images/specific/trainingAcademy/checkMark.webp" className="mx-auto h-20 md:h-auto z-4 -mt-10 md:-mt-20 " />
                     <div className="text-center mt-10">
                         <h3 className="text-4xl md:text-7xl  text-blue-600  text-center font-GreatVibes   ">Thank you</h3>
                         <p className=" my-5 text-lg md:text-2xl font-bold   ">You have successfully registered for the workshop.</p>
-                        <p className=" my-5 text-lg md:text-2xl font-bold   "><span>Please mark your calendar and set reminder for 17th March, 2024 Sunday @4:00pm. </span></p>
+                        <p className=" my-5 text-lg md:text-2xl font-bold   "><span>Please mark your calendar and set reminder for 28th March, 2024 Thursday @4:00pm. </span></p>
                         <p className=" md:text-lg"><span>To become a part of your life changing workshop community,</span><br/> join us on WhatsApp group by clicking below link  </p>
                         <button className="my-5 px-1 md:py-1 md:px-2 h-16 md:h-auto  bg-green-500 md:text-center rounded-full hover:bg-blue-500">
                             {/* <i class="fa-brands fa-square-whatsapp"></i> */}

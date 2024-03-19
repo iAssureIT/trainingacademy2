@@ -130,15 +130,15 @@ const StudEnrollModal = (props) => {
                     setSubmitted(false);
                     const formValues1 = {
                         toEmail: fields.email,
-                        subject: "Confirmation: Registration for March 17th Workshop Successful!",
+                        subject: "Confirmation: Registration for March 28th Workshop Successful!",
                         text: "",
                         mail:
                             "Dear " +
                             fields.fullName +
                             ", <br/><br/>" +
                             "Congratulations! You've successfully registered for our workshop on HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY!" +
-                            `<div style="color: #333; background: #f2f2f2; padding: 20px; margin: 25px 0 25px 0" ><b>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY | 17th March, Sunday | Hindi/English</b>
-                            <div style="margin-top:15px"> Date & Time <span style="margin-left:10px">Mar 17, 2024; 4:00 PM to 7:00 PM India</span> </div>
+                            `<div style="color: #333; background: #f2f2f2; padding: 20px; margin: 25px 0 25px 0" ><b>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY | 28th March, Sunday | Hindi/English</b>
+                            <div style="margin-top:15px"> Date & Time <span style="margin-left:10px">Mar 28, 2024; 4:00 PM to 7:00 PM India</span> </div>
                             </div>`+
                             "Please Click the Link below to Join our WhatsApp Group"+
                             "<br/>" 
@@ -191,7 +191,7 @@ const StudEnrollModal = (props) => {
                         text: "",
                         mail:
                             "Dear Admin, <br/>" +
-                            "This is to inform you that we have received a new Registration for 17 March '24 Workshop.<br/>Below are the details of the student:<br/> <br/> " +
+                            "This is to inform you that we have received a new Registration for 28 March '24 Workshop.<br/>Below are the details of the student:<br/> <br/> " +
                             "<b>Full Name: </b>" +
                             fields.fullName +
                             "<br/>" +
@@ -243,7 +243,7 @@ const StudEnrollModal = (props) => {
 
                     <div className="flex items-center justify-between p-4 border-b rounded-t md:p-5">
                         <h3 className="text-center  text-xl font-semibold text-gray-900">
-                        Register for 17th march 2024
+                        Register for 28th march 2024
                         </h3>
                         <button onClick={closeModal} type="button" className="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-toggle="authentication-modal">
                             <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -276,7 +276,7 @@ const StudEnrollModal = (props) => {
                                 <div>
                                     <label for="city" className="block mb-2 text-sm font-medium text-gray-900 ">City<span className="my-auto text-red-600">*</span></label>
                                     <input type="text" name="city" id="city" onChange={handleChange}
-                                        value={fields.city} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="" />
+                                        value={fields.city} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="Enter city" />
                                     {errors.city && <p className="mt-1 text-xs text-red-500">{errors.city}</p>}
                                 </div>
                             </div>
