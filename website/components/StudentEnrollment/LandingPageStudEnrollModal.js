@@ -137,7 +137,7 @@ const StudEnrollModal = (props) => {
                             fields.fullName +
                             ", <br/><br/>" +
                             "Congratulations! You've successfully registered for our workshop on HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY!" +
-                            `<div style="color: #333; background: #f2f2f2; padding: 20px; margin: 25px 0 25px 0" ><b>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY | 28th March, Sunday | Hindi/English</b>
+                            `<div style="color: #333; background: #f2f2f2; padding: 20px; margin: 25px 0 25px 0" ><b>HOW TO GET ENTRY & HIGH SALARY JOB IN IT INDUSTRY | 28th March, Thursday | Hindi/English</b>
                             <div style="margin-top:15px"> Date & Time <span style="margin-left:10px">Mar 28, 2024; 4:00 PM to 7:00 PM India</span> </div>
                             </div>`+
                             "Please Click the Link below to Join our WhatsApp Group"+
@@ -191,7 +191,7 @@ const StudEnrollModal = (props) => {
                         text: "",
                         mail:
                             "Dear Admin, <br/>" +
-                            "This is to inform you that we have received a new Registration for 28 March '24 Workshop.<br/>Below are the details of the student:<br/> <br/> " +
+                            "This is to inform you that we have received a new Registration for 28 March 2024 Workshop.<br/>Below are the details of the student:<br/> <br/> " +
                             "<b>Full Name: </b>" +
                             fields.fullName +
                             "<br/>" +
