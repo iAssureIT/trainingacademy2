@@ -110,7 +110,7 @@ const HomePage = () => {
 			"lazyload object-fit py-0 lg:py-10 bg-blue-600 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		logoCss: "lazyload justify-left align-left  mb-5 ",
 		paraCss:
-			" text-white text-sm md:text-lg lg:text-xl font-medium text-left md:mt-5 ",
+			" text-white text-sm md:text-lg lg:text-xl font-medium text-left ",
 		gridCss:
 			"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full pb-10  lg:pb-0 xl:h-full h-full content-center  px-5 md:px-20 2xl:px-32 xxl:!px-48",
 		gridSubDivCss:
@@ -166,16 +166,16 @@ const HomePage = () => {
 		id: "Banner_Block2",
 		paraTitle:
 			"At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
-		paraTitleClass: "subTitle text-sm md:text-lg lg:text-xl text-justify text-black",
+		paraTitleClass: "subTitle text-sm md:text-lg lg:text-xl text-justify text-black mt-10",
 		pageTitle:
 			"<span class='font-extrabold'> Welcome to India's Premier Training Program in FullStack Development</span>",
 		pageTitleCss: " mb-10 md:mb-20 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black w-full text-center BlockTitle ",
 		gridColCss:
-			"my-auto mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-10 ",
+			" mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 md:py-0 ",
 
 		gridCol1Css: "  ",
 		gridClass:
-			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center lg:px-20 md:gap-x-3",
+			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center lg:px-20 xl:px-24 md:gap-x-3",
 		bannerClass:
 			"object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
@@ -213,7 +213,7 @@ const HomePage = () => {
 		image: "/images/specific/trainingAcademy/iAssureIT-training-16.webp",
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
-		imgTagcss: "mx-auto lazyload",
+		imgTagcss: "mx-auto xl:h-[400px]",
 	};
 
 	
@@ -622,55 +622,55 @@ const HomePage = () => {
 				cardImage: "/images/specific/Icons-2/1.webp",
 				altImage: "imageDescription",
 				cardTitle: "1. Comprehensive Curriculum",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: " txtJustify h-auto  my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				content: "Our training program covers all facets of FullStack Development, including Web Technologies, ReactJS Framework, NodeJS, MongoDB, and more. Each course is meticulously designed to provide in-depth understanding and practical skills.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/2.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "2. Expert Mentorship",
 				content: "With Mr. Ashish Naik at the helm, students benefit from personalized mentorship and guidance from an industry expert. Mr. Naik's extensive experience and practical insights enrich the learning experience, ensuring students are well-prepared for the challenges of the real world."
 			},
 			{
 				cardImage: "/images/specific/Icons-2/3.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "txtJustify  h-auto  my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "3. Cutting-edge Technologies",
 				content: "Stay ahead of the curve with our focus on the latest technologies and frameworks. From HTML5 and CSS3 to advanced topics like AWS integration and Next.js, our curriculum is constantly updated to reflect industry trends.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/4.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "4. Hands-on Learning",
 				content: "Our program emphasizes hands-on learning through practical projects, assignments, and real-world case studies. Students gain valuable experience by working on industry-relevant projects under the guidance of experienced mentors.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/5.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "5. Internship Opportunities",
 				content: "Students who enroll in all four courses are eligible for a three-month internship at iAssure International Technologies Pvt Ltd, with the possibility of securing a full-time job based on performance. ",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/6.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "6. Job Assistance",
 				content: "We provide 100% job assistance to our students, equipping them with the skills and confidence to ace interviews and secure lucrative positions in top IT companies.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/7.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "7. Flexible Learning Options",
 				content: "Whether you're a beginner or an experienced developer looking to upskill, our program caters to individuals at all levels. Choose from flexible payment options and customize your learning journey based on your goals and schedule.",
 			},
 			{
 				cardImage: "/images/specific/Icons-2/8.webp",
 				altImage: "imageDescription",
-				classForContent: "justify-content h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "8. Community and Networking",
 				content: "Join a vibrant community of like-minded individuals, network with industry professionals, and participate in workshops, seminars, and networking events to broaden your horizons and foster professional growth.",
 			}

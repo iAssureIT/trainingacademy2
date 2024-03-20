@@ -366,7 +366,18 @@ background-position: left;
 .border-Accordion{
 border-color: #fd641f;
 }
-
+.txtJustify p{
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05em;
+}
+.txtJustify {
+  text-align: justify;
+  hyphens: auto;
+  /* word-spacing: -2px; */
+  word-break: break-all;
+}
 .scroll-smooth{
   /* scroll-padding: 230px 0 0 50px; */
 }
