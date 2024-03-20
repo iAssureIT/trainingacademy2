@@ -202,6 +202,9 @@ app.post("/send-email", (req, res) => {
       user: globalVariable.user,
       pass: globalVariable.pass,
     },
+    tls: {
+      rejectUnauthorized: true
+    }
   };
 
   console.log("nodemailerValues => ", nodemailerValues);

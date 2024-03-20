@@ -197,15 +197,18 @@ const content_Footer2 = {
   footerText:
     '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
-
-const options = {
-  duration: 1500, // Duration of the scroll animation in milliseconds
-  smooth: 'linear', // Enable smooth scrolling
-};
 export default function RootLayout({ children }) {
   const handleScrollToTop = () => {
-    animateScroll.scrollToTop(options);
+    const options = {
+      // Your options here, for example:
+      duration: 1500,
+      smooth: 'easeInOutQuint',
+    };
+
+    // Scroll to 100 pixels from the top of the page
+    animateScroll.scrollTo(100, options);
   };
+
   const pathname = usePathname();
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
@@ -220,7 +223,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en" className='scroll-smooth' style={{scrollBehavior:'smooth', scrollPaddingTop:'28%'}}  suppressHydrationWarning={true}>
+    <html lang="en" className='scroll-smooth' style={{ scrollBehavior: 'smooth', scrollPaddingTop: '28%' }} suppressHydrationWarning={true}>
       <head>
         <title>{metadata.title}</title>
         <link rel="icon" href="/favicon.ico" sizes="any"></link>
@@ -229,7 +232,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         ></link>
         <meta charSet="UTF-8" />
-        
+
         <meta name="viewport" content="width=device-width" />
         {/* <meta
           name={metadata.title}
@@ -251,7 +254,7 @@ export default function RootLayout({ children }) {
 
         {/* <!-- Google tag (gtag.js) --> */}
         <script async defer src="https://www.googletagmanager.com/gtag/js?id=AW-11480106532"></script>
-       
+
       </head>
       <body className={" bg-white"}>
         {
