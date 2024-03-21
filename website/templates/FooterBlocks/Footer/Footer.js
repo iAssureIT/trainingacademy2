@@ -211,7 +211,7 @@ const Footer = (props) => {
                     props.inputData?.iconColor
                   }
                 >
-                  <div className="flex  space-x-2 xl:space-x-5 place-content-start lg:place-content-center my-8">
+                  <div className="flex  space-x-2 xl:space-x-5 place-content-start lg:place-content-center my-0 md:my-8">
                    
                     {props.inputData.twitterLink ? (
                       <a

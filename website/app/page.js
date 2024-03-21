@@ -116,7 +116,7 @@ const HomePage = () => {
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-13.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-auto mx-auto 2xl:mx-0 2xl:float-right md:mb-0 pb-5 md:pb-0 md:py-10",
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-auto mx-auto 2xl:mx-0 2xl:float-right md:mb-0 pb-5 md:pb-0 md:py-10 mt-10 md:mt-1",
 		imgTagcss : '2xl:float-right mx-auto lazyload',
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
@@ -148,7 +148,7 @@ const HomePage = () => {
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-20.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mb-10 pb-5 md:py-0",
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-2/3 mx-auto mt-10 md:mt-1 mb-10 pb-5 md:py-0",
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
@@ -181,7 +181,7 @@ const HomePage = () => {
 		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload ",
-		imgTagcss: "mx-auto xl:h-[300px]  lazyload",
+		imgTagcss: "mx-auto xl:h-[350px] w-2/3 md:w-auto  lazyload",
 		modalId: "registrationModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
@@ -303,7 +303,7 @@ const HomePage = () => {
 				classForContent:
 					"justify-content h-auto text-justify my-auto text-md lg:text-lg px-3 font-[500]",
 				content:
-					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><div class='h-auto md:h-44 lg:h-44 xl:h-36 2xl:h-36'><br/><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
+					"<div class='font-semibold text-left'>Redux, AWS Integration, Authentication, Payment Gateway Integration, Next.js, and more. </div><div class='h-auto md:h-44 lg:h-44 xl:h-36 2xl:h-36 text-left'><br/><span class=''>Elevate your FullStack expertise with advanced techniques and cutting-edge technologies. From mastering Redux for state management to integrating AWS services for scalability and reliability, this course pushes the boundaries of what's possible. Explore advanced topics such as user authentication, data visualization with animated graphical charts, and next-generation frameworks like NEXTJS.</span></div>",
 			},
 		],
 	};
@@ -628,7 +628,7 @@ const HomePage = () => {
 			{
 				cardImage: "/images/specific/Icons-2/2.webp",
 				altImage: "imageDescription",
-				classForContent: "txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
+				classForContent: "text-left md:txtJustify h-auto text-justify my-auto text-[14px] lg:text-[16px] p-3 font-[500]",
 				cardTitle: "2. Expert Mentorship",
 				content: "With Mr. Ashish Naik at the helm, students benefit from personalized mentorship and guidance from an industry expert. Mr. Naik's extensive experience and practical insights enrich the learning experience, ensuring students are well-prepared for the challenges of the real world."
 			},
@@ -715,11 +715,11 @@ const HomePage = () => {
 		classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-3 md:py-10  leading-tight",
 		classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",
 		classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
-		classForCardTitle: "text-white text-center font-bold text-[1.2rem] md:text-sm lg:text-md p-3",
+		classForCardTitle: "text-white text-center font-bold text-[1.2rem] md:text-sm lg:text-[1.1rem] p-3",
 		classForCardTitle_2: "",
 		cardTitle2Css:"text-center",
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
-		bgImgCss: "relative bg-cover p-2 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
+		bgImgCss: "relative bg-cover p-2 md:px-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><div class='font-extrabold  text-xl md:text-2xl xl:text-3xl '>Total Investment</div>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +
