@@ -65,7 +65,7 @@ const HomePage = () => {
 		gridSubDivCss:
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-18.webp",
-		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-3/4 2xl:w-3/4 mx-auto ",
+		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-3/4 2xl:w-3/4 mt-5 md:mt-1 mx-auto ",
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
