@@ -181,7 +181,7 @@ const HomePage = () => {
 		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload ",
-		imgTagcss: "mx-auto  lazyload",
+		imgTagcss: "mx-auto xl:h-[300px] 3xl:!h-[400px] lazyload",
 		modalId: "registrationModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
@@ -203,7 +203,7 @@ const HomePage = () => {
 			"<span class='font-extrabold uppercase'> Ashish Naik’s Vision:</span>",
 		pageTitleCss: " mb-5 sm:mb-10 md:mb-20 text-white w-full text-center BlockTitle",
 		gridColCss:
-			" mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-0 sm:px-10   ",
+			" mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 sm:py-0 sm:px-10  2xl:pr-40  ",
 
 		gridCol1Css: "  ",
 		gridClass:

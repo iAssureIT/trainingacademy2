@@ -1,5 +1,5 @@
 "use client";
-import React, { $, useEffect } from "react";
+import React, { $, useEffect,useState } from "react";
 import axios from "axios";
 import { usePathname } from "next/navigation";
 import { animateScroll } from 'react-scroll';
@@ -198,16 +198,16 @@ const content_Footer2 = {
     '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
 export default function RootLayout({ children }) {
-  const handleScrollToTop = () => {
-    const options = {
-      // Your options here, for example:
-      duration: 1500,
-      smooth: 'easeInOutQuint',
-    };
+  // const handleScrollToTop = () => {
+  //   const options = {
+  //     // Your options here, for example:
+  //     duration: 1500,
+  //     smooth: 'easeInOutQuint',
+  //   };
 
-    // Scroll to 100 pixels from the top of the page
-    animateScroll.scrollTo(100, options);
-  };
+  //   // Scroll to 100 pixels from the top of the page
+  //   animateScroll.scrollTo(100, options);
+  // };
 
   const pathname = usePathname();
   useEffect(() => {
@@ -222,6 +222,61 @@ export default function RootLayout({ children }) {
 
   }, []);
 
+  
+
+  // window.onscroll = function() {
+  //   // scrollFunction()
+  // };
+  
+  // function scrollFunction() {
+  //   var mybutton = document.getElementById("myBtn");
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //     mybutton.classList.add("block");
+  //   } else {
+  //     mybutton.classList.add("hidden");
+  //   }
+  // }
+  // const scrollToTop = () => window.scrollTo(0, 0);
+  const scrollTo =(element, duration)=> {
+    return () => {
+    console.log("element",element)
+    console.log("document.documentElement",document.documentElement)
+    var e = document.documentElement;
+    if (e.scrollTop === 0) {
+      var t = e.scrollTop;
+      ++e.scrollTop;
+      e = t + 1 === e.scrollTop-- ? e : document.body;
+    }
+    scrollToC(e, e.scrollTop, element, duration);
+  };
+}
+  
+  // Element to move, element or px from, element or px to, time in ms to animate
+  function scrollToC(element, from, to, duration) {
+    if (duration <= 0) return;
+    if (typeof from === "object") from = from.offsetTop;
+    if (typeof to === "object") to = to.offsetTop;
+  
+    scrollToX(element, from, to, 0, 1 / duration, 20, linearEase);
+  }
+  
+  function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+    if (t01 < 0 || t01 > 1 || speed <= 0) {
+      element.scrollTop = xTo;
+      return;
+    }
+    element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+    t01 += speed * step;
+    setTimeout(function() {
+      scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+    }, step);
+  }
+  
+  function linearEase(t) {
+    t--;
+    return t * t * t + 1;
+  }
+  
   return (
     <html lang="en" className='scroll-smooth' style={{ scrollBehavior: 'smooth', scrollPaddingTop: '28%' }} suppressHydrationWarning={true}>
       <head>
@@ -275,7 +330,8 @@ export default function RootLayout({ children }) {
               <Footer2 inputData={content_Footer2} />
 
               <div
-                onClick={handleScrollToTop}
+                id="myBtn"
+                onClick={scrollTo(0,8000)}
                 className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
               >
                 <i className="text-white fa-solid fa-arrow-up"></i>
