@@ -149,7 +149,7 @@ function MenuBar(props) {
                   />
                </a>
             </div>
-            <div className="block lg:hidden  items-center h-12  lg:h-14 flex-shrink-0 text-white mr-6 object-fit">
+            <div className="block lg:hidden  items-center h-12  lg:h-14 flex-shrink-0 text-white mr-6 object-fit  w-2/5 md:w-auto">
                <a href="/">
                   <img
                      id="navLogo1"

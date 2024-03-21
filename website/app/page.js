@@ -181,7 +181,7 @@ const HomePage = () => {
 		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload ",
-		imgTagcss: "mx-auto xl:h-[300px] 3xl:!h-[400px] lazyload",
+		imgTagcss: "mx-auto xl:h-[300px]  lazyload",
 		modalId: "registrationModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
@@ -213,7 +213,7 @@ const HomePage = () => {
 		image: "/images/specific/trainingAcademy/iAssureIT-training-16.webp",
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload",
-		imgTagcss: "mx-auto xl:h-[400px]",
+		imgTagcss: "mx-auto xl:h-[400px] 2xl:-mt-5",
 	};
 
 	

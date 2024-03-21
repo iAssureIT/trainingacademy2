@@ -90,7 +90,7 @@ const content_Menubar = {
   navCss:
     "mx-10 lg:mx-10 xl:mx-10 2xl:mx-24 flex flex-wrap items-center justify-between  py-1 ",
   classForLogoLink: "w-2/3 sm:w-1/3 md:w-1/6 lg:w-1/4 xl:w-auto",
-  classForLogo: "h-full w-full md:w-full ",
+  classForLogo: "md:h-full w-full md:w-full ",
   showLoginbutton: true,
   customButton: false,
   showSubMenu: true,
@@ -288,7 +288,7 @@ export default function RootLayout({ children }) {
         ></link>
         <meta charSet="UTF-8" />
 
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width" initial-scale="1.0" />
         {/* <meta
           name={metadata.title}
           content="iAssure International Technologies Pvt Ltd is a Pune, India based IT Services & Product Development company."
