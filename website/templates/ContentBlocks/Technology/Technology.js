@@ -113,7 +113,7 @@ const Technology = (props) => {
                            card.cardTitle_2
                               ?
                               <div className={props.inputData?.cardTitle2Css ? props.inputData.cardTitle2Css : 'flex justify-start'}>
-                                 <div className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md text-primary dark:text-primary-400"} dangerouslySetInnerHTML={{ __html: card?.cardTitle_2 }} ></div>
+                                 <div className={props.inputData.classForCardTitle_2 ? props.inputData.classForCardTitle_2 : "font-bold text-md text-primary dark:text-primary-400 text-center mx-auto "} dangerouslySetInnerHTML={{ __html: card?.cardTitle_2 }} ></div>
                               </div>
                               : null
                         }

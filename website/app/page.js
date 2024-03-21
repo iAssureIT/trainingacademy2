@@ -175,7 +175,7 @@ const HomePage = () => {
 
 		gridCol1Css: "  ",
 		gridClass:
-			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center lg:px-20 xl:px-24 md:gap-x-3",
+			"grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-content-center lg:h-full   xl:h-full h-full content-center lg:px-20 xl:px-24 2xl:px-40 md:gap-x-3",
 		bannerClass:
 			"object-fit py-5 md:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
@@ -715,11 +715,11 @@ const HomePage = () => {
 		classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-3 md:py-10  leading-tight",
 		classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",
 		classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
-		classForCardTitle: "text-white text-center font-bold text-sm md:text-sm lg:text-md p-3",
+		classForCardTitle: "text-white text-center font-bold text-[1.2rem] md:text-sm lg:text-md p-3",
 		classForCardTitle_2: "",
 		cardTitle2Css:"text-center",
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
-		bgImgCss: "relative bg-cover p-12 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
+		bgImgCss: "relative bg-cover p-2 md:p-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><div class='font-extrabold  text-xl md:text-2xl xl:text-3xl '>Total Investment</div>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +

@@ -32,7 +32,7 @@ const ThankYouPage = ({ data }) => {
     return (
         <main className=" bg-white font-TerminaTest h-full z-4">
 
-            <div className="h-auto pt-10 md:py-20 lg:py-28 2xl:pt-20 ">
+            <div className="h-auto pt-10 md:pt-20 lg:pt-28 md:pb-20 lg:pb-28 2xl:pt-20 2xl:pb-0 ">
                 <div className="bg-white my-4 mx-3 p-2 md:p-6 md:w-3/4 lg:w-1/2 xl:w-2/4 2xl:w-2/5 3xl:w-1/3 md:mx-auto border shadow-[0_3px_10px_rgb(0,0,0,0.2)] " >
                     <img src="/images/specific/trainingAcademy/checkMark.webp" className="mx-auto h-20 md:h-auto z-4 -mt-10 md:-mt-20 " />
                     <div className="text-center mt-10">
