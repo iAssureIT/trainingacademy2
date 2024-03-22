@@ -43,7 +43,7 @@ const HomePage = () => {
 		modalDisplay: "true",
 		// modalUrlName: "Download Brochure",
 		modalUrlName: "Enroll Now",
-		modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-lg   ml-3 md:ml-10 py-1 md:py-2 px-6 md:px-4  xl:px-6  2xl:px-10  mt-3 lg:mt-8 xl:mt-16  rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-lg   ml-3 md:ml-10 py-1 md:py-2 px-6 md:px-4  xl:px-6  2xl:px-10  mt-3 lg:mt-8 xl:mt-16 2xl:mt-5 rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
 
 	};
 
