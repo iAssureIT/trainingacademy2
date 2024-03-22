@@ -100,7 +100,7 @@ const DowloadBrochureModal = (props) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         var adminEmail = process.env.CONTACT_EMAIL
-        var adminEmailSubject = " Brochure Downloaded"
+        var adminEmailSubject = process.env.ADMIN_DOWNLOAD_PDF_FORM_SUB 
         if (validateForm()) {
             setSubmitted(true);
             var formValues = {
@@ -140,18 +140,21 @@ const DowloadBrochureModal = (props) => {
                         .then((res) => {
                             if (res.status === 200) {                               
                                 setBtnLoading(false)
-                                const link = document.createElement('a');
-                                link.href = "https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf";
-                                link.setAttribute('download', 'Brochure.pdf');
-                                document.body.appendChild(link);
-                                link.click();
-                                document.body.removeChild(link);
+                                //  const link = document.createElement('a');
+                                //  link.href = "https:iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf";
+                                //  link.setAttribute('download', 'Brochure.pdf');
+                                //  document.body.appendChild(link);
+                                //  link.click();
+                                //  document.body.removeChild(link);
+                                window.open('https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf', '_blank');
+  
                                 setFields({
                                     fullName: "",
                                     email: "",
                                     phone: "",
                                     city: "",
                                 });
+                                closeModal();
                             }
                         })
                         .catch((error) => {
@@ -219,7 +222,8 @@ const DowloadBrochureModal = (props) => {
                                     Submit &nbsp; <i className="fa fa-spinner fa-pulse"></i>{" "}
                                 </button>)
                                 : (
-                                    <button type="submit" onClick={handleSubmit} className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <button type="submit" onClick={handleSubmit} className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank"
+      download>
                                         Submit
                                     </button>
                                 )
