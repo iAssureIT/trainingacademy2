@@ -145,7 +145,7 @@ const CenterContentRepeatableBlocks = (props) => {
                                                 <img
                                                     
                                                     loading="lazy"
-                                                    className={" rounded-full shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
+                                                    className={"p-0.5 rounded-full shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lazyload"}
                                                     src={card?.profileImage}
                                                     alt={card?.altImage ? card?.altImage : "iassureitProfile"}
                                                     draggable="false"

@@ -86,13 +86,12 @@ function MenuBar(props) {
             window.location.assign("/");
          });
    };
-   const imageURL = "/images/specific/Home/header.webp"
+   const imageURL = ""
 
    if (typeof window !== 'undefined') {
-      var nav1 = document.querySelector(".menubar");
-
 
       window.addEventListener('scroll', () => {
+         var nav1 = document.querySelector(".menubar");
          // var shouldAddClass = window.scrollY > nav1.clientHeight;
          var shouldAddClass = window.scrollY;
          var menuItemElements = document.querySelectorAll(".menuText");

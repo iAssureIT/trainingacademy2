@@ -15,7 +15,7 @@ const AccordionBlock = ({ inputData }) => {
 
   const { dash, pageTitle, pageTitleCss, accordionData, titleDescriptionCss, titleDescription, titleDescription_2, titleDescription_2Css, modalUrlName, modalDisplay,modalBtnCss} = inputData;
   return (
-    <div className=" px-4 mx-auto mb-10 lg:px-10 xl:px-16 2xl:px-32 mt-20">
+    <div className="container mx-auto px-5 lg:px-32 xl:px-32 pb-10 bg-white  ">
         {isModalOpen && <LPStudEnrollModal modalId="stud_enroll_modal"/>}
       {dash && (
         <div className="w-full mb-4">

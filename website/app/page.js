@@ -462,9 +462,10 @@ const HomePage = () => {
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		testimonial: true,
+		// profileImageCss:"grid ",
 		cardsArray: [
 			{
-				profileImage: "/images/specific/testimonials/Akshay-Madanepatil.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Akshay-Madanepatil.webp",
 				designation: "Student",
 				altImage: "Akshay_Madanepatil",
 				name: "Akshay Madanepatil",
@@ -475,7 +476,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Siddhant-Kakade.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Siddhant-Kakade.webp",
 				altImage: "Siddhant_Kakade",
 				classForContent: " mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Siddhant Kakade",
@@ -497,7 +498,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Rutika-Bankar.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Rutika-Bankar.webp",
 				altImage: "Rutika_Bankar",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Rutika Bankar",
@@ -508,7 +509,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Ashwini-Kori.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Ashwini-Kori.webp",
 				altImage: "Ashwini-Kori",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Ashwini Kori",
@@ -522,7 +523,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Shubham-Ankushe.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Shubham-Ankushe.webp",
 				altImage: "Shubham-Ankushe",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Shubham Ankushe",
@@ -532,7 +533,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Ankit-Kumar-Rai.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Ankit-Kumar-Rai.webp",
 				altImage: "Ankit-Kumar-Rai",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Ankit Kumar Rai",
@@ -542,7 +543,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Abhishek-Varma.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Abhishek-Varma.webp",
 				altImage: "Abhishek_Varma",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Abhishek Varma",
@@ -560,7 +561,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Mohit-Panjwani.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Mohit-Panjwani.webp",
 				altImage: "Mohit_Panjwani",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Mohit Panjwani",
@@ -569,7 +570,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Archana-Kadam.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Archana-Kadam.webp",
 				altImage: "Archana_Kadam",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Archana Kadam",
@@ -581,7 +582,7 @@ const HomePage = () => {
 			},
 			{
 				designation: "Student",
-				profileImage: "/images/specific/testimonials/Aniket-Pawar.webp",
+				profileImage: "/images/specific/testimonials/Students-Images/Aniket-Pawar.webp",
 				altImage: "Aniket_Pawar",
 				classForContent: "mb-2 md:mb-4 breakWord h-[110px] md:h-[155px] lg:h-[150px] md:px-9 slide  overflow-auto  justify-content  text-justify my-auto text-xs lg:text-sm p-3 font-[500]",
 				name: "Aniket Pawar",
