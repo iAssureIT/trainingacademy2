@@ -31,6 +31,7 @@
     "react-scroll": "^1.9.0",
     "react-select": "^5.7.4",
     "react-share": "^5.0.3",
+    "react-super-responsive-table": "^5.2.2",
     "sitemap": "^7.1.1",
     "sweetalert2": "^11.7.28",
     "xlsx": "^0.18.5",

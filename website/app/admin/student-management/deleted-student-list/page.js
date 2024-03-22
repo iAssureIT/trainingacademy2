@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'; 
 
 const DeletedStudentList = props => {
     const [studList, setStudList] = useState(null);
@@ -133,53 +135,53 @@ const DeletedStudentList = props => {
                 <div className=" ">
                     <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                         <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
-                            <table className="min-w-full leading-normal">
-                                <thead>
-                                    <tr>
-                                        <th
+                            <Table className="min-w-full leading-normal">
+                                <Thead>
+                                    <Tr>
+                                        <Th
                                             className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                            fullName
-                                        </th>
-                                        <th
+                                            Full Name
+                                        </Th>
+                                        <Th
                                             className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Email
-                                        </th>
-                                        <th
+                                        </Th>
+                                        <Th
                                             className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Phone Number
-                                        </th>
-                                        <th
+                                        </Th>
+                                        <Th
                                             className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             City
-                                        </th>
-                                        <th
+                                        </Th>
+                                        <Th
                                             className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Status
-                                        </th>
-                                        <th
+                                        </Th>
+                                        <Th
                                             className="px-5 py-3 border-b-2  border-gray-200 bg-gray-100 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
                                             Actions
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                                        </Th>
+                                    </Tr>
+                                </Thead>
+                                <Tbody>
                                     {studList ?
                                         studList?.map((data, index) => {
                                             return (
-                                                <tr key={index}>
-                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                <Tr key={index}>
+                                                    <Td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                         <p className="text-gray-900 whitespace-no-wrap">{data.fullName}</p>
-                                                    </td>
-                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    </Td>
+                                                    <Td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                         <p className="text-gray-900 whitespace-no-wrap">{data.email}</p>
-                                                    </td>
-                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    </Td>
+                                                    <Td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                         <p className="text-gray-900 whitespace-no-wrap">{data.phone}</p>
-                                                    </td>
-                                                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    </Td>
+                                                    <Td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                         <p className="text-gray-900 whitespace-no-wrap">{data.city}</p>
-                                                    </td>
-                                                    <td id={data._id} value={data.status} className="px-5 py-5 border-b border-gray-200 bg-white text-sm" >
+                                                    </Td>
+                                                    <Td id={data._id} value={data.status} className="px-5 py-5 border-b border-gray-200 bg-white text-sm" >
                                                         <select className="bg-white" name="studStatus" onChange={handleUpdateStatus}>
                                                             <option disabled="disabled" selected="true">{data.status}</option>
                                                             <option value="new" >New</option>
@@ -188,20 +190,20 @@ const DeletedStudentList = props => {
                                                             <option value="admitted">Admitted </option>
                                                             <option value="notReachable">Not Reachable </option>
                                                         </select>
-                                                    </td>
-                                                    <td className="px-5 py-5 border-b text-center border-gray-200 bg-white text-sm">
+                                                    </Td>
+                                                    <Td className="px-5 py-5 border-b text-center border-gray-200 bg-white text-sm">
                                                        
                                                         <div>
                                                             <i className="fa fa-trash cursor-pointer hover:text-red-500 " title="Delete" onClick={handleDeleteStatus} id={data._id}></i>
                                                         </div>
-                                                    </td>
-                                                </tr>)
+                                                    </Td>
+                                                </Tr>)
                                         })
                                         :
                                         ""
                                     }
-                                </tbody>
-                            </table>
+                                </Tbody>
+                            </Table>
                         </div>
                     </div>
                 </div>
