@@ -193,7 +193,7 @@ const content_Footer2 = {
     "relative block shadow-lg  bg-no-repeat  max-w-full   bg-center  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] bg-[length:100%_100%] md:bg-[length:100%_100%]",
   bgImage: "/images/specific/Footer/Footer-2.webp",
   smallBGImage: "/images/specific/Footer/Footer-2.webp",
-  copyrightText: '<span class="text-light font-normal">Copyright © ' + currentYear + ', <span class="text-orangeColor hover:text-ftLink "><a href="/" target="_blank" >iAspireIT</a></span> All Rights Reserved</span>',
+  copyrightText: '<span class="text-light font-normal">Copyright © ' + currentYear + ', <span class="text-orangeColor hover:text-ftLink font-bold "><a href="/" target="_blank" >iAspireIT</a></span> All Rights Reserved</span>',
   footerText:
     '<span class="text-light mr-1 mb-3">Designed & Developed By</span> <span class="  text-orangeColor font-bold left hover:text-ftLink "> <a href="https://iassureit.com/" target="_blank"> iAssure International Technologies Pvt. Ltd.</a></span>',
 };
@@ -236,7 +236,7 @@ export default function RootLayout({ children }) {
   //     mybutton.classList.add("hidden");
   //   }
   // }
-  // const scrollToTop = () => window.scrollTo(0, 0);
+  const scrollToTop = () => window.scrollTo(0, 0);
   const scrollTo =(element, duration)=> {
     return () => {
     console.log("element",element)
@@ -277,6 +277,40 @@ export default function RootLayout({ children }) {
     return t * t * t + 1;
   }
   
+  const animationDuration = 1500; // Adjust this value for desired speed
+
+  function smoothScrollToTop() {
+  const currentScrollPos = window.pageYOffset;
+  const finalScrollPos = 0;
+  const animationDuration = 1500; // Adjust this value for desired speed
+
+  // Define an easing function (e.g., easeInOutQuad)
+  const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) * (t - 1);
+
+  let startTime = null;
+
+  const animateScroll = (timestamp) => {
+    if (!startTime) startTime = timestamp;
+    const elapsedTime = timestamp - startTime;
+
+    if (elapsedTime >= animationDuration) {
+      window.scrollTo(0, finalScrollPos);
+      return;
+    }
+
+    const normalizedTime = Math.min(1, elapsedTime / animationDuration);
+    const easedTime = easeInOutQuad(normalizedTime);
+
+    const newScrollPos = currentScrollPos + (finalScrollPos - currentScrollPos) * easedTime;
+    window.scrollTo(0, newScrollPos);
+
+    requestAnimationFrame(animateScroll);
+  };
+
+  requestAnimationFrame(animateScroll);
+}
+  
+
   return (
     <html lang="en" className='scroll-smooth' style={{ scrollBehavior: 'smooth', scrollPaddingTop: '28%' }} suppressHydrationWarning={true}>
       <head>
@@ -331,7 +365,7 @@ export default function RootLayout({ children }) {
 
               <div
                 id="myBtn"
-                onClick={scrollTo(0,8000)}
+                onClick={smoothScrollToTop}
                 className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
               >
                 <i className="text-white fa-solid fa-arrow-up"></i>

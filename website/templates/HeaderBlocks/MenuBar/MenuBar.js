@@ -24,7 +24,7 @@ function MenuBar(props) {
          const parseUser_id = userDetailsParse.user_id;
          setUserData(userDetailsParse);
       }
-      let userExists = pathname.includes("/admin/");
+      let userExists = pathname.includes("/admin");
       if (userExists && !userDetails) {
          Swal.fire("Please login first!", "", "warning");
          window.location.href = "/auth/login";
@@ -124,6 +124,11 @@ function MenuBar(props) {
                   imageElement2.src = "/images/specific/trainingAcademy/White-Logo.png";
                }
          }
+         if (shouldAddClass) {
+				nav1.classList.add("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
+			} else {
+				nav1.classList.remove("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
+			}
       });
    }
    return (
@@ -295,7 +300,7 @@ function MenuBar(props) {
                            md:w-auto z-20 ${isOpen ? "block" : "hidden"}`}
                         >
 
-                           <div className="text-sm md:flex md:flex-wrap h-8 md:my-4 lg:my-auto ">
+                           <div className="text-sm md:flex md:flex-wrap h-8 md:mt-4 ">
                               {userData ? (
                                  <ul
                                     id="navBar"

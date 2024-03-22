@@ -89,7 +89,7 @@ const Technology = (props) => {
                           ?
                            <div className="w-0 h-0 mx-auto
                                           border-l-[25px] border-l-transparent 
-                                          border-t-[25px] border-t-skyBlue
+                                          border-t-[25px] border-t-lightBlue
                                           border-r-[25px] border-r-transparent">
                            </div>
                            :

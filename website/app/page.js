@@ -10,7 +10,7 @@ import Technology from "@/templates/ContentBlocks/Technology/Technology";
 import AccordionBlock from '@/templates/Accordion/AccordionBlock.js';
 import BannerSmallBlocks from '@/templates/BannerSmallBlocks/BannerSmallBlocks'
 import StudEnrollModal from '@/components/StudentEnrollment/StudEnrollModal';
-
+import DownloadBrochure from '@/components/StudentEnrollment/DowloadBrochureModal'
 const HomePage = () => {
 
 	const content_Banner = {
@@ -27,7 +27,7 @@ const HomePage = () => {
 		gridCss:
 			" pt-10 md:pt-20 lg:pt-32  xl:pt-28 2xl:pt-20  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 place-content-center lg:grid-cols-2 lg:h-full   xl:h-full h-full content-center  px-5 md:px-5 lg:px-12 xl:px-12 2xl:px-16",
 		gridSubDivCss:
-			" lg:mt-0 xl:mt-12 2xl:mt-24 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
+			" lg:mt-0 xl:mt-16 2xl:mt-28 mb-0 lg:mb-20 xl:mb-0 mx-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-2.webp",
 		imageCss: "  object-fit lazyload  lg:w-2/3 xl:w-full 2xl:w-full mx-auto mb-0 lg:pb-16",
 		imgTagcss: "lazyload",
@@ -43,7 +43,7 @@ const HomePage = () => {
 		modalDisplay: "true",
 		// modalUrlName: "Download Brochure",
 		modalUrlName: "Enroll Now",
-		modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-lg   ml-3 md:ml-10 py-1 md:py-2 px-6 md:px-4  xl:px-6  2xl:px-10  mt-3 lg:mt-5   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
+		modalBtnCss: "w-fit mx-auto md:float-left md:mb-10 lg:mb-0 text-white text-center font-bold text-lg   ml-3 md:ml-10 py-1 md:py-2 px-6 md:px-4  xl:px-6  2xl:px-10  mt-3 lg:mt-8   rounded btn bg-orange-500 hover:bg-offWhite hover:text-black cursor-pointer"
 
 	};
 
@@ -168,7 +168,7 @@ const HomePage = () => {
 			"At our training program, we pride ourselves on being the leading destination for individuals aspiring to excel in FullStack Development. Led by the esteemed mentor, Mr. Ashish Naik, a seasoned professional with over 25 years of experience in the IT industry, our program stands as a beacon of excellence, offering unparalleled expertise and guidance to our students.",
 		paraTitleClass: "subTitle text-sm md:text-lg lg:text-xl text-justify text-black mt-10",
 		pageTitle:
-			"<span class='font-extrabold'> Welcome to India's Premier Training Program in FullStack Development</span>",
+			"<span class='font-extrabold uppercase'> Welcome to India's Premier Training Program <br/> in FullStack Development</span>",
 		pageTitleCss: " mb-10 md:mb-20 text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black w-full text-center BlockTitle ",
 		gridColCss:
 			" mx-auto text-white content-center  place-content-center  justify-center py-5 px-5 md:py-0 ",
@@ -227,7 +227,7 @@ const HomePage = () => {
 		classForNoOfCards:
 			"px-10 lg:px-20  xl:px-32 2xl:px-48 mt-10  max-w-8xl text-center justify-evenly grid grid-cols-1 md:grid-cols-1 gap-x-4 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6",
 		classForCards:
-			" p-3 mb-7 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
+			" p-3 mb-7 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white ",
 		classForCardTitle:
 			"text-left font-bold text-xl md:text-xl lg:text-2xl px-3",
 		classForCardTitle_2:
@@ -280,13 +280,13 @@ const HomePage = () => {
 		classForNoOfCards:
 			"px-10 lg:px-20 xl:px-32 2xl:px-48  max-w-8xl text-center justify-evenly grid grid-cols-1 ",
 		classForCards:
-			" p-3 mb-7 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
+			" p-3 mb-7 rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white",
 		classForCardTitle:
 			"text-left font-bold text-xl md:text-xl lg:text-2xl px-3",
 		classForCardTitle_2:
 			"font-bold text-md text-primary  p-5",
 		imgDivCss: "py-2",
-		classForCardImage: " px-2 md:h-[25rem] xl:h-[28em] w-full",
+		classForCardImage: " px-2  w-full",
 		bgImgCss:
 			"relative bg-cover p-3 block   bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 
@@ -312,7 +312,7 @@ const HomePage = () => {
 	const content_About = {
 		id: "about",
 		sectionClass:
-			"pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-offWhite   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
+			"pt-20 pb-20 md:pt-10 md:pb-10 lazyload object-fit bg-cover bg-no-repeat relative bg-white   lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] ",
 		pageTitle:
 			"<span class=' font-extrabold uppercase'>Meet your coach - Mr Ashish Naik:</span>  ",
 		pageTitleCss: "w-full text-center   BlockTitle mb-10 md:mb-5 2xl:mb-2 leading-relaxed",
@@ -376,7 +376,7 @@ const HomePage = () => {
 		bgImage: "/images/specific/trainingAcademy/iAssureIT-training-21.webp",
 		smallBGImage: "/images/specific/trainingAcademy/iAssureIT-training-21.webp",
 		title: "UNLOCK YOUR POTENTIAL, TRANSFORM YOUR SKILLS, AND JOIN A THRIVING COMMUNITY OF DEVELOPERS. ENROLL NOW AND TAKE THE FIRST STEP TOWARDS A SUCCESSFUL CAREER IN FULLSTACK DEVELOPMENT!",
-		titleClass: " text-center mx-auto  my-auto font-extrabold text-lg md:text-3xl xl:text-3xl  w-full md:w-5/6 xl:w-full 2xl:w-5/6  px-4 xl:px-5 2xl:px-2 md:leading-loose",
+		titleClass: " text-center mx-auto  my-auto font-extrabold text-lg md:text-3xl xl:text-3xl  w-full md:w-5/6 xl:w-full 2xl:w-5/6  px-4 xl:px-5 2xl:px-2 md:!leading-relaxed",
 		className: "h-auto w-full mx-auto",
 		alt: "reserve",
 		bgImgCss: "bg-blue-600 py-3 md:py-10 2xl:py-10 bg-cover bg-no-repeat  bg-left-bottom lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)]",
@@ -436,7 +436,7 @@ const HomePage = () => {
 				content: "Prerequisites vary by course, but many of our programs are designed to accommodate learners with diverse backgrounds and skill sets."
 			},
 		],
-		titleDescription_2: "Have more questions? Feel free to reach out to us! We're here to help you embark on your journey to becoming a successful Fullstack Developer."
+		titleDescription_2: "Have more questions? Feel free to reach out to us! We're here to help you <br> embark on your journey to becoming a successful Fullstack Developer."
 	}
 
 	const content_Testimonials = {
@@ -713,13 +713,13 @@ const HomePage = () => {
 		blockDescription: "<span>Embark on your FullStack journey with our comprehensive courses designed to elevate your skills and propel your career to new heights. With flexible payment options and exclusive discounts, investing in your future has never been more accessible</span>" +
 			"<br /><br />	<span class='font-bold '>Course Fees Breakdown</span>",
 		classForblockTitle: "w-full text-center BlockTitle xl:py-5 py-3 md:py-10  leading-tight",
-		classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-52 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",
+		classForNoOfCards: "px-10 pb-10 lg:px-20 2xl:px-32 lg:mt-5  max-w-8xl text-center justify-evenly mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-10 mx-auto",
 		classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
 		classForCardTitle: "text-white text-center font-bold text-[1.2rem] md:text-sm lg:text-[1.1rem] p-3",
 		classForCardTitle_2: "",
 		cardTitle2Css:"text-center",
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
-		bgImgCss: "relative bg-cover p-2 md:px-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-skyBlue rounded-t-lg leading-tight",
+		bgImgCss: "relative bg-cover p-2 md:px-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-lightBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><div class='font-extrabold  text-xl md:text-2xl xl:text-3xl '>Total Investment</div>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +
@@ -727,32 +727,32 @@ const HomePage = () => {
 			displayTriangle:"true",
 			cardsArray: [
 			{
-				cardTitle: '<p>Course 1</p>' +
-					'<p class="wrap-text">HTML5, CSS3, JavaScript </p><p>etc</p>',
-				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
+				cardTitle: '<p class="md:text-2xl">Course 1</p>' +
+					'<p class="wrap-text leading-relaxed">HTML5, CSS3, JavaScript </p><p>etc</p>',
+				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black '>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 30,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
 					"<p class='text-sm mb-6 font-semibold text-success mt-3'> 17% of Discount  </p>"
 			}, {
-				cardTitle: '<p>Course 2</p>' +
-					'<p class="wrap-text">ReactJS, JSON,</p><p> API Integration</p>',
+				cardTitle: '<p class="md:text-2xl">Course 2</p>' +
+					'<p class="wrap-text leading-relaxed ">ReactJS, JSON,</p><p> API Integration</p>',
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
 					"<p class='text-sm mb-6 font-semibold text-success mt-3'>50% of Discount </p>"
 			}, {
-				cardTitle: '<p>Course 3</p>' +
-					'<p class="wrap-text">NodeJS, MongoDB,</p><p> REST API Development</p>',
+				cardTitle: '<p class="md:text-2xl">Course 3</p>' +
+					'<p class="wrap-text leading-relaxed ">NodeJS, MongoDB,</p><p> REST API Development</p>',
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
 					"<p class='text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 25,000</p>" +
 					"<p class='text-sm mb-6 font-semibold text-success mt-3'> 50% of Discount </p>"
 			}, {
-				cardTitle: '<p>Course 4</p>' +
-					'<p class="wrap-text">Advanced Skills in ReactJS,</p><p> NodeJS, etc</p>',
+				cardTitle: '<p class="md:text-2xl">Course 4</p>' +
+					'<p class="wrap-text leading-relaxed ">Advanced Skills in ReactJS, NodeJS, etc</p>',
 				cardTitle_2: "<p class='mt-6 text-sm font-semibold text-black'>Regular Price</p>" +
 					"<p class=' line-through text-lg font-bold text-black'><i class='fa-solid fa-indian-rupee-sign'></i> 50,000</p>" +
 					"<p class='text-sm font-semibold text-black mt-3'>Discounted Price</p>" +
@@ -788,6 +788,7 @@ const HomePage = () => {
 		modalBtnCss: "w-fit place-content-center justify-center mx-auto text-white text-center font-bold text-sm 2xl:text-lg py-2 px-2 md:px-5  2xl:px-6 mt-5 lg:mt-20 border  rounded btn bg-orange-500 hover:bg-orange-700 cursor-pointer",
 	};
 	const [isModalOpen, setModalOpen] = useState(false);
+	const [isDownloadModal, setIsDownloadModal] = useState(false);
 
 	useEffect(() => {
 		{/* <!-- Meta Pixel Code --> */}
@@ -816,10 +817,10 @@ const HomePage = () => {
 					/>
 				</noscript>
 			</Head>
-			{isModalOpen && <StudEnrollModal modalId={"DownloadBrochure"} downloadBrochure={true} />}
+			{isDownloadModal && <DownloadBrochure  />}
 			<div
-				onClick={() => setModalOpen(!isModalOpen)}
-				className=" fixed top-12 md:top-14 lg:top-10 xl:top-10 z-30 right-2 xs:right-5 md:right-0 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="download Brochure "
+				onClick={() => setIsDownloadModal(!isDownloadModal)}
+				className=" fixed top-12 md:top-14 lg:top-10 xl:top-10 z-30 right-2 xs:right-5 md:right-0 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-3 py-2 h-10 w-10 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="Download Brochure "
 			>
 
 				{/* <a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf" target={"_blank"} aria-label="Downlod Brochure"> */}

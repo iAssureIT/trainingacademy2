@@ -133,7 +133,7 @@ const DowloadBrochureModal = (props) => {
                             "<br/>" +
                             "<b>City: </b>" +
                             fields.city +
-                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>" + process.env.WEBSITE_NAME + "/stud-enrollment-list/<br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
+                            "<br/><br/>You can access the database of candidates by clicking the link below<br/>" + process.env.WEBSITE_NAME + "/admin/student-management/student-list <br/><br/> Please take the necessary steps to reach out to the prospect promptly and address their inquiry.",
                     };
                     axios
                         .post("/send-email", formValues2)

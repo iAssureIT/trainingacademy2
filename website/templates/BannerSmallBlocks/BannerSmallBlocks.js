@@ -16,7 +16,7 @@ const BannerSmallBlocks = (props) => {
                     {props.inputData?.cardData.map((data, index) => (
                         <div key={index} className={` rounded-lg min-h-24 md:h-auto px-2 my-5 lg:my-0 py-4    hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]  font-bold  flex gap-4 items-center text-white hover:text-black  ${data.bgColor} `}
                             >
-                            <div><img src={data.img} className="rounded-full p-3 lg:p-1 xl:p-3 bg-white" draggable="false" /></div>
+                            <div><img src={data.img} className="ml-1 rounded-full p-3 lg:p-1 xl:p-3 bg-white" draggable="false" /></div>
                             <div className="text-[1rem]  pr-5 lg:pr-0 text-left  font-bold">
                                 {data.title}
                             </div>

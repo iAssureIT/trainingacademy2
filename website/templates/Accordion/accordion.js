@@ -14,9 +14,9 @@ const Accordion = ({ title, content }) => {
         <div className="flex">
           {isOpen
             ?
-            <div className="items-center object-center w-20 px-8 py-10 md:py-3 text-3xl font-semibold text-white lg:py-3  2xl:py-3 place-content-center bg-orangeColor" > <span>-</span></div>
+            <div className="items-center mx-auto object-center px-6 md:px-5  py-8 md:py-5 lg:py-6 xl:py-3 2xl:py-3 my-auto text-3xl font-semibold text-white  place-content-center bg-orangeColor" > <span>-</span></div>
             :
-            <div className="items-center object-center w-20 px-8 py-10 md:py-5 my-auto text-3xl font-semibold text-white lg:py-6 2xl:py-3 place-content-center bg-orangeColor"> <span>+</span></div>
+            <div className="items-center mx-auto object-center px-6 md:px-5  py-8 md:py-5 lg:py-6 xl:py-3 2xl:py-3 my-auto text-3xl font-semibold text-white  place-content-center bg-orangeColor"> <span>+</span></div>
           }
           <div className="w-0 h-0 my-auto
             border-t-[12px] border-t-transparent
