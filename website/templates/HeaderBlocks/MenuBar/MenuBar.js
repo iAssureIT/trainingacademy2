@@ -92,6 +92,7 @@ function MenuBar(props) {
 
       window.addEventListener('scroll', () => {
          var nav1 = document.querySelector(".menubar");
+         var navMenu = document.querySelector("#menubar");
          // var shouldAddClass = window.scrollY > nav1.clientHeight;
          var shouldAddClass = window.scrollY;
          var menuItemElements = document.querySelectorAll(".menuText");
@@ -124,9 +125,9 @@ function MenuBar(props) {
                }
          }
          if (shouldAddClass) {
-				nav1.classList.add("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
+				navMenu.classList.add("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
 			} else {
-				nav1.classList.remove("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
+				navMenu.classList.remove("shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]");
 			}
       });
    }
@@ -136,6 +137,7 @@ function MenuBar(props) {
             className={" flex justify-between flex-wrap px-6 md:px-20 py-3 bg-cover  bg-no-repeat sm:bg-cover lg:h-20 xl:h-20 h-20 bg-right "} 
             style={{ backgroundImage: `url(${imageURL})`, backgroundSize: "100% 100%" }}> */}
          <nav
+         id="menubar"
             className={pathname !== "/" ? "bg-cover  bg-no-repeat sm:bg-cover  bg-[image:var(--largeImage-url)]  flex justify-between  w-full  md:flex-wrap px-6 lg:px-20 lg:py-0 lg:h-24  xl:h-24 h-12 bg-blue-500  " : " fixed z-20  w-full  flex md:justify-between md:flex-wrap px-6 lg:px-20 lg:py-0 lg:h-28 xl:h-28 h-12 bg-[image:var(--largeImage-url)] lg:bg-none menubar"}
             style={{
                '--largeImage-url': `url(${imageURL})`,
