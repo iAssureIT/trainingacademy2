@@ -181,7 +181,7 @@ const HomePage = () => {
 		image: "/images/specific/trainingAcademy/iAssureIT-training-7.webp",
 		imageCss:
 			"mx-auto sm:object-fit my-auto content-center  place-content-center lazyload ",
-		imgTagcss: "mx-auto xl:h-[350px] w-2/3 md:w-auto  lazyload",
+		imgTagcss: "mx-auto xl:h-[300px] w-2/3 md:w-auto  lazyload",
 		modalId: "registrationModal",
 		modalDisplay1: "true",
 		modalUrlName1: "Apply Now",
@@ -825,8 +825,7 @@ const HomePage = () => {
 			>
 
 				{/* <a href="https://iaspireit.s3.ap-south-1.amazonaws.com/iAspireIT-Executive+-Learning-Brochure-2.pdf" target={"_blank"} aria-label="Downlod Brochure"> */}
-				<i className="text-white fa-solid fa-download">
-				</i>
+				<i className="text-white fa-solid fa-download">		</i>
 				{/* </a> */}
 			</div>
 

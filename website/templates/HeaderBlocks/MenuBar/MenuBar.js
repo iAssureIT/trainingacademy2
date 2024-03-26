@@ -24,6 +24,11 @@ function MenuBar(props) {
          const parseUser_id = userDetailsParse.user_id;
          setUserData(userDetailsParse);
       }
+      let adminEx = pathname.includes("/admin/student-management/student-list");
+      if (adminEx ) {
+         // Swal.fire("Please login first!", "", "warning");
+         window.location.href = "/auth/login";
+      }
       let userExists = pathname.includes("/admin");
       if (userExists && !userDetails) {
          Swal.fire("Please login first!", "", "warning");

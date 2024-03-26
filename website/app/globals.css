@@ -385,3 +385,12 @@ border-color: #fd641f;
 .scroll-smooth{
   /* scroll-padding: 230px 0 0 50px; */
 }
+/* div[title]:hover::after {
+   content: attr("title");
+    position: absolute;
+    padding: 5px;
+    border: 1px solid gray;
+    background: whitesmoke;
+    font-size: 14px;
+    right:20px;
+} */
