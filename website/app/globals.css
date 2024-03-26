@@ -394,3 +394,37 @@ border-color: #fd641f;
     font-size: 14px;
     right:20px;
 } */
+
+
+
+@keyframes toBottomFromTop {
+  from {
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+/* Apply the animation when the element is hovered */
+.element:hover {
+  animation: toBottomFromTop 0.8s ease forwards;
+}
+
+@keyframes toBottomFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation when the element is hovered */
+.parent:hover .sub-element {
+  animation: toBottomFromTop 0.8s ease forwards;
+}
+
+.sub-element {
+  overflow: hidden; /* Ensure image doesn't overflow its container */
+}

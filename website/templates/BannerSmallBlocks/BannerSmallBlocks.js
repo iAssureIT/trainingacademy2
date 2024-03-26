@@ -14,9 +14,9 @@ const BannerSmallBlocks = (props) => {
                 <div className="mx-1 md:mx-20 lg:mx-16 xl:mx-12 2xl:mx-20 lg:-mt-24 h-auto">
                 <div className="grid p-5 block bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-2xl grid-cols-1 lg:grid-cols-4 lg:gap-4">
                     {props.inputData?.cardData.map((data, index) => (
-                        <div key={index}  className={` flex md:grid md:grid-cols-3 group  rounded-lg min-h-24 md:h-auto px-2 my-5 lg:my-0 py-4    hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]  hover:font-bold hover:text-lg  gap-4 items-center hover:text-white bannerBlocks `}
+                        <div key={index}  className={` parent flex md:grid md:grid-cols-3 group  rounded-lg min-h-24 md:h-auto px-2 my-5 lg:my-0 py-4    hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)]  hover:font-bold hover:text-lg   items-center hover:text-white bannerBlocks gap-3 xl:gap-2 `}
                             >
-                            <div className={` `}><img src={data.img} className={`${data.bgColor} rounded-full p-3  group-hover:fadeIn `} /></div>
+                            <div className={`  ${data.bgColor} rounded-full 2xl:w-3/4 mx-auto p-3 `}><div className={` `}><img  src={data.img} className={` bg-pink  group-hover:fadeIn  sub-element `} /></div></div>
                             <div className=" md:col-span-2 text-lg font-bold pr-5 lg:pr-0 text-left ">
                                 {data.title}
                             </div>

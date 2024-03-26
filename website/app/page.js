@@ -90,10 +90,10 @@ const HomePage = () => {
 		smallBGImage3: "/images/specific/trainingAcademy/3.webp",
 		smallBGImage4: "/images/specific/trainingAcademy/4.webp",
 		cardData: [
-			{img:"/images/specific/trainingAcademy/bannerIcons/1.webp", title:"Advanced Skills and Beyond",bgColor:"bg-danger" },
-			{img:"/images/specific/trainingAcademy/bannerIcons/2.webp", title:"Web Technologies Mastery", bgColor:"bg-yelloC"},
-			{img:"/images/specific/trainingAcademy/bannerIcons/3.webp", title:"ReactJS Framework and Beyond", bgColor:"bg-success"},
-			{img:"/images/specific/trainingAcademy/bannerIcons/4.webp", title:"NodeJS and Database Development",bgColor:"bg-info" },
+			{ img: "/images/specific/trainingAcademy/bannerIcons/1.webp", title: "Advanced Skills and Beyond", bgColor: "bg-danger" },
+			{ img: "/images/specific/trainingAcademy/bannerIcons/2.webp", title: "Web Technologies Mastery", bgColor: "bg-yelloC" },
+			{ img: "/images/specific/trainingAcademy/bannerIcons/3.webp", title: "ReactJS Framework and Beyond", bgColor: "bg-success" },
+			{ img: "/images/specific/trainingAcademy/bannerIcons/4.webp", title: "NodeJS and Database Development", bgColor: "bg-info" },
 
 		]
 	};
@@ -117,7 +117,7 @@ const HomePage = () => {
 			" md-mt-12 mx-auto my-auto text-white content-center  place-content-center  justify-center",
 		image: "/images/specific/trainingAcademy/iAssureIT-training-13.webp",
 		imageCss: "  object-fit lazyload w-2/3 md:w-2/3 xl:w-2/3 2xl:w-auto mx-auto 2xl:mx-0 2xl:float-right md:mb-0 pb-5 md:pb-0 md:py-10 mt-10 md:mt-1",
-		imgTagcss : '2xl:float-right mx-auto lazyload',
+		imgTagcss: '2xl:float-right mx-auto lazyload',
 		borderColor:
 			"border-darkBluobject-fit py-10 md:py-20 2xl:py-20 bg-cover bg-no-repeat relative  w-full  lg:bg-[image:var(--largeImage-url)]  bg-[image:var(--smallImage-url)] lazyloadede",
 		dash: "",
@@ -216,7 +216,7 @@ const HomePage = () => {
 		imgTagcss: "mx-auto xl:h-[400px] 2xl:-mt-5",
 	};
 
-	
+
 	const content_Courses = {
 		id: "courses",
 		sectionCss: "md:mt-5 lg:mt-0 pt-10 lg:pt-20 bg-offWhite",
@@ -322,11 +322,11 @@ const HomePage = () => {
 			"text-lg md:text-sm lg:text-lg text-center font-normal   mx-auto    -mt-10 md:mt-0 px-4 md:px-10",
 		bgImage:
 			"/images/specific/trainingAcademy/iAssureIT-training-14.webp",
-		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto xl:-mt-20 2xl:-mt-32  xxl:!w-3/4 h-full xl:h-[800px] xxl:!h-full float-right ",
+		bgImageCss: "  object-cover  lg:-mb-40 xl:mb-auto xl:-mt-20 2xl:-mt-32 w-auto xxl:!w-3/4 xl:h-[800px] xxl:!h-full float-right ",
 		bigImageAlt: "iAssureIT-infra",
 		gridCss: "grid grid-cols-1 lg:grid-cols-2 float-right lg:float-left px-3",
 		gridCol1Css: "order-first lg:order-last  w-full h-auto relative my-auto ",
-		gridCol2Css:" pl-2 md:pl-2 lg:pl-10 xl:pl-16 2xl:pl-16 xxl:!pl-24",
+		gridCol2Css: " pl-2 md:pl-2 lg:pl-10 xl:pl-16 2xl:pl-16 xxl:!pl-24",
 		repeatedBlkCss: " shadow-none flex items-start sm:h-36 md:h-auto my-10 lg:my-4 2xl:my-5  border-b  border-black	leading-tight ",
 		imgCss:
 			"flex-none   items-start rounded mr-3 md:mr-10 object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)]",
@@ -718,15 +718,15 @@ const HomePage = () => {
 		classForCards: "mb-7 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]",
 		classForCardTitle: "text-white text-center font-bold text-[1.2rem] md:text-sm lg:text-[1.1rem] p-3",
 		classForCardTitle_2: "",
-		cardTitle2Css:"text-center",
+		cardTitle2Css: "text-center",
 		classForCardImage: "w-full rounded-full pb-5 object-cover",
 		bgImgCss: "relative bg-cover p-2 md:px-3  block  bg-no-repeat  max-w-full  sm:bg-cover bg-center lazyload bg-lightBlue rounded-t-lg leading-tight",
 		cardTitle_2: "<div class='text-center text-xl'><div class='font-extrabold  text-xl md:text-2xl xl:text-3xl '>Total Investment</div>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Regular Price for all 4 Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,80,000</span></span></p>" +
 			"<br /> <p class='md:flex font-semibold text-xl text-center'>Discounted Price for all 4 Courses <span class='hidden md:block'>:</span> <br class='md:hidden' /><span class=''> <i class='fa-solid fa-indian-rupee-sign mx-1 py-1'></i><span class='font-bold mx-1'>1,00,000</span></span></p>" +
 			"<br /><p class='text-2xl font-bold text-success'> 45% of Discount </p></div>",
-			displayTriangle:"true",
-			cardsArray: [
+		displayTriangle: "true",
+		cardsArray: [
 			{
 				cardTitle: '<p class="md:text-2xl">Course 1</p>' +
 					'<p class="wrap-text leading-relaxed">HTML5, CSS3, JavaScript </p><p>etc</p>',
@@ -792,33 +792,36 @@ const HomePage = () => {
 	const [isDownloadModal, setIsDownloadModal] = useState(false);
 
 	useEffect(() => {
-		{/* <!-- Meta Pixel Code --> */}
+		{/* <!-- Meta Pixel Code --> */ }
 		// <script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-		n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t,s)}(window, document,'script',
-		'https://connect.facebook.net/en_US/fbevents.js');
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '357106483981046');
 		fbq('track', 'PageView');
 		// </script>
-		
-		{/* <!-- End Meta Pixel Code --> */}
+
+		{/* <!-- End Meta Pixel Code --> */ }
 	}, []);
-	
+
 	return (
 		<main className="flex flex-col justify-between min-h-screen bg-white font-TerminaTest">
 			<Head>
 				<noscript>
 					<img height="1" width="1" style="display:none"
-					src="https://www.facebook.com/tr?id=357106483981046&ev=PageView&noscript=1"
+						src="https://www.facebook.com/tr?id=357106483981046&ev=PageView&noscript=1"
 					/>
 				</noscript>
 			</Head>
-			{isDownloadModal && <DownloadBrochure  />}
+			{isDownloadModal && <DownloadBrochure />}
 			<div
 				onClick={() => setIsDownloadModal(!isDownloadModal)}
 				className=" fixed top-12 md:top-14 lg:top-10 xl:top-10 z-30 right-2 xs:right-5 md:right-0 rounded-sm border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-3 py-2 h-10 w-10 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer " title="Download Brochure "
