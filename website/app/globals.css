@@ -383,7 +383,7 @@ border-color: #fd641f;
   word-break: break-word;
 }
 .scroll-smooth{
-  /* scroll-padding: 230px 0 0 50px; */
+  scroll-behavior: smooth;
 }
 /* div[title]:hover::after {
    content: attr("title");
@@ -427,4 +427,9 @@ border-color: #fd641f;
 
 .sub-element {
   overflow: hidden; /* Ensure image doesn't overflow its container */
+}
+
+.scrolltop{
+  transition: all 200ms linear;
+  transform: translateY(0);
 }

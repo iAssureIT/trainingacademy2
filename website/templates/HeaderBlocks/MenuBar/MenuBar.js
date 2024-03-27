@@ -28,7 +28,9 @@ function MenuBar(props) {
       let userExists = pathname.includes("/admin");
       if (userExists && !userDetails) {
          Swal.fire("Please login first!", "", "warning");
-         window.location.href = "/auth/login";
+         Swal.fire("Please login first!", "", "warning").then(() => {
+            window.location.href = "/auth/login";
+          });
       }
    }, []);
    const loginPage = () => {

@@ -1,5 +1,5 @@
 "use client";
-import React, { $, useEffect,useState } from "react";
+import React, { $, useEffect, useState } from "react";
 import axios from "axios";
 import { usePathname } from "next/navigation";
 import { animateScroll } from 'react-scroll';
@@ -222,12 +222,12 @@ export default function RootLayout({ children }) {
 
   }, []);
 
-  
+
 
   // window.onscroll = function() {
   //   // scrollFunction()
   // };
-  
+
   // function scrollFunction() {
   //   var mybutton = document.getElementById("myBtn");
   //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -236,81 +236,13 @@ export default function RootLayout({ children }) {
   //     mybutton.classList.add("hidden");
   //   }
   // }
-  const scrollToTop = () => window.scrollTo(0, 0);
-  const scrollTo =(element, duration)=> {
-    return () => {
-    console.log("element",element)
-    console.log("document.documentElement",document.documentElement)
-    var e = document.documentElement;
-    if (e.scrollTop === 0) {
-      var t = e.scrollTop;
-      ++e.scrollTop;
-      e = t + 1 === e.scrollTop-- ? e : document.body;
-    }
-    scrollToC(e, e.scrollTop, element, duration);
+  // const scrollToTop = () => window.scrollTo(0, 0);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling behavior
+    });
   };
-}
-  
-  // Element to move, element or px from, element or px to, time in ms to animate
-  function scrollToC(element, from, to, duration) {
-    if (duration <= 0) return;
-    if (typeof from === "object") from = from.offsetTop;
-    if (typeof to === "object") to = to.offsetTop;
-  
-    scrollToX(element, from, to, 0, 1 / duration, 20, linearEase);
-  }
-  
-  function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
-    if (t01 < 0 || t01 > 1 || speed <= 0) {
-      element.scrollTop = xTo;
-      return;
-    }
-    element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
-    t01 += speed * step;
-    setTimeout(function() {
-      scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-    }, step);
-  }
-  
-  function linearEase(t) {
-    t--;
-    return t * t * t + 1;
-  }
-  
-  const animationDuration = 1500; // Adjust this value for desired speed
-
-  function smoothScrollToTop() {
-  const currentScrollPos = window.pageYOffset;
-  const finalScrollPos = 0;
-  const animationDuration = 1500; // Adjust this value for desired speed
-
-  // Define an easing function (e.g., easeInOutQuad)
-  const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) * (t - 1);
-
-  let startTime = null;
-
-  const animateScroll = (timestamp) => {
-    if (!startTime) startTime = timestamp;
-    const elapsedTime = timestamp - startTime;
-
-    if (elapsedTime >= animationDuration) {
-      window.scrollTo(0, finalScrollPos);
-      return;
-    }
-
-    const normalizedTime = Math.min(1, elapsedTime / animationDuration);
-    const easedTime = easeInOutQuad(normalizedTime);
-
-    const newScrollPos = currentScrollPos + (finalScrollPos - currentScrollPos) * easedTime;
-    window.scrollTo(0, newScrollPos);
-
-    requestAnimationFrame(animateScroll);
-  };
-
-  requestAnimationFrame(animateScroll);
-}
-  
-
   return (
     <html lang="en" className='scroll-smooth' style={{ scrollBehavior: 'smooth', scrollPaddingTop: '28%' }} suppressHydrationWarning={true}>
       <head>
@@ -320,9 +252,9 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,500;0,700;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
           rel="stylesheet"
         ></link> */}
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
         <meta charSet="UTF-8" />
 
         <meta name="viewport" content="width=device-width" initial-scale="1.0" />
@@ -368,8 +300,8 @@ export default function RootLayout({ children }) {
 
               <div
                 id="myBtn"
-                onClick={smoothScrollToTop}
-                className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer"
+                onClick={scrollToTop}
+                className=" fixed bottom-5 right-5 rounded-full border border-orangeColor hover:border-2 hover:h-9 hover:px-2.5 hover:w-9 px-2 py-1 h-8 w-8 text-white bg-orangeColor shadow-[0_3px_10px_rgb(0,0,0,0.2)]  cursor-pointer scrolltop"
               >
                 <i className="text-white fa-solid fa-arrow-up"></i>
               </div>
